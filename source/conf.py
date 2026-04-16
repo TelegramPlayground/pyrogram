@@ -28,6 +28,8 @@ from pyrogram.raw.all import layer
 
 commit_id = subprocess.check_output([
     "git",
+    "-C",
+    "../..",
     "rev-parse",
     "--short",
     "HEAD",
@@ -125,7 +127,7 @@ html_sidebars = {
 # Towncrier settings
 towncrier_draft_autoversion_mode = "draft"
 towncrier_draft_include_empty = True
-towncrier_draft_working_directory = html_static_path[0] + "/../news/"
+towncrier_draft_working_directory = html_static_path[0] + "/../../news/"
 
 latex_engine = "xelatex"
 latex_logo = os.path.abspath("static/img/pyrogram.png")
@@ -269,6 +271,9 @@ def linkcode_resolve(domain, info):
         # Ensure forward slashes for the GitHub URL (important for Windows users)
         rel_filepath = rel_filepath.replace(os.sep, "/")
         
+        if "/raw/" in rel_filepath:
+            return None
+
         # 3. Get the line numbers
         source, lineno = inspect.getsourcelines(obj)
         
@@ -280,6 +285,5 @@ def linkcode_resolve(domain, info):
         # Fails safely if source cannot be inspected or path calculation fails
         return None
 
-    # Fallback to just linking to the file if line numbers can't be resolved
-    return f"{project_url}/blob/{commit_id}/{filename}.py"
+    return None
 
