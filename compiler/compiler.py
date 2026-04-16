@@ -24,7 +24,7 @@ import shutil
 from dataclasses import dataclass
 from typing import Literal, Optional
 
-HOME = "compiler/docs"
+HOME = "docs/compiler"
 DESTINATION = "docs/source/telegram"
 PYROGRAM_API_DEST = "docs/source/api"
 
