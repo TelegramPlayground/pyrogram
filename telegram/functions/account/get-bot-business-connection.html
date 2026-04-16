@@ -980,7 +980,7 @@
 <h1>account.GetBotBusinessConnection<a class="headerlink" href="#account-getbotbusinessconnection" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.functions.account.GetBotBusinessConnection">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.functions.account.</span></span><span class="sig-name descname"><span class="pre">GetBotBusinessConnection</span></span><a class="reference external" href="https://github.com/TelegramPlayGround/Pyrogram/blob/da45545/pyrogram/raw/functions/account/get_bot_business_connection.py#L35-L78"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyrogram.raw.functions.account.GetBotBusinessConnection" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.functions.account.</span></span><span class="sig-name descname"><span class="pre">GetBotBusinessConnection</span></span><a class="reference external" href="https://github.com/TelegramPlayGround/Pyrogram/blob/b48582b/pyrogram/raw/functions/account/get_bot_business_connection.py#L35-L78"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyrogram.raw.functions.account.GetBotBusinessConnection" title="Link to this definition">#</a></dt>
 <dd><p>Bots may invoke this method to re-fetch the <a class="reference external" href="https://corefork.telegram.org/constructor/updateBotBusinessConnect">updateBotBusinessConnect</a> constructor associated with a specific <a class="reference external" href="https://corefork.telegram.org/api/bots/connected-business-bots">business connection_id, see here</a> for more info on connected business bots.
 This is needed for example for freshly logged in bots that are receiving some <a class="reference external" href="https://corefork.telegram.org/constructor/updateBotNewBusinessMessage">updateBotNewBusinessMessage</a>, etc. updates because some users have already connected to the bot before it could login.
 In this case, the bot is receiving messages from the business connection, but it hasn’t cached the associated <a class="reference external" href="https://corefork.telegram.org/constructor/updateBotBusinessConnect">updateBotBusinessConnect</a> with info about the connection (can it reply to messages? etc.) yet, and cannot receive the old ones because they were sent when the bot wasn’t logged into the session yet.
@@ -1041,7 +1041,7 @@ This method can be used to fetch info about a not-yet-cached business connection
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/da45545" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b48582b" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               
