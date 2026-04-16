@@ -1,0 +1,1 @@
+Allow creating polls with single answer option.
