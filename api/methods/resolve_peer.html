@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=302659d7" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/all.min.css?v=9fdaa247" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=734d5245" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=a44c511a" />
     
     
 
@@ -1023,24 +1023,24 @@
 <h1>resolve_peer()<a class="headerlink" href="#resolve-peer" title="Link to this heading">¶</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="pyrogram.Client.resolve_peer">
-<span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">resolve_peer</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/TelegramPlayGround/Pyrogram/blob/2787e8e/pyrogram/methods/advanced/resolve_peer.py#L31-L140"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyrogram.Client.resolve_peer" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">resolve_peer</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/TelegramPlayGround/Pyrogram/blob/73e631a/pyrogram/methods/advanced/resolve_peer.py#L31-L140"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyrogram.Client.resolve_peer" title="Link to this definition">¶</a></dt>
 <dd><p>Get the InputPeer of a known peer id.
 Useful whenever an InputPeer type is required.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This is a utility method intended to be used <strong>only</strong> when working with raw
-<code class="xref py py-obj docutils literal notranslate"><span class="pre">functions</span></code> (i.e: a Telegram API method you wish to use which is not
+<a class="reference internal" href="../../telegram/functions/index.html#module-pyrogram.raw.functions" title="pyrogram.raw.functions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">functions</span></code></a> (i.e: a Telegram API method you wish to use which is not
 available yet in the Client class as an easy-to-use method).</p>
 </div>
 <strong>Usable by</strong>
-<span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Users</span>
-<span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Bots</span><dl class="field-list simple">
+<span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i><span class="iv-fallback">✅ </span> Users</span>
+<span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i><span class="iv-fallback">✅ </span> Bots</span><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>peer_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – The peer id you want to extract the InputPeer from.
 Can be a direct id (int), a username (str) or a phone number (str).</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">InputPeer</span></code> – On success, the resolved peer id is returned in form of an InputPeer object.</p>
+<dd class="field-even"><p><a class="reference internal" href="../../telegram/base/input-peer.html#pyrogram.raw.base.InputPeer" title="pyrogram.raw.base.InputPeer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPeer</span></code></a> – On success, the resolved peer id is returned in form of an InputPeer object.</p>
 </dd>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#KeyError" title="(in Python v3.14)"><strong>KeyError</strong></a> – In case the peer doesn’t exist in the internal database.</p>
@@ -1086,7 +1086,7 @@ Can be a direct id (int), a username (str) or a phone number (str).</p>
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/2787e8e" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/73e631a" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

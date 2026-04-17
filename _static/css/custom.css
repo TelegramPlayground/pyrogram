@@ -627,3 +627,8 @@ ul.breadcrumbs li {
 .fa-telegram-plane::before, .fa-telegram::before {
     content: "\f2c6";
 }
+
+/* Hide fallback text for Instant View so it doesn't duplicate FontAwesome icons */
+.iv-fallback {
+    display: none;
+}
