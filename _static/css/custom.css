@@ -628,7 +628,25 @@ ul.breadcrumbs li {
     content: "\f2c6";
 }
 
-/* Hide fallback text for Instant View so it doesn't duplicate FontAwesome icons */
+/* Hide native emojis on the web view */
 .iv-fallback {
     display: none;
+}
+
+/* Inject Green FontAwesome Checkmark */
+.badge-yes::before {
+    content: "\f00c"; /* Unicode for fa-check */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900; /* Required for solid icons */
+    color: var(--color-green);
+    margin-right: 6px;
+}
+
+/* Inject Red FontAwesome X-Mark */
+.badge-no::before {
+    content: "\f00d"; /* Unicode for fa-xmark */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900; /* Required for solid icons */
+    color: var(--color-red);
+    margin-right: 6px;
 }
