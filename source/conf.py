@@ -53,7 +53,6 @@ extensions = [
     # "sphinx.ext.coverage",
     "sphinx.ext.linkcode",
     "sphinx_llms_txt",
-    "sphinxcontrib.towncrier.ext",
 ]
 
 intersphinx_mapping = {
@@ -123,11 +122,6 @@ html_sidebars = {
         "sidebar/scroll-end.html",
     ]
 }
-
-# Towncrier settings
-towncrier_draft_autoversion_mode = "draft"
-towncrier_draft_include_empty = True
-towncrier_draft_working_directory = html_static_path[0] + "/../../news/"
 
 latex_engine = "xelatex"
 latex_logo = os.path.abspath("static/img/pyrogram.png")

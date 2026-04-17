@@ -28,19 +28,6 @@ If you found any issue or have any suggestions, feel free to make `an issue <htt
 Changes in this Fork
 =====================
 
-..
-    You should *NOT* be adding new change log entries to this file, this
-    file is managed by towncrier. You *may* edit previous change logs to
-    fix problems like typo corrections or such.
-    To add a new change log entry, please see
-    https://pip.pypa.io/en/latest/development/#adding-a-news-entry
-    we named the news folder "news".
-    WARNING: Don't drop the next directive!
-
-.. towncrier-draft-entries:: |release| [UNRELEASED DRAFT]
-
-.. towncrier release notes start
-
 +------------------------+
 | Scheme layer used: 224 |
 +------------------------+
