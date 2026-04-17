@@ -141,6 +141,7 @@ Meta
     :hidden:
     :caption: Topic Guides
 
+    topics/comparison-with-other-forks
     topics/use-filters
     topics/create-filters
     topics/more-on-updates
