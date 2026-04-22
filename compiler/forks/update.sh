@@ -5,7 +5,7 @@ INPUT_FILE="input.tsv"
 OUTPUT_FILE="output.tsv"
 
 # Optional: Set this if you hit GitHub API rate limits
-# Highly recommended to use a token now, as we are making 2 API calls per repository (unauthenticated is 60/hr)
+# Highly recommended to use a token now, as we are making up to 3 API calls per repository (unauthenticated is 60/hr)
 # GITHUB_TOKEN="your_personal_access_token_here"
 
 # 2. Write the TSV Header Row to the output file
@@ -28,7 +28,7 @@ while IFS=$'\t' read -r slug url name tsv_layer bot speed py tg suffix; do
         CURL_CMD="$CURL_CMD -H \"Authorization: token $GITHUB_TOKEN\""
     fi
 
-    # --- 1. DETERMINE THE BEST REFERENCE (RELEASE TAG OR BRANCH) ---
+    # --- 1. DETERMINE THE BEST REFERENCE (RELEASE TAG, NORMAL TAG, OR BRANCH) ---
     
     target_ref=""
     
@@ -42,10 +42,20 @@ while IFS=$'\t' read -r slug url name tsv_layer bot speed py tg suffix; do
         target_ref="$tag_name"
         echo "  -> Found latest release: $target_ref"
     else
-        # Fallback: Extract the branch name from the URL (e.g., from .../tree/dev/ to "dev")
-        target_ref=$(echo "$url" | awk -F'/tree/' '{print $2}' | cut -d'/' -f1)
-        if [ -n "$target_ref" ]; then
-            echo "  -> No release found. Using branch from URL: $target_ref"
+        # Fallback 1: Attempt to fetch the latest normal tag (if no formal release exists)
+        tags_response=$(eval "$CURL_NO_FAIL https://api.github.com/repos/$slug/tags")
+        # We check if it's an array to avoid jq errors if GitHub returns an error object, then grab the first tag
+        latest_tag=$(echo "$tags_response" | jq -r 'if type=="array" then .[0].name // empty else empty end')
+        
+        if [ -n "$latest_tag" ] && [ "$latest_tag" != "null" ]; then
+            target_ref="$latest_tag"
+            echo "  -> No release found. Using latest tag: $target_ref"
+        else
+            # Fallback 2: Extract the branch name from the URL (e.g., from .../tree/dev/ to "dev")
+            target_ref=$(echo "$url" | awk -F'/tree/' '{print $2}' | cut -d'/' -f1)
+            if [ -n "$target_ref" ]; then
+                echo "  -> No release or tag found. Using branch from URL: $target_ref"
+            fi
         fi
     fi
 
@@ -66,7 +76,7 @@ while IFS=$'\t' read -r slug url name tsv_layer bot speed py tg suffix; do
             echo "  -> Failed to parse layer from .tl file. Falling back to TSV data ($final_layer)."
         fi
     else
-        echo "  -> Could not determine a release or branch. Falling back to TSV data ($final_layer)."
+        echo "  -> Could not determine a release, tag, or branch. Falling back to TSV data ($final_layer)."
     fi
 
     # --- 3. GITHUB STATS FETCHING ---
