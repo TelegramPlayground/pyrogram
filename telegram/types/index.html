@@ -16,7 +16,7 @@
         <link rel="canonical" href="/pyrogram/telegram/types/index.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Raw Types - PyroTGFork 2.2.23 Layer 224</title>
+        <title>Raw Types - PyroTGFork 2.2.23 Layer 225</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.23 Layer 224</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.23 Layer 225</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.23 Layer 224</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.23 Layer 225</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -221,6 +221,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_parse_mode.html">set_parse_mode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/idle.html">idle()</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/compose.html">compose()</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_option.html">get_option</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/initialize.html">initialize</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/sign_up.html">sign_up</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/accept_terms_of_service.html">accept_terms_of_service</a></li>
@@ -1022,6 +1023,11 @@
 <li class="toctree-l2"><a class="reference internal" href="account/web-authorizations.html">WebAuthorizations</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="aicompose/index.html">Aicompose</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="aicompose/tones.html">Tones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aicompose/tones-not-modified.html">TonesNotModified</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="auth/index.html">Auth</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="auth/authorization.html">Authorization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auth/authorization-sign-up-required.html">AuthorizationSignUpRequired</a></li>
@@ -1054,6 +1060,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="bots/index.html">Bots</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bots/access-settings.html">AccessSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bots/bot-info.html">BotInfo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bots/exported-bot-token.html">ExportedBotToken</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bots/popular-app-bots.html">PopularAppBots</a></li>
@@ -1066,6 +1073,8 @@
 <li class="toctree-l2"><a class="reference internal" href="channels/channel-participant.html">ChannelParticipant</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/channel-participants.html">ChannelParticipants</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/channel-participants-not-modified.html">ChannelParticipantsNotModified</a></li>
+<li class="toctree-l2"><a class="reference internal" href="channels/found.html">Found</a></li>
+<li class="toctree-l2"><a class="reference internal" href="channels/personal-channels.html">PersonalChannels</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/send-as-peers.html">SendAsPeers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/sponsored-message-report-result-ads-hidden.html">SponsoredMessageReportResultAdsHidden</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/sponsored-message-report-result-choose-option.html">SponsoredMessageReportResultChooseOption</a></li>
@@ -1302,6 +1311,7 @@
 <li class="toctree-l2"><a class="reference internal" href="stats/broadcast-stats.html">BroadcastStats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stats/megagroup-stats.html">MegagroupStats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stats/message-stats.html">MessageStats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stats/poll-stats.html">PollStats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stats/public-forwards.html">PublicForwards</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stats/story-stats.html">StoryStats</a></li>
 </ul>
@@ -1366,6 +1376,9 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="access-point-rule.html">AccessPointRule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="account-days-ttl.html">AccountDaysTTL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ai-compose-tone.html">AiComposeTone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ai-compose-tone-default.html">AiComposeToneDefault</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ai-compose-tone-example.html">AiComposeToneExample</a></li>
 <li class="toctree-l1"><a class="reference internal" href="attach-menu-bot.html">AttachMenuBot</a></li>
 <li class="toctree-l1"><a class="reference internal" href="attach-menu-bot-icon.html">AttachMenuBotIcon</a></li>
 <li class="toctree-l1"><a class="reference internal" href="attach-menu-bot-icon-color.html">AttachMenuBotIconColor</a></li>
@@ -1513,6 +1526,7 @@
 <li class="toctree-l1"><a class="reference internal" href="channel-participants-mentions.html">ChannelParticipantsMentions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="channel-participants-recent.html">ChannelParticipantsRecent</a></li>
 <li class="toctree-l1"><a class="reference internal" href="channel-participants-search.html">ChannelParticipantsSearch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="channel-topic.html">ChannelTopic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chat.html">Chat</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chat-admin-rights.html">ChatAdminRights</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chat-admin-with-invites.html">ChatAdminWithInvites</a></li>
@@ -1642,6 +1656,9 @@
 <li class="toctree-l1"><a class="reference internal" href="inline-query-peer-type-megagroup.html">InlineQueryPeerTypeMegagroup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="inline-query-peer-type-pm.html">InlineQueryPeerTypePM</a></li>
 <li class="toctree-l1"><a class="reference internal" href="inline-query-peer-type-same-bot-pm.html">InlineQueryPeerTypeSameBotPM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-ai-compose-tone-default.html">InputAiComposeToneDefault</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-ai-compose-tone-id.html">InputAiComposeToneID</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-ai-compose-tone-slug.html">InputAiComposeToneSlug</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-app-event.html">InputAppEvent</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-bot-app-id.html">InputBotAppID</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-bot-app-short-name.html">InputBotAppShortName</a></li>
@@ -2149,6 +2166,7 @@
 <li class="toctree-l1"><a class="reference internal" href="peer-stories.html">PeerStories</a></li>
 <li class="toctree-l1"><a class="reference internal" href="peer-user.html">PeerUser</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pending-suggestion.html">PendingSuggestion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="personal-channel.html">PersonalChannel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phone-call.html">PhoneCall</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phone-call-accepted.html">PhoneCallAccepted</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phone-call-discard-reason-busy.html">PhoneCallDiscardReasonBusy</a></li>
@@ -2443,6 +2461,7 @@
 <li class="toctree-l1"><a class="reference internal" href="top-peer-category-groups.html">TopPeerCategoryGroups</a></li>
 <li class="toctree-l1"><a class="reference internal" href="top-peer-category-peers.html">TopPeerCategoryPeers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="top-peer-category-phone-calls.html">TopPeerCategoryPhoneCalls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-ai-compose-tones.html">UpdateAiComposeTones</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-attach-menu-bots.html">UpdateAttachMenuBots</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-auto-save-settings.html">UpdateAutoSaveSettings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-business-connect.html">UpdateBotBusinessConnect</a></li>
@@ -2452,6 +2471,7 @@
 <li class="toctree-l1"><a class="reference internal" href="update-bot-commands.html">UpdateBotCommands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-delete-business-message.html">UpdateBotDeleteBusinessMessage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-edit-business-message.html">UpdateBotEditBusinessMessage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-bot-guest-chat-query.html">UpdateBotGuestChatQuery</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-inline-query.html">UpdateBotInlineQuery</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-inline-send.html">UpdateBotInlineSend</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-menu-button.html">UpdateBotMenuButton</a></li>
@@ -2629,6 +2649,7 @@
 <li class="toctree-l1"><a class="reference internal" href="web-document.html">WebDocument</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web-document-no-proxy.html">WebDocumentNoProxy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web-page.html">WebPage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="web-page-attribute-ai-compose-tone.html">WebPageAttributeAiComposeTone</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web-page-attribute-star-gift-auction.html">WebPageAttributeStarGiftAuction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web-page-attribute-star-gift-collection.html">WebPageAttributeStarGiftCollection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web-page-attribute-sticker-set.html">WebPageAttributeStickerSet</a></li>
@@ -2680,7 +2701,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/c3eaca4" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/4c9a29c" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               
