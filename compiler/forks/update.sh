@@ -2,7 +2,7 @@
 
 # Define your input source and output compilation target
 INPUT_FILE="input.tsv"
-OUTPUT_FILE="output.tsv"
+OUTPUT_FILE="data.tsv"
 
 # Optional: Set this if you hit GitHub API rate limits
 # Highly recommended to use a token now, as we are making up to 5 API calls per repository (unauthenticated is 60/hr)
