@@ -764,6 +764,7 @@ def pyrogram_api():
             InputMediaAudio
             InputMediaAnimation
             InputMediaDocument
+            InputMediaSticker
             InputPhoneContact
             LinkPreviewOptions
         """,
