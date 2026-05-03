@@ -29,9 +29,20 @@ Changes in this Fork
 =====================
 
 +------------------------+
+| Scheme layer used: 225 |
++------------------------+
+
+- Added ``is_high_quality`` in :obj:`~pyrogram.types.InputMediaPhoto` and replaced the parameter ``photo`` in :meth:`~pyrogram.Client.send_photo` and :meth:`~pyrogram.types.Message.reply_photo`.
+- Added ``description_media`` and ``explanation_media`` in :meth:`~pyrogram.Client.send_poll` and :meth:`~pyrogram.types.Message.reply_poll`.
+- fix in :obj:`~pyrogram.types.Venue`. (contributed in `#282774 <https://t.me/c/1999755950/282774>`__).
+- fix in :obj:`~pyrogram.types.Dialog`. (contributed by @gurland in `#236 <https://github.com/TelegramPlayground/PyroTGFork/pull/236>`__).
+- Migrated `documentation <https://github.com/TelegramPlayground/pyrogram>`__, `source code <https://github.com/TelegramPlayground/PyroTGFork>`__ and `PyTGCrypto <https://github.com/TelegramPlayground/pyrogram-tgcrypto>`__ to separate repositories. 
+
++------------------------+
 | Scheme layer used: 224 |
 +------------------------+
 
+- Added the method :meth:`~pyrogram.Client.get_option` to retrive client specific configuration.
 - Added the methods :meth:`~pyrogram.Client.add_poll_option` and :meth:`~pyrogram.Client.delete_poll_option`.
 - Added the field ``can_manage_bots`` to the class :obj:`~pyrogram.types.User`.
 - Added the class :obj:`~pyrogram.types.KeyboardButtonRequestManagedBot` and the field ``request_managed_bot`` to the class :obj:`~pyrogram.types.KeyboardButton`.
@@ -45,7 +56,6 @@ Changes in this Fork
 - Added the classes :obj:`~pyrogram.types.PollOptionAdded` and :obj:`~pyrogram.types.PollOptionDeleted` and the fields ``poll_option_added``, ``poll_option_deleted`` to the class :obj:`~pyrogram.types.Message`.
 - Added the field ``poll_option_id`` to the class :obj:`~pyrogram.types.ReplyParameters`, allowing to reply to a specific poll option.
 - Added the field ``reply_to_poll_option_id`` to the class :obj:`~pyrogram.types.Message`.
-- Added the method :meth:`~pyrogram.Client.send_message_draft`  (contributed by @sudo-py-dev in `#231 <https://github.com/TelegramPlayground/PyroTGFork/pull/231>`__).
 - View `new and changed <https://telegramplayground.github.io/TG-APIs/TL/diff/tdlib.html?from=222&to=223>`__ `raw API methods <https://telegramplayground.github.io/TG-APIs/TL/diff/tdesktop.html?from=222&to=223>`__.
 
 +------------------------+
