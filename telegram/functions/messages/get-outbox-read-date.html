@@ -638,6 +638,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAudio.html">InputMediaAudio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAnimation.html">InputMediaAnimation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaDocument.html">InputMediaDocument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaSticker.html">InputMediaSticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPhoneContact.html">InputPhoneContact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/LinkPreviewOptions.html">LinkPreviewOptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPaidMedia.html">InputPaidMedia</a></li>
@@ -984,10 +985,10 @@
 <dt class="sig sig-object py" id="pyrogram.raw.functions.messages.GetOutboxReadDate">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.functions.messages.</span></span><span class="sig-name descname"><span class="pre">GetOutboxReadDate</span></span><a class="headerlink" href="#pyrogram.raw.functions.messages.GetOutboxReadDate" title="Link to this definition">#</a></dt>
 <dd><p>Get the exact read date of one of our messages, sent to a private chat with another user.
-Can be only done for private outgoing messages not older than <a class="reference external" href="https://corefork.telegram.org/api/config#pm-read-date-expire-period">appConfig.pm_read_date_expire_period</a>.
-If the peer’s <a class="reference external" href="https://corefork.telegram.org/constructor/userFull">userFull</a>.read_dates_private flag is set, we will not be able to fetch the exact read date of messages we send to them, and a USER_PRIVACY_RESTRICTED RPC error will be emitted.
-The exact read date of messages might still be unavailable for other reasons, see <a class="reference external" href="https://corefork.telegram.org/constructor/globalPrivacySettings">here</a> for more info.
-To set <a class="reference external" href="https://corefork.telegram.org/constructor/userFull">userFull</a>.read_dates_private for ourselves invoke <a class="reference external" href="https://corefork.telegram.org/method/account.setGlobalPrivacySettings">account.setGlobalPrivacySettings</a>, setting the settings.hide_read_marks flag.</p>
+Can be only done for private outgoing messages not older than <a class="reference external" href="https://core.telegram.org/api/config#pm-read-date-expire-period">appConfig.pm_read_date_expire_period</a>.
+If the peer’s <a class="reference external" href="https://core.telegram.org/constructor/userFull">userFull</a>.read_dates_private flag is set, we will not be able to fetch the exact read date of messages we send to them, and a USER_PRIVACY_RESTRICTED RPC error will be emitted.
+The exact read date of messages might still be unavailable for other reasons, see <a class="reference external" href="https://core.telegram.org/constructor/globalPrivacySettings">here</a> for more info.
+To set <a class="reference external" href="https://core.telegram.org/constructor/userFull">userFull</a>.read_dates_private for ourselves invoke <a class="reference external" href="https://core.telegram.org/method/account.setGlobalPrivacySettings">account.setGlobalPrivacySettings</a>, setting the settings.hide_read_marks flag.</p>
 <strong>Usable by</strong>
 <span class="iv-fallback">✅ </span>
 <span class="usable-by badge-yes">Users</span>
@@ -1051,7 +1052,7 @@ To set <a class="reference external" href="https://corefork.telegram.org/constru
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/4c9a29c" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

@@ -638,6 +638,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../api/types/InputMediaAudio.html">InputMediaAudio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/types/InputMediaAnimation.html">InputMediaAnimation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/types/InputMediaDocument.html">InputMediaDocument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/types/InputMediaSticker.html">InputMediaSticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/types/InputPhoneContact.html">InputPhoneContact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/types/LinkPreviewOptions.html">LinkPreviewOptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/types/InputPaidMedia.html">InputPaidMedia</a></li>
@@ -1004,12 +1005,28 @@ it can take advantage of new goodies!</p>
 <div class="table-wrapper docutils container">
 <table class="docutils align-default">
 <tbody>
+<tr class="row-odd"><td><p>Scheme layer used: 225</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">is_high_quality</span></code> in <a class="reference internal" href="../api/types/InputMediaPhoto.html#pyrogram.types.InputMediaPhoto" title="pyrogram.types.InputMediaPhoto"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMediaPhoto</span></code></a> and replaced the parameter <code class="docutils literal notranslate"><span class="pre">photo</span></code> in <a class="reference internal" href="../api/methods/send_photo.html#pyrogram.Client.send_photo" title="pyrogram.Client.send_photo"><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_photo()</span></code></a> and <a class="reference internal" href="../api/bound-methods/Message.reply_photo.html#pyrogram.types.Message.reply_photo" title="pyrogram.types.Message.reply_photo"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply_photo()</span></code></a>.</p></li>
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">description_media</span></code> and <code class="docutils literal notranslate"><span class="pre">explanation_media</span></code> in <a class="reference internal" href="../api/methods/send_poll.html#pyrogram.Client.send_poll" title="pyrogram.Client.send_poll"><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_poll()</span></code></a> and <a class="reference internal" href="../api/bound-methods/Message.reply_poll.html#pyrogram.types.Message.reply_poll" title="pyrogram.types.Message.reply_poll"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply_poll()</span></code></a>.</p></li>
+<li><p>fix in <a class="reference internal" href="../api/types/Venue.html#pyrogram.types.Venue" title="pyrogram.types.Venue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Venue</span></code></a>. (contributed in <a class="reference external" href="https://t.me/c/1999755950/282774">#282774</a>).</p></li>
+<li><p>fix in <a class="reference internal" href="../api/types/Dialog.html#pyrogram.types.Dialog" title="pyrogram.types.Dialog"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dialog</span></code></a>. (contributed by &#64;gurland in <a class="reference external" href="https://github.com/TelegramPlayground/PyroTGFork/pull/236">#236</a>).</p></li>
+<li><p>Migrated <a class="reference external" href="https://github.com/TelegramPlayground/pyrogram">documentation</a>, <a class="reference external" href="https://github.com/TelegramPlayground/PyroTGFork">source code</a> and <a class="reference external" href="https://github.com/TelegramPlayground/pyrogram-tgcrypto">PyTGCrypto</a> to separate repositories.</p></li>
+</ul>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
 <tr class="row-odd"><td><p>Scheme layer used: 224</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <ul class="simple">
+<li><p>Added the method <a class="reference internal" href="../api/methods/get_option.html#pyrogram.Client.get_option" title="pyrogram.Client.get_option"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_option()</span></code></a> to retrive client specific configuration.</p></li>
 <li><p>Added the methods <a class="reference internal" href="../api/methods/add_poll_option.html#pyrogram.Client.add_poll_option" title="pyrogram.Client.add_poll_option"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_poll_option()</span></code></a> and <a class="reference internal" href="../api/methods/delete_poll_option.html#pyrogram.Client.delete_poll_option" title="pyrogram.Client.delete_poll_option"><code class="xref py py-meth docutils literal notranslate"><span class="pre">delete_poll_option()</span></code></a>.</p></li>
 <li><p>Added the field <code class="docutils literal notranslate"><span class="pre">can_manage_bots</span></code> to the class <a class="reference internal" href="../api/types/User.html#pyrogram.types.User" title="pyrogram.types.User"><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>.</p></li>
 <li><p>Added the class <a class="reference internal" href="../api/types/KeyboardButtonRequestManagedBot.html#pyrogram.types.KeyboardButtonRequestManagedBot" title="pyrogram.types.KeyboardButtonRequestManagedBot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonRequestManagedBot</span></code></a> and the field <code class="docutils literal notranslate"><span class="pre">request_managed_bot</span></code> to the class <a class="reference internal" href="../api/types/KeyboardButton.html#pyrogram.types.KeyboardButton" title="pyrogram.types.KeyboardButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButton</span></code></a>.</p></li>
@@ -1023,7 +1040,6 @@ it can take advantage of new goodies!</p>
 <li><p>Added the classes <a class="reference internal" href="../api/types/PollOptionAdded.html#pyrogram.types.PollOptionAdded" title="pyrogram.types.PollOptionAdded"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PollOptionAdded</span></code></a> and <a class="reference internal" href="../api/types/PollOptionDeleted.html#pyrogram.types.PollOptionDeleted" title="pyrogram.types.PollOptionDeleted"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PollOptionDeleted</span></code></a> and the fields <code class="docutils literal notranslate"><span class="pre">poll_option_added</span></code>, <code class="docutils literal notranslate"><span class="pre">poll_option_deleted</span></code> to the class <a class="reference internal" href="../api/types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>.</p></li>
 <li><p>Added the field <code class="docutils literal notranslate"><span class="pre">poll_option_id</span></code> to the class <a class="reference internal" href="../api/types/ReplyParameters.html#pyrogram.types.ReplyParameters" title="pyrogram.types.ReplyParameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyParameters</span></code></a>, allowing to reply to a specific poll option.</p></li>
 <li><p>Added the field <code class="docutils literal notranslate"><span class="pre">reply_to_poll_option_id</span></code> to the class <a class="reference internal" href="../api/types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>.</p></li>
-<li><p>Added the method <a class="reference internal" href="../api/methods/send_message_draft.html#pyrogram.Client.send_message_draft" title="pyrogram.Client.send_message_draft"><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_message_draft()</span></code></a>  (contributed by &#64;sudo-py-dev in <a class="reference external" href="https://github.com/TelegramPlayground/PyroTGFork/pull/231">#231</a>).</p></li>
 <li><p>View <a class="reference external" href="https://telegramplayground.github.io/TG-APIs/TL/diff/tdlib.html?from=222&amp;to=223">new and changed</a> <a class="reference external" href="https://telegramplayground.github.io/TG-APIs/TL/diff/tdesktop.html?from=222&amp;to=223">raw API methods</a>.</p></li>
 </ul>
 <div class="table-wrapper docutils container">
@@ -1800,7 +1816,7 @@ it can take advantage of new goodies!</p>
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/4c9a29c" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

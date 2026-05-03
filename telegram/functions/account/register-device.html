@@ -638,6 +638,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAudio.html">InputMediaAudio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAnimation.html">InputMediaAnimation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaDocument.html">InputMediaDocument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaSticker.html">InputMediaSticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPhoneContact.html">InputPhoneContact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/LinkPreviewOptions.html">LinkPreviewOptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPaidMedia.html">InputPaidMedia</a></li>
@@ -983,7 +984,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.functions.account.RegisterDevice">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.functions.account.</span></span><span class="sig-name descname"><span class="pre">RegisterDevice</span></span><a class="headerlink" href="#pyrogram.raw.functions.account.RegisterDevice" title="Link to this definition">#</a></dt>
-<dd><p>Register device to receive <a class="reference external" href="https://corefork.telegram.org/api/push-updates">PUSH notifications</a></p>
+<dd><p>Register device to receive <a class="reference external" href="https://core.telegram.org/api/push-updates">PUSH notifications</a></p>
 <strong>Usable by</strong>
 <span class="iv-fallback">✅ </span>
 <span class="usable-by badge-yes">Users</span>
@@ -999,9 +1000,9 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>token_type</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Device token type, see <a class="reference external" href="https://corefork.telegram.org/api/push-updates#subscribing-to-notifications">PUSH updates</a> for the possible values.</p></li>
-<li><p><strong>token</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Device token, see <a class="reference external" href="https://corefork.telegram.org/api/push-updates#subscribing-to-notifications">PUSH updates</a> for the possible values.</p></li>
-<li><p><strong>app_sandbox</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – If <a class="reference external" href="https://corefork.telegram.org/constructor/boolTrue">(boolTrue)</a> is transmitted, a sandbox-certificate will be used during transmission.</p></li>
+<li><p><strong>token_type</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Device token type, see <a class="reference external" href="https://core.telegram.org/api/push-updates#subscribing-to-notifications">PUSH updates</a> for the possible values.</p></li>
+<li><p><strong>token</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Device token, see <a class="reference external" href="https://core.telegram.org/api/push-updates#subscribing-to-notifications">PUSH updates</a> for the possible values.</p></li>
+<li><p><strong>app_sandbox</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – If <a class="reference external" href="https://core.telegram.org/constructor/boolTrue">(boolTrue)</a> is transmitted, a sandbox-certificate will be used during transmission.</p></li>
 <li><p><strong>secret</strong> (<code class="docutils literal notranslate"><span class="pre">bytes</span></code>) – For FCM and APNS VoIP, optional encryption key used to encrypt push notifications</p></li>
 <li><p><strong>other_uids</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>) – List of user identifiers of other users currently using the client</p></li>
 <li><p><strong>no_muted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Avoid receiving (silent and invisible background) notifications. Useful to save battery.</p></li>
@@ -1051,7 +1052,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/4c9a29c" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

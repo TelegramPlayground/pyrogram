@@ -638,6 +638,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAudio.html">InputMediaAudio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAnimation.html">InputMediaAnimation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaDocument.html">InputMediaDocument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaSticker.html">InputMediaSticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPhoneContact.html">InputPhoneContact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/LinkPreviewOptions.html">LinkPreviewOptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPaidMedia.html">InputPaidMedia</a></li>
@@ -983,7 +984,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.functions.updates.GetDifference">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.functions.updates.</span></span><span class="sig-name descname"><span class="pre">GetDifference</span></span><a class="headerlink" href="#pyrogram.raw.functions.updates.GetDifference" title="Link to this definition">#</a></dt>
-<dd><p>Get new <a class="reference external" href="https://corefork.telegram.org/api/updates">updates</a>.</p>
+<dd><p>Get new <a class="reference external" href="https://core.telegram.org/api/updates">updates</a>.</p>
 <dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
 <li><p>Layer: <code class="docutils literal notranslate"><span class="pre">225</span></code></p></li>
@@ -994,11 +995,11 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>pts</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – PTS, see <a class="reference external" href="https://corefork.telegram.org/api/updates">updates</a>.</p></li>
-<li><p><strong>date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – date, see <a class="reference external" href="https://corefork.telegram.org/api/updates">updates</a>.</p></li>
-<li><p><strong>qts</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – QTS, see <a class="reference external" href="https://corefork.telegram.org/api/updates">updates</a>.</p></li>
+<li><p><strong>pts</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – PTS, see <a class="reference external" href="https://core.telegram.org/api/updates">updates</a>.</p></li>
+<li><p><strong>date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – date, see <a class="reference external" href="https://core.telegram.org/api/updates">updates</a>.</p></li>
+<li><p><strong>qts</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – QTS, see <a class="reference external" href="https://core.telegram.org/api/updates">updates</a>.</p></li>
 <li><p><strong>pts_limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – PTS limit</p></li>
-<li><p><strong>pts_total_limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – For fast updating: if provided and pts + pts_total_limit &lt; remote pts, <a class="reference external" href="https://corefork.telegram.org/constructor/updates.differenceTooLong">updates.differenceTooLong</a> will be returned.Simply tells the server to not return the difference if it is bigger than pts_total_limitIf the remote pts is too big (&gt; ~4000000), this field will default to 1000000</p></li>
+<li><p><strong>pts_total_limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – For fast updating: if provided and pts + pts_total_limit &lt; remote pts, <a class="reference external" href="https://core.telegram.org/constructor/updates.differenceTooLong">updates.differenceTooLong</a> will be returned.Simply tells the server to not return the difference if it is bigger than pts_total_limitIf the remote pts is too big (&gt; ~4000000), this field will default to 1000000</p></li>
 <li><p><strong>qts_limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – QTS limit</p></li>
 </ul>
 </dd>
@@ -1046,7 +1047,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/4c9a29c" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

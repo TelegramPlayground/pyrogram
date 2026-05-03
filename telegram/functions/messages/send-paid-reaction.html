@@ -638,6 +638,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAudio.html">InputMediaAudio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAnimation.html">InputMediaAnimation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaDocument.html">InputMediaDocument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaSticker.html">InputMediaSticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPhoneContact.html">InputPhoneContact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/LinkPreviewOptions.html">LinkPreviewOptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPaidMedia.html">InputPaidMedia</a></li>
@@ -983,7 +984,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.functions.messages.SendPaidReaction">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.functions.messages.</span></span><span class="sig-name descname"><span class="pre">SendPaidReaction</span></span><a class="headerlink" href="#pyrogram.raw.functions.messages.SendPaidReaction" title="Link to this definition">#</a></dt>
-<dd><p>Sends one or more <a class="reference external" href="https://corefork.telegram.org/api/reactions#paid-reactions">paid Telegram Star reactions</a>, transferring <a class="reference external" href="https://corefork.telegram.org/api/stars">Telegram Stars</a> to a channel’s balance.</p>
+<dd><p>Sends one or more <a class="reference external" href="https://core.telegram.org/api/reactions#paid-reactions">paid Telegram Star reactions</a>, transferring <a class="reference external" href="https://core.telegram.org/api/stars">Telegram Stars</a> to a channel’s balance.</p>
 <strong>Usable by</strong>
 <span class="iv-fallback">✅ </span>
 <span class="usable-by badge-yes">Users</span>
@@ -1001,9 +1002,9 @@
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>peer</strong> (<a class="reference internal" href="../../base/input-peer.html#pyrogram.raw.base.InputPeer" title="pyrogram.raw.base.InputPeer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPeer</span></code></a>) – The channel</p></li>
 <li><p><strong>msg_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – The message to react to</p></li>
-<li><p><strong>count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – The number of <a class="reference external" href="https://corefork.telegram.org/api/stars">stars</a> to send (each will increment the reaction counter by one).</p></li>
-<li><p><strong>random_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>) – Unique client message ID required to prevent message resending. Note: this argument must be composed of a 64-bit integer where the lower 32 bits are random, and the higher 32 bits are equal to the current unixtime, i.e. uint64_t random_id = (time() &lt;&lt; 32) | ((uint64_t)random_uint32_t()): this differs from the random_id format of all other methods in the API, which just take 64 random bits.</p></li>
-<li><p><strong>private</strong> (<a class="reference internal" href="../../base/paid-reaction-privacy.html#pyrogram.raw.base.PaidReactionPrivacy" title="pyrogram.raw.base.PaidReactionPrivacy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PaidReactionPrivacy</span></code></a>, <em>optional</em>) – Each post with star reactions has a leaderboard with the top senders, but users can opt out of appearing there if they prefer more privacy. Not populating this field will use the default reaction privacy, stored on the server and synced to clients using <a class="reference external" href="https://corefork.telegram.org/constructor/updatePaidReactionPrivacy">updatePaidReactionPrivacy</a> (see <a class="reference external" href="https://corefork.telegram.org/api/reactions#paid-reaction-privacy">here</a> for more info).</p></li>
+<li><p><strong>count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – The number of <a class="reference external" href="https://core.telegram.org/api/stars">stars</a> to send (each will increment the reaction counter by one).</p></li>
+<li><p><strong>random_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>) – Unique client message ID required to prevent message resending. Note: this argument must be composed of a 64-bit integer where the lower 32 bits are random, and the higher 32 bits are equal to the current unixtime, i.e. <a href="#id1"><span class="problematic" id="id2">`</span></a>uint64_t random_id = (time() &lt;&lt; 32)</p></li>
+<li><p><strong>private</strong> (<a class="reference internal" href="../../base/paid-reaction-privacy.html#pyrogram.raw.base.PaidReactionPrivacy" title="pyrogram.raw.base.PaidReactionPrivacy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PaidReactionPrivacy</span></code></a>, <em>optional</em>) – Each post with star reactions has a leaderboard with the top senders, but users can opt out of appearing there if they prefer more privacy. Not populating this field will use the default reaction privacy, stored on the server and synced to clients using <a class="reference external" href="https://core.telegram.org/constructor/updatePaidReactionPrivacy">updatePaidReactionPrivacy</a> (see <a class="reference external" href="https://core.telegram.org/api/reactions#paid-reaction-privacy">here</a> for more info).</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -1050,7 +1051,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/4c9a29c" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

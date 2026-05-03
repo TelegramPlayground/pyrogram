@@ -638,6 +638,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAudio.html">InputMediaAudio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAnimation.html">InputMediaAnimation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaDocument.html">InputMediaDocument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaSticker.html">InputMediaSticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPhoneContact.html">InputPhoneContact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/LinkPreviewOptions.html">LinkPreviewOptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPaidMedia.html">InputPaidMedia</a></li>
@@ -983,7 +984,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.functions.messages.SetChatWallPaper">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.functions.messages.</span></span><span class="sig-name descname"><span class="pre">SetChatWallPaper</span></span><a class="headerlink" href="#pyrogram.raw.functions.messages.SetChatWallPaper" title="Link to this definition">#</a></dt>
-<dd><p>Set a custom <a class="reference external" href="https://corefork.telegram.org/api/wallpapers">wallpaper</a> in a specific private chat with another user.</p>
+<dd><p>Set a custom <a class="reference external" href="https://core.telegram.org/api/wallpapers">wallpaper</a> in a specific private chat with another user.</p>
 <strong>Usable by</strong>
 <span class="iv-fallback">✅ </span>
 <span class="usable-by badge-yes">Users</span>
@@ -1000,11 +1001,11 @@
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>peer</strong> (<a class="reference internal" href="../../base/input-peer.html#pyrogram.raw.base.InputPeer" title="pyrogram.raw.base.InputPeer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPeer</span></code></a>) – The private chat where the wallpaper will be set</p></li>
-<li><p><strong>for_both</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Only for <a class="reference external" href="https://corefork.telegram.org/api/premium">Premium</a> users, sets the specified wallpaper for both users of the chat, without requiring confirmation from the other user.</p></li>
+<li><p><strong>for_both</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Only for <a class="reference external" href="https://core.telegram.org/api/premium">Premium</a> users, sets the specified wallpaper for both users of the chat, without requiring confirmation from the other user.</p></li>
 <li><p><strong>revert</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If we don’t like the new wallpaper the other user of the chat has chosen for us using the for_both flag, we can re-set our previous wallpaper just on our side using this flag.</p></li>
-<li><p><strong>wallpaper</strong> (<a class="reference internal" href="../../base/input-wall-paper.html#pyrogram.raw.base.InputWallPaper" title="pyrogram.raw.base.InputWallPaper"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputWallPaper</span></code></a>, <em>optional</em>) – The <a class="reference external" href="https://corefork.telegram.org/api/wallpapers">wallpaper »</a>, obtained as described in the <a class="reference external" href="https://corefork.telegram.org/api/wallpapers#uploading-wallpapers">wallpaper documentation »</a>; must not be provided when installing a wallpaper obtained from a <a class="reference external" href="https://corefork.telegram.org/constructor/messageActionSetChatWallPaper">messageActionSetChatWallPaper</a> service message (id must be provided, instead).</p></li>
-<li><p><strong>settings</strong> (<a class="reference internal" href="../../base/wall-paper-settings.html#pyrogram.raw.base.WallPaperSettings" title="pyrogram.raw.base.WallPaperSettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WallPaperSettings</span></code></a>, <em>optional</em>) – Wallpaper settings, obtained as described in the <a class="reference external" href="https://corefork.telegram.org/api/wallpapers#uploading-wallpapers">wallpaper documentation »</a> or from <a class="reference external" href="https://corefork.telegram.org/constructor/messageActionSetChatWallPaper">messageActionSetChatWallPaper</a>.wallpaper.settings.</p></li>
-<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – If the wallpaper was obtained from a <a class="reference external" href="https://corefork.telegram.org/constructor/messageActionSetChatWallPaper">messageActionSetChatWallPaper</a> service message, must contain the ID of that message.</p></li>
+<li><p><strong>wallpaper</strong> (<a class="reference internal" href="../../base/input-wall-paper.html#pyrogram.raw.base.InputWallPaper" title="pyrogram.raw.base.InputWallPaper"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputWallPaper</span></code></a>, <em>optional</em>) – The <a class="reference external" href="https://core.telegram.org/api/wallpapers">wallpaper »</a>, obtained as described in the <a class="reference external" href="https://core.telegram.org/api/wallpapers#uploading-wallpapers">wallpaper documentation »</a>; must not be provided when installing a wallpaper obtained from a <a class="reference external" href="https://core.telegram.org/constructor/messageActionSetChatWallPaper">messageActionSetChatWallPaper</a> service message (id must be provided, instead).</p></li>
+<li><p><strong>settings</strong> (<a class="reference internal" href="../../base/wall-paper-settings.html#pyrogram.raw.base.WallPaperSettings" title="pyrogram.raw.base.WallPaperSettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WallPaperSettings</span></code></a>, <em>optional</em>) – Wallpaper settings, obtained as described in the <a class="reference external" href="https://core.telegram.org/api/wallpapers#uploading-wallpapers">wallpaper documentation »</a> or from <a class="reference external" href="https://core.telegram.org/constructor/messageActionSetChatWallPaper">messageActionSetChatWallPaper</a>.wallpaper.settings.</p></li>
+<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – If the wallpaper was obtained from a <a class="reference external" href="https://core.telegram.org/constructor/messageActionSetChatWallPaper">messageActionSetChatWallPaper</a> service message, must contain the ID of that message.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -1051,7 +1052,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/4c9a29c" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

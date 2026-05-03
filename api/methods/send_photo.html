@@ -638,6 +638,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../types/InputMediaAudio.html">InputMediaAudio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/InputMediaAnimation.html">InputMediaAnimation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/InputMediaDocument.html">InputMediaDocument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../types/InputMediaSticker.html">InputMediaSticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/InputPhoneContact.html">InputPhoneContact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/LinkPreviewOptions.html">LinkPreviewOptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/InputPaidMedia.html">InputPaidMedia</a></li>
@@ -982,7 +983,7 @@
 <h1>send_photo()<a class="headerlink" href="#send-photo" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="pyrogram.Client.send_photo">
-<span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">send_photo</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/TelegramPlayGround/PyroTGFork/blob/4c9a29c/pyrogram/methods/messages/send_photo.py#L36-L316"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyrogram.Client.send_photo" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">send_photo</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/TelegramPlayGround/PyroTGFork/blob/be85046/pyrogram/methods/messages/send_photo.py#L36-L301"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyrogram.Client.send_photo" title="Link to this definition">#</a></dt>
 <dd><p>Send photos.</p>
 <strong>Usable by</strong>
 <span class="iv-fallback">✅ </span>
@@ -995,14 +996,7 @@
 <li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.
 For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
-<li><p><strong>photo</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <a class="reference external" href="https://docs.python.org/3/library/io.html#io.BytesIO" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">io.BytesIO</span></code></a>) – Photo to send.
-Pass a file_id as string to send a photo that exists on the Telegram servers,
-pass an HTTP URL as a string for Telegram to get a photo from the Internet,
-pass a file path as string to upload a new photo that exists on your local machine, or
-pass a binary file-like object with its attribute “.name” set for in-memory uploads.
-The photo must be at most 10 MB in size.
-The photo’s width and height must not exceed 10000 in total.
-The photo’s width and height ratio must be at most 20.</p></li>
+<li><p><strong>photo</strong> (<a class="reference internal" href="../types/InputMediaPhoto.html#pyrogram.types.InputMediaPhoto" title="pyrogram.types.InputMediaPhoto"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMediaPhoto</span></code></a>) – Photo to send.</p></li>
 <li><p><strong>caption</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Photo caption, 0-1024 characters.</p></li>
 <li><p><strong>parse_mode</strong> (<a class="reference internal" href="../enums/ParseMode.html#pyrogram.enums.ParseMode" title="pyrogram.enums.ParseMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a>, <em>optional</em>) – By default, texts are parsed using both Markdown and HTML styles.
 You can combine both syntaxes together.</p></li>
@@ -1105,7 +1099,7 @@ case the upload is deliberately stopped with <a class="reference internal" href=
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/4c9a29c" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

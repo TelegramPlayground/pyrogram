@@ -638,6 +638,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAudio.html">InputMediaAudio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAnimation.html">InputMediaAnimation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaDocument.html">InputMediaDocument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaSticker.html">InputMediaSticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPhoneContact.html">InputPhoneContact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/LinkPreviewOptions.html">LinkPreviewOptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPaidMedia.html">InputPaidMedia</a></li>
@@ -983,7 +984,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.functions.channels.CreateChannel">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.functions.channels.</span></span><span class="sig-name descname"><span class="pre">CreateChannel</span></span><a class="headerlink" href="#pyrogram.raw.functions.channels.CreateChannel" title="Link to this definition">#</a></dt>
-<dd><p>Create a <a class="reference external" href="https://corefork.telegram.org/api/channel">supergroup/channel</a>.</p>
+<dd><p>Create a <a class="reference external" href="https://core.telegram.org/api/channel">supergroup/channel</a>.</p>
 <strong>Usable by</strong>
 <span class="iv-fallback">✅ </span>
 <span class="usable-by badge-yes">Users</span>
@@ -1001,13 +1002,13 @@
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Channel title</p></li>
 <li><p><strong>about</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Channel description</p></li>
-<li><p><strong>broadcast</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether to create a <a class="reference external" href="https://corefork.telegram.org/api/channel">channel</a></p></li>
-<li><p><strong>megagroup</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether to create a <a class="reference external" href="https://corefork.telegram.org/api/channel">supergroup</a></p></li>
-<li><p><strong>for_import</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the supergroup is being created to import messages from a foreign chat service using <a class="reference external" href="https://corefork.telegram.org/method/messages.initHistoryImport">messages.initHistoryImport</a></p></li>
-<li><p><strong>forum</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether to create a <a class="reference external" href="https://corefork.telegram.org/api/forum">forum</a></p></li>
-<li><p><strong>geo_point</strong> (<a class="reference internal" href="../../base/input-geo-point.html#pyrogram.raw.base.InputGeoPoint" title="pyrogram.raw.base.InputGeoPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputGeoPoint</span></code></a>, <em>optional</em>) – Geogroup location, see <a class="reference external" href="https://corefork.telegram.org/api/nearby">here »</a> for more info on geogroups.</p></li>
-<li><p><strong>address</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Geogroup address, see <a class="reference external" href="https://corefork.telegram.org/api/nearby">here »</a> for more info on geogroups.</p></li>
-<li><p><strong>ttl_period</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Time-to-live of all messages that will be sent in the supergroup: once message.date+message.ttl_period === time(), the message will be deleted on the server, and must be deleted locally as well. You can use <a class="reference external" href="https://corefork.telegram.org/method/messages.setDefaultHistoryTTL">messages.setDefaultHistoryTTL</a> to edit this value later.</p></li>
+<li><p><strong>broadcast</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether to create a <a class="reference external" href="https://core.telegram.org/api/channel">channel</a></p></li>
+<li><p><strong>megagroup</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether to create a <a class="reference external" href="https://core.telegram.org/api/channel">supergroup</a></p></li>
+<li><p><strong>for_import</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the supergroup is being created to import messages from a foreign chat service using <a class="reference external" href="https://core.telegram.org/method/messages.initHistoryImport">messages.initHistoryImport</a></p></li>
+<li><p><strong>forum</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether to create a <a class="reference external" href="https://core.telegram.org/api/forum">forum</a></p></li>
+<li><p><strong>geo_point</strong> (<a class="reference internal" href="../../base/input-geo-point.html#pyrogram.raw.base.InputGeoPoint" title="pyrogram.raw.base.InputGeoPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputGeoPoint</span></code></a>, <em>optional</em>) – Geogroup location, see <a class="reference external" href="https://core.telegram.org/api/nearby">here »</a> for more info on geogroups.</p></li>
+<li><p><strong>address</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Geogroup address, see <a class="reference external" href="https://core.telegram.org/api/nearby">here »</a> for more info on geogroups.</p></li>
+<li><p><strong>ttl_period</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Time-to-live of all messages that will be sent in the supergroup: once message.date+message.ttl_period === time(), the message will be deleted on the server, and must be deleted locally as well. You can use <a class="reference external" href="https://core.telegram.org/method/messages.setDefaultHistoryTTL">messages.setDefaultHistoryTTL</a> to edit this value later.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -1054,7 +1055,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/4c9a29c" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

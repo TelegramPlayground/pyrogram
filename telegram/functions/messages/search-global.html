@@ -638,6 +638,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAudio.html">InputMediaAudio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAnimation.html">InputMediaAnimation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaDocument.html">InputMediaDocument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaSticker.html">InputMediaSticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPhoneContact.html">InputPhoneContact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/LinkPreviewOptions.html">LinkPreviewOptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPaidMedia.html">InputPaidMedia</a></li>
@@ -1003,14 +1004,14 @@
 <li><p><strong>filter</strong> (<a class="reference internal" href="../../base/messages-filter.html#pyrogram.raw.base.MessagesFilter" title="pyrogram.raw.base.MessagesFilter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessagesFilter</span></code></a>) – Global search filter</p></li>
 <li><p><strong>min_date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – If a positive value was specified, the method will return only messages with date bigger than min_date</p></li>
 <li><p><strong>max_date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – If a positive value was transferred, the method will return only messages with date smaller than max_date</p></li>
-<li><p><strong>offset_rate</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Initially 0, then set to the <a class="reference external" href="https://corefork.telegram.org/constructor/messages.messagesSlice">next_rate parameter of messages.messagesSlice</a>, or if that is absent, the date of the last returned message.</p></li>
-<li><p><strong>offset_peer</strong> (<a class="reference internal" href="../../base/input-peer.html#pyrogram.raw.base.InputPeer" title="pyrogram.raw.base.InputPeer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPeer</span></code></a>) – <a class="reference external" href="https://corefork.telegram.org/api/offsets">Offsets for pagination, for more info click here</a></p></li>
-<li><p><strong>offset_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – <a class="reference external" href="https://corefork.telegram.org/api/offsets">Offsets for pagination, for more info click here</a></p></li>
-<li><p><strong>limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – <a class="reference external" href="https://corefork.telegram.org/api/offsets">Offsets for pagination, for more info click here</a></p></li>
-<li><p><strong>broadcasts_only</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, only returns results from channels (used in the <a class="reference external" href="https://corefork.telegram.org/api/search#global-search">global channel search tab »</a>).</p></li>
+<li><p><strong>offset_rate</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Initially 0, then set to the <a class="reference external" href="https://core.telegram.org/constructor/messages.messagesSlice">next_rate parameter of messages.messagesSlice</a>, or if that is absent, the date of the last returned message.</p></li>
+<li><p><strong>offset_peer</strong> (<a class="reference internal" href="../../base/input-peer.html#pyrogram.raw.base.InputPeer" title="pyrogram.raw.base.InputPeer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPeer</span></code></a>) – <a class="reference external" href="https://core.telegram.org/api/offsets">Offsets for pagination, for more info click here</a></p></li>
+<li><p><strong>offset_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – <a class="reference external" href="https://core.telegram.org/api/offsets">Offsets for pagination, for more info click here</a></p></li>
+<li><p><strong>limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – <a class="reference external" href="https://core.telegram.org/api/offsets">Offsets for pagination, for more info click here</a></p></li>
+<li><p><strong>broadcasts_only</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, only returns results from channels (used in the <a class="reference external" href="https://core.telegram.org/api/search#global-search">global channel search tab »</a>).</p></li>
 <li><p><strong>groups_only</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether to search only in groups</p></li>
 <li><p><strong>users_only</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether to search only in private chats</p></li>
-<li><p><strong>folder_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – <a class="reference external" href="https://corefork.telegram.org/api/folders#peer-folders">Peer folder ID, for more info click here</a></p></li>
+<li><p><strong>folder_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/api/folders#peer-folders">Peer folder ID, for more info click here</a></p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -1057,7 +1058,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/4c9a29c" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

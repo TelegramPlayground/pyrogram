@@ -638,6 +638,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAudio.html">InputMediaAudio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAnimation.html">InputMediaAnimation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaDocument.html">InputMediaDocument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaSticker.html">InputMediaSticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPhoneContact.html">InputPhoneContact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/LinkPreviewOptions.html">LinkPreviewOptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPaidMedia.html">InputPaidMedia</a></li>
@@ -983,9 +984,9 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.functions.auth.ExportLoginToken">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.functions.auth.</span></span><span class="sig-name descname"><span class="pre">ExportLoginToken</span></span><a class="headerlink" href="#pyrogram.raw.functions.auth.ExportLoginToken" title="Link to this definition">#</a></dt>
-<dd><p>Generate a login token, for <a class="reference external" href="https://corefork.telegram.org/api/qr-login">login via QR code</a>.
-The generated login token should be encoded using base64url, then shown as a tg://login?token=base64encodedtoken <a class="reference external" href="https://corefork.telegram.org/api/links#qr-code-login-links">deep link</a> in the QR code.
-For more info, see <a class="reference external" href="https://corefork.telegram.org/api/qr-login">login via QR code</a>.</p>
+<dd><p>Generate a login token, for <a class="reference external" href="https://core.telegram.org/api/qr-login">login via QR code</a>.
+The generated login token should be encoded using base64url, then shown as a tg://login?token=base64encodedtoken <a class="reference external" href="https://core.telegram.org/api/links#qr-code-login-links">deep link</a> in the QR code.
+For more info, see <a class="reference external" href="https://core.telegram.org/api/qr-login">login via QR code</a>.</p>
 <strong>Usable by</strong>
 <span class="iv-fallback">✅ </span>
 <span class="usable-by badge-yes">Users</span>
@@ -1005,8 +1006,8 @@ For more info, see <a class="reference external" href="https://corefork.telegram
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>api_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Application identifier (see. <a class="reference external" href="https://corefork.telegram.org/myapp">App configuration</a>)</p></li>
-<li><p><strong>api_hash</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Application identifier hash (see. <a class="reference external" href="https://corefork.telegram.org/myapp">App configuration</a>)</p></li>
+<li><p><strong>api_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Application identifier (see. <a class="reference external" href="https://core.telegram.org/myapp">App configuration</a>)</p></li>
+<li><p><strong>api_hash</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Application identifier hash (see. <a class="reference external" href="https://core.telegram.org/myapp">App configuration</a>)</p></li>
 <li><p><strong>except_ids</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>) – List of already logged-in user IDs, to prevent logging in twice with the same user</p></li>
 </ul>
 </dd>
@@ -1054,7 +1055,7 @@ For more info, see <a class="reference external" href="https://corefork.telegram
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/4c9a29c" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

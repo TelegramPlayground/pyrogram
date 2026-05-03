@@ -638,6 +638,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAudio.html">InputMediaAudio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAnimation.html">InputMediaAnimation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaDocument.html">InputMediaDocument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaSticker.html">InputMediaSticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPhoneContact.html">InputPhoneContact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/LinkPreviewOptions.html">LinkPreviewOptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPaidMedia.html">InputPaidMedia</a></li>
@@ -983,7 +984,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.functions.phone.AcceptCall">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.functions.phone.</span></span><span class="sig-name descname"><span class="pre">AcceptCall</span></span><a class="headerlink" href="#pyrogram.raw.functions.phone.AcceptCall" title="Link to this definition">#</a></dt>
-<dd><p>Accept incoming call</p>
+<dd><p>Accept incoming call, see <a class="reference external" href="https://core.telegram.org/api/calls#one-to-one-calls">here</a> for more info on the full flow.</p>
 <strong>Usable by</strong>
 <span class="iv-fallback">✅ </span>
 <span class="usable-by badge-yes">Users</span>
@@ -1000,7 +1001,7 @@
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>peer</strong> (<a class="reference internal" href="../../base/input-phone-call.html#pyrogram.raw.base.InputPhoneCall" title="pyrogram.raw.base.InputPhoneCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPhoneCall</span></code></a>) – The call to accept</p></li>
-<li><p><strong>g_b</strong> (<code class="docutils literal notranslate"><span class="pre">bytes</span></code>) – <a class="reference external" href="https://corefork.telegram.org/api/end-to-end/voice-calls">Parameter for E2E encryption key exchange »</a></p></li>
+<li><p><strong>g_b</strong> (<code class="docutils literal notranslate"><span class="pre">bytes</span></code>) – <a class="reference external" href="https://core.telegram.org/api/end-to-end/voice-calls">Parameter for E2E encryption key exchange »</a></p></li>
 <li><p><strong>protocol</strong> (<a class="reference internal" href="../../base/phone-call-protocol.html#pyrogram.raw.base.PhoneCallProtocol" title="pyrogram.raw.base.PhoneCallProtocol"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PhoneCallProtocol</span></code></a>) – Phone call settings</p></li>
 </ul>
 </dd>
@@ -1048,7 +1049,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/4c9a29c" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

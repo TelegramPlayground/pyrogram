@@ -638,6 +638,7 @@
 <li class="toctree-l2"><a class="reference internal" href="InputMediaAudio.html">InputMediaAudio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="InputMediaAnimation.html">InputMediaAnimation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="InputMediaDocument.html">InputMediaDocument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="InputMediaSticker.html">InputMediaSticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="InputPhoneContact.html">InputPhoneContact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="LinkPreviewOptions.html">LinkPreviewOptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="InputPaidMedia.html">InputPaidMedia</a></li>
@@ -982,17 +983,23 @@
 <h1>InputMediaPhoto<a class="headerlink" href="#inputmediaphoto" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.types.InputMediaPhoto">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">InputMediaPhoto</span></span><a class="reference external" href="https://github.com/TelegramPlayGround/PyroTGFork/blob/4c9a29c/pyrogram/types/input_media/input_media_photo.py#L27-L69"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyrogram.types.InputMediaPhoto" title="Link to this definition">#</a></dt>
-<dd><p>A photo to be sent inside an album.
-It is intended to be used with <a class="reference internal" href="../methods/send_media_group.html#pyrogram.Client.send_media_group" title="pyrogram.Client.send_media_group"><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_media_group</span></code></a>.</p>
-<dl class="field-list simple">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">InputMediaPhoto</span></span><a class="reference external" href="https://github.com/TelegramPlayGround/PyroTGFork/blob/be85046/pyrogram/types/input_media/input_media_photo.py#L40-L227"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyrogram.types.InputMediaPhoto" title="Link to this definition">#</a></dt>
+<dd><p>A photo to be sent.</p>
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
+<dd class="field-odd"><ul>
 <li><p><strong>media</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <a class="reference external" href="https://docs.python.org/3/library/io.html#io.BytesIO" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">io.BytesIO</span></code></a>) – Photo to send.
 Pass a file_id as string to send a photo that exists on the Telegram servers or
 pass a file path as string to upload a new photo that exists on your local machine or
 pass a binary file-like object with its attribute “.name” set for in-memory uploads or
-pass an HTTP URL as a string for Telegram to get a photo from the Internet.</p></li>
+pass an HTTP URL as a string for Telegram to get a photo from the Internet.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The photo must be at most 10 MB in size.
+The photo’s width and height must not exceed 10000 in total.
+The photo’s width and height ratio must be at most 20.</p>
+</div>
+</li>
 <li><p><strong>caption</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Caption of the photo to be sent, 0-1024 characters.
 If not specified, the original caption is kept. Pass “” (empty string) to remove the caption.</p></li>
 <li><p><strong>parse_mode</strong> (<a class="reference internal" href="../enums/ParseMode.html#pyrogram.enums.ParseMode" title="pyrogram.enums.ParseMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a>, <em>optional</em>) – By default, texts are parsed using both Markdown and HTML styles.
@@ -1000,6 +1007,15 @@ You can combine both syntaxes together.</p></li>
 <li><p><strong>caption_entities</strong> (List of <a class="reference internal" href="MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>) – List of special entities that appear in the caption, which can be specified instead of <em>parse_mode</em>.</p></li>
 <li><p><strong>show_caption_above_media</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True, if the caption must be shown above the message media.</p></li>
 <li><p><strong>has_spoiler</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True if the photo needs to be covered with a spoiler animation.</p></li>
+<li><p><strong>is_high_quality</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass <code class="docutils literal notranslate"><span class="pre">True</span></code> to locally compress the photo to High Definition quality (up to 2560x2560 resolution).
+Pass <code class="docutils literal notranslate"><span class="pre">False</span></code> to locally compress the photo to Standard Definition quality (up to 1280x1280 resolution).
+Pass <code class="docutils literal notranslate"><span class="pre">None</span></code> to bypass local compression entirely and upload the original file unaltered.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This local compression feature requires the <code class="docutils literal notranslate"><span class="pre">Pillow</span></code> library to be installed and
+only applies when uploading local file paths or in-memory objects.</p>
+</div>
+</li>
 </ul>
 </dd>
 </dl>
@@ -1043,7 +1059,7 @@ You can combine both syntaxes together.</p></li>
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/4c9a29c" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

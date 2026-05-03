@@ -638,6 +638,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAudio.html">InputMediaAudio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAnimation.html">InputMediaAnimation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaDocument.html">InputMediaDocument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaSticker.html">InputMediaSticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPhoneContact.html">InputPhoneContact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/LinkPreviewOptions.html">LinkPreviewOptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPaidMedia.html">InputPaidMedia</a></li>
@@ -983,7 +984,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.functions.account.ToggleNoPaidMessagesException">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.functions.account.</span></span><span class="sig-name descname"><span class="pre">ToggleNoPaidMessagesException</span></span><a class="headerlink" href="#pyrogram.raw.functions.account.ToggleNoPaidMessagesException" title="Link to this definition">#</a></dt>
-<dd><p>Allow a user to send us messages without paying if <a class="reference external" href="https://corefork.telegram.org/api/paid-messages">paid messages</a> are enabled.</p>
+<dd><p>Allow a user to send us messages without paying if <a class="reference external" href="https://core.telegram.org/api/paid-messages">paid messages</a> are enabled.</p>
 <strong>Usable by</strong>
 <span class="iv-fallback">✅ </span>
 <span class="usable-by badge-yes">Users</span>
@@ -1001,8 +1002,8 @@
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>user_id</strong> (<a class="reference internal" href="../../base/input-user.html#pyrogram.raw.base.InputUser" title="pyrogram.raw.base.InputUser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputUser</span></code></a>) – The user to exempt or unexempt.</p></li>
 <li><p><strong>refund_charged</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set and require_payment is not set, refunds the amounts the user has already paid us to send us messages (directly or via a monoforum).</p></li>
-<li><p><strong>require_payment</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, requires the user to pay in order to send us messages. Can only be set by monoforums, not users, i.e. parent_peer must be set if this flag is set; users must instead use the <a class="reference external" href="https://corefork.telegram.org/constructor/inputPrivacyKeyNoPaidMessages">inputPrivacyKeyNoPaidMessages</a> privacy setting to remove a previously added exemption. If not set, allows the user to send us messages without paying (can be unset by both monoforums and users).</p></li>
-<li><p><strong>parent_peer</strong> (<a class="reference internal" href="../../base/input-peer.html#pyrogram.raw.base.InputPeer" title="pyrogram.raw.base.InputPeer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPeer</span></code></a>, <em>optional</em>) – If set, applies the setting within the <a class="reference external" href="https://corefork.telegram.org/api/monoforum">monoforum aka direct messages »</a> (pass the ID of the monoforum, not the ID of the associated channel).</p></li>
+<li><p><strong>require_payment</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, requires the user to pay in order to send us messages. Can only be set by monoforums, not users, i.e. parent_peer must be set if this flag is set; users must instead use the <a class="reference external" href="https://core.telegram.org/constructor/inputPrivacyKeyNoPaidMessages">inputPrivacyKeyNoPaidMessages</a> privacy setting to remove a previously added exemption. If not set, allows the user to send us messages without paying (can be unset by both monoforums and users).</p></li>
+<li><p><strong>parent_peer</strong> (<a class="reference internal" href="../../base/input-peer.html#pyrogram.raw.base.InputPeer" title="pyrogram.raw.base.InputPeer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPeer</span></code></a>, <em>optional</em>) – If set, applies the setting within the <a class="reference external" href="https://core.telegram.org/api/monoforum">monoforum aka direct messages »</a> (pass the ID of the monoforum, not the ID of the associated channel).</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -1049,7 +1050,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/4c9a29c" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

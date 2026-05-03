@@ -638,6 +638,7 @@
 <li class="toctree-l2"><a class="reference internal" href="InputMediaAudio.html">InputMediaAudio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="InputMediaAnimation.html">InputMediaAnimation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="InputMediaDocument.html">InputMediaDocument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="InputMediaSticker.html">InputMediaSticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="InputPhoneContact.html">InputPhoneContact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="LinkPreviewOptions.html">LinkPreviewOptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="InputPaidMedia.html">InputPaidMedia</a></li>
@@ -982,17 +983,15 @@
 <h1>InputPollOption<a class="headerlink" href="#inputpolloption" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.types.InputPollOption">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">InputPollOption</span></span><a class="reference external" href="https://github.com/TelegramPlayGround/PyroTGFork/blob/4c9a29c/pyrogram/types/input_message_content/input_poll_option.py#L28-L89"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyrogram.types.InputPollOption" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">InputPollOption</span></span><a class="reference external" href="https://github.com/TelegramPlayGround/PyroTGFork/blob/be85046/pyrogram/types/input_message_content/input_poll_option.py#L28-L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyrogram.types.InputPollOption" title="Link to this definition">#</a></dt>
 <dd><p>This object contains information about one answer option in a poll to send.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>text</strong> (<a class="reference internal" href="FormattedText.html#pyrogram.types.FormattedText" title="pyrogram.types.FormattedText"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FormattedText</span></code></a>) – Option text, 1-100 characters after entity parsing.
 Only custom emoji entities are allowed to be added and only by Premium users.</p></li>
-<li><p><strong>animation</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Pass a file_id as string to send a photo that exists on the Telegram servers.</p></li>
-<li><p><strong>photo</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Pass a file_id as string to send a photo that exists on the Telegram servers.</p></li>
-<li><p><strong>sticker</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Pass a file_id as string to send a photo that exists on the Telegram servers.</p></li>
-<li><p><strong>video</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Pass a file_id as string to send a photo that exists on the Telegram servers.</p></li>
+<li><p><strong>media</strong> (<a class="reference internal" href="InputMediaPhoto.html#pyrogram.types.InputMediaPhoto" title="pyrogram.types.InputMediaPhoto"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMediaPhoto</span></code></a> | <a class="reference internal" href="InputMediaVideo.html#pyrogram.types.InputMediaVideo" title="pyrogram.types.InputMediaVideo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMediaVideo</span></code></a> | <a class="reference internal" href="InputMediaSticker.html#pyrogram.types.InputMediaSticker" title="pyrogram.types.InputMediaSticker"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMediaSticker</span></code></a> | <a class="reference internal" href="Location.html#pyrogram.types.Location" title="pyrogram.types.Location"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Location</span></code></a>, <em>optional</em>) – Media associated with the option.
+Currently supports only photo, video, sticker or location.</p></li>
 </ul>
 </dd>
 </dl>
@@ -1036,7 +1035,7 @@ Only custom emoji entities are allowed to be added and only by Premium users.</p
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/4c9a29c" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

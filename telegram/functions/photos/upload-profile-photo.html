@@ -638,6 +638,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAudio.html">InputMediaAudio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAnimation.html">InputMediaAnimation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaDocument.html">InputMediaDocument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaSticker.html">InputMediaSticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPhoneContact.html">InputPhoneContact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/LinkPreviewOptions.html">LinkPreviewOptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPaidMedia.html">InputPaidMedia</a></li>
@@ -998,9 +999,9 @@ The file, video and video_emoji_markup flags are mutually exclusive.</p>
 <li><p><strong>fallback</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, the chosen profile photo will be shown to users that can’t display your main profile photo due to your privacy settings.</p></li>
 <li><p><strong>bot</strong> (<a class="reference internal" href="../../base/input-user.html#pyrogram.raw.base.InputUser" title="pyrogram.raw.base.InputUser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputUser</span></code></a>, <em>optional</em>) – Can contain info of a bot we own, to change the profile photo of that bot, instead of the current user.</p></li>
 <li><p><strong>file</strong> (<a class="reference internal" href="../../base/input-file.html#pyrogram.raw.base.InputFile" title="pyrogram.raw.base.InputFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputFile</span></code></a>, <em>optional</em>) – Profile photo</p></li>
-<li><p><strong>video</strong> (<a class="reference internal" href="../../base/input-file.html#pyrogram.raw.base.InputFile" title="pyrogram.raw.base.InputFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputFile</span></code></a>, <em>optional</em>) – <a class="reference external" href="https://corefork.telegram.org/api/files#animated-profile-pictures">Animated profile picture</a> video</p></li>
+<li><p><strong>video</strong> (<a class="reference internal" href="../../base/input-file.html#pyrogram.raw.base.InputFile" title="pyrogram.raw.base.InputFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputFile</span></code></a>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/api/files#animated-profile-pictures">Animated profile picture</a> video</p></li>
 <li><p><strong>video_start_ts</strong> (<code class="docutils literal notranslate"><span class="pre">float</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – Floating point UNIX timestamp in seconds, indicating the frame of the video/sticker that should be used as static preview; can only be used if video or video_emoji_markup is set.</p></li>
-<li><p><strong>video_emoji_markup</strong> (<a class="reference internal" href="../../base/video-size.html#pyrogram.raw.base.VideoSize" title="pyrogram.raw.base.VideoSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VideoSize</span></code></a>, <em>optional</em>) – Animated sticker profile picture, must contain either a <a class="reference external" href="https://corefork.telegram.org/constructor/videoSizeEmojiMarkup">videoSizeEmojiMarkup</a> or a <a class="reference external" href="https://corefork.telegram.org/constructor/videoSizeStickerMarkup">videoSizeStickerMarkup</a> constructor.</p></li>
+<li><p><strong>video_emoji_markup</strong> (<a class="reference internal" href="../../base/video-size.html#pyrogram.raw.base.VideoSize" title="pyrogram.raw.base.VideoSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VideoSize</span></code></a>, <em>optional</em>) – Animated sticker profile picture, must contain either a <a class="reference external" href="https://core.telegram.org/constructor/videoSizeEmojiMarkup">videoSizeEmojiMarkup</a> or a <a class="reference external" href="https://core.telegram.org/constructor/videoSizeStickerMarkup">videoSizeStickerMarkup</a> constructor.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -1047,7 +1048,7 @@ The file, video and video_emoji_markup flags are mutually exclusive.</p>
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/4c9a29c" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

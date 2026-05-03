@@ -638,6 +638,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAudio.html">InputMediaAudio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaAnimation.html">InputMediaAnimation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaDocument.html">InputMediaDocument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputMediaSticker.html">InputMediaSticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPhoneContact.html">InputPhoneContact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/LinkPreviewOptions.html">LinkPreviewOptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/InputPaidMedia.html">InputPaidMedia</a></li>
@@ -983,7 +984,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.functions.messages.RequestMainWebView">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.functions.messages.</span></span><span class="sig-name descname"><span class="pre">RequestMainWebView</span></span><a class="headerlink" href="#pyrogram.raw.functions.messages.RequestMainWebView" title="Link to this definition">#</a></dt>
-<dd><p>Open a <a class="reference external" href="https://corefork.telegram.org/api/bots/webapps#main-mini-apps">Main Mini App</a>.</p>
+<dd><p>Open a <a class="reference external" href="https://core.telegram.org/api/bots/webapps#main-mini-apps">Main Mini App</a>.</p>
 <strong>Usable by</strong>
 <span class="iv-fallback">✅ </span>
 <span class="usable-by badge-yes">Users</span>
@@ -999,13 +1000,13 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>peer</strong> (<a class="reference internal" href="../../base/input-peer.html#pyrogram.raw.base.InputPeer" title="pyrogram.raw.base.InputPeer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPeer</span></code></a>) – Currently open chat, may be <a class="reference external" href="https://corefork.telegram.org/constructor/inputPeerEmpty">inputPeerEmpty</a> if no chat is currently open.</p></li>
+<li><p><strong>peer</strong> (<a class="reference internal" href="../../base/input-peer.html#pyrogram.raw.base.InputPeer" title="pyrogram.raw.base.InputPeer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPeer</span></code></a>) – Currently open chat, may be <a class="reference external" href="https://core.telegram.org/constructor/inputPeerEmpty">inputPeerEmpty</a> if no chat is currently open.</p></li>
 <li><p><strong>bot</strong> (<a class="reference internal" href="../../base/input-user.html#pyrogram.raw.base.InputUser" title="pyrogram.raw.base.InputUser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputUser</span></code></a>) – Bot that owns the main mini app.</p></li>
 <li><p><strong>platform</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Short name of the application; 0-64 English letters, digits, and underscores</p></li>
-<li><p><strong>compact</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, requests to open the mini app in compact mode (as opposed to normal or fullscreen mode). Must be set if the mode parameter of the <a class="reference external" href="https://corefork.telegram.org/api/links#main-mini-app-links">Main Mini App link</a> is equal to compact.</p></li>
-<li><p><strong>fullscreen</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, requests to open the mini app in fullscreen mode (as opposed to compact or normal mode). Must be set if the mode parameter of the <a class="reference external" href="https://corefork.telegram.org/api/links#main-mini-app-links">Main Mini App link</a> is equal to fullscreen.</p></li>
-<li><p><strong>start_param</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Start parameter, if opening from a <a class="reference external" href="https://corefork.telegram.org/api/links#main-mini-app-links">Main Mini App link »</a>.</p></li>
-<li><p><strong>theme_params</strong> (<a class="reference internal" href="../../base/data-json.html#pyrogram.raw.base.DataJSON" title="pyrogram.raw.base.DataJSON"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataJSON</span></code></a>, <em>optional</em>) – <a class="reference external" href="https://corefork.telegram.org/api/bots/webapps#theme-parameters">Theme parameters »</a></p></li>
+<li><p><strong>compact</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, requests to open the mini app in compact mode (as opposed to normal or fullscreen mode). Must be set if the mode parameter of the <a class="reference external" href="https://core.telegram.org/api/links#main-mini-app-links">Main Mini App link</a> is equal to compact.</p></li>
+<li><p><strong>fullscreen</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, requests to open the mini app in fullscreen mode (as opposed to compact or normal mode). Must be set if the mode parameter of the <a class="reference external" href="https://core.telegram.org/api/links#main-mini-app-links">Main Mini App link</a> is equal to fullscreen.</p></li>
+<li><p><strong>start_param</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Start parameter, if opening from a <a class="reference external" href="https://core.telegram.org/api/links#main-mini-app-links">Main Mini App link »</a>.</p></li>
+<li><p><strong>theme_params</strong> (<a class="reference internal" href="../../base/data-json.html#pyrogram.raw.base.DataJSON" title="pyrogram.raw.base.DataJSON"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataJSON</span></code></a>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/api/bots/webapps#theme-parameters">Theme parameters »</a></p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -1052,7 +1053,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/4c9a29c" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               
