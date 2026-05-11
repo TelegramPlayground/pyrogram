@@ -335,6 +335,7 @@ def pyrogram_api():
             get_chat
             get_chat_members
             get_chat_members_count
+            get_chat_administrators
             get_chat_member
             get_direct_messages_topics_by_id
             get_direct_messages_topics
