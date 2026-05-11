@@ -422,6 +422,8 @@ def pyrogram_api():
             set_personal_chat
             delete_account
             update_status
+            get_user_personal_chat_messages
+            get_user_personal_chat_messages_count
         """,
         contacts="""
         Contacts
