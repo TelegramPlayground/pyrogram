@@ -32,7 +32,8 @@ Changes in this Fork
 | Scheme layer used: 225 |
 +------------------------+
 
-- Added the methods :meth:`~pyrogram.Client.get_user_personal_chat_messages` and :meth:`~pyrogram.Client.get_user_personal_chat_messages_count`.
+- Added the classes :obj:`~pyrogram.types.SentGuestMessage` and :obj:`~pyrogram.types.BotAccessSettings`.
+- Added the methods :meth:`~pyrogram.Client.delete_message_reaction`, :meth:`~pyrogram.Client.delete_all_message_reactions`, :meth:`~pyrogram.Client.get_user_personal_chat_messages` and :meth:`~pyrogram.Client.get_user_personal_chat_messages_count`.
 - Added the fields ``guest_bot_caller_user``, ``guest_bot_caller_chat``, ``summary_language_code``, ``is_paid_star_suggested_post``, ``is_paid_ton_suggested_post``, ``schedule_repeat_period``, ``restriction_reason`` to the :obj:`~pyrogram.types.Message`.
 - Added the parameter ``return_bots`` to the method :meth:`~pyrogram.Client.get_chat_administrators`.
 - Added the field ``supports_guest_queries`` to the :obj:`~pyrogram.types.User`.

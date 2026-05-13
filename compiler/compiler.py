@@ -424,6 +424,8 @@ def pyrogram_api():
             update_status
             get_user_personal_chat_messages
             get_user_personal_chat_messages_count
+            delete_message_reaction
+            delete_all_message_reactions
         """,
         contacts="""
         Contacts
@@ -678,6 +680,8 @@ def pyrogram_api():
             ChatHasProtectedContentDisableRequested
             ManagedBotCreated
             ManagedBotUpdated
+            SentGuestMessage
+            BotAccessSettings
         """,
         chat_topics="""
         Chat Forum Topics
