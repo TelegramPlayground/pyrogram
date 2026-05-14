@@ -62,6 +62,7 @@ Changes in this Fork
 - Added the classes :obj:`~pyrogram.types.PollOptionAdded` and :obj:`~pyrogram.types.PollOptionDeleted` and the fields ``poll_option_added``, ``poll_option_deleted`` to the class :obj:`~pyrogram.types.Message`.
 - Added the field ``poll_option_id`` to the class :obj:`~pyrogram.types.ReplyParameters`, allowing to reply to a specific poll option.
 - Added the field ``reply_to_poll_option_id`` to the class :obj:`~pyrogram.types.Message`.
+- Updated :doc:`Text Formatting <../../topics/text-formatting>` documentation.
 - View `new and changed <https://telegramplayground.github.io/TG-APIs/TL/diff/tdlib.html?from=222&to=223>`__ `raw API methods <https://telegramplayground.github.io/TG-APIs/TL/diff/tdesktop.html?from=222&to=223>`__.
 
 +------------------------+
