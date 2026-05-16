@@ -32,14 +32,8 @@ Changes in this Fork
 | Scheme layer used: 225 |
 +------------------------+
 
-- Added the classes :obj:`~pyrogram.types.SentGuestMessage` and :obj:`~pyrogram.types.BotAccessSettings`.
-- Added the methods :meth:`~pyrogram.Client.delete_message_reaction`, :meth:`~pyrogram.Client.delete_all_message_reactions`, :meth:`~pyrogram.Client.get_user_personal_chat_messages` and :meth:`~pyrogram.Client.get_user_personal_chat_messages_count`.
-- Added the fields ``guest_bot_caller_user``, ``guest_bot_caller_chat``, ``summary_language_code``, ``is_paid_star_suggested_post``, ``is_paid_ton_suggested_post``, ``schedule_repeat_period``, ``restriction_reason`` to the :obj:`~pyrogram.types.Message`.
-- Added the parameter ``return_bots`` to the method :meth:`~pyrogram.Client.get_chat_administrators`.
-- Added the field ``supports_guest_queries`` to the :obj:`~pyrogram.types.User`.
 - Added the field ``can_react_to_messages`` to the :obj:`~pyrogram.types.ChatPermissions`.
-- Added ``is_high_quality`` in :obj:`~pyrogram.types.InputMediaPhoto` and replaced the parameter ``photo`` in :meth:`~pyrogram.Client.send_photo` and :meth:`~pyrogram.types.Message.reply_photo`.
-- Added ``description_media`` and ``explanation_media`` in :meth:`~pyrogram.Client.send_poll` and :meth:`~pyrogram.types.Message.reply_poll`.
+- Added ``is_high_quality`` in :obj:`~pyrogram.types.InputMediaPhoto` and replaced the parameter ``photo`` in :meth:`~pyrogram.Client.send_photo` and :meth:`~pyrogram.types.Message.reply_photo`.``
 - fix in :obj:`~pyrogram.types.Venue`. (contributed in `#282774 <https://t.me/c/1999755950/282774>`__).
 - fix in :obj:`~pyrogram.types.Dialog`. (contributed by @gurland in `#236 <https://github.com/TelegramPlayground/PyroTGFork/pull/236>`__).
 - Migrated `documentation <https://github.com/TelegramPlayground/pyrogram>`__, `source code <https://github.com/TelegramPlayground/PyroTGFork>`__ and `PyTGCrypto <https://github.com/TelegramPlayground/pyrogram-tgcrypto>`__ to separate repositories. 
