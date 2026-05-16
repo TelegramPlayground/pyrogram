@@ -16,7 +16,7 @@
         <link rel="canonical" href="/pyrogram/telegram/types/message-entity-formatted-date.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>MessageEntityFormattedDate - PyroTGFork 2.2.23 Layer 225</title>
+        <title>MessageEntityFormattedDate - PyroTGFork 2.2.24 Layer 225</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.23 Layer 225</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 225</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.23 Layer 225</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 225</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -326,6 +326,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat.html">get_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_administrators.html">get_chat_administrators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_member.html">get_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
@@ -403,6 +404,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_personal_chat.html">set_personal_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_account.html">delete_account</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/update_status.html">update_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages.html">get_user_personal_chat_messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages_count.html">get_user_personal_chat_messages_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_message_reaction.html">delete_message_reaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_all_message_reactions.html">delete_all_message_reactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/add_contact.html">add_contact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_contacts.html">delete_contacts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/import_contacts.html">import_contacts</a></li>
@@ -558,6 +563,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ChatHasProtectedContentDisableRequested.html">ChatHasProtectedContentDisableRequested</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotCreated.html">ManagedBotCreated</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotUpdated.html">ManagedBotUpdated</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/SentGuestMessage.html">SentGuestMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/BotAccessSettings.html">BotAccessSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Birthdate.html">Birthdate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/User.html">User</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Chat.html">Chat</a></li>
@@ -984,7 +991,20 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.types.MessageEntityFormattedDate">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">MessageEntityFormattedDate</span></span><a class="headerlink" href="#pyrogram.raw.types.MessageEntityFormattedDate" title="Link to this definition">#</a></dt>
-<dd><p>Telegram API type.</p>
+<dd><p>Represents a specific point in time, rendered as specified <a class="reference external" href="https://core.telegram.org/api/entities#date-entities">here</a>
+All flags are optional, with the following limitations:
+If any of the flags are combined, their rendering order in the text is the following:</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">relative cannot combined with any other flag</div>
+</div>
+<div class="line-block">
+<div class="line">short_time and long_time cannot be combined with each other</div>
+</div>
+<div class="line-block">
+<div class="line">short_date and long_date cannot be combined with each other</div>
+</div>
+</div></blockquote>
 <p>Constructor of <a class="reference internal" href="../base/message-entity.html#pyrogram.raw.base.MessageEntity" title="pyrogram.raw.base.MessageEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>.</p>
 <dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
@@ -996,15 +1016,15 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>offset</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – N/A</p></li>
-<li><p><strong>length</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – N/A</p></li>
-<li><p><strong>date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – N/A</p></li>
-<li><p><strong>relative</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>short_time</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>long_time</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>short_date</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>long_date</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>day_of_week</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
+<li><p><strong>offset</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Offset of message entity within message (in <a class="reference external" href="https://core.telegram.org/api/entities#entity-length">UTF-16 code units</a>)</p></li>
+<li><p><strong>length</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Length of message entity within message (in <a class="reference external" href="https://core.telegram.org/api/entities#entity-length">UTF-16 code units</a>)</p></li>
+<li><p><strong>date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – The date as a UNIX timestamp: the allowed value ranges from 0 to the current date plus 1098 days (time()+1098*86400).</p></li>
+<li><p><strong>relative</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, render a relative date, see <a class="reference external" href="https://core.telegram.org/api/entities#date-entities">here »</a> for more info. Cannot be combined with any of the other flags.</p></li>
+<li><p><strong>short_time</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Renders the time in short format: hours and minutes, according to the user’s locale settings; cannot be combined with long_time.</p></li>
+<li><p><strong>long_time</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Renders the time in long format: hours, minutes, seconds and maybe timezone, according to the user’s locale settings; cannot be combined with short_time.</p></li>
+<li><p><strong>short_date</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Renders the time in short format: month, date, (and year, if different from the current one), all according the user’s locale settings; cannot be combined with long_date.</p></li>
+<li><p><strong>long_date</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Renders the time in long format: always month, date and year, all according the user’s locale settings; cannot be combined with short_date.</p></li>
+<li><p><strong>day_of_week</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Renders the day of the week according to the user’s locale settings.</p></li>
 </ul>
 </dd>
 </dl>
@@ -1048,7 +1068,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/40056f4" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

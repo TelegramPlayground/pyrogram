@@ -16,7 +16,7 @@
         <link rel="canonical" href="/pyrogram/telegram/base/channel-admin-log-event-action.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>ChannelAdminLogEventAction - PyroTGFork 2.2.23 Layer 225</title>
+        <title>ChannelAdminLogEventAction - PyroTGFork 2.2.24 Layer 225</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.23 Layer 225</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 225</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.23 Layer 225</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 225</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -326,6 +326,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat.html">get_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_administrators.html">get_chat_administrators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_member.html">get_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
@@ -403,6 +404,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_personal_chat.html">set_personal_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_account.html">delete_account</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/update_status.html">update_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages.html">get_user_personal_chat_messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages_count.html">get_user_personal_chat_messages_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_message_reaction.html">delete_message_reaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_all_message_reactions.html">delete_all_message_reactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/add_contact.html">add_contact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_contacts.html">delete_contacts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/import_contacts.html">import_contacts</a></li>
@@ -558,6 +563,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ChatHasProtectedContentDisableRequested.html">ChatHasProtectedContentDisableRequested</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotCreated.html">ManagedBotCreated</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotUpdated.html">ManagedBotUpdated</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/SentGuestMessage.html">SentGuestMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/BotAccessSettings.html">BotAccessSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Birthdate.html">Birthdate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/User.html">User</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Chat.html">Chat</a></li>
@@ -984,167 +991,167 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.base.ChannelAdminLogEventAction">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.base.</span></span><span class="sig-name descname"><span class="pre">ChannelAdminLogEventAction</span></span><a class="headerlink" href="#pyrogram.raw.base.ChannelAdminLogEventAction" title="Link to this definition">#</a></dt>
-<dd><p>Telegram API base type.</p>
+<dd><p>Channel admin log event</p>
 <dl>
 <dt>Constructors:</dt><dd><p>This base type has 52 constructors available.</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-change-about.html#pyrogram.raw.types.ChannelAdminLogEventActionChangeAbout" title="pyrogram.raw.types.ChannelAdminLogEventActionChangeAbout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionChangeAbout</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>The description was changed</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-change-available-reactions.html#pyrogram.raw.types.ChannelAdminLogEventActionChangeAvailableReactions" title="pyrogram.raw.types.ChannelAdminLogEventActionChangeAvailableReactions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionChangeAvailableReactions</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>The set of allowed <a class="reference external" href="https://core.telegram.org/api/reactions">message reactions</a> for this channel has changed</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-change-emoji-status.html#pyrogram.raw.types.ChannelAdminLogEventActionChangeEmojiStatus" title="pyrogram.raw.types.ChannelAdminLogEventActionChangeEmojiStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionChangeEmojiStatus</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>The <a class="reference external" href="https://core.telegram.org/api/emoji-status">emoji status</a> was changed</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-change-emoji-sticker-set.html#pyrogram.raw.types.ChannelAdminLogEventActionChangeEmojiStickerSet" title="pyrogram.raw.types.ChannelAdminLogEventActionChangeEmojiStickerSet"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionChangeEmojiStickerSet</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>The supergroup's <a class="reference external" href="https://core.telegram.org/api/boost#setting-a-custom-emoji-stickerset-for-supergroups">custom emoji stickerset</a> was changed.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-change-history-ttl.html#pyrogram.raw.types.ChannelAdminLogEventActionChangeHistoryTTL" title="pyrogram.raw.types.ChannelAdminLogEventActionChangeHistoryTTL"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionChangeHistoryTTL</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>The Time-To-Live of messages in this chat was changed</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-change-linked-chat.html#pyrogram.raw.types.ChannelAdminLogEventActionChangeLinkedChat" title="pyrogram.raw.types.ChannelAdminLogEventActionChangeLinkedChat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionChangeLinkedChat</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>The linked chat was changed</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-change-location.html#pyrogram.raw.types.ChannelAdminLogEventActionChangeLocation" title="pyrogram.raw.types.ChannelAdminLogEventActionChangeLocation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionChangeLocation</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>The geogroup location was changed</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-change-peer-color.html#pyrogram.raw.types.ChannelAdminLogEventActionChangePeerColor" title="pyrogram.raw.types.ChannelAdminLogEventActionChangePeerColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionChangePeerColor</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>The <a class="reference external" href="https://core.telegram.org/api/colors">message accent color</a> was changed</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-change-photo.html#pyrogram.raw.types.ChannelAdminLogEventActionChangePhoto" title="pyrogram.raw.types.ChannelAdminLogEventActionChangePhoto"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionChangePhoto</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>The channel/supergroup's picture was changed</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-change-profile-peer-color.html#pyrogram.raw.types.ChannelAdminLogEventActionChangeProfilePeerColor" title="pyrogram.raw.types.ChannelAdminLogEventActionChangeProfilePeerColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionChangeProfilePeerColor</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>The <a class="reference external" href="https://core.telegram.org/api/colors">profile accent color</a> was changed</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-change-sticker-set.html#pyrogram.raw.types.ChannelAdminLogEventActionChangeStickerSet" title="pyrogram.raw.types.ChannelAdminLogEventActionChangeStickerSet"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionChangeStickerSet</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>The supergroup's stickerset was changed</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-change-title.html#pyrogram.raw.types.ChannelAdminLogEventActionChangeTitle" title="pyrogram.raw.types.ChannelAdminLogEventActionChangeTitle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionChangeTitle</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Channel/supergroup title was changed</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-change-username.html#pyrogram.raw.types.ChannelAdminLogEventActionChangeUsername" title="pyrogram.raw.types.ChannelAdminLogEventActionChangeUsername"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionChangeUsername</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Channel/supergroup username was changed</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-change-usernames.html#pyrogram.raw.types.ChannelAdminLogEventActionChangeUsernames" title="pyrogram.raw.types.ChannelAdminLogEventActionChangeUsernames"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionChangeUsernames</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>The list of usernames associated with the channel was changed</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-change-wallpaper.html#pyrogram.raw.types.ChannelAdminLogEventActionChangeWallpaper" title="pyrogram.raw.types.ChannelAdminLogEventActionChangeWallpaper"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionChangeWallpaper</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>The <a class="reference external" href="https://core.telegram.org/api/wallpapers">wallpaper</a> was changed</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-create-topic.html#pyrogram.raw.types.ChannelAdminLogEventActionCreateTopic" title="pyrogram.raw.types.ChannelAdminLogEventActionCreateTopic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionCreateTopic</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A <a class="reference external" href="https://core.telegram.org/api/forum#forum-topics">forum topic</a> was created</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-default-banned-rights.html#pyrogram.raw.types.ChannelAdminLogEventActionDefaultBannedRights" title="pyrogram.raw.types.ChannelAdminLogEventActionDefaultBannedRights"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionDefaultBannedRights</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>The default banned rights were modified</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-delete-message.html#pyrogram.raw.types.ChannelAdminLogEventActionDeleteMessage" title="pyrogram.raw.types.ChannelAdminLogEventActionDeleteMessage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionDeleteMessage</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A message was deleted</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-delete-topic.html#pyrogram.raw.types.ChannelAdminLogEventActionDeleteTopic" title="pyrogram.raw.types.ChannelAdminLogEventActionDeleteTopic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionDeleteTopic</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A <a class="reference external" href="https://core.telegram.org/api/forum#forum-topics">forum topic</a> was deleted</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-discard-group-call.html#pyrogram.raw.types.ChannelAdminLogEventActionDiscardGroupCall" title="pyrogram.raw.types.ChannelAdminLogEventActionDiscardGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionDiscardGroupCall</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A group call was terminated</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-edit-message.html#pyrogram.raw.types.ChannelAdminLogEventActionEditMessage" title="pyrogram.raw.types.ChannelAdminLogEventActionEditMessage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionEditMessage</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A message was edited</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-edit-topic.html#pyrogram.raw.types.ChannelAdminLogEventActionEditTopic" title="pyrogram.raw.types.ChannelAdminLogEventActionEditTopic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionEditTopic</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A <a class="reference external" href="https://core.telegram.org/api/forum#forum-topics">forum topic</a> was edited</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-exported-invite-delete.html#pyrogram.raw.types.ChannelAdminLogEventActionExportedInviteDelete" title="pyrogram.raw.types.ChannelAdminLogEventActionExportedInviteDelete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionExportedInviteDelete</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A chat invite was deleted</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-exported-invite-edit.html#pyrogram.raw.types.ChannelAdminLogEventActionExportedInviteEdit" title="pyrogram.raw.types.ChannelAdminLogEventActionExportedInviteEdit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionExportedInviteEdit</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A chat invite was edited</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-exported-invite-revoke.html#pyrogram.raw.types.ChannelAdminLogEventActionExportedInviteRevoke" title="pyrogram.raw.types.ChannelAdminLogEventActionExportedInviteRevoke"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionExportedInviteRevoke</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A specific invite link was revoked</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-participant-edit-rank.html#pyrogram.raw.types.ChannelAdminLogEventActionParticipantEditRank" title="pyrogram.raw.types.ChannelAdminLogEventActionParticipantEditRank"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionParticipantEditRank</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A participant's <a class="reference external" href="https://core.telegram.org/api/rank">tag</a> was changed.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-participant-invite.html#pyrogram.raw.types.ChannelAdminLogEventActionParticipantInvite" title="pyrogram.raw.types.ChannelAdminLogEventActionParticipantInvite"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionParticipantInvite</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A user was invited to the group</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-participant-join.html#pyrogram.raw.types.ChannelAdminLogEventActionParticipantJoin" title="pyrogram.raw.types.ChannelAdminLogEventActionParticipantJoin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionParticipantJoin</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A user has joined the group (in the case of big groups, info of the user that has joined isn't shown)</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-participant-join-by-invite.html#pyrogram.raw.types.ChannelAdminLogEventActionParticipantJoinByInvite" title="pyrogram.raw.types.ChannelAdminLogEventActionParticipantJoinByInvite"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionParticipantJoinByInvite</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A user joined the <a class="reference external" href="https://core.telegram.org/api/channel">supergroup/channel</a> using a specific invite link</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-participant-join-by-request.html#pyrogram.raw.types.ChannelAdminLogEventActionParticipantJoinByRequest" title="pyrogram.raw.types.ChannelAdminLogEventActionParticipantJoinByRequest"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionParticipantJoinByRequest</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A new member was accepted to the chat by an admin</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-participant-leave.html#pyrogram.raw.types.ChannelAdminLogEventActionParticipantLeave" title="pyrogram.raw.types.ChannelAdminLogEventActionParticipantLeave"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionParticipantLeave</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A user left the channel/supergroup (in the case of big groups, info of the user that has joined isn't shown)</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-participant-mute.html#pyrogram.raw.types.ChannelAdminLogEventActionParticipantMute" title="pyrogram.raw.types.ChannelAdminLogEventActionParticipantMute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionParticipantMute</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A group call participant was muted</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-participant-sub-extend.html#pyrogram.raw.types.ChannelAdminLogEventActionParticipantSubExtend" title="pyrogram.raw.types.ChannelAdminLogEventActionParticipantSubExtend"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionParticipantSubExtend</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A paid subscriber has extended their <a class="reference external" href="https://core.telegram.org/api/stars#star-subscriptions">Telegram Star subscription</a>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-participant-toggle-admin.html#pyrogram.raw.types.ChannelAdminLogEventActionParticipantToggleAdmin" title="pyrogram.raw.types.ChannelAdminLogEventActionParticipantToggleAdmin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionParticipantToggleAdmin</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>The admin <a class="reference external" href="https://core.telegram.org/api/rights">rights</a> of a user were changed</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-participant-toggle-ban.html#pyrogram.raw.types.ChannelAdminLogEventActionParticipantToggleBan" title="pyrogram.raw.types.ChannelAdminLogEventActionParticipantToggleBan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionParticipantToggleBan</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>The banned <a class="reference external" href="https://core.telegram.org/api/rights">rights</a> of a user were changed</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-participant-unmute.html#pyrogram.raw.types.ChannelAdminLogEventActionParticipantUnmute" title="pyrogram.raw.types.ChannelAdminLogEventActionParticipantUnmute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionParticipantUnmute</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A group call participant was unmuted</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-participant-volume.html#pyrogram.raw.types.ChannelAdminLogEventActionParticipantVolume" title="pyrogram.raw.types.ChannelAdminLogEventActionParticipantVolume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionParticipantVolume</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>channelAdminLogEvent.user_id has set the volume of participant.peer to participant.volume</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-pin-topic.html#pyrogram.raw.types.ChannelAdminLogEventActionPinTopic" title="pyrogram.raw.types.ChannelAdminLogEventActionPinTopic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionPinTopic</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A <a class="reference external" href="https://core.telegram.org/api/forum#forum-topics">forum topic</a> was pinned or unpinned</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-send-message.html#pyrogram.raw.types.ChannelAdminLogEventActionSendMessage" title="pyrogram.raw.types.ChannelAdminLogEventActionSendMessage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionSendMessage</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A message was posted in a channel</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-start-group-call.html#pyrogram.raw.types.ChannelAdminLogEventActionStartGroupCall" title="pyrogram.raw.types.ChannelAdminLogEventActionStartGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionStartGroupCall</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A group call was started</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-stop-poll.html#pyrogram.raw.types.ChannelAdminLogEventActionStopPoll" title="pyrogram.raw.types.ChannelAdminLogEventActionStopPoll"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionStopPoll</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A poll was stopped</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-toggle-anti-spam.html#pyrogram.raw.types.ChannelAdminLogEventActionToggleAntiSpam" title="pyrogram.raw.types.ChannelAdminLogEventActionToggleAntiSpam"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionToggleAntiSpam</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p><a class="reference external" href="https://core.telegram.org/api/antispam">Native antispam</a> functionality was enabled or disabled.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-toggle-autotranslation.html#pyrogram.raw.types.ChannelAdminLogEventActionToggleAutotranslation" title="pyrogram.raw.types.ChannelAdminLogEventActionToggleAutotranslation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionToggleAutotranslation</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p><a class="reference external" href="https://core.telegram.org/api/translation#autotranslation-for-channels">Channel autotranslation was toggled</a>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-toggle-forum.html#pyrogram.raw.types.ChannelAdminLogEventActionToggleForum" title="pyrogram.raw.types.ChannelAdminLogEventActionToggleForum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionToggleForum</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p><a class="reference external" href="https://core.telegram.org/api/forum">Forum</a> functionality was enabled or disabled.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-toggle-group-call-setting.html#pyrogram.raw.types.ChannelAdminLogEventActionToggleGroupCallSetting" title="pyrogram.raw.types.ChannelAdminLogEventActionToggleGroupCallSetting"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionToggleGroupCallSetting</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Group call settings were changed</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-toggle-invites.html#pyrogram.raw.types.ChannelAdminLogEventActionToggleInvites" title="pyrogram.raw.types.ChannelAdminLogEventActionToggleInvites"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionToggleInvites</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Invites were enabled/disabled</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-toggle-no-forwards.html#pyrogram.raw.types.ChannelAdminLogEventActionToggleNoForwards" title="pyrogram.raw.types.ChannelAdminLogEventActionToggleNoForwards"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionToggleNoForwards</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Forwards were enabled or disabled</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-toggle-pre-history-hidden.html#pyrogram.raw.types.ChannelAdminLogEventActionTogglePreHistoryHidden" title="pyrogram.raw.types.ChannelAdminLogEventActionTogglePreHistoryHidden"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionTogglePreHistoryHidden</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>The hidden prehistory setting was <a class="reference external" href="https://core.telegram.org/method/channels.togglePreHistoryHidden">changed</a></p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-toggle-signature-profiles.html#pyrogram.raw.types.ChannelAdminLogEventActionToggleSignatureProfiles" title="pyrogram.raw.types.ChannelAdminLogEventActionToggleSignatureProfiles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionToggleSignatureProfiles</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Channel signature profiles were enabled/disabled.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-toggle-signatures.html#pyrogram.raw.types.ChannelAdminLogEventActionToggleSignatures" title="pyrogram.raw.types.ChannelAdminLogEventActionToggleSignatures"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionToggleSignatures</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Channel signatures were enabled/disabled</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-toggle-slow-mode.html#pyrogram.raw.types.ChannelAdminLogEventActionToggleSlowMode" title="pyrogram.raw.types.ChannelAdminLogEventActionToggleSlowMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionToggleSlowMode</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p><a class="reference external" href="https://core.telegram.org/method/channels.toggleSlowMode">Slow mode setting for supergroups was changed</a></p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/channel-admin-log-event-action-update-pinned.html#pyrogram.raw.types.ChannelAdminLogEventActionUpdatePinned" title="pyrogram.raw.types.ChannelAdminLogEventActionUpdatePinned"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventActionUpdatePinned</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A message was pinned</p></td>
 </tr>
 </tbody>
 </table>
@@ -1191,7 +1198,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/40056f4" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

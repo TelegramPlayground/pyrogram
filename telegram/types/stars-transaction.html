@@ -16,7 +16,7 @@
         <link rel="canonical" href="/pyrogram/telegram/types/stars-transaction.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>StarsTransaction - PyroTGFork 2.2.23 Layer 225</title>
+        <title>StarsTransaction - PyroTGFork 2.2.24 Layer 225</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.23 Layer 225</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 225</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.23 Layer 225</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 225</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -326,6 +326,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat.html">get_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_administrators.html">get_chat_administrators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_member.html">get_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
@@ -403,6 +404,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_personal_chat.html">set_personal_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_account.html">delete_account</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/update_status.html">update_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages.html">get_user_personal_chat_messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages_count.html">get_user_personal_chat_messages_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_message_reaction.html">delete_message_reaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_all_message_reactions.html">delete_all_message_reactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/add_contact.html">add_contact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_contacts.html">delete_contacts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/import_contacts.html">import_contacts</a></li>
@@ -558,6 +563,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ChatHasProtectedContentDisableRequested.html">ChatHasProtectedContentDisableRequested</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotCreated.html">ManagedBotCreated</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotUpdated.html">ManagedBotUpdated</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/SentGuestMessage.html">SentGuestMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/BotAccessSettings.html">BotAccessSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Birthdate.html">Birthdate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/User.html">User</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Chat.html">Chat</a></li>
@@ -984,7 +991,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.types.StarsTransaction">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">StarsTransaction</span></span><a class="headerlink" href="#pyrogram.raw.types.StarsTransaction" title="Link to this definition">#</a></dt>
-<dd><p>Telegram API type.</p>
+<dd><p>Represents a <a class="reference external" href="https://core.telegram.org/api/stars">Telegram Stars or TON transaction</a>.</p>
 <p>Constructor of <a class="reference internal" href="../base/stars-transaction.html#pyrogram.raw.base.StarsTransaction" title="pyrogram.raw.base.StarsTransaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsTransaction</span></code></a>.</p>
 <dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
@@ -996,43 +1003,43 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – N/A</p></li>
-<li><p><strong>amount</strong> (<a class="reference internal" href="../base/stars-amount.html#pyrogram.raw.base.StarsAmount" title="pyrogram.raw.base.StarsAmount"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsAmount</span></code></a>) – N/A</p></li>
-<li><p><strong>date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – N/A</p></li>
-<li><p><strong>peer</strong> (<a class="reference internal" href="../base/stars-transaction-peer.html#pyrogram.raw.base.StarsTransactionPeer" title="pyrogram.raw.base.StarsTransactionPeer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsTransactionPeer</span></code></a>) – N/A</p></li>
-<li><p><strong>refund</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>pending</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>failed</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>gift</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>reaction</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>stargift_upgrade</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>business_transfer</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>stargift_resale</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>posts_search</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>stargift_prepaid_upgrade</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>stargift_drop_original_details</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>phonegroup_message</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>stargift_auction_bid</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>offer</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>description</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>photo</strong> (<a class="reference internal" href="../base/web-document.html#pyrogram.raw.base.WebDocument" title="pyrogram.raw.base.WebDocument"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebDocument</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>transaction_date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>transaction_url</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>bot_payload</strong> (<code class="docutils literal notranslate"><span class="pre">bytes</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>msg_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>extended_media</strong> (List of <a class="reference internal" href="../base/message-media.html#pyrogram.raw.base.MessageMedia" title="pyrogram.raw.base.MessageMedia"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMedia</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>subscription_period</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>giveaway_post_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>stargift</strong> (<a class="reference internal" href="../base/star-gift.html#pyrogram.raw.base.StarGift" title="pyrogram.raw.base.StarGift"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarGift</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>floodskip_number</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>starref_commission_permille</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>starref_peer</strong> (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>starref_amount</strong> (<a class="reference internal" href="../base/stars-amount.html#pyrogram.raw.base.StarsAmount" title="pyrogram.raw.base.StarsAmount"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsAmount</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>paid_messages</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>premium_gift_months</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>ads_proceeds_from_date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>ads_proceeds_to_date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
+<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Transaction ID.</p></li>
+<li><p><strong>amount</strong> (<a class="reference internal" href="../base/stars-amount.html#pyrogram.raw.base.StarsAmount" title="pyrogram.raw.base.StarsAmount"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsAmount</span></code></a>) – Amount of Telegram Stars or TON.</p></li>
+<li><p><strong>date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Date of the transaction (unixtime).</p></li>
+<li><p><strong>peer</strong> (<a class="reference internal" href="../base/stars-transaction-peer.html#pyrogram.raw.base.StarsTransactionPeer" title="pyrogram.raw.base.StarsTransactionPeer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsTransactionPeer</span></code></a>) – Source of the incoming transaction, or its recipient for outgoing transactions.</p></li>
+<li><p><strong>refund</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this transaction is a refund.</p></li>
+<li><p><strong>pending</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – The transaction is currently pending.</p></li>
+<li><p><strong>failed</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – This transaction has failed.</p></li>
+<li><p><strong>gift</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – This transaction was a gift from the user in peer.peer.</p></li>
+<li><p><strong>reaction</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – This transaction is a <a class="reference external" href="https://core.telegram.org/api/reactions#paid-reactions">paid reaction »</a>.</p></li>
+<li><p><strong>stargift_upgrade</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – This transaction pays for the upgrade of a gift to a <a class="reference external" href="https://core.telegram.org/api/gifts#collectible-gifts">collectible gift »</a>.</p></li>
+<li><p><strong>business_transfer</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – This transaction transfers stars from the balance of a user account <a class="reference external" href="https://core.telegram.org/api/bots/connected-business-bots">connected to a business bot</a>, to the balance of the business bot, see <a class="reference external" href="https://core.telegram.org/api/stars#transferring-stars-from-a-business-account-to-the-business-bot">here »</a> for more info.</p></li>
+<li><p><strong>stargift_resale</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – This transaction is related to the <a class="reference external" href="https://core.telegram.org/api/gifts#reselling-collectible-gifts">resale of a collectible gift »</a>.</p></li>
+<li><p><strong>posts_search</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Represents payment for a <a class="reference external" href="https://core.telegram.org/api/search#posts-tab">paid global post search »</a>.</p></li>
+<li><p><strong>stargift_prepaid_upgrade</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Represents payment for a <a class="reference external" href="https://core.telegram.org/api/gifts#prepaying-for-someone-elses-upgrade">separate prepaid upgrade of a gift</a>.</p></li>
+<li><p><strong>stargift_drop_original_details</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Represents payment for the removal of the <a class="reference external" href="https://core.telegram.org/constructor/starGiftAttributeOriginalDetails">starGiftAttributeOriginalDetails</a> attribute from a gift, see <a class="reference external" href="https://core.telegram.org/api/gifts#dropping-the-original-details-of-an-upgraded-gift">here »</a> for the full flow.</p></li>
+<li><p><strong>phonegroup_message</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>)</p></li>
+<li><p><strong>stargift_auction_bid</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Represents payment for placing a <a class="reference external" href="https://core.telegram.org/api/auctions">collectible gift auction bid »</a>.</p></li>
+<li><p><strong>offer</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Represents payment for a <a class="reference external" href="https://core.telegram.org/api/gifts#collectible-gift-purchase-offers">collectible gift purchase offer »</a>.</p></li>
+<li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – For transactions with bots, title of the bought product.</p></li>
+<li><p><strong>description</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – For transactions with bots, description of the bought product.</p></li>
+<li><p><strong>photo</strong> (<a class="reference internal" href="../base/web-document.html#pyrogram.raw.base.WebDocument" title="pyrogram.raw.base.WebDocument"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebDocument</span></code></a>, <em>optional</em>) – For transactions with bots, photo of the bought product.</p></li>
+<li><p><strong>transaction_date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – If neither pending nor failed are set, the transaction was completed successfully, and this field will contain the point in time (Unix timestamp) when the withdrawal was completed successfully.</p></li>
+<li><p><strong>transaction_url</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – If neither pending nor failed are set, the transaction was completed successfully, and this field will contain a URL where the withdrawal transaction can be viewed.</p></li>
+<li><p><strong>bot_payload</strong> (<code class="docutils literal notranslate"><span class="pre">bytes</span></code>, <em>optional</em>) – Bot specified invoice payload (i.e. the payload passed to <a class="reference external" href="https://core.telegram.org/constructor/inputMediaInvoice">inputMediaInvoice</a> when <a class="reference external" href="https://core.telegram.org/api/payments">creating the invoice</a>).</p></li>
+<li><p><strong>msg_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – For <a class="reference external" href="https://core.telegram.org/api/paid-media">paid media transactions »</a>, message ID of the paid media posted to peer.peer (can point to a deleted message; either way, extended_media will always contain the bought media).</p></li>
+<li><p><strong>extended_media</strong> (List of <a class="reference internal" href="../base/message-media.html#pyrogram.raw.base.MessageMedia" title="pyrogram.raw.base.MessageMedia"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMedia</span></code></a>, <em>optional</em>) – The purchased <a class="reference external" href="https://core.telegram.org/api/paid-media">paid media »</a>.</p></li>
+<li><p><strong>subscription_period</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – The number of seconds between consecutive Telegram Star debiting for <a class="reference external" href="https://core.telegram.org/api/stars#star-subscriptions">Telegram Star subscriptions »</a>.</p></li>
+<li><p><strong>giveaway_post_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – ID of the message containing the <a class="reference external" href="https://core.telegram.org/constructor/messageMediaGiveaway">messageMediaGiveaway</a>, for incoming <a class="reference external" href="https://core.telegram.org/api/giveaways#star-giveaways">star giveaway prizes</a>.</p></li>
+<li><p><strong>stargift</strong> (<a class="reference internal" href="../base/star-gift.html#pyrogram.raw.base.StarGift" title="pyrogram.raw.base.StarGift"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarGift</span></code></a>, <em>optional</em>) – This transaction indicates a purchase or a sale (conversion back to Stars) of a <a class="reference external" href="https://core.telegram.org/api/stars">gift »</a>.</p></li>
+<li><p><strong>floodskip_number</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – This transaction is payment for <a class="reference external" href="https://core.telegram.org/bots/faq#how-can-i-message-all-of-my-bot-39s-subscribers-at-once">paid bot broadcasts</a>.  Paid broadcasts are only allowed if the allow_paid_floodskip parameter of <a class="reference external" href="https://core.telegram.org/method/messages.sendMessage">messages.sendMessage</a> and other message sending methods is set while trying to broadcast more than 30 messages per second to bot users. The integer value returned by this flag indicates the number of billed API calls.</p></li>
+<li><p><strong>starref_commission_permille</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – This transaction is the receival (or refund) of an <a class="reference external" href="https://core.telegram.org/api/bots/referrals">affiliate commission</a> (i.e. this is the transaction received by the peer that created the <a class="reference external" href="https://core.telegram.org/api/links#referral-links">referral link</a>, flag 17 is for transactions made by users that imported the referral link).</p></li>
+<li><p><strong>starref_peer</strong> (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>, <em>optional</em>) – For transactions made by <a class="reference external" href="https://core.telegram.org/api/bots/referrals">referred users</a>, the peer that received the affiliate commission.</p></li>
+<li><p><strong>starref_amount</strong> (<a class="reference internal" href="../base/stars-amount.html#pyrogram.raw.base.StarsAmount" title="pyrogram.raw.base.StarsAmount"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsAmount</span></code></a>, <em>optional</em>) – For transactions made by <a class="reference external" href="https://core.telegram.org/api/bots/referrals">referred users</a>, the amount of Telegram Stars received by the affiliate, can be negative for refunds.</p></li>
+<li><p><strong>paid_messages</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – This transaction is related to the reception or transmission of a <a class="reference external" href="https://core.telegram.org/api/paid-messages">paid message »</a>.</p></li>
+<li><p><strong>premium_gift_months</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – This transaction indicates the payment for a <a class="reference external" href="https://core.telegram.org/api/premium#gifting-telegram-premium">gifted Telegram Premium subscription »</a>.</p></li>
+<li><p><strong>ads_proceeds_from_date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Indicates that this is payment for ad revenue from the specified unixtime (always set together with ads_proceeds_to_date).</p></li>
+<li><p><strong>ads_proceeds_to_date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Indicates that this is payment for ad revenue to the specified unixtime.</p></li>
 </ul>
 </dd>
 </dl>
@@ -1076,7 +1083,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/40056f4" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="#" /><link rel="search" title="Search" href="search.html" />
         <link rel="canonical" href="/pyrogram/genindex.html" />
 
-    <link rel="shortcut icon" href="_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 --><title>Index - PyroTGFork 2.2.23 Layer 225</title>
+    <link rel="shortcut icon" href="_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 --><title>Index - PyroTGFork 2.2.24 Layer 225</title>
 <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">PyroTGFork 2.2.23 Layer 225</div></a>
+      <a href="index.html"><div class="brand">PyroTGFork 2.2.24 Layer 225</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.23 Layer 225</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 225</span-->
     
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -325,6 +325,7 @@
 <li class="toctree-l2"><a class="reference internal" href="api/methods/get_chat.html">get_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/methods/get_chat_administrators.html">get_chat_administrators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/methods/get_chat_member.html">get_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
@@ -402,6 +403,10 @@
 <li class="toctree-l2"><a class="reference internal" href="api/methods/set_personal_chat.html">set_personal_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/methods/delete_account.html">delete_account</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/methods/update_status.html">update_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/methods/get_user_personal_chat_messages.html">get_user_personal_chat_messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/methods/get_user_personal_chat_messages_count.html">get_user_personal_chat_messages_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/methods/delete_message_reaction.html">delete_message_reaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/methods/delete_all_message_reactions.html">delete_all_message_reactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/methods/add_contact.html">add_contact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/methods/delete_contacts.html">delete_contacts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/methods/import_contacts.html">import_contacts</a></li>
@@ -557,6 +562,8 @@
 <li class="toctree-l2"><a class="reference internal" href="api/types/ChatHasProtectedContentDisableRequested.html">ChatHasProtectedContentDisableRequested</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/types/ManagedBotCreated.html">ManagedBotCreated</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/types/ManagedBotUpdated.html">ManagedBotUpdated</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/types/SentGuestMessage.html">SentGuestMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/types/BotAccessSettings.html">BotAccessSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/types/Birthdate.html">Birthdate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/types/User.html">User</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/types/Chat.html">Chat</a></li>
@@ -2037,12 +2044,6 @@
 </li>
         <li><a href="telegram/types/channel-participants-search.html#pyrogram.raw.types.ChannelParticipantsSearch">ChannelParticipantsSearch (class in pyrogram.raw.types)</a>
 </li>
-        <li><a href="telegram/base/channel-topic.html#pyrogram.raw.base.ChannelTopic">ChannelTopic (class in pyrogram.raw.base)</a>
-
-        <ul>
-          <li><a href="telegram/types/channel-topic.html#pyrogram.raw.types.ChannelTopic">(class in pyrogram.raw.types)</a>
-</li>
-        </ul></li>
         <li><a href="api/filters.html#pyrogram.filters.chat">chat (class in pyrogram.filters)</a>
 </li>
         <li><a href="telegram/base/chat.html#pyrogram.raw.base.Chat">Chat (class in pyrogram.raw.base)</a>
@@ -2175,10 +2176,10 @@
 </li>
         <li><a href="api/types/ChatJoinRequest.html#pyrogram.types.ChatJoinRequest">ChatJoinRequest (class in pyrogram.types)</a>
 </li>
-    </ul></td>
-    <td style="width: 33%; vertical-align: top;"><ul>
         <li><a href="api/handlers.html#pyrogram.handlers.ChatJoinRequestHandler">ChatJoinRequestHandler (class in pyrogram.handlers)</a>
 </li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
         <li><a href="api/enums/ChatJoinType.html#pyrogram.enums.ChatJoinType">ChatJoinType (class in pyrogram.enums)</a>
 </li>
         <li><a href="telegram/base/chatlists/chatlist-invite.html#pyrogram.raw.base.chatlists.ChatlistInvite">ChatlistInvite (class in pyrogram.raw.base.chatlists)</a>
@@ -2783,6 +2784,10 @@
         </ul></li>
         <li><a href="telegram/functions/channels/delete-participant-history.html#pyrogram.raw.functions.channels.DeleteParticipantHistory">DeleteParticipantHistory (class in pyrogram.raw.functions.channels)</a>
 </li>
+        <li><a href="telegram/functions/messages/delete-participant-reaction.html#pyrogram.raw.functions.messages.DeleteParticipantReaction">DeleteParticipantReaction (class in pyrogram.raw.functions.messages)</a>
+</li>
+        <li><a href="telegram/functions/messages/delete-participant-reactions.html#pyrogram.raw.functions.messages.DeleteParticipantReactions">DeleteParticipantReactions (class in pyrogram.raw.functions.messages)</a>
+</li>
         <li><a href="telegram/functions/account/delete-passkey.html#pyrogram.raw.functions.account.DeletePasskey">DeletePasskey (class in pyrogram.raw.functions.account)</a>
 </li>
         <li><a href="telegram/functions/messages/delete-phone-call-history.html#pyrogram.raw.functions.messages.DeletePhoneCallHistory">DeletePhoneCallHistory (class in pyrogram.raw.functions.messages)</a>
@@ -2821,10 +2826,10 @@
 </li>
         <li><a href="telegram/functions/destroy-auth-key.html#pyrogram.raw.functions.DestroyAuthKey">DestroyAuthKey (class in pyrogram.raw.functions)</a>
 </li>
-        <li><a href="telegram/types/destroy-auth-key-fail.html#pyrogram.raw.types.DestroyAuthKeyFail">DestroyAuthKeyFail (class in pyrogram.raw.types)</a>
-</li>
     </ul></td>
     <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="telegram/types/destroy-auth-key-fail.html#pyrogram.raw.types.DestroyAuthKeyFail">DestroyAuthKeyFail (class in pyrogram.raw.types)</a>
+</li>
         <li><a href="telegram/types/destroy-auth-key-none.html#pyrogram.raw.types.DestroyAuthKeyNone">DestroyAuthKeyNone (class in pyrogram.raw.types)</a>
 </li>
         <li><a href="telegram/types/destroy-auth-key-ok.html#pyrogram.raw.types.DestroyAuthKeyOk">DestroyAuthKeyOk (class in pyrogram.raw.types)</a>
@@ -3509,10 +3514,10 @@
           <li><a href="telegram/types/folder-peer.html#pyrogram.raw.types.FolderPeer">(class in pyrogram.raw.types)</a>
 </li>
         </ul></li>
-        <li><a href="api/types/ForceReply.html#pyrogram.types.ForceReply">ForceReply (class in pyrogram.types)</a>
-</li>
     </ul></td>
     <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="api/types/ForceReply.html#pyrogram.types.ForceReply">ForceReply (class in pyrogram.types)</a>
+</li>
         <li><a href="api/types/FormattedText.html#pyrogram.types.FormattedText">FormattedText (class in pyrogram.types)</a>
 </li>
         <li><a href="api/enums/MessageServiceType.html#pyrogram.enums.MessageServiceType.FORUM_TOPIC_CLOSED">FORUM_TOPIC_CLOSED (pyrogram.enums.MessageServiceType attribute)</a>
@@ -3557,13 +3562,9 @@
 </li>
         <li><a href="telegram/functions/messages/forward-messages.html#pyrogram.raw.functions.messages.ForwardMessages">ForwardMessages (class in pyrogram.raw.functions.messages)</a>
 </li>
-        <li><a href="telegram/base/channels/found.html#pyrogram.raw.base.channels.Found">Found (class in pyrogram.raw.base.channels)</a>
+        <li><a href="telegram/base/contacts/found.html#pyrogram.raw.base.contacts.Found">Found (class in pyrogram.raw.base.contacts)</a>
 
         <ul>
-          <li><a href="telegram/base/contacts/found.html#pyrogram.raw.base.contacts.Found">(class in pyrogram.raw.base.contacts)</a>
-</li>
-          <li><a href="telegram/types/channels/found.html#pyrogram.raw.types.channels.Found">(class in pyrogram.raw.types.channels)</a>
-</li>
           <li><a href="telegram/types/contacts/found.html#pyrogram.raw.types.contacts.Found">(class in pyrogram.raw.types.contacts)</a>
 </li>
         </ul></li>
@@ -3931,8 +3932,6 @@
 </li>
         <li><a href="telegram/functions/contacts/get-contact-i-ds.html#pyrogram.raw.functions.contacts.GetContactIDs">GetContactIDs (class in pyrogram.raw.functions.contacts)</a>
 </li>
-        <li><a href="telegram/functions/channels/get-contact-personal-channels.html#pyrogram.raw.functions.channels.GetContactPersonalChannels">GetContactPersonalChannels (class in pyrogram.raw.functions.channels)</a>
-</li>
         <li><a href="telegram/functions/contacts/get-contacts.html#pyrogram.raw.functions.contacts.GetContacts">GetContacts (class in pyrogram.raw.functions.contacts)</a>
 </li>
         <li><a href="telegram/functions/account/get-contact-sign-up-notification.html#pyrogram.raw.functions.account.GetContactSignUpNotification">GetContactSignUpNotification (class in pyrogram.raw.functions.account)</a>
@@ -4057,10 +4056,10 @@
 </li>
         <li><a href="telegram/functions/channels/get-inactive-channels.html#pyrogram.raw.functions.channels.GetInactiveChannels">GetInactiveChannels (class in pyrogram.raw.functions.channels)</a>
 </li>
-    </ul></td>
-    <td style="width: 33%; vertical-align: top;"><ul>
         <li><a href="telegram/functions/messages/get-inline-bot-results.html#pyrogram.raw.functions.messages.GetInlineBotResults">GetInlineBotResults (class in pyrogram.raw.functions.messages)</a>
 </li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
         <li><a href="telegram/functions/messages/get-inline-game-high-scores.html#pyrogram.raw.functions.messages.GetInlineGameHighScores">GetInlineGameHighScores (class in pyrogram.raw.functions.messages)</a>
 </li>
         <li><a href="telegram/functions/help/get-invite-text.html#pyrogram.raw.functions.help.GetInviteText">GetInviteText (class in pyrogram.raw.functions.help)</a>
@@ -4152,6 +4151,8 @@
         <li><a href="telegram/functions/messages/get-peer-settings.html#pyrogram.raw.functions.messages.GetPeerSettings">GetPeerSettings (class in pyrogram.raw.functions.messages)</a>
 </li>
         <li><a href="telegram/functions/stories/get-peer-stories.html#pyrogram.raw.functions.stories.GetPeerStories">GetPeerStories (class in pyrogram.raw.functions.stories)</a>
+</li>
+        <li><a href="telegram/functions/messages/get-personal-channel-history.html#pyrogram.raw.functions.messages.GetPersonalChannelHistory">GetPersonalChannelHistory (class in pyrogram.raw.functions.messages)</a>
 </li>
         <li><a href="telegram/functions/messages/get-pinned-dialogs.html#pyrogram.raw.functions.messages.GetPinnedDialogs">GetPinnedDialogs (class in pyrogram.raw.functions.messages)</a>
 </li>
@@ -4338,8 +4339,6 @@
         <li><a href="telegram/functions/aicompose/get-tone-example.html#pyrogram.raw.functions.aicompose.GetToneExample">GetToneExample (class in pyrogram.raw.functions.aicompose)</a>
 </li>
         <li><a href="telegram/functions/aicompose/get-tones.html#pyrogram.raw.functions.aicompose.GetTones">GetTones (class in pyrogram.raw.functions.aicompose)</a>
-</li>
-        <li><a href="telegram/functions/channels/get-topics.html#pyrogram.raw.functions.channels.GetTopics">GetTopics (class in pyrogram.raw.functions.channels)</a>
 </li>
         <li><a href="telegram/functions/contacts/get-top-peers.html#pyrogram.raw.functions.contacts.GetTopPeers">GetTopPeers (class in pyrogram.raw.functions.contacts)</a>
 </li>
@@ -7052,18 +7051,6 @@
           <li><a href="telegram/types/pending-suggestion.html#pyrogram.raw.types.PendingSuggestion">(class in pyrogram.raw.types)</a>
 </li>
         </ul></li>
-        <li><a href="telegram/base/personal-channel.html#pyrogram.raw.base.PersonalChannel">PersonalChannel (class in pyrogram.raw.base)</a>
-
-        <ul>
-          <li><a href="telegram/types/personal-channel.html#pyrogram.raw.types.PersonalChannel">(class in pyrogram.raw.types)</a>
-</li>
-        </ul></li>
-        <li><a href="telegram/base/channels/personal-channels.html#pyrogram.raw.base.channels.PersonalChannels">PersonalChannels (class in pyrogram.raw.base.channels)</a>
-
-        <ul>
-          <li><a href="telegram/types/channels/personal-channels.html#pyrogram.raw.types.channels.PersonalChannels">(class in pyrogram.raw.types.channels)</a>
-</li>
-        </ul></li>
         <li><a href="api/enums/MessagesFilter.html#pyrogram.enums.MessagesFilter.PHONE_CALL">PHONE_CALL (pyrogram.enums.MessagesFilter attribute)</a>
 </li>
         <li><a href="api/enums/MessageEntityType.html#pyrogram.enums.MessageEntityType.PHONE_NUMBER">PHONE_NUMBER (pyrogram.enums.MessageEntityType attribute)</a>
@@ -7260,14 +7247,14 @@
           <li><a href="telegram/types/bots/popular-app-bots.html#pyrogram.raw.types.bots.PopularAppBots">(class in pyrogram.raw.types.bots)</a>
 </li>
         </ul></li>
-    </ul></td>
-    <td style="width: 33%; vertical-align: top;"><ul>
         <li><a href="telegram/base/popular-contact.html#pyrogram.raw.base.PopularContact">PopularContact (class in pyrogram.raw.base)</a>
 
         <ul>
           <li><a href="telegram/types/popular-contact.html#pyrogram.raw.types.PopularContact">(class in pyrogram.raw.types)</a>
 </li>
         </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
         <li><a href="api/methods/post_story.html#pyrogram.Client.post_story">post_story() (pyrogram.Client method)</a>
 </li>
         <li><a href="telegram/base/post-address.html#pyrogram.raw.base.PostAddress">PostAddress (class in pyrogram.raw.base)</a>
@@ -8666,11 +8653,9 @@
 </li>
         <li><a href="api/types/ScreenshotTaken.html#pyrogram.types.ScreenshotTaken">ScreenshotTaken (class in pyrogram.types)</a>
 </li>
-        <li><a href="telegram/functions/channels/search.html#pyrogram.raw.functions.channels.Search">Search (class in pyrogram.raw.functions.channels)</a>
+        <li><a href="telegram/functions/contacts/search.html#pyrogram.raw.functions.contacts.Search">Search (class in pyrogram.raw.functions.contacts)</a>
 
         <ul>
-          <li><a href="telegram/functions/contacts/search.html#pyrogram.raw.functions.contacts.Search">(class in pyrogram.raw.functions.contacts)</a>
-</li>
           <li><a href="telegram/functions/messages/search.html#pyrogram.raw.functions.messages.Search">(class in pyrogram.raw.functions.messages)</a>
 </li>
         </ul></li>
@@ -10182,6 +10167,8 @@
 </li>
         <li><a href="telegram/types/top-peer-category-bots-app.html#pyrogram.raw.types.TopPeerCategoryBotsApp">TopPeerCategoryBotsApp (class in pyrogram.raw.types)</a>
 </li>
+        <li><a href="telegram/types/top-peer-category-bots-guest-chat.html#pyrogram.raw.types.TopPeerCategoryBotsGuestChat">TopPeerCategoryBotsGuestChat (class in pyrogram.raw.types)</a>
+</li>
         <li><a href="telegram/types/top-peer-category-bots-inline.html#pyrogram.raw.types.TopPeerCategoryBotsInline">TopPeerCategoryBotsInline (class in pyrogram.raw.types)</a>
 </li>
         <li><a href="telegram/types/top-peer-category-bots-pm.html#pyrogram.raw.types.TopPeerCategoryBotsPM">TopPeerCategoryBotsPM (class in pyrogram.raw.types)</a>
@@ -11145,7 +11132,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/40056f4" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

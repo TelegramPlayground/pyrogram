@@ -12,11 +12,11 @@
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="https://t.me/PyroTGFork/2" />
     <meta property="article:author" content="@PyroTGFork" />
-    <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="channels.SendAsPeers" href="send-as-peers.html" /><link rel="prev" title="channels.Found" href="found.html" />
-        <link rel="canonical" href="/pyrogram/telegram/types/channels/personal-channels.html" />
+    <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="messages.GetPinnedDialogs" href="get-pinned-dialogs.html" /><link rel="prev" title="messages.GetPeerSettings" href="get-peer-settings.html" />
+        <link rel="canonical" href="/pyrogram/telegram/functions/messages/get-personal-channel-history.html" />
 
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>channels.PersonalChannels - PyroTGFork 2.2.23 Layer 225</title>
+        <title>messages.GetPersonalChannelHistory - PyroTGFork 2.2.24 Layer 225</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.23 Layer 225</div></a>
+      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 225</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.23 Layer 225</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 225</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -326,6 +326,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/get_chat.html">get_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/methods/get_chat_administrators.html">get_chat_administrators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/get_chat_member.html">get_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
@@ -403,6 +404,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/set_personal_chat.html">set_personal_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/delete_account.html">delete_account</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/update_status.html">update_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/methods/get_user_personal_chat_messages.html">get_user_personal_chat_messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/methods/get_user_personal_chat_messages_count.html">get_user_personal_chat_messages_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/methods/delete_message_reaction.html">delete_message_reaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/methods/delete_all_message_reactions.html">delete_all_message_reactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/add_contact.html">add_contact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/delete_contacts.html">delete_contacts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/import_contacts.html">import_contacts</a></li>
@@ -558,6 +563,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/ChatHasProtectedContentDisableRequested.html">ChatHasProtectedContentDisableRequested</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/ManagedBotCreated.html">ManagedBotCreated</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/ManagedBotUpdated.html">ManagedBotUpdated</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/types/SentGuestMessage.html">SentGuestMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/types/BotAccessSettings.html">BotAccessSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/Birthdate.html">Birthdate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/User.html">User</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/Chat.html">Chat</a></li>
@@ -901,8 +908,8 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../functions/index.html">Raw Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Raw Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Raw Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../types/index.html">Raw Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../base/index.html">Raw Base</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">External Links</span></p>
@@ -979,40 +986,30 @@
         </div>
         <div class="article">
             <article role="main" id="furo-main-content" class="article__content">
-            <section id="channels-personalchannels">
-<h1>channels.PersonalChannels<a class="headerlink" href="#channels-personalchannels" title="Link to this heading">#</a></h1>
+            <section id="messages-getpersonalchannelhistory">
+<h1>messages.GetPersonalChannelHistory<a class="headerlink" href="#messages-getpersonalchannelhistory" title="Link to this heading">#</a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="pyrogram.raw.types.channels.PersonalChannels">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.channels.</span></span><span class="sig-name descname"><span class="pre">PersonalChannels</span></span><a class="headerlink" href="#pyrogram.raw.types.channels.PersonalChannels" title="Link to this definition">#</a></dt>
-<dd><p>Telegram API type.</p>
-<p>Constructor of <a class="reference internal" href="../../base/channels/personal-channels.html#pyrogram.raw.base.channels.PersonalChannels" title="pyrogram.raw.base.channels.PersonalChannels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PersonalChannels</span></code></a>.</p>
-<dl class="simple">
+<dt class="sig sig-object py" id="pyrogram.raw.functions.messages.GetPersonalChannelHistory">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.functions.messages.</span></span><span class="sig-name descname"><span class="pre">GetPersonalChannelHistory</span></span><a class="headerlink" href="#pyrogram.raw.functions.messages.GetPersonalChannelHistory" title="Link to this definition">#</a></dt>
+<dd><dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
 <li><p>Layer: <code class="docutils literal notranslate"><span class="pre">225</span></code></p></li>
-<li><p>ID: <code class="docutils literal notranslate"><span class="pre">D69AE84D</span></code></p></li>
+<li><p>ID: <code class="docutils literal notranslate"><span class="pre">55FB0996</span></code></p></li>
 </ul>
 </dd>
 </dl>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>channels</strong> (List of <a class="reference internal" href="../../base/personal-channel.html#pyrogram.raw.base.PersonalChannel" title="pyrogram.raw.base.PersonalChannel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PersonalChannel</span></code></a>) – N/A</p></li>
-<li><p><strong>chats</strong> (List of <a class="reference internal" href="../../base/chat.html#pyrogram.raw.base.Chat" title="pyrogram.raw.base.Chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>) – N/A</p></li>
-<li><p><strong>users</strong> (List of <a class="reference internal" href="../../base/user.html#pyrogram.raw.base.User" title="pyrogram.raw.base.User"><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>) – N/A</p></li>
+<li><p><strong>user_id</strong> (<a class="reference internal" href="../../base/input-user.html#pyrogram.raw.base.InputUser" title="pyrogram.raw.base.InputUser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputUser</span></code></a>)</p></li>
+<li><p><strong>limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Maximum number of results to return, <a class="reference external" href="https://core.telegram.org/api/offsets">see pagination</a></p></li>
+<li><p><strong>max_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>)</p></li>
+<li><p><strong>min_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>)</p></li>
+<li><p><strong>hash</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>)</p></li>
 </ul>
 </dd>
-</dl>
-<dl>
-<dt>Functions:</dt><dd><p>This object can be returned by 1 function.</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="../../functions/channels/get-contact-personal-channels.html#pyrogram.raw.functions.channels.GetContactPersonalChannels" title="pyrogram.raw.functions.channels.GetContactPersonalChannels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.GetContactPersonalChannels</span></code></a></p></td>
-<td><p>Telegram API function.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="../../base/messages/messages.html#pyrogram.raw.base.messages.Messages" title="pyrogram.raw.base.messages.Messages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.Messages</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -1025,23 +1022,23 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="send-as-peers.html">
+          <a class="next-page" href="get-pinned-dialogs.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">channels.SendAsPeers</div>
+                <div class="title">messages.GetPinnedDialogs</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="found.html">
+          <a class="prev-page" href="get-peer-settings.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">channels.Found</div>
+                <div class="title">messages.GetPeerSettings</div>
                 
               </div>
             </a>
@@ -1055,7 +1052,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/40056f4" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               
@@ -1077,8 +1074,8 @@
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">channels.PersonalChannels</a><ul>
-<li><a class="reference internal" href="#pyrogram.raw.types.channels.PersonalChannels"><code class="docutils literal notranslate"><span class="pre">PersonalChannels</span></code></a></li>
+<li><a class="reference internal" href="#">messages.GetPersonalChannelHistory</a><ul>
+<li><a class="reference internal" href="#pyrogram.raw.functions.messages.GetPersonalChannelHistory"><code class="docutils literal notranslate"><span class="pre">GetPersonalChannelHistory</span></code></a></li>
 </ul>
 </li>
 </ul>

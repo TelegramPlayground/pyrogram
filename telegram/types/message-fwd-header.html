@@ -16,7 +16,7 @@
         <link rel="canonical" href="/pyrogram/telegram/types/message-fwd-header.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>MessageFwdHeader - PyroTGFork 2.2.23 Layer 225</title>
+        <title>MessageFwdHeader - PyroTGFork 2.2.24 Layer 225</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.23 Layer 225</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 225</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.23 Layer 225</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 225</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -326,6 +326,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat.html">get_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_administrators.html">get_chat_administrators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_member.html">get_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
@@ -403,6 +404,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_personal_chat.html">set_personal_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_account.html">delete_account</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/update_status.html">update_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages.html">get_user_personal_chat_messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages_count.html">get_user_personal_chat_messages_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_message_reaction.html">delete_message_reaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_all_message_reactions.html">delete_all_message_reactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/add_contact.html">add_contact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_contacts.html">delete_contacts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/import_contacts.html">import_contacts</a></li>
@@ -558,6 +563,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ChatHasProtectedContentDisableRequested.html">ChatHasProtectedContentDisableRequested</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotCreated.html">ManagedBotCreated</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotUpdated.html">ManagedBotUpdated</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/SentGuestMessage.html">SentGuestMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/BotAccessSettings.html">BotAccessSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Birthdate.html">Birthdate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/User.html">User</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Chat.html">Chat</a></li>
@@ -984,7 +991,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.types.MessageFwdHeader">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">MessageFwdHeader</span></span><a class="headerlink" href="#pyrogram.raw.types.MessageFwdHeader" title="Link to this definition">#</a></dt>
-<dd><p>Telegram API type.</p>
+<dd><p>Info about a forwarded message</p>
 <p>Constructor of <a class="reference internal" href="../base/message-fwd-header.html#pyrogram.raw.base.MessageFwdHeader" title="pyrogram.raw.base.MessageFwdHeader"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageFwdHeader</span></code></a>.</p>
 <dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
@@ -996,19 +1003,19 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – N/A</p></li>
-<li><p><strong>imported</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>saved_out</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>from_id</strong> (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>from_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>channel_post</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>post_author</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>saved_from_peer</strong> (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>saved_from_msg_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>saved_from_id</strong> (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>saved_from_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>saved_date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>psa_type</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – N/A</p></li>
+<li><p><strong>date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – When was the message originally sent</p></li>
+<li><p><strong>imported</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this message was <a class="reference external" href="https://core.telegram.org/api/import">imported from a foreign chat service, click here for more info »</a></p></li>
+<li><p><strong>saved_out</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Only for messages forwarded to <a class="reference external" href="https://core.telegram.org/api/saved-messages">saved messages »</a>, set if the original message was outgoing (though the message may have been originally outgoing even if this flag is not set, if from_id points to the current user).</p></li>
+<li><p><strong>from_id</strong> (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>, <em>optional</em>) – The ID of the user that originally sent the message</p></li>
+<li><p><strong>from_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The name of the user that originally sent the message</p></li>
+<li><p><strong>channel_post</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – ID of the channel message that was forwarded</p></li>
+<li><p><strong>post_author</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – For channels and if signatures are enabled, author of the channel message</p></li>
+<li><p><strong>saved_from_peer</strong> (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>, <em>optional</em>) – Only for messages forwarded to <a class="reference external" href="https://core.telegram.org/api/saved-messages">saved messages »</a>, contains the dialog where the message was originally sent.</p></li>
+<li><p><strong>saved_from_msg_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Only for messages forwarded to <a class="reference external" href="https://core.telegram.org/api/saved-messages">saved messages »</a>, contains the original ID of the message in saved_from_peer.</p></li>
+<li><p><strong>saved_from_id</strong> (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>, <em>optional</em>) – Only for forwarded messages reforwarded to <a class="reference external" href="https://core.telegram.org/api/saved-messages">saved messages »</a>, contains the sender of the original message (i.e. if user A sends a message, then user B forwards it somewhere, then user C saves it to saved messages, this field will contain the ID of user B and from_id will contain the ID of user A).</p></li>
+<li><p><strong>saved_from_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Only for forwarded messages from users with forward privacy enabled, sent by users with forward privacy enabled, reforwarded to <a class="reference external" href="https://core.telegram.org/api/saved-messages">saved messages »</a>, contains the sender of the original message (i.e. if user A (fwd privacy enabled) sends a message, then user B (fwd privacy enabled) forwards it somewhere, then user C saves it to saved messages, this field will contain the name of user B and from_name will contain the name of user A).</p></li>
+<li><p><strong>saved_date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Only for forwarded messages reforwarded to <a class="reference external" href="https://core.telegram.org/api/saved-messages">saved messages »</a>, indicates when was the original message sent (i.e. if user A sends a message &#64; unixtime 1, then user B forwards it somewhere &#64; unixtime 2, then user C saves it to saved messages &#64; unixtime 3, this field will contain 2, date will contain 1 and the date of the containing <a class="reference external" href="https://core.telegram.org/constructor/message">message</a> will contain 3).</p></li>
+<li><p><strong>psa_type</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – PSA type</p></li>
 </ul>
 </dd>
 </dl>
@@ -1052,7 +1059,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/40056f4" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

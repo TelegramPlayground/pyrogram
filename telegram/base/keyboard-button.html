@@ -16,7 +16,7 @@
         <link rel="canonical" href="/pyrogram/telegram/base/keyboard-button.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>KeyboardButton - PyroTGFork 2.2.23 Layer 225</title>
+        <title>KeyboardButton - PyroTGFork 2.2.24 Layer 225</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.23 Layer 225</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 225</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.23 Layer 225</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 225</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -326,6 +326,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat.html">get_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_administrators.html">get_chat_administrators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_member.html">get_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
@@ -403,6 +404,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_personal_chat.html">set_personal_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_account.html">delete_account</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/update_status.html">update_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages.html">get_user_personal_chat_messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages_count.html">get_user_personal_chat_messages_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_message_reaction.html">delete_message_reaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_all_message_reactions.html">delete_all_message_reactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/add_contact.html">add_contact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_contacts.html">delete_contacts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/import_contacts.html">import_contacts</a></li>
@@ -558,6 +563,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ChatHasProtectedContentDisableRequested.html">ChatHasProtectedContentDisableRequested</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotCreated.html">ManagedBotCreated</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotUpdated.html">ManagedBotUpdated</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/SentGuestMessage.html">SentGuestMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/BotAccessSettings.html">BotAccessSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Birthdate.html">Birthdate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/User.html">User</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Chat.html">Chat</a></li>
@@ -984,65 +991,65 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.base.KeyboardButton">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.base.</span></span><span class="sig-name descname"><span class="pre">KeyboardButton</span></span><a class="headerlink" href="#pyrogram.raw.base.KeyboardButton" title="Link to this definition">#</a></dt>
-<dd><p>Telegram API base type.</p>
+<dd><p>Bot or inline keyboard buttons</p>
 <dl>
 <dt>Constructors:</dt><dd><p>This base type has 18 constructors available.</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/input-keyboard-button-request-peer.html#pyrogram.raw.types.InputKeyboardButtonRequestPeer" title="pyrogram.raw.types.InputKeyboardButtonRequestPeer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputKeyboardButtonRequestPeer</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Prompts the user to select and share one or more peers with the bot using <a class="reference external" href="https://core.telegram.org/method/messages.sendBotRequestedPeer">messages.sendBotRequestedPeer</a>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/input-keyboard-button-url-auth.html#pyrogram.raw.types.InputKeyboardButtonUrlAuth" title="pyrogram.raw.types.InputKeyboardButtonUrlAuth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputKeyboardButtonUrlAuth</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Button to request a user to <a class="reference external" href="https://core.telegram.org/method/messages.acceptUrlAuth">authorize</a> via URL using <a class="reference external" href="https://telegram.org/blog/privacy-discussions-web-bots#meet-seamless-web-bots">Seamless Telegram Login</a>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/input-keyboard-button-user-profile.html#pyrogram.raw.types.InputKeyboardButtonUserProfile" title="pyrogram.raw.types.InputKeyboardButtonUserProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputKeyboardButtonUserProfile</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Button that links directly to a user profile</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/keyboard-button.html#pyrogram.raw.types.KeyboardButton" title="pyrogram.raw.types.KeyboardButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButton</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Bot keyboard button</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/keyboard-button-buy.html#pyrogram.raw.types.KeyboardButtonBuy" title="pyrogram.raw.types.KeyboardButtonBuy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonBuy</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Button to buy a product</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/keyboard-button-callback.html#pyrogram.raw.types.KeyboardButtonCallback" title="pyrogram.raw.types.KeyboardButtonCallback"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonCallback</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Callback button</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/keyboard-button-copy.html#pyrogram.raw.types.KeyboardButtonCopy" title="pyrogram.raw.types.KeyboardButtonCopy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonCopy</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Clipboard button: when clicked, the attached text must be copied to the clipboard.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/keyboard-button-game.html#pyrogram.raw.types.KeyboardButtonGame" title="pyrogram.raw.types.KeyboardButtonGame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonGame</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Button to start a game</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/keyboard-button-request-geo-location.html#pyrogram.raw.types.KeyboardButtonRequestGeoLocation" title="pyrogram.raw.types.KeyboardButtonRequestGeoLocation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonRequestGeoLocation</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Button to request a user's geolocation</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/keyboard-button-request-peer.html#pyrogram.raw.types.KeyboardButtonRequestPeer" title="pyrogram.raw.types.KeyboardButtonRequestPeer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonRequestPeer</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Prompts the user to select and share one or more peers with the bot using <a class="reference external" href="https://core.telegram.org/method/messages.sendBotRequestedPeer">messages.sendBotRequestedPeer</a></p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/keyboard-button-request-phone.html#pyrogram.raw.types.KeyboardButtonRequestPhone" title="pyrogram.raw.types.KeyboardButtonRequestPhone"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonRequestPhone</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Button to request a user's phone number</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/keyboard-button-request-poll.html#pyrogram.raw.types.KeyboardButtonRequestPoll" title="pyrogram.raw.types.KeyboardButtonRequestPoll"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonRequestPoll</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A button that allows the user to create and send a poll when pressed; available only in private</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/keyboard-button-simple-web-view.html#pyrogram.raw.types.KeyboardButtonSimpleWebView" title="pyrogram.raw.types.KeyboardButtonSimpleWebView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonSimpleWebView</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Button to open a <a class="reference external" href="https://core.telegram.org/api/bots/webapps">bot mini app</a> using <a class="reference external" href="https://core.telegram.org/method/messages.requestSimpleWebView">messages.requestSimpleWebView</a>, without sending user information to the web app.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/keyboard-button-switch-inline.html#pyrogram.raw.types.KeyboardButtonSwitchInline" title="pyrogram.raw.types.KeyboardButtonSwitchInline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonSwitchInline</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Button to force a user to switch to inline mode: pressing the button will prompt the user to select one of their chats, open that chat and insert the bot's username and the specified inline query in the input field.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/keyboard-button-url.html#pyrogram.raw.types.KeyboardButtonUrl" title="pyrogram.raw.types.KeyboardButtonUrl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonUrl</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>URL button</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/keyboard-button-url-auth.html#pyrogram.raw.types.KeyboardButtonUrlAuth" title="pyrogram.raw.types.KeyboardButtonUrlAuth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonUrlAuth</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Button to request a user to authorize via URL using <a class="reference external" href="https://telegram.org/blog/privacy-discussions-web-bots#meet-seamless-web-bots">Seamless Telegram Login</a>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/keyboard-button-user-profile.html#pyrogram.raw.types.KeyboardButtonUserProfile" title="pyrogram.raw.types.KeyboardButtonUserProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonUserProfile</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Button that links directly to a user profile</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/keyboard-button-web-view.html#pyrogram.raw.types.KeyboardButtonWebView" title="pyrogram.raw.types.KeyboardButtonWebView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonWebView</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Button to open a <a class="reference external" href="https://core.telegram.org/api/bots/webapps">bot mini app</a> using <a class="reference external" href="https://core.telegram.org/method/messages.requestWebView">messages.requestWebView</a>, sending over user information after user confirmation.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1053,7 +1060,7 @@
 <table class="autosummary longtable docutils align-default">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="../functions/bots/get-requested-web-view-button.html#pyrogram.raw.functions.bots.GetRequestedWebViewButton" title="pyrogram.raw.functions.bots.GetRequestedWebViewButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bots.GetRequestedWebViewButton</span></code></a></p></td>
-<td><p>Telegram API function.</p></td>
+<td><p>Details:</p></td>
 </tr>
 </tbody>
 </table>
@@ -1100,7 +1107,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/40056f4" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

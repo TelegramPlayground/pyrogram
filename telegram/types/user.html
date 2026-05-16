@@ -16,7 +16,7 @@
         <link rel="canonical" href="/pyrogram/telegram/types/user.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>User - PyroTGFork 2.2.23 Layer 225</title>
+        <title>User - PyroTGFork 2.2.24 Layer 225</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.23 Layer 225</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 225</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.23 Layer 225</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 225</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -326,6 +326,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat.html">get_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_administrators.html">get_chat_administrators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_member.html">get_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
@@ -403,6 +404,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_personal_chat.html">set_personal_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_account.html">delete_account</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/update_status.html">update_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages.html">get_user_personal_chat_messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages_count.html">get_user_personal_chat_messages_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_message_reaction.html">delete_message_reaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_all_message_reactions.html">delete_all_message_reactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/add_contact.html">add_contact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_contacts.html">delete_contacts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/import_contacts.html">import_contacts</a></li>
@@ -558,6 +563,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ChatHasProtectedContentDisableRequested.html">ChatHasProtectedContentDisableRequested</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotCreated.html">ManagedBotCreated</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotUpdated.html">ManagedBotUpdated</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/SentGuestMessage.html">SentGuestMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/BotAccessSettings.html">BotAccessSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Birthdate.html">Birthdate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/User.html">User</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Chat.html">Chat</a></li>
@@ -984,7 +991,9 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.types.User">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">User</span></span><a class="headerlink" href="#pyrogram.raw.types.User" title="Link to this definition">#</a></dt>
-<dd><p>Telegram API type.</p>
+<dd><p>Indicates info about a certain user.
+Unless specified otherwise, when updating the <a class="reference external" href="https://core.telegram.org/api/peers">local peer database</a>, all fields from the newly received constructor take priority over the old constructor cached locally (including by removing fields that aren’t set in the new constructor).
+See <a class="reference external" href="https://github.com/tdlib/td/blob/cb164927417f22811c74cd8678ed4a5ab7cb80ba/td/telegram/UserManager.cpp#L2267">here</a> for an implementation of the logic to use when updating the <a class="reference external" href="https://core.telegram.org/api/peers">local user peer database</a>.</p>
 <p>Constructor of <a class="reference internal" href="../base/user.html#pyrogram.raw.base.User" title="pyrogram.raw.base.User"><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>.</p>
 <dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
@@ -996,55 +1005,55 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>) – N/A</p></li>
+<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>) – ID of the user, see <a class="reference external" href="https://core.telegram.org/api/peers#peer-id">here »</a> for more info and the available ID range.</p></li>
 <li><p><strong>is_self</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>contact</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>mutual_contact</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>deleted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>bot</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>bot_chat_history</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>bot_nochats</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>verified</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>restricted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>min</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>bot_inline_geo</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>support</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>scam</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>apply_min_photo</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>fake</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>bot_attach_menu</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>premium</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>attach_menu_enabled</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>bot_can_edit</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>close_friend</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>stories_hidden</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>stories_unavailable</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>contact_require_premium</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>bot_business</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>bot_has_main_app</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>bot_forum_view</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>bot_forum_can_manage_topics</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>bot_can_manage_bots</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>bot_guestchat</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>access_hash</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>first_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>last_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>username</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>phone</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>photo</strong> (<a class="reference internal" href="../base/user-profile-photo.html#pyrogram.raw.base.UserProfilePhoto" title="pyrogram.raw.base.UserProfilePhoto"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UserProfilePhoto</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>status</strong> (<a class="reference internal" href="../base/user-status.html#pyrogram.raw.base.UserStatus" title="pyrogram.raw.base.UserStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UserStatus</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>bot_info_version</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>restriction_reason</strong> (List of <a class="reference internal" href="../base/restriction-reason.html#pyrogram.raw.base.RestrictionReason" title="pyrogram.raw.base.RestrictionReason"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RestrictionReason</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>bot_inline_placeholder</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>lang_code</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>emoji_status</strong> (<a class="reference internal" href="../base/emoji-status.html#pyrogram.raw.base.EmojiStatus" title="pyrogram.raw.base.EmojiStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EmojiStatus</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>usernames</strong> (List of <a class="reference internal" href="../base/username.html#pyrogram.raw.base.Username" title="pyrogram.raw.base.Username"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Username</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>stories_max_id</strong> (<a class="reference internal" href="../base/recent-story.html#pyrogram.raw.base.RecentStory" title="pyrogram.raw.base.RecentStory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RecentStory</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>color</strong> (<a class="reference internal" href="../base/peer-color.html#pyrogram.raw.base.PeerColor" title="pyrogram.raw.base.PeerColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColor</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>profile_color</strong> (<a class="reference internal" href="../base/peer-color.html#pyrogram.raw.base.PeerColor" title="pyrogram.raw.base.PeerColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColor</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>bot_active_users</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>bot_verification_icon</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>send_paid_messages_stars</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – N/A</p></li>
+<li><p><strong>contact</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this user is a contact When updating the <a class="reference external" href="https://core.telegram.org/api/peers">local peer database</a>, do not apply changes to this field if the min flag is set.</p></li>
+<li><p><strong>mutual_contact</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this user is a mutual contact. When updating the <a class="reference external" href="https://core.telegram.org/api/peers">local peer database</a>, do not apply changes to this field if the min flag is set.</p></li>
+<li><p><strong>deleted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the account of this user was deleted. Changes to this flag should invalidate the local <a class="reference external" href="https://core.telegram.org/constructor/userFull">userFull</a> cache for this user ID, see <a class="reference external" href="https://core.telegram.org/api/peers#full-info-database">here »</a> for more info.</p></li>
+<li><p><strong>bot</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Is this user a bot? Changes to this flag should invalidate the local <a class="reference external" href="https://core.telegram.org/constructor/userFull">userFull</a> cache for this user ID, see <a class="reference external" href="https://core.telegram.org/api/peers#full-info-database">here »</a> for more info.</p></li>
+<li><p><strong>bot_chat_history</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Can the bot see all messages in groups?</p></li>
+<li><p><strong>bot_nochats</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Can the bot be added to groups?</p></li>
+<li><p><strong>verified</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this user is verified</p></li>
+<li><p><strong>restricted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Access to this user must be restricted for the reason specified in restriction_reason</p></li>
+<li><p><strong>min</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – See <a class="reference external" href="https://core.telegram.org/api/min">min</a></p></li>
+<li><p><strong>bot_inline_geo</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the bot can request our geolocation in inline mode</p></li>
+<li><p><strong>support</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this is an official support user</p></li>
+<li><p><strong>scam</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – This may be a scam user</p></li>
+<li><p><strong>apply_min_photo</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set and min is set, the value of photo can be used to update the local database, see the documentation of that flag for more info.</p></li>
+<li><p><strong>fake</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, this user was reported by many users as a fake or scam user: be careful when interacting with them.</p></li>
+<li><p><strong>bot_attach_menu</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this bot offers an <a class="reference external" href="https://core.telegram.org/api/bots/attach">attachment menu web app</a></p></li>
+<li><p><strong>premium</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this user is a Telegram Premium user Changes to this flag should invalidate the local <a class="reference external" href="https://core.telegram.org/constructor/userFull">userFull</a> cache for this user ID, see <a class="reference external" href="https://core.telegram.org/api/peers#full-info-database">here »</a> for more info. Changes to this flag if the self flag is set should also trigger the following calls, to refresh the respective caches: - The <a class="reference external" href="https://core.telegram.org/method/help.getConfig">help.getConfig</a> cache - The <a class="reference external" href="https://core.telegram.org/method/messages.getTopReactions">messages.getTopReactions</a> cache if the bot flag is not set</p></li>
+<li><p><strong>attach_menu_enabled</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether we installed the <a class="reference external" href="https://core.telegram.org/api/bots/attach">attachment menu web app</a> offered by this bot. When updating the <a class="reference external" href="https://core.telegram.org/api/peers">local peer database</a>, do not apply changes to this field if the min flag is set.</p></li>
+<li><p><strong>bot_can_edit</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether we can edit the profile picture, name, about text and description of this bot because we own it. When updating the <a class="reference external" href="https://core.telegram.org/api/peers">local peer database</a>, do not apply changes to this field if the min flag is set. Changes to this flag (if min is not set) should invalidate the local <a class="reference external" href="https://core.telegram.org/constructor/userFull">userFull</a> cache for this user ID.</p></li>
+<li><p><strong>close_friend</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether we marked this user as a <a class="reference external" href="https://core.telegram.org/api/privacy">close friend, see here » for more info</a>. When updating the <a class="reference external" href="https://core.telegram.org/api/peers">local peer database</a>, do not apply changes to this field if the min flag is set.</p></li>
+<li><p><strong>stories_hidden</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether we have <a class="reference external" href="https://core.telegram.org/api/stories#hiding-stories-of-other-users">hidden »</a> all active stories of this user. When updating the <a class="reference external" href="https://core.telegram.org/api/peers">local peer database</a>, do not apply changes to this field if the min flag is set.</p></li>
+<li><p><strong>stories_unavailable</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – No stories from this user are visible.</p></li>
+<li><p><strong>contact_require_premium</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – See <a class="reference external" href="https://core.telegram.org/api/privacy#require-premium-for-new-non-contact-users">here for more info on this flag »</a>.</p></li>
+<li><p><strong>bot_business</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this bot can be <a class="reference external" href="https://core.telegram.org/api/bots/connected-business-bots">connected to a user as specified here »</a>.</p></li>
+<li><p><strong>bot_has_main_app</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, this bot has configured a <a class="reference external" href="https://core.telegram.org/api/bots/webapps#main-mini-apps">Main Mini App »</a>.</p></li>
+<li><p><strong>bot_forum_view</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, this bot supports <a class="reference external" href="https://core.telegram.org/api/forum#bot-forums">bot forum topics »</a>.</p></li>
+<li><p><strong>bot_forum_can_manage_topics</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, this bot supports <a class="reference external" href="https://core.telegram.org/api/forum#bot-forums">bot forum topics »</a>, and users (not just the bot!) are allowed to create and manage bot forum topics in their private chat with the bot.</p></li>
+<li><p><strong>bot_can_manage_bots</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>)</p></li>
+<li><p><strong>bot_guestchat</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>)</p></li>
+<li><p><strong>access_hash</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – Access hash of the user, see <a class="reference external" href="https://core.telegram.org/api/peers#access-hash">here »</a> for more info. If this flag is set, when updating the <a class="reference external" href="https://core.telegram.org/api/peers">local peer database</a>, generate a virtual flag called min_access_hash, which is: - Set to true if min is set AND – The phone flag is not set OR – The phone flag is set and the associated phone number string is non-empty - Set to false otherwise. Then, apply both access_hash and min_access_hash to the local database if: - min_access_hash is false OR - min_access_hash is true AND – There is no locally cached object for this user OR – There is no access_hash in the local cache OR – The cached object’s min_access_hash is also true If the final merged object stored to the database has the min_access_hash field set to true, the related access_hash is only suitable to use in <a class="reference external" href="https://core.telegram.org/constructor/inputPeerPhotoFileLocation">inputPeerPhotoFileLocation »</a>, to directly <a class="reference external" href="https://core.telegram.org/api/files">download the profile pictures</a> of users, everywhere else a inputPeer*FromMessage constructor will have to be generated as specified <a class="reference external" href="https://core.telegram.org/api/min">here »</a>. Bots can also use min access hashes in some conditions, by passing 0 instead of the min access hash.</p></li>
+<li><p><strong>first_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – First name. When updating the <a class="reference external" href="https://core.telegram.org/api/peers">local peer database</a>, apply changes to this field only if: - The min flag is not set OR - The min flag is set AND – The min flag of the locally cached user entry is set.</p></li>
+<li><p><strong>last_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Last name. When updating the <a class="reference external" href="https://core.telegram.org/api/peers">local peer database</a>, apply changes to this field only if: - The min flag is not set OR - The min flag is set AND – The min flag of the locally cached user entry is set.</p></li>
+<li><p><strong>username</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Main active username. When updating the <a class="reference external" href="https://core.telegram.org/api/peers">local peer database</a>, apply changes to this field only if: - The min flag is not set OR - The min flag is set AND – The min flag of the locally cached user entry is set. Changes to this flag should invalidate the local <a class="reference external" href="https://core.telegram.org/constructor/userFull">userFull</a> cache for this user ID if the above conditions are respected and the bot_can_edit flag is also set.</p></li>
+<li><p><strong>phone</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Phone number. When updating the <a class="reference external" href="https://core.telegram.org/api/peers">local peer database</a>, apply changes to this field only if: - The min flag is not set OR - The min flag is set AND – The min flag of the locally cached user entry is set.</p></li>
+<li><p><strong>photo</strong> (<a class="reference internal" href="../base/user-profile-photo.html#pyrogram.raw.base.UserProfilePhoto" title="pyrogram.raw.base.UserProfilePhoto"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UserProfilePhoto</span></code></a>, <em>optional</em>) – Profile picture of user. When updating the <a class="reference external" href="https://core.telegram.org/api/peers">local peer database</a>, apply changes to this field only if: - The min flag is not set OR - The min flag is set AND – The apply_min_photo flag is set OR – The min flag of the locally cached user entry is set.</p></li>
+<li><p><strong>status</strong> (<a class="reference internal" href="../base/user-status.html#pyrogram.raw.base.UserStatus" title="pyrogram.raw.base.UserStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UserStatus</span></code></a>, <em>optional</em>) – Online status of user. When updating the <a class="reference external" href="https://core.telegram.org/api/peers">local peer database</a>, apply changes to this field only if: - The min flag is not set OR - The min flag is set AND – The min flag of the locally cached user entry is set OR – The locally cached user entry is equal to <a class="reference external" href="https://core.telegram.org/constructor/userStatusEmpty">userStatusEmpty</a>.</p></li>
+<li><p><strong>bot_info_version</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Version of the <a class="reference external" href="https://core.telegram.org/constructor/userFull">bot_info field in userFull</a>, incremented every time it changes. Changes to this flag should invalidate the local <a class="reference external" href="https://core.telegram.org/constructor/userFull">userFull</a> cache for this user ID, see <a class="reference external" href="https://core.telegram.org/api/peers#full-info-database">here »</a> for more info.</p></li>
+<li><p><strong>restriction_reason</strong> (List of <a class="reference internal" href="../base/restriction-reason.html#pyrogram.raw.base.RestrictionReason" title="pyrogram.raw.base.RestrictionReason"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RestrictionReason</span></code></a>, <em>optional</em>) – Contains the reason why access to this user must be restricted.</p></li>
+<li><p><strong>bot_inline_placeholder</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Inline placeholder for this inline bot</p></li>
+<li><p><strong>lang_code</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Language code of the user</p></li>
+<li><p><strong>emoji_status</strong> (<a class="reference internal" href="../base/emoji-status.html#pyrogram.raw.base.EmojiStatus" title="pyrogram.raw.base.EmojiStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EmojiStatus</span></code></a>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/api/emoji-status">Emoji status</a></p></li>
+<li><p><strong>usernames</strong> (List of <a class="reference internal" href="../base/username.html#pyrogram.raw.base.Username" title="pyrogram.raw.base.Username"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Username</span></code></a>, <em>optional</em>) – Additional usernames. When updating the <a class="reference external" href="https://core.telegram.org/api/peers">local peer database</a>, apply changes to this field only if: - The min flag is not set OR - The min flag is set AND – The min flag of the locally cached user entry is set. Changes to this flag (if the above conditions are respected) should invalidate the local <a class="reference external" href="https://core.telegram.org/constructor/userFull">userFull</a> cache for this user ID.</p></li>
+<li><p><strong>stories_max_id</strong> (<a class="reference internal" href="../base/recent-story.html#pyrogram.raw.base.RecentStory" title="pyrogram.raw.base.RecentStory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RecentStory</span></code></a>, <em>optional</em>) – ID of the maximum read <a class="reference external" href="https://core.telegram.org/api/stories">story</a>.  When updating the <a class="reference external" href="https://core.telegram.org/api/peers">local peer database</a>, do not apply changes to this field if the min flag of the incoming constructor is set.</p></li>
+<li><p><strong>color</strong> (<a class="reference internal" href="../base/peer-color.html#pyrogram.raw.base.PeerColor" title="pyrogram.raw.base.PeerColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColor</span></code></a>, <em>optional</em>) – The user’s <a class="reference external" href="https://core.telegram.org/api/colors">accent color</a>.</p></li>
+<li><p><strong>profile_color</strong> (<a class="reference internal" href="../base/peer-color.html#pyrogram.raw.base.PeerColor" title="pyrogram.raw.base.PeerColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColor</span></code></a>, <em>optional</em>) – The user’s <a class="reference external" href="https://core.telegram.org/api/colors">profile color</a>.</p></li>
+<li><p><strong>bot_active_users</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Monthly Active Users (MAU) of this bot (may be absent for small bots).</p></li>
+<li><p><strong>bot_verification_icon</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – Describes a <a class="reference external" href="https://core.telegram.org/api/bots/verification">bot verification icon »</a>.</p></li>
+<li><p><strong>send_paid_messages_stars</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – If set, the user has enabled <a class="reference external" href="https://core.telegram.org/api/paid-messages">paid messages »</a>, we might need to pay the specified amount of <a class="reference external" href="https://core.telegram.org/api/stars">Stars</a> to send them messages, depending on the configured exceptions: check <a class="reference external" href="https://core.telegram.org/constructor/userFull">userFull</a>.send_paid_messages_stars or <a class="reference external" href="https://core.telegram.org/method/users.getRequirementsToContact">users.getRequirementsToContact</a> to see if the currently logged in user actually has to pay or not, see <a class="reference external" href="https://core.telegram.org/api/paid-messages">here »</a> for the full flow.</p></li>
 </ul>
 </dd>
 </dl>
@@ -1069,7 +1078,7 @@
 <td><p>Obtain user info from a <a class="reference external" href="https://core.telegram.org/api/links#temporary-profile-links">temporary profile link</a>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/get-future-chat-creator-after-leave.html#pyrogram.raw.functions.messages.GetFutureChatCreatorAfterLeave" title="pyrogram.raw.functions.messages.GetFutureChatCreatorAfterLeave"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.GetFutureChatCreatorAfterLeave</span></code></a></p></td>
-<td><p>Details:</p></td>
+<td><p>Group/channel owners only: returns the ID of the user that will become the new owner of the group if we decide to leave the group, see <a class="reference external" href="https://core.telegram.org/api/channel#leaving-groups-channels">here</a> for more info on the full flow.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/get-message-author.html#pyrogram.raw.functions.channels.GetMessageAuthor" title="pyrogram.raw.functions.channels.GetMessageAuthor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.GetMessageAuthor</span></code></a></p></td>
 <td><p>Can only be invoked by non-bot admins of a <a class="reference external" href="https://core.telegram.org/api/monoforum">monoforum</a>, obtains the original sender of a message sent by other monoforum admins to the monoforum, on behalf of the channel associated to the monoforum.</p></td>
@@ -1078,7 +1087,7 @@
 <td><p>Get a list of bots owned by the current user</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../functions/bots/create-bot.html#pyrogram.raw.functions.bots.CreateBot" title="pyrogram.raw.functions.bots.CreateBot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bots.CreateBot</span></code></a></p></td>
-<td><p>Telegram API function.</p></td>
+<td><p>Details:</p></td>
 </tr>
 </tbody>
 </table>
@@ -1125,7 +1134,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/40056f4" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

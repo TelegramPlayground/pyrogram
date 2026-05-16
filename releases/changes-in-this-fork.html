@@ -16,7 +16,7 @@
         <link rel="canonical" href="/pyrogram/releases/changes-in-this-fork.html" />
 
     <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Changes in this Fork - PyroTGFork 2.2.23 Layer 225</title>
+        <title>Changes in this Fork - PyroTGFork 2.2.24 Layer 225</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../index.html"><div class="brand">PyroTGFork 2.2.23 Layer 225</div></a>
+      <a href="../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 225</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.23 Layer 225</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 225</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -326,6 +326,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/get_chat.html">get_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/methods/get_chat_administrators.html">get_chat_administrators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/get_chat_member.html">get_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
@@ -403,6 +404,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/set_personal_chat.html">set_personal_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/delete_account.html">delete_account</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/update_status.html">update_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/methods/get_user_personal_chat_messages.html">get_user_personal_chat_messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/methods/get_user_personal_chat_messages_count.html">get_user_personal_chat_messages_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/methods/delete_message_reaction.html">delete_message_reaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/methods/delete_all_message_reactions.html">delete_all_message_reactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/add_contact.html">add_contact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/delete_contacts.html">delete_contacts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/import_contacts.html">import_contacts</a></li>
@@ -558,6 +563,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../api/types/ChatHasProtectedContentDisableRequested.html">ChatHasProtectedContentDisableRequested</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/types/ManagedBotCreated.html">ManagedBotCreated</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/types/ManagedBotUpdated.html">ManagedBotUpdated</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/types/SentGuestMessage.html">SentGuestMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/types/BotAccessSettings.html">BotAccessSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/types/Birthdate.html">Birthdate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/types/User.html">User</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/types/Chat.html">Chat</a></li>
@@ -1011,8 +1018,8 @@ it can take advantage of new goodies!</p>
 </table>
 </div>
 <ul class="simple">
-<li><p>Added <code class="docutils literal notranslate"><span class="pre">is_high_quality</span></code> in <a class="reference internal" href="../api/types/InputMediaPhoto.html#pyrogram.types.InputMediaPhoto" title="pyrogram.types.InputMediaPhoto"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMediaPhoto</span></code></a> and replaced the parameter <code class="docutils literal notranslate"><span class="pre">photo</span></code> in <a class="reference internal" href="../api/methods/send_photo.html#pyrogram.Client.send_photo" title="pyrogram.Client.send_photo"><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_photo()</span></code></a> and <a class="reference internal" href="../api/bound-methods/Message.reply_photo.html#pyrogram.types.Message.reply_photo" title="pyrogram.types.Message.reply_photo"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply_photo()</span></code></a>.</p></li>
-<li><p>Added <code class="docutils literal notranslate"><span class="pre">description_media</span></code> and <code class="docutils literal notranslate"><span class="pre">explanation_media</span></code> in <a class="reference internal" href="../api/methods/send_poll.html#pyrogram.Client.send_poll" title="pyrogram.Client.send_poll"><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_poll()</span></code></a> and <a class="reference internal" href="../api/bound-methods/Message.reply_poll.html#pyrogram.types.Message.reply_poll" title="pyrogram.types.Message.reply_poll"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply_poll()</span></code></a>.</p></li>
+<li><p>Added the field <code class="docutils literal notranslate"><span class="pre">can_react_to_messages</span></code> to the <a class="reference internal" href="../api/types/ChatPermissions.html#pyrogram.types.ChatPermissions" title="pyrogram.types.ChatPermissions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPermissions</span></code></a>.</p></li>
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">is_high_quality</span></code> in <a class="reference internal" href="../api/types/InputMediaPhoto.html#pyrogram.types.InputMediaPhoto" title="pyrogram.types.InputMediaPhoto"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMediaPhoto</span></code></a> and replaced the parameter <code class="docutils literal notranslate"><span class="pre">photo</span></code> in <a class="reference internal" href="../api/methods/send_photo.html#pyrogram.Client.send_photo" title="pyrogram.Client.send_photo"><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_photo()</span></code></a> and <a class="reference internal" href="../api/bound-methods/Message.reply_photo.html#pyrogram.types.Message.reply_photo" title="pyrogram.types.Message.reply_photo"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply_photo()</span></code></a>.``</p></li>
 <li><p>fix in <a class="reference internal" href="../api/types/Venue.html#pyrogram.types.Venue" title="pyrogram.types.Venue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Venue</span></code></a>. (contributed in <a class="reference external" href="https://t.me/c/1999755950/282774">#282774</a>).</p></li>
 <li><p>fix in <a class="reference internal" href="../api/types/Dialog.html#pyrogram.types.Dialog" title="pyrogram.types.Dialog"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dialog</span></code></a>. (contributed by &#64;gurland in <a class="reference external" href="https://github.com/TelegramPlayground/PyroTGFork/pull/236">#236</a>).</p></li>
 <li><p>Migrated <a class="reference external" href="https://github.com/TelegramPlayground/pyrogram">documentation</a>, <a class="reference external" href="https://github.com/TelegramPlayground/PyroTGFork">source code</a> and <a class="reference external" href="https://github.com/TelegramPlayground/pyrogram-tgcrypto">PyTGCrypto</a> to separate repositories.</p></li>
@@ -1040,6 +1047,7 @@ it can take advantage of new goodies!</p>
 <li><p>Added the classes <a class="reference internal" href="../api/types/PollOptionAdded.html#pyrogram.types.PollOptionAdded" title="pyrogram.types.PollOptionAdded"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PollOptionAdded</span></code></a> and <a class="reference internal" href="../api/types/PollOptionDeleted.html#pyrogram.types.PollOptionDeleted" title="pyrogram.types.PollOptionDeleted"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PollOptionDeleted</span></code></a> and the fields <code class="docutils literal notranslate"><span class="pre">poll_option_added</span></code>, <code class="docutils literal notranslate"><span class="pre">poll_option_deleted</span></code> to the class <a class="reference internal" href="../api/types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>.</p></li>
 <li><p>Added the field <code class="docutils literal notranslate"><span class="pre">poll_option_id</span></code> to the class <a class="reference internal" href="../api/types/ReplyParameters.html#pyrogram.types.ReplyParameters" title="pyrogram.types.ReplyParameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyParameters</span></code></a>, allowing to reply to a specific poll option.</p></li>
 <li><p>Added the field <code class="docutils literal notranslate"><span class="pre">reply_to_poll_option_id</span></code> to the class <a class="reference internal" href="../api/types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>.</p></li>
+<li><p>Updated <a class="reference internal" href="../topics/text-formatting.html"><span class="doc">Text Formatting</span></a> documentation.</p></li>
 <li><p>View <a class="reference external" href="https://telegramplayground.github.io/TG-APIs/TL/diff/tdlib.html?from=222&amp;to=223">new and changed</a> <a class="reference external" href="https://telegramplayground.github.io/TG-APIs/TL/diff/tdesktop.html?from=222&amp;to=223">raw API methods</a>.</p></li>
 </ul>
 <div class="table-wrapper docutils container">
@@ -1816,7 +1824,7 @@ it can take advantage of new goodies!</p>
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/40056f4" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

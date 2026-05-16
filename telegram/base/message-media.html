@@ -16,7 +16,7 @@
         <link rel="canonical" href="/pyrogram/telegram/base/message-media.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>MessageMedia - PyroTGFork 2.2.23 Layer 225</title>
+        <title>MessageMedia - PyroTGFork 2.2.24 Layer 225</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.23 Layer 225</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 225</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.23 Layer 225</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 225</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -326,6 +326,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat.html">get_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_administrators.html">get_chat_administrators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_member.html">get_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
@@ -403,6 +404,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_personal_chat.html">set_personal_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_account.html">delete_account</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/update_status.html">update_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages.html">get_user_personal_chat_messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages_count.html">get_user_personal_chat_messages_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_message_reaction.html">delete_message_reaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_all_message_reactions.html">delete_all_message_reactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/add_contact.html">add_contact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_contacts.html">delete_contacts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/import_contacts.html">import_contacts</a></li>
@@ -558,6 +563,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ChatHasProtectedContentDisableRequested.html">ChatHasProtectedContentDisableRequested</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotCreated.html">ManagedBotCreated</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotUpdated.html">ManagedBotUpdated</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/SentGuestMessage.html">SentGuestMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/BotAccessSettings.html">BotAccessSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Birthdate.html">Birthdate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/User.html">User</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Chat.html">Chat</a></li>
@@ -991,61 +998,61 @@
 <table class="autosummary longtable docutils align-default">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/message-media-contact.html#pyrogram.raw.types.MessageMediaContact" title="pyrogram.raw.types.MessageMediaContact"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaContact</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Attached contact.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/message-media-dice.html#pyrogram.raw.types.MessageMediaDice" title="pyrogram.raw.types.MessageMediaDice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaDice</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p><a class="reference external" href="https://core.telegram.org/api/dice">Dice-based animated sticker</a></p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/message-media-document.html#pyrogram.raw.types.MessageMediaDocument" title="pyrogram.raw.types.MessageMediaDocument"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaDocument</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Document (video, audio, voice, sticker, any media type except photo)</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/message-media-empty.html#pyrogram.raw.types.MessageMediaEmpty" title="pyrogram.raw.types.MessageMediaEmpty"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaEmpty</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Empty constructor.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/message-media-game.html#pyrogram.raw.types.MessageMediaGame" title="pyrogram.raw.types.MessageMediaGame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaGame</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Telegram game</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/message-media-geo.html#pyrogram.raw.types.MessageMediaGeo" title="pyrogram.raw.types.MessageMediaGeo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaGeo</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Attached map.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/message-media-geo-live.html#pyrogram.raw.types.MessageMediaGeoLive" title="pyrogram.raw.types.MessageMediaGeoLive"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaGeoLive</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Indicates a <a class="reference external" href="https://core.telegram.org/api/live-location">live geolocation</a></p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/message-media-giveaway.html#pyrogram.raw.types.MessageMediaGiveaway" title="pyrogram.raw.types.MessageMediaGiveaway"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaGiveaway</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Contains info about a <a class="reference external" href="https://core.telegram.org/api/giveaways">giveaway, see here</a> for more info.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/message-media-giveaway-results.html#pyrogram.raw.types.MessageMediaGiveawayResults" title="pyrogram.raw.types.MessageMediaGiveawayResults"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaGiveawayResults</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A <a class="reference external" href="https://core.telegram.org/api/giveaways">giveaway</a> with public winners has finished, this constructor contains info about the winners.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/message-media-invoice.html#pyrogram.raw.types.MessageMediaInvoice" title="pyrogram.raw.types.MessageMediaInvoice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaInvoice</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Invoice</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/message-media-paid-media.html#pyrogram.raw.types.MessageMediaPaidMedia" title="pyrogram.raw.types.MessageMediaPaidMedia"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaPaidMedia</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p><a class="reference external" href="https://core.telegram.org/api/paid-media">Paid media, see here</a> for more info.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/message-media-photo.html#pyrogram.raw.types.MessageMediaPhoto" title="pyrogram.raw.types.MessageMediaPhoto"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaPhoto</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Attached photo.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/message-media-poll.html#pyrogram.raw.types.MessageMediaPoll" title="pyrogram.raw.types.MessageMediaPoll"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaPoll</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Poll</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/message-media-story.html#pyrogram.raw.types.MessageMediaStory" title="pyrogram.raw.types.MessageMediaStory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaStory</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Represents a forwarded <a class="reference external" href="https://core.telegram.org/api/stories">story</a> or a story mention.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/message-media-to-do.html#pyrogram.raw.types.MessageMediaToDo" title="pyrogram.raw.types.MessageMediaToDo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaToDo</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Represents a <a class="reference external" href="https://core.telegram.org/api/todo">todo list</a>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/message-media-unsupported.html#pyrogram.raw.types.MessageMediaUnsupported" title="pyrogram.raw.types.MessageMediaUnsupported"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaUnsupported</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Current version of the client does not support this media type.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/message-media-venue.html#pyrogram.raw.types.MessageMediaVenue" title="pyrogram.raw.types.MessageMediaVenue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaVenue</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Venue</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/message-media-video-stream.html#pyrogram.raw.types.MessageMediaVideoStream" title="pyrogram.raw.types.MessageMediaVideoStream"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaVideoStream</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Constructor of <a class="reference internal" href="#pyrogram.raw.base.MessageMedia" title="pyrogram.raw.base.MessageMedia"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMedia</span></code></a>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/message-media-web-page.html#pyrogram.raw.types.MessageMediaWebPage" title="pyrogram.raw.types.MessageMediaWebPage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaWebPage</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Preview of webpage</p></td>
 </tr>
 </tbody>
 </table>
@@ -1106,7 +1113,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/40056f4" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

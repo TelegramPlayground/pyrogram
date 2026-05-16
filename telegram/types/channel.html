@@ -16,7 +16,7 @@
         <link rel="canonical" href="/pyrogram/telegram/types/channel.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Channel - PyroTGFork 2.2.23 Layer 225</title>
+        <title>Channel - PyroTGFork 2.2.24 Layer 225</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.23 Layer 225</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 225</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.23 Layer 225</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 225</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -326,6 +326,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat.html">get_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_administrators.html">get_chat_administrators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_member.html">get_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
@@ -403,6 +404,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_personal_chat.html">set_personal_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_account.html">delete_account</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/update_status.html">update_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages.html">get_user_personal_chat_messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages_count.html">get_user_personal_chat_messages_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_message_reaction.html">delete_message_reaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_all_message_reactions.html">delete_all_message_reactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/add_contact.html">add_contact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_contacts.html">delete_contacts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/import_contacts.html">import_contacts</a></li>
@@ -558,6 +563,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ChatHasProtectedContentDisableRequested.html">ChatHasProtectedContentDisableRequested</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotCreated.html">ManagedBotCreated</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotUpdated.html">ManagedBotUpdated</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/SentGuestMessage.html">SentGuestMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/BotAccessSettings.html">BotAccessSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Birthdate.html">Birthdate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/User.html">User</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Chat.html">Chat</a></li>
@@ -984,7 +991,102 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.types.Channel">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">Channel</span></span><a class="headerlink" href="#pyrogram.raw.types.Channel" title="Link to this definition">#</a></dt>
-<dd><p>Telegram API type.</p>
+<dd><p>Channel/supergroup info
+When updating the <a class="reference external" href="https://core.telegram.org/api/peers">local peer database</a>, all fields from the newly received constructor take priority over the old constructor cached locally (including by removing fields that aren’t set in the new constructor).
+The only exception to the above rule is when the min flag is set, in which case only the following fields must be applied over any locally stored version:
+See <a class="reference external" href="https://github.com/tdlib/td/blob/a24af0992245f838f2b4b418a0a2d5fa9caa27b5/td/telegram/ChatManager.cpp#L8329">here</a> for an implementation of the logic to use when updating the <a class="reference external" href="https://core.telegram.org/api/peers">local user peer database</a>.</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">title</div>
+</div>
+<div class="line-block">
+<div class="line">megagroup</div>
+</div>
+<div class="line-block">
+<div class="line">color</div>
+</div>
+<div class="line-block">
+<div class="line">photo</div>
+</div>
+<div class="line-block">
+<div class="line">username</div>
+</div>
+<div class="line-block">
+<div class="line">usernames</div>
+</div>
+<div class="line-block">
+<div class="line">has_geo</div>
+</div>
+<div class="line-block">
+<div class="line">noforwards</div>
+</div>
+<div class="line-block">
+<div class="line">emoji_status</div>
+</div>
+<div class="line-block">
+<div class="line">has_link</div>
+</div>
+<div class="line-block">
+<div class="line">slow_mode_enabled</div>
+</div>
+<div class="line-block">
+<div class="line">scam</div>
+</div>
+<div class="line-block">
+<div class="line">fake</div>
+</div>
+<div class="line-block">
+<div class="line">gigagroup</div>
+</div>
+<div class="line-block">
+<div class="line">forum</div>
+</div>
+<div class="line-block">
+<div class="line">level</div>
+</div>
+<div class="line-block">
+<div class="line">restricted</div>
+</div>
+<div class="line-block">
+<div class="line">restriction_reason</div>
+</div>
+<div class="line-block">
+<div class="line">join_to_send</div>
+</div>
+<div class="line-block">
+<div class="line">join_request</div>
+</div>
+<div class="line-block">
+<div class="line">is_verified</div>
+</div>
+<div class="line-block">
+<div class="line">default_banned_rights</div>
+</div>
+<div class="line-block">
+<div class="line">signature_profiles</div>
+</div>
+<div class="line-block">
+<div class="line">autotranslation</div>
+</div>
+<div class="line-block">
+<div class="line">broadcast_messages_allowed</div>
+</div>
+<div class="line-block">
+<div class="line">monoforum</div>
+</div>
+<div class="line-block">
+<div class="line">forum_tabs</div>
+</div>
+<div class="line-block">
+<div class="line">linked_monoforum_id</div>
+</div>
+<div class="line-block">
+<div class="line">send_paid_messages_stars</div>
+</div>
+<div class="line-block">
+<div class="line">bot_verification_icon</div>
+</div>
+</div></blockquote>
 <p>Constructor of <a class="reference internal" href="../base/chat.html#pyrogram.raw.base.Chat" title="pyrogram.raw.base.Chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>.</p>
 <dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
@@ -996,55 +1098,55 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>) – N/A</p></li>
-<li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – N/A</p></li>
-<li><p><strong>photo</strong> (<a class="reference internal" href="../base/chat-photo.html#pyrogram.raw.base.ChatPhoto" title="pyrogram.raw.base.ChatPhoto"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPhoto</span></code></a>) – N/A</p></li>
-<li><p><strong>date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – N/A</p></li>
-<li><p><strong>creator</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>left</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>broadcast</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>verified</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>megagroup</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>restricted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>signatures</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>min</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>scam</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>has_link</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>has_geo</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>slowmode_enabled</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>call_active</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>call_not_empty</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>fake</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>gigagroup</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>noforwards</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>join_to_send</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>join_request</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>forum</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>stories_hidden</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>stories_hidden_min</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>stories_unavailable</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>signature_profiles</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>autotranslation</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>broadcast_messages_allowed</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>monoforum</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>forum_tabs</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>access_hash</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>username</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>restriction_reason</strong> (List of <a class="reference internal" href="../base/restriction-reason.html#pyrogram.raw.base.RestrictionReason" title="pyrogram.raw.base.RestrictionReason"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RestrictionReason</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>admin_rights</strong> (<a class="reference internal" href="../base/chat-admin-rights.html#pyrogram.raw.base.ChatAdminRights" title="pyrogram.raw.base.ChatAdminRights"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatAdminRights</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>banned_rights</strong> (<a class="reference internal" href="../base/chat-banned-rights.html#pyrogram.raw.base.ChatBannedRights" title="pyrogram.raw.base.ChatBannedRights"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatBannedRights</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>default_banned_rights</strong> (<a class="reference internal" href="../base/chat-banned-rights.html#pyrogram.raw.base.ChatBannedRights" title="pyrogram.raw.base.ChatBannedRights"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatBannedRights</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>participants_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>usernames</strong> (List of <a class="reference internal" href="../base/username.html#pyrogram.raw.base.Username" title="pyrogram.raw.base.Username"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Username</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>stories_max_id</strong> (<a class="reference internal" href="../base/recent-story.html#pyrogram.raw.base.RecentStory" title="pyrogram.raw.base.RecentStory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RecentStory</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>color</strong> (<a class="reference internal" href="../base/peer-color.html#pyrogram.raw.base.PeerColor" title="pyrogram.raw.base.PeerColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColor</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>profile_color</strong> (<a class="reference internal" href="../base/peer-color.html#pyrogram.raw.base.PeerColor" title="pyrogram.raw.base.PeerColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColor</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>emoji_status</strong> (<a class="reference internal" href="../base/emoji-status.html#pyrogram.raw.base.EmojiStatus" title="pyrogram.raw.base.EmojiStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EmojiStatus</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>level</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>subscription_until_date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>bot_verification_icon</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>send_paid_messages_stars</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>linked_monoforum_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – N/A</p></li>
+<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>) – ID of the channel, see <a class="reference external" href="https://core.telegram.org/api/peers#peer-id">here »</a> for more info and the available ID range.</p></li>
+<li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Title</p></li>
+<li><p><strong>photo</strong> (<a class="reference internal" href="../base/chat-photo.html#pyrogram.raw.base.ChatPhoto" title="pyrogram.raw.base.ChatPhoto"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPhoto</span></code></a>) – Profile photo</p></li>
+<li><p><strong>date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Date when the user joined the supergroup/channel, or if the user isn’t a member, its creation date</p></li>
+<li><p><strong>creator</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the current user is the creator of this channel</p></li>
+<li><p><strong>left</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the current user has left or is not a member of this channel</p></li>
+<li><p><strong>broadcast</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Is this a channel?</p></li>
+<li><p><strong>verified</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Is this channel verified by telegram?</p></li>
+<li><p><strong>megagroup</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Is this a supergroup? Changes to this flag should invalidate the local <a class="reference external" href="https://core.telegram.org/constructor/channelFull">channelFull</a> cache for this channel/supergroup ID, see <a class="reference external" href="https://core.telegram.org/api/peers#full-info-database">here »</a> for more info.</p></li>
+<li><p><strong>restricted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether viewing/writing in this channel for a reason (see restriction_reason)</p></li>
+<li><p><strong>signatures</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether signatures are enabled (channels)</p></li>
+<li><p><strong>min</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – See <a class="reference external" href="https://core.telegram.org/api/min">min</a></p></li>
+<li><p><strong>scam</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – This channel/supergroup is probably a scam Changes to this flag should invalidate the local <a class="reference external" href="https://core.telegram.org/constructor/channelFull">channelFull</a> cache for this channel/supergroup ID, see <a class="reference external" href="https://core.telegram.org/api/peers#full-info-database">here »</a> for more info.</p></li>
+<li><p><strong>has_link</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this channel has a linked <a class="reference external" href="https://core.telegram.org/api/discussion">discussion group »</a> (or this supergroup is a channel’s discussion group). The actual ID of the linked channel/supergroup is contained in <a class="reference external" href="https://core.telegram.org/constructor/channelFull">channelFull</a>.linked_chat_id. Changes to this flag should invalidate the local <a class="reference external" href="https://core.telegram.org/constructor/channelFull">channelFull</a> cache for this channel/supergroup ID, see <a class="reference external" href="https://core.telegram.org/api/peers#full-info-database">here »</a> for more info.</p></li>
+<li><p><strong>has_geo</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this chanel has a geoposition</p></li>
+<li><p><strong>slowmode_enabled</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether slow mode is enabled for groups to prevent flood in chat. Changes to this flag should invalidate the local <a class="reference external" href="https://core.telegram.org/constructor/channelFull">channelFull</a> cache for this channel/supergroup ID, see <a class="reference external" href="https://core.telegram.org/api/peers#full-info-database">here »</a> for more info.</p></li>
+<li><p><strong>call_active</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether a group call or livestream is currently active</p></li>
+<li><p><strong>call_not_empty</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether there’s anyone in the group call or livestream</p></li>
+<li><p><strong>fake</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, this <a class="reference external" href="https://core.telegram.org/api/channel">supergroup/channel</a> was reported by many users as a fake or scam: be careful when interacting with it. Changes to this flag should invalidate the local <a class="reference external" href="https://core.telegram.org/constructor/channelFull">channelFull</a> cache for this channel/supergroup ID, see <a class="reference external" href="https://core.telegram.org/api/peers#full-info-database">here »</a> for more info.</p></li>
+<li><p><strong>gigagroup</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this <a class="reference external" href="https://core.telegram.org/api/channel">supergroup</a> is a gigagroupChanges to this flag should invalidate the local <a class="reference external" href="https://core.telegram.org/constructor/channelFull">channelFull</a> cache for this channel/supergroup ID, see <a class="reference external" href="https://core.telegram.org/api/peers#full-info-database">here »</a> for more info.</p></li>
+<li><p><strong>noforwards</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this channel or group is <a class="reference external" href="https://telegram.org/blog/content-protection-delete-by-date-and-more">protected</a>, thus does not allow forwarding messages from it</p></li>
+<li><p><strong>join_to_send</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether a user needs to join the supergroup before they can send messages: can be false only for <a class="reference external" href="https://core.telegram.org/api/discussion">discussion groups »</a>, toggle using <a class="reference external" href="https://core.telegram.org/method/channels.toggleJoinToSend">channels.toggleJoinToSend</a>Changes to this flag should invalidate the local <a class="reference external" href="https://core.telegram.org/constructor/channelFull">channelFull</a> cache for this channel/supergroup ID, see <a class="reference external" href="https://core.telegram.org/api/peers#full-info-database">here »</a> for more info.</p></li>
+<li><p><strong>join_request</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether a user’s join request will have to be <a class="reference external" href="https://core.telegram.org/api/invites#join-requests">approved by administrators</a>, toggle using <a class="reference external" href="https://core.telegram.org/method/channels.toggleJoinRequest">channels.toggleJoinToSend</a>Changes to this flag should invalidate the local <a class="reference external" href="https://core.telegram.org/constructor/channelFull">channelFull</a> cache for this channel/supergroup ID, see <a class="reference external" href="https://core.telegram.org/api/peers#full-info-database">here »</a> for more info.</p></li>
+<li><p><strong>forum</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this supergroup is a <a class="reference external" href="https://core.telegram.org/api/forum">forum</a>. Changes to this flag should invalidate the local <a class="reference external" href="https://core.telegram.org/constructor/channelFull">channelFull</a> cache for this channel/supergroup ID, see <a class="reference external" href="https://core.telegram.org/api/peers#full-info-database">here »</a> for more info.</p></li>
+<li><p><strong>stories_hidden</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether we have <a class="reference external" href="https://core.telegram.org/api/stories#hiding-stories-of-other-users">hidden all stories posted by this channel »</a>.</p></li>
+<li><p><strong>stories_hidden_min</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, indicates that the stories_hidden flag was not populated, and its value must cannot be relied on; use the previously cached value, or re-fetch the constructor using <a class="reference external" href="https://core.telegram.org/method/channels.getChannels">channels.getChannels</a> to obtain the latest value of the stories_hidden flag.</p></li>
+<li><p><strong>stories_unavailable</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – No stories from the channel are visible.</p></li>
+<li><p><strong>signature_profiles</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, messages sent by admins to this channel will link to the admin’s profile (just like with groups).</p></li>
+<li><p><strong>autotranslation</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, <a class="reference external" href="https://core.telegram.org/api/translation#autotranslation-for-channels">autotranslation</a> was enabled for all users by the admin of the channel, as specified <a class="reference external" href="https://core.telegram.org/api/translation#autotranslation-for-channels">here »</a>.</p></li>
+<li><p><strong>broadcast_messages_allowed</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, this channel has an associated <a class="reference external" href="https://core.telegram.org/api/monoforum">monoforum »</a>, and its ID is specified in the linked_monoforum_id flag.</p></li>
+<li><p><strong>monoforum</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, this is a <a class="reference external" href="https://core.telegram.org/api/monoforum">monoforum »</a>, and the ID of the associated channel is specified in the linked_monoforum_id.</p></li>
+<li><p><strong>forum_tabs</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/api/forum#tabbed-or-list-based-forum-ui">If set, enables the tabbed forum UI »</a>.</p></li>
+<li><p><strong>access_hash</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – Access hash, see <a class="reference external" href="https://core.telegram.org/api/peers#access-hash">here »</a> for more info</p></li>
+<li><p><strong>username</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Main active username.</p></li>
+<li><p><strong>restriction_reason</strong> (List of <a class="reference internal" href="../base/restriction-reason.html#pyrogram.raw.base.RestrictionReason" title="pyrogram.raw.base.RestrictionReason"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RestrictionReason</span></code></a>, <em>optional</em>) – Contains the reason why access to this channel must be restricted. Changes to this flag should invalidate the local <a class="reference external" href="https://core.telegram.org/constructor/channelFull">channelFull</a> cache for this channel/supergroup ID, see <a class="reference external" href="https://core.telegram.org/api/peers#full-info-database">here »</a> for more info.</p></li>
+<li><p><strong>admin_rights</strong> (<a class="reference internal" href="../base/chat-admin-rights.html#pyrogram.raw.base.ChatAdminRights" title="pyrogram.raw.base.ChatAdminRights"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatAdminRights</span></code></a>, <em>optional</em>) – Admin rights of the user in this channel (see <a class="reference external" href="https://core.telegram.org/api/rights">rights</a>)</p></li>
+<li><p><strong>banned_rights</strong> (<a class="reference internal" href="../base/chat-banned-rights.html#pyrogram.raw.base.ChatBannedRights" title="pyrogram.raw.base.ChatBannedRights"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatBannedRights</span></code></a>, <em>optional</em>) – Banned rights of the user in this channel (see <a class="reference external" href="https://core.telegram.org/api/rights">rights</a>)</p></li>
+<li><p><strong>default_banned_rights</strong> (<a class="reference internal" href="../base/chat-banned-rights.html#pyrogram.raw.base.ChatBannedRights" title="pyrogram.raw.base.ChatBannedRights"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatBannedRights</span></code></a>, <em>optional</em>) – Default chat rights (see <a class="reference external" href="https://core.telegram.org/api/rights">rights</a>)</p></li>
+<li><p><strong>participants_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Participant count</p></li>
+<li><p><strong>usernames</strong> (List of <a class="reference internal" href="../base/username.html#pyrogram.raw.base.Username" title="pyrogram.raw.base.Username"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Username</span></code></a>, <em>optional</em>) – Additional usernames</p></li>
+<li><p><strong>stories_max_id</strong> (<a class="reference internal" href="../base/recent-story.html#pyrogram.raw.base.RecentStory" title="pyrogram.raw.base.RecentStory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RecentStory</span></code></a>, <em>optional</em>) – ID of the maximum read <a class="reference external" href="https://core.telegram.org/api/stories">story</a>.</p></li>
+<li><p><strong>color</strong> (<a class="reference internal" href="../base/peer-color.html#pyrogram.raw.base.PeerColor" title="pyrogram.raw.base.PeerColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColor</span></code></a>, <em>optional</em>) – The channel’s <a class="reference external" href="https://core.telegram.org/api/colors">accent color</a>.</p></li>
+<li><p><strong>profile_color</strong> (<a class="reference internal" href="../base/peer-color.html#pyrogram.raw.base.PeerColor" title="pyrogram.raw.base.PeerColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColor</span></code></a>, <em>optional</em>) – The channel’s <a class="reference external" href="https://core.telegram.org/api/colors">profile color</a>.</p></li>
+<li><p><strong>emoji_status</strong> (<a class="reference internal" href="../base/emoji-status.html#pyrogram.raw.base.EmojiStatus" title="pyrogram.raw.base.EmojiStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EmojiStatus</span></code></a>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/api/emoji-status">Emoji status</a></p></li>
+<li><p><strong>level</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/api/boost">Boost level</a>. Changes to this flag should invalidate the local <a class="reference external" href="https://core.telegram.org/constructor/channelFull">channelFull</a> cache for this channel/supergroup ID, see <a class="reference external" href="https://core.telegram.org/api/peers#full-info-database">here »</a> for more info.</p></li>
+<li><p><strong>subscription_until_date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Expiration date of the <a class="reference external" href="https://core.telegram.org/api/stars#star-subscriptions">Telegram Star subscription »</a> the current user has bought to gain access to this channel.</p></li>
+<li><p><strong>bot_verification_icon</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – Describes a <a class="reference external" href="https://core.telegram.org/api/bots/verification">bot verification icon »</a>.</p></li>
+<li><p><strong>send_paid_messages_stars</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – If set, this supergroup or <a class="reference external" href="https://core.telegram.org/api/monoforum">monoforum</a> has enabled <a class="reference external" href="https://core.telegram.org/api/paid-messages">paid messages »</a>, we might need to pay the specified amount of <a class="reference external" href="https://core.telegram.org/api/stars">Stars</a> to send messages to it, depending on the configured exceptions: check <a class="reference external" href="https://core.telegram.org/constructor/channelFull">channelFull</a>.send_paid_messages_stars to see if the currently logged in user actually has to pay or not, see <a class="reference external" href="https://core.telegram.org/api/paid-messages">here »</a> for the full flow (only set for the monoforum, not the associated channel).</p></li>
+<li><p><strong>linked_monoforum_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – For channels with associated <a class="reference external" href="https://core.telegram.org/api/monoforum">monoforums</a>, the <a class="reference external" href="https://core.telegram.org/api/monoforum">monoforum</a> ID. For <a class="reference external" href="https://core.telegram.org/api/monoforum">Monoforums</a>, the ID of the associated channel.</p></li>
 </ul>
 </dd>
 </dl>
@@ -1088,7 +1190,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/40056f4" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

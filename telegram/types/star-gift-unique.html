@@ -16,7 +16,7 @@
         <link rel="canonical" href="/pyrogram/telegram/types/star-gift-unique.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>StarGiftUnique - PyroTGFork 2.2.23 Layer 225</title>
+        <title>StarGiftUnique - PyroTGFork 2.2.24 Layer 225</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.23 Layer 225</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 225</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.23 Layer 225</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 225</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -326,6 +326,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat.html">get_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_administrators.html">get_chat_administrators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_member.html">get_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
@@ -403,6 +404,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_personal_chat.html">set_personal_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_account.html">delete_account</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/update_status.html">update_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages.html">get_user_personal_chat_messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages_count.html">get_user_personal_chat_messages_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_message_reaction.html">delete_message_reaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_all_message_reactions.html">delete_all_message_reactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/add_contact.html">add_contact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_contacts.html">delete_contacts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/import_contacts.html">import_contacts</a></li>
@@ -558,6 +563,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ChatHasProtectedContentDisableRequested.html">ChatHasProtectedContentDisableRequested</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotCreated.html">ManagedBotCreated</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotUpdated.html">ManagedBotUpdated</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/SentGuestMessage.html">SentGuestMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/BotAccessSettings.html">BotAccessSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Birthdate.html">Birthdate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/User.html">User</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Chat.html">Chat</a></li>
@@ -984,7 +991,8 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.types.StarGiftUnique">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">StarGiftUnique</span></span><a class="headerlink" href="#pyrogram.raw.types.StarGiftUnique" title="Link to this definition">#</a></dt>
-<dd><p>Telegram API type.</p>
+<dd><p>Represents a <a class="reference external" href="https://core.telegram.org/api/gifts#collectible-gifts">collectible star gift, see here</a> for more info.
+The sticker that represents the gift is contained in a <a class="reference external" href="https://core.telegram.org/constructor/starGiftAttributeModel">starGiftAttributeModel</a> object in attributes.</p>
 <p>Constructor of <a class="reference internal" href="../base/star-gift.html#pyrogram.raw.base.StarGift" title="pyrogram.raw.base.StarGift"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarGift</span></code></a>.</p>
 <dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
@@ -996,33 +1004,33 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>) – N/A</p></li>
-<li><p><strong>gift_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>) – N/A</p></li>
-<li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – N/A</p></li>
-<li><p><strong>slug</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – N/A</p></li>
-<li><p><strong>num</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – N/A</p></li>
-<li><p><strong>attributes</strong> (List of <a class="reference internal" href="../base/star-gift-attribute.html#pyrogram.raw.base.StarGiftAttribute" title="pyrogram.raw.base.StarGiftAttribute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarGiftAttribute</span></code></a>) – N/A</p></li>
-<li><p><strong>availability_issued</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – N/A</p></li>
-<li><p><strong>availability_total</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – N/A</p></li>
-<li><p><strong>require_premium</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>resale_ton_only</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>theme_available</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>burned</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>crafted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>owner_id</strong> (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>owner_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>owner_address</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>gift_address</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>resell_amount</strong> (List of <a class="reference internal" href="../base/stars-amount.html#pyrogram.raw.base.StarsAmount" title="pyrogram.raw.base.StarsAmount"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsAmount</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>released_by</strong> (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>value_amount</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>value_currency</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>value_usd_amount</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>theme_peer</strong> (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>peer_color</strong> (<a class="reference internal" href="../base/peer-color.html#pyrogram.raw.base.PeerColor" title="pyrogram.raw.base.PeerColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColor</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>host_id</strong> (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>offer_min_stars</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>craft_chance_permille</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
+<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>) – Unique identifier of this collectible gift.</p></li>
+<li><p><strong>gift_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>) – ID of the regular gift from which this gift was upgraded (all collectible gifts upgraded from the same gift will have the same gift_id, with different attributes).</p></li>
+<li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Collectible title.</p></li>
+<li><p><strong>slug</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Slug that can be used to create a <a class="reference external" href="https://core.telegram.org/api/links#collectible-gift-link">collectible gift deep link »</a>, or <a class="reference external" href="https://core.telegram.org/api/gifts">elsewhere in the API where a collectible slug is accepted</a>.</p></li>
+<li><p><strong>num</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Unique identifier of this collectible gift among all (already upgraded) collectible gifts of the same type.</p></li>
+<li><p><strong>attributes</strong> (List of <a class="reference internal" href="../base/star-gift-attribute.html#pyrogram.raw.base.StarGiftAttribute" title="pyrogram.raw.base.StarGiftAttribute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarGiftAttribute</span></code></a>) – Collectible attributes</p></li>
+<li><p><strong>availability_issued</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Total number of gifts of the same type that were upgraded to a collectible gift.</p></li>
+<li><p><strong>availability_total</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Total number of gifts of the same type that can be upgraded or were already upgraded to a collectible gift.</p></li>
+<li><p><strong>require_premium</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – This gift can only be bought by users with a <a class="reference external" href="https://core.telegram.org/api/premium">Premium</a> subscription.</p></li>
+<li><p><strong>resale_ton_only</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the gift can be bought only using Toncoins.</p></li>
+<li><p><strong>theme_available</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – A chat theme associated to this gift is available, <a class="reference external" href="https://core.telegram.org/api/themes#chat-themes">see here »</a> for more info on how to use it.</p></li>
+<li><p><strong>burned</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – This gift was already used as an ingredient for <a class="reference external" href="https://core.telegram.org/api/gifts#crafting-collectible-gifts">crafting another collectible gift »</a>.</p></li>
+<li><p><strong>crafted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – This collectible gift was obtained by <a class="reference external" href="https://core.telegram.org/api/gifts#crafting-collectible-gifts">crafting »</a>, not by upgrading a regular gift.</p></li>
+<li><p><strong>owner_id</strong> (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>, <em>optional</em>) – The owner of the gift.</p></li>
+<li><p><strong>owner_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The name of the owner if neither owner_id nor owner_address are set.</p></li>
+<li><p><strong>owner_address</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – For <a class="reference external" href="https://core.telegram.org/api/gifts#withdraw-a-collectible-gift-to-the-ton-blockchain">NFTs on the TON blockchain</a>, contains the address of the owner (append it to the <a class="reference external" href="https://core.telegram.org/api/config#ton-blockchain-explorer-url">ton_blockchain_explorer_url client configuration value »</a> to obtain a link with information about the address).</p></li>
+<li><p><strong>gift_address</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – For <a class="reference external" href="https://core.telegram.org/api/gifts#withdraw-a-collectible-gift-to-the-ton-blockchain">NFTs on the TON blockchain</a>, contains the address of the NFT (append it to the <a class="reference external" href="https://core.telegram.org/api/config#ton-blockchain-explorer-url">ton_blockchain_explorer_url client configuration value »</a> to obtain a link with information about the address).</p></li>
+<li><p><strong>resell_amount</strong> (List of <a class="reference internal" href="../base/stars-amount.html#pyrogram.raw.base.StarsAmount" title="pyrogram.raw.base.StarsAmount"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsAmount</span></code></a>, <em>optional</em>) – Resale price of the gift.</p></li>
+<li><p><strong>released_by</strong> (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>, <em>optional</em>) – This gift was released by the specified peer.</p></li>
+<li><p><strong>value_amount</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – Estimated price of the gift.</p></li>
+<li><p><strong>value_currency</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Currency for the gift’s estimated price.</p></li>
+<li><p><strong>value_usd_amount</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – Estimated price of the gift in USD cents.</p></li>
+<li><p><strong>theme_peer</strong> (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>, <em>optional</em>) – The current chat where the associated <a class="reference external" href="https://core.telegram.org/api/themes#chat-themes">chat theme</a> is installed, if any (gift-based themes can only be installed in one chat at a time).</p></li>
+<li><p><strong>peer_color</strong> (<a class="reference internal" href="../base/peer-color.html#pyrogram.raw.base.PeerColor" title="pyrogram.raw.base.PeerColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColor</span></code></a>, <em>optional</em>) – Can contain a <a class="reference external" href="https://core.telegram.org/api/colors#collectible-message-palettes">collectible message palette »</a>.</p></li>
+<li><p><strong>host_id</strong> (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>, <em>optional</em>) – If set, the gift is currently hosted on the specified user or channel profile even though ownership belongs to a TON wallet. The owner may transfer, resell or export the gift, while the host or owner may show it on the profile, use it as a theme/status and add it to a collection.</p></li>
+<li><p><strong>offer_min_stars</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – If set, you can <a class="reference external" href="https://core.telegram.org/api/gifts#collectible-gift-purchase-offers">send a purchase offer for this gift »</a>: the minimum offer price is specified in this flag.</p></li>
+<li><p><strong>craft_chance_permille</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Success probability, per 1000, contributed by this gift when it is used for <a class="reference external" href="https://core.telegram.org/api/gifts#crafting-collectible-gifts">crafting »</a>.</p></li>
 </ul>
 </dd>
 </dl>
@@ -1066,7 +1074,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/40056f4" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

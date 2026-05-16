@@ -16,7 +16,7 @@
         <link rel="canonical" href="/pyrogram/telegram/types/channel-admin-log-events-filter.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>ChannelAdminLogEventsFilter - PyroTGFork 2.2.23 Layer 225</title>
+        <title>ChannelAdminLogEventsFilter - PyroTGFork 2.2.24 Layer 225</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.23 Layer 225</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 225</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.23 Layer 225</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 225</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -326,6 +326,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat.html">get_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_administrators.html">get_chat_administrators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_member.html">get_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
@@ -403,6 +404,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_personal_chat.html">set_personal_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_account.html">delete_account</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/update_status.html">update_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages.html">get_user_personal_chat_messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages_count.html">get_user_personal_chat_messages_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_message_reaction.html">delete_message_reaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_all_message_reactions.html">delete_all_message_reactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/add_contact.html">add_contact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_contacts.html">delete_contacts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/import_contacts.html">import_contacts</a></li>
@@ -558,6 +563,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ChatHasProtectedContentDisableRequested.html">ChatHasProtectedContentDisableRequested</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotCreated.html">ManagedBotCreated</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotUpdated.html">ManagedBotUpdated</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/SentGuestMessage.html">SentGuestMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/BotAccessSettings.html">BotAccessSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Birthdate.html">Birthdate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/User.html">User</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Chat.html">Chat</a></li>
@@ -984,7 +991,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.types.ChannelAdminLogEventsFilter">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">ChannelAdminLogEventsFilter</span></span><a class="headerlink" href="#pyrogram.raw.types.ChannelAdminLogEventsFilter" title="Link to this definition">#</a></dt>
-<dd><p>Telegram API type.</p>
+<dd><p>Filter only certain admin log events</p>
 <p>Constructor of <a class="reference internal" href="../base/channel-admin-log-events-filter.html#pyrogram.raw.base.ChannelAdminLogEventsFilter" title="pyrogram.raw.base.ChannelAdminLogEventsFilter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelAdminLogEventsFilter</span></code></a>.</p>
 <dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
@@ -996,26 +1003,26 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>join</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>leave</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>invite</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>ban</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>unban</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>kick</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>unkick</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>promote</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>demote</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>info</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>settings</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>pinned</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>edit</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>delete</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>group_call</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>invites</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>send</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>forums</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>sub_extend</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>edit_rank</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
+<li><p><strong>join</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionParticipantJoin">Join events</a>, including <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionParticipantJoinByInvite">joins using invite links</a> and <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionParticipantJoinByRequest">join requests</a>.</p></li>
+<li><p><strong>leave</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionParticipantLeave">Leave events</a></p></li>
+<li><p><strong>invite</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionParticipantInvite">Invite events</a></p></li>
+<li><p><strong>ban</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionParticipantToggleBan">Ban events</a></p></li>
+<li><p><strong>unban</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionParticipantToggleBan">Unban events</a></p></li>
+<li><p><strong>kick</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionParticipantToggleBan">Kick events</a></p></li>
+<li><p><strong>unkick</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionParticipantToggleBan">Unkick events</a></p></li>
+<li><p><strong>promote</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionParticipantToggleAdmin">Admin promotion events</a></p></li>
+<li><p><strong>demote</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionParticipantToggleAdmin">Admin demotion events</a></p></li>
+<li><p><strong>info</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Info change events (when <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionChangeAbout">about</a>, <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionChangeLinkedChat">linked chat</a>, <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionChangeLocation">location</a>, <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionChangePhoto">photo</a>, <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionChangeStickerSet">stickerset</a>, <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionChangeTitle">title</a> or <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionChangeUsername">username</a>, <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionToggleSlowMode">slowmode</a>, <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionChangeHistoryTTL">history TTL</a> settings of a channel gets modified)</p></li>
+<li><p><strong>settings</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Settings change events (<a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionToggleInvites">invites</a>, <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionTogglePreHistoryHidden">hidden prehistory</a>, <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionToggleSignatures">signatures</a>, <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionDefaultBannedRights">default banned rights</a>, <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionToggleForum">forum toggle events</a>)</p></li>
+<li><p><strong>pinned</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionUpdatePinned">Message pin events</a></p></li>
+<li><p><strong>edit</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionEditMessage">Message edit events</a></p></li>
+<li><p><strong>delete</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionDeleteMessage">Message deletion events</a></p></li>
+<li><p><strong>group_call</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Group call events</p></li>
+<li><p><strong>invites</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Invite events</p></li>
+<li><p><strong>send</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – A message was posted in a channel</p></li>
+<li><p><strong>forums</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/api/forum">Forum</a>-related events</p></li>
+<li><p><strong>sub_extend</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/constructor/channelAdminLogEventActionParticipantSubExtend">Telegram Star subscription extension events »</a></p></li>
+<li><p><strong>edit_rank</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>)</p></li>
 </ul>
 </dd>
 </dl>
@@ -1059,7 +1066,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/40056f4" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

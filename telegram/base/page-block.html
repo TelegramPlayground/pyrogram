@@ -16,7 +16,7 @@
         <link rel="canonical" href="/pyrogram/telegram/base/page-block.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>PageBlock - PyroTGFork 2.2.23 Layer 225</title>
+        <title>PageBlock - PyroTGFork 2.2.24 Layer 225</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.23 Layer 225</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 225</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.23 Layer 225</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 225</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -326,6 +326,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat.html">get_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_administrators.html">get_chat_administrators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_member.html">get_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
@@ -403,6 +404,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_personal_chat.html">set_personal_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_account.html">delete_account</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/update_status.html">update_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages.html">get_user_personal_chat_messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages_count.html">get_user_personal_chat_messages_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_message_reaction.html">delete_message_reaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_all_message_reactions.html">delete_all_message_reactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/add_contact.html">add_contact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_contacts.html">delete_contacts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/import_contacts.html">import_contacts</a></li>
@@ -558,6 +563,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ChatHasProtectedContentDisableRequested.html">ChatHasProtectedContentDisableRequested</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotCreated.html">ManagedBotCreated</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotUpdated.html">ManagedBotUpdated</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/SentGuestMessage.html">SentGuestMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/BotAccessSettings.html">BotAccessSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Birthdate.html">Birthdate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/User.html">User</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Chat.html">Chat</a></li>
@@ -984,98 +991,98 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.base.PageBlock">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.base.</span></span><span class="sig-name descname"><span class="pre">PageBlock</span></span><a class="headerlink" href="#pyrogram.raw.base.PageBlock" title="Link to this definition">#</a></dt>
-<dd><p>Telegram API base type.</p>
+<dd><p>Represents an <a class="reference external" href="https://instantview.telegram.org">instant view page element</a></p>
 <dl>
 <dt>Constructors:</dt><dd><p>This base type has 29 constructors available.</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/page-block-anchor.html#pyrogram.raw.types.PageBlockAnchor" title="pyrogram.raw.types.PageBlockAnchor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockAnchor</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Link to section within the page itself (like &lt;a href=&quot;#target&quot;&gt;anchor&lt;/a&gt;)</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/page-block-audio.html#pyrogram.raw.types.PageBlockAudio" title="pyrogram.raw.types.PageBlockAudio"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockAudio</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Audio</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/page-block-author-date.html#pyrogram.raw.types.PageBlockAuthorDate" title="pyrogram.raw.types.PageBlockAuthorDate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockAuthorDate</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Author and date of creation of article</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/page-block-blockquote.html#pyrogram.raw.types.PageBlockBlockquote" title="pyrogram.raw.types.PageBlockBlockquote"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockBlockquote</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Quote (equivalent to the HTML &lt;blockquote&gt;)</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/page-block-channel.html#pyrogram.raw.types.PageBlockChannel" title="pyrogram.raw.types.PageBlockChannel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockChannel</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Reference to a telegram channel</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/page-block-collage.html#pyrogram.raw.types.PageBlockCollage" title="pyrogram.raw.types.PageBlockCollage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockCollage</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Collage of media</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/page-block-cover.html#pyrogram.raw.types.PageBlockCover" title="pyrogram.raw.types.PageBlockCover"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockCover</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A page cover</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/page-block-details.html#pyrogram.raw.types.PageBlockDetails" title="pyrogram.raw.types.PageBlockDetails"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockDetails</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A collapsible details block</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/page-block-divider.html#pyrogram.raw.types.PageBlockDivider" title="pyrogram.raw.types.PageBlockDivider"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockDivider</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>An empty block separating a page</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/page-block-embed.html#pyrogram.raw.types.PageBlockEmbed" title="pyrogram.raw.types.PageBlockEmbed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockEmbed</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>An embedded webpage</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/page-block-embed-post.html#pyrogram.raw.types.PageBlockEmbedPost" title="pyrogram.raw.types.PageBlockEmbedPost"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockEmbedPost</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>An embedded post</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/page-block-footer.html#pyrogram.raw.types.PageBlockFooter" title="pyrogram.raw.types.PageBlockFooter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockFooter</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Page footer</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/page-block-header.html#pyrogram.raw.types.PageBlockHeader" title="pyrogram.raw.types.PageBlockHeader"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockHeader</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Page header</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/page-block-kicker.html#pyrogram.raw.types.PageBlockKicker" title="pyrogram.raw.types.PageBlockKicker"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockKicker</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Kicker</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/page-block-list.html#pyrogram.raw.types.PageBlockList" title="pyrogram.raw.types.PageBlockList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockList</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Unordered list of IV blocks</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/page-block-map.html#pyrogram.raw.types.PageBlockMap" title="pyrogram.raw.types.PageBlockMap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockMap</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A map</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/page-block-ordered-list.html#pyrogram.raw.types.PageBlockOrderedList" title="pyrogram.raw.types.PageBlockOrderedList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockOrderedList</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Ordered list of IV blocks</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/page-block-paragraph.html#pyrogram.raw.types.PageBlockParagraph" title="pyrogram.raw.types.PageBlockParagraph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockParagraph</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A paragraph</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/page-block-photo.html#pyrogram.raw.types.PageBlockPhoto" title="pyrogram.raw.types.PageBlockPhoto"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockPhoto</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>A photo</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/page-block-preformatted.html#pyrogram.raw.types.PageBlockPreformatted" title="pyrogram.raw.types.PageBlockPreformatted"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockPreformatted</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Preformatted (&lt;pre&gt; text)</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/page-block-pullquote.html#pyrogram.raw.types.PageBlockPullquote" title="pyrogram.raw.types.PageBlockPullquote"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockPullquote</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Pullquote</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/page-block-related-articles.html#pyrogram.raw.types.PageBlockRelatedArticles" title="pyrogram.raw.types.PageBlockRelatedArticles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockRelatedArticles</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Related articles</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/page-block-slideshow.html#pyrogram.raw.types.PageBlockSlideshow" title="pyrogram.raw.types.PageBlockSlideshow"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockSlideshow</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Slideshow</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/page-block-subheader.html#pyrogram.raw.types.PageBlockSubheader" title="pyrogram.raw.types.PageBlockSubheader"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockSubheader</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Subheader</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/page-block-subtitle.html#pyrogram.raw.types.PageBlockSubtitle" title="pyrogram.raw.types.PageBlockSubtitle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockSubtitle</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Subtitle</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/page-block-table.html#pyrogram.raw.types.PageBlockTable" title="pyrogram.raw.types.PageBlockTable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockTable</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Table</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/page-block-title.html#pyrogram.raw.types.PageBlockTitle" title="pyrogram.raw.types.PageBlockTitle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockTitle</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Title</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/page-block-unsupported.html#pyrogram.raw.types.PageBlockUnsupported" title="pyrogram.raw.types.PageBlockUnsupported"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockUnsupported</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Unsupported IV element</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/page-block-video.html#pyrogram.raw.types.PageBlockVideo" title="pyrogram.raw.types.PageBlockVideo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PageBlockVideo</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Video</p></td>
 </tr>
 </tbody>
 </table>
@@ -1122,7 +1129,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/40056f4" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

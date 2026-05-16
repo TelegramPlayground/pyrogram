@@ -16,7 +16,7 @@
         <link rel="canonical" href="/pyrogram/telegram/base/input-invoice.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>InputInvoice - PyroTGFork 2.2.23 Layer 225</title>
+        <title>InputInvoice - PyroTGFork 2.2.24 Layer 225</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.23 Layer 225</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 225</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.23 Layer 225</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 225</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -326,6 +326,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat.html">get_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_administrators.html">get_chat_administrators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_member.html">get_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
@@ -403,6 +404,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_personal_chat.html">set_personal_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_account.html">delete_account</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/update_status.html">update_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages.html">get_user_personal_chat_messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages_count.html">get_user_personal_chat_messages_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_message_reaction.html">delete_message_reaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_all_message_reactions.html">delete_all_message_reactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/add_contact.html">add_contact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_contacts.html">delete_contacts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/import_contacts.html">import_contacts</a></li>
@@ -558,6 +563,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ChatHasProtectedContentDisableRequested.html">ChatHasProtectedContentDisableRequested</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotCreated.html">ManagedBotCreated</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotUpdated.html">ManagedBotUpdated</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/SentGuestMessage.html">SentGuestMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/BotAccessSettings.html">BotAccessSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Birthdate.html">Birthdate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/User.html">User</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Chat.html">Chat</a></li>
@@ -984,56 +991,56 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.base.InputInvoice">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.base.</span></span><span class="sig-name descname"><span class="pre">InputInvoice</span></span><a class="headerlink" href="#pyrogram.raw.base.InputInvoice" title="Link to this definition">#</a></dt>
-<dd><p>Telegram API base type.</p>
+<dd><p>An invoice</p>
 <dl>
 <dt>Constructors:</dt><dd><p>This base type has 15 constructors available.</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/input-invoice-business-bot-transfer-stars.html#pyrogram.raw.types.InputInvoiceBusinessBotTransferStars" title="pyrogram.raw.types.InputInvoiceBusinessBotTransferStars"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputInvoiceBusinessBotTransferStars</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Transfer stars from the balance of a user account <a class="reference external" href="https://core.telegram.org/api/bots/connected-business-bots">connected to a business bot</a>, to the balance of the <a class="reference external" href="https://core.telegram.org/api/bots/connected-business-bots">business bot</a>, see <a class="reference external" href="https://core.telegram.org/api/stars#transferring-stars-from-a-business-account-to-the-business-bot">here</a> for more info on the full flow.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/input-invoice-chat-invite-subscription.html#pyrogram.raw.types.InputInvoiceChatInviteSubscription" title="pyrogram.raw.types.InputInvoiceChatInviteSubscription"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputInvoiceChatInviteSubscription</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Used to pay for a <a class="reference external" href="https://core.telegram.org/api/stars#star-subscriptions">Telegram Star subscription</a>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/input-invoice-message.html#pyrogram.raw.types.InputInvoiceMessage" title="pyrogram.raw.types.InputInvoiceMessage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputInvoiceMessage</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>An invoice contained in a <a class="reference external" href="https://core.telegram.org/constructor/messageMediaInvoice">messageMediaInvoice</a> message or <a class="reference external" href="https://core.telegram.org/api/paid-media">paid media</a>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/input-invoice-premium-auth-code.html#pyrogram.raw.types.InputInvoicePremiumAuthCode" title="pyrogram.raw.types.InputInvoicePremiumAuthCode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputInvoicePremiumAuthCode</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Used to pay for login codes, in case of high cost of SMS verification codes for the user's country/provider, see <a class="reference external" href="https://core.telegram.org/api/auth#paid-auth">here</a> for more info.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/input-invoice-premium-gift-code.html#pyrogram.raw.types.InputInvoicePremiumGiftCode" title="pyrogram.raw.types.InputInvoicePremiumGiftCode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputInvoicePremiumGiftCode</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Used if the user wishes to start a channel/supergroup <a class="reference external" href="https://core.telegram.org/api/giveaways">giveaway</a> or send some <a class="reference external" href="https://core.telegram.org/api/giveaways">giftcodes</a> to members of a channel/supergroup, in exchange for <a class="reference external" href="https://core.telegram.org/api/boost">boosts</a>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/input-invoice-premium-gift-stars.html#pyrogram.raw.types.InputInvoicePremiumGiftStars" title="pyrogram.raw.types.InputInvoicePremiumGiftStars"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputInvoicePremiumGiftStars</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Used to gift a <a class="reference external" href="https://core.telegram.org/api/premium">Telegram Premium</a> subscription to another user, paying with <a class="reference external" href="https://core.telegram.org/api/stars">Telegram Stars</a>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/input-invoice-slug.html#pyrogram.raw.types.InputInvoiceSlug" title="pyrogram.raw.types.InputInvoiceSlug"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputInvoiceSlug</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>An invoice slug taken from an <a class="reference external" href="https://core.telegram.org/api/links#invoice-links">invoice deep link</a> or from the <a class="reference external" href="https://core.telegram.org/api/config#premium-invoice-slug">premium_invoice_slug app config parameter</a></p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/input-invoice-star-gift.html#pyrogram.raw.types.InputInvoiceStarGift" title="pyrogram.raw.types.InputInvoiceStarGift"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputInvoiceStarGift</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Used to buy a <a class="reference external" href="https://core.telegram.org/api/gifts">Telegram Star Gift, see here</a> for more info.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/input-invoice-star-gift-auction-bid.html#pyrogram.raw.types.InputInvoiceStarGiftAuctionBid" title="pyrogram.raw.types.InputInvoiceStarGiftAuctionBid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputInvoiceStarGiftAuctionBid</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Used to place a bid in a <a class="reference external" href="https://core.telegram.org/api/auctions">collectible gift auction</a>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/input-invoice-star-gift-drop-original-details.html#pyrogram.raw.types.InputInvoiceStarGiftDropOriginalDetails" title="pyrogram.raw.types.InputInvoiceStarGiftDropOriginalDetails"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputInvoiceStarGiftDropOriginalDetails</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Used to pay for for the removal of the <a class="reference external" href="https://core.telegram.org/constructor/starGiftAttributeOriginalDetails">starGiftAttributeOriginalDetails</a> attribute from a collectible gift, see <a class="reference external" href="https://core.telegram.org/api/gifts#dropping-the-original-details-of-an-upgraded-gift">here</a> for the full flow.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/input-invoice-star-gift-prepaid-upgrade.html#pyrogram.raw.types.InputInvoiceStarGiftPrepaidUpgrade" title="pyrogram.raw.types.InputInvoiceStarGiftPrepaidUpgrade"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputInvoiceStarGiftPrepaidUpgrade</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p><a class="reference external" href="https://core.telegram.org/api/gifts#prepaying-for-someone-elses-upgrade">Separately prepay for the upgrade of a gift</a>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/input-invoice-star-gift-resale.html#pyrogram.raw.types.InputInvoiceStarGiftResale" title="pyrogram.raw.types.InputInvoiceStarGiftResale"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputInvoiceStarGiftResale</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Used to buy a <a class="reference external" href="https://core.telegram.org/api/gifts#collectible-gifts">collectible gift</a> currently up on resale, see <a class="reference external" href="https://core.telegram.org/api/gifts#reselling-collectible-gifts">here</a> for more info on the full flow.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/input-invoice-star-gift-transfer.html#pyrogram.raw.types.InputInvoiceStarGiftTransfer" title="pyrogram.raw.types.InputInvoiceStarGiftTransfer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputInvoiceStarGiftTransfer</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Used to <a class="reference external" href="https://core.telegram.org/api/gifts#transferring-collectible-gifts">pay to transfer a collectible gift to another peer</a>, see the <a class="reference external" href="https://core.telegram.org/api/gifts#transferring-collectible-gifts">gifts</a> documentation for more info.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/input-invoice-star-gift-upgrade.html#pyrogram.raw.types.InputInvoiceStarGiftUpgrade" title="pyrogram.raw.types.InputInvoiceStarGiftUpgrade"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputInvoiceStarGiftUpgrade</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Used to <a class="reference external" href="https://core.telegram.org/api/gifts#upgrade-a-gift-to-a-collectible-gift">pay to upgrade a Gift to a collectible gift</a>, see the <a class="reference external" href="https://core.telegram.org/api/gifts#collectible-gifts">collectible gifts</a> documentation for more info on the full flow.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/input-invoice-stars.html#pyrogram.raw.types.InputInvoiceStars" title="pyrogram.raw.types.InputInvoiceStars"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputInvoiceStars</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Used to top up the <a class="reference external" href="https://core.telegram.org/api/stars">Telegram Stars</a> balance of the current account or someone else's account, or to start a <a class="reference external" href="https://core.telegram.org/api/giveaways#star-giveaways">Telegram Star giveaway</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1080,7 +1087,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/40056f4" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

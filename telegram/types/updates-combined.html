@@ -16,7 +16,7 @@
         <link rel="canonical" href="/pyrogram/telegram/types/updates-combined.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>UpdatesCombined - PyroTGFork 2.2.23 Layer 225</title>
+        <title>UpdatesCombined - PyroTGFork 2.2.24 Layer 225</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.23 Layer 225</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 225</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.23 Layer 225</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 225</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -326,6 +326,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat.html">get_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_administrators.html">get_chat_administrators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_member.html">get_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
@@ -403,6 +404,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_personal_chat.html">set_personal_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_account.html">delete_account</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/update_status.html">update_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages.html">get_user_personal_chat_messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages_count.html">get_user_personal_chat_messages_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_message_reaction.html">delete_message_reaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_all_message_reactions.html">delete_all_message_reactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/add_contact.html">add_contact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_contacts.html">delete_contacts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/import_contacts.html">import_contacts</a></li>
@@ -558,6 +563,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ChatHasProtectedContentDisableRequested.html">ChatHasProtectedContentDisableRequested</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotCreated.html">ManagedBotCreated</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotUpdated.html">ManagedBotUpdated</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/SentGuestMessage.html">SentGuestMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/BotAccessSettings.html">BotAccessSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Birthdate.html">Birthdate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/User.html">User</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Chat.html">Chat</a></li>
@@ -984,7 +991,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.types.UpdatesCombined">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">UpdatesCombined</span></span><a class="headerlink" href="#pyrogram.raw.types.UpdatesCombined" title="Link to this definition">#</a></dt>
-<dd><p>Telegram API type.</p>
+<dd><p>Constructor for a group of updates.</p>
 <p>Constructor of <a class="reference internal" href="../base/updates.html#pyrogram.raw.base.Updates" title="pyrogram.raw.base.Updates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Updates</span></code></a>.</p>
 <dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
@@ -996,17 +1003,17 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>updates</strong> (List of <a class="reference internal" href="../base/update.html#pyrogram.raw.base.Update" title="pyrogram.raw.base.Update"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Update</span></code></a>) – N/A</p></li>
-<li><p><strong>users</strong> (List of <a class="reference internal" href="../base/user.html#pyrogram.raw.base.User" title="pyrogram.raw.base.User"><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>) – N/A</p></li>
-<li><p><strong>chats</strong> (List of <a class="reference internal" href="../base/chat.html#pyrogram.raw.base.Chat" title="pyrogram.raw.base.Chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>) – N/A</p></li>
-<li><p><strong>date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – N/A</p></li>
-<li><p><strong>seq_start</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – N/A</p></li>
-<li><p><strong>seq</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – N/A</p></li>
+<li><p><strong>updates</strong> (List of <a class="reference internal" href="../base/update.html#pyrogram.raw.base.Update" title="pyrogram.raw.base.Update"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Update</span></code></a>) – List of updates</p></li>
+<li><p><strong>users</strong> (List of <a class="reference internal" href="../base/user.html#pyrogram.raw.base.User" title="pyrogram.raw.base.User"><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>) – List of users mentioned in updates</p></li>
+<li><p><strong>chats</strong> (List of <a class="reference internal" href="../base/chat.html#pyrogram.raw.base.Chat" title="pyrogram.raw.base.Chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>) – List of chats mentioned in updates</p></li>
+<li><p><strong>date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Current date</p></li>
+<li><p><strong>seq_start</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Value seq for the earliest update in a group</p></li>
+<li><p><strong>seq</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Value seq for the latest update in a group</p></li>
 </ul>
 </dd>
 </dl>
 <dl>
-<dt>Functions:</dt><dd><p>This object can be returned by 130 functions.</p>
+<dt>Functions:</dt><dd><p>This object can be returned by 131 functions.</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
@@ -1113,7 +1120,7 @@
 <td><p>Dismiss or approve all <a class="reference external" href="https://core.telegram.org/api/invites#join-requests">join requests</a> related to a specific chat or channel.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/toggle-no-forwards.html#pyrogram.raw.functions.messages.ToggleNoForwards" title="pyrogram.raw.functions.messages.ToggleNoForwards"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.ToggleNoForwards</span></code></a></p></td>
-<td><p>Enable or disable <a class="reference external" href="https://telegram.org/blog/protected-content-delete-by-date-and-more">content protection</a> on a channel or chat</p></td>
+<td><p>Enable or disable <a class="reference external" href="https://core.telegram.org/api/content-protection">content protection</a> on a channel, group or private chat.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/send-reaction.html#pyrogram.raw.functions.messages.SendReaction" title="pyrogram.raw.functions.messages.SendReaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.SendReaction</span></code></a></p></td>
 <td><p>React to message.</p></td>
@@ -1176,202 +1183,195 @@
 <td><p>Create a <a class="reference external" href="https://core.telegram.org/api/forum">forum topic</a>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/edit-chat-creator.html#pyrogram.raw.functions.messages.EditChatCreator" title="pyrogram.raw.functions.messages.EditChatCreator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.EditChatCreator</span></code></a></p></td>
-<td><p>Details:</p></td>
+<td><p>Transfer the ownership of a basic group, supergroup or channel to another user, see <a class="reference external" href="https://core.telegram.org/api/channel#transferring-ownership-of-a-groupchannel">here</a> for the full flow.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/edit-chat-participant-rank.html#pyrogram.raw.functions.messages.EditChatParticipantRank" title="pyrogram.raw.functions.messages.EditChatParticipantRank"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.EditChatParticipantRank</span></code></a></p></td>
 <td><p>Edit a group participant's <a class="reference external" href="https://core.telegram.org/api/rank">tag</a>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/add-poll-answer.html#pyrogram.raw.functions.messages.AddPollAnswer" title="pyrogram.raw.functions.messages.AddPollAnswer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.AddPollAnswer</span></code></a></p></td>
-<td><p>Telegram API function.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/delete-poll-answer.html#pyrogram.raw.functions.messages.DeletePollAnswer" title="pyrogram.raw.functions.messages.DeletePollAnswer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.DeletePollAnswer</span></code></a></p></td>
-<td><p>Telegram API function.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/create-channel.html#pyrogram.raw.functions.channels.CreateChannel" title="pyrogram.raw.functions.channels.CreateChannel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.CreateChannel</span></code></a></p></td>
-<td><p>Create a <a class="reference external" href="https://core.telegram.org/api/channel">supergroup/channel</a>.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/edit-admin.html#pyrogram.raw.functions.channels.EditAdmin" title="pyrogram.raw.functions.channels.EditAdmin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditAdmin</span></code></a></p></td>
-<td><p>Modify the admin rights of a user in a <a class="reference external" href="https://core.telegram.org/api/channel">supergroup/channel</a>.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/edit-title.html#pyrogram.raw.functions.channels.EditTitle" title="pyrogram.raw.functions.channels.EditTitle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditTitle</span></code></a></p></td>
-<td><p>Edit the name of a <a class="reference external" href="https://core.telegram.org/api/channel">channel/supergroup</a></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/edit-photo.html#pyrogram.raw.functions.channels.EditPhoto" title="pyrogram.raw.functions.channels.EditPhoto"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditPhoto</span></code></a></p></td>
-<td><p>Change the photo of a <a class="reference external" href="https://core.telegram.org/api/channel">channel/supergroup</a></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/join-channel.html#pyrogram.raw.functions.channels.JoinChannel" title="pyrogram.raw.functions.channels.JoinChannel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.JoinChannel</span></code></a></p></td>
-<td><p>Join a channel/supergroup</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/leave-channel.html#pyrogram.raw.functions.channels.LeaveChannel" title="pyrogram.raw.functions.channels.LeaveChannel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.LeaveChannel</span></code></a></p></td>
-<td><p>Leave a <a class="reference external" href="https://core.telegram.org/api/channel">channel/supergroup</a></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/delete-channel.html#pyrogram.raw.functions.channels.DeleteChannel" title="pyrogram.raw.functions.channels.DeleteChannel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.DeleteChannel</span></code></a></p></td>
-<td><p>Delete a <a class="reference external" href="https://core.telegram.org/api/channel">channel/supergroup</a></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-signatures.html#pyrogram.raw.functions.channels.ToggleSignatures" title="pyrogram.raw.functions.channels.ToggleSignatures"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleSignatures</span></code></a></p></td>
-<td><p>Enable/disable message signatures in channels</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/edit-banned.html#pyrogram.raw.functions.channels.EditBanned" title="pyrogram.raw.functions.channels.EditBanned"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditBanned</span></code></a></p></td>
-<td><p>Ban/unban/kick a user in a <a class="reference external" href="https://core.telegram.org/api/channel">supergroup/channel</a>.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/delete-history.html#pyrogram.raw.functions.channels.DeleteHistory" title="pyrogram.raw.functions.channels.DeleteHistory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.DeleteHistory</span></code></a></p></td>
-<td><p>Delete the history of a <a class="reference external" href="https://core.telegram.org/api/channel">supergroup</a></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-pre-history-hidden.html#pyrogram.raw.functions.channels.TogglePreHistoryHidden" title="pyrogram.raw.functions.channels.TogglePreHistoryHidden"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.TogglePreHistoryHidden</span></code></a></p></td>
-<td><p>Hide/unhide message history for new channel/supergroup users</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-slow-mode.html#pyrogram.raw.functions.channels.ToggleSlowMode" title="pyrogram.raw.functions.channels.ToggleSlowMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleSlowMode</span></code></a></p></td>
-<td><p>Toggle supergroup slow mode: if enabled, users will only be able to send one message every seconds seconds</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/convert-to-gigagroup.html#pyrogram.raw.functions.channels.ConvertToGigagroup" title="pyrogram.raw.functions.channels.ConvertToGigagroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ConvertToGigagroup</span></code></a></p></td>
-<td><p>Convert a <a class="reference external" href="https://core.telegram.org/api/channel">supergroup</a> to a <a class="reference external" href="https://core.telegram.org/api/channel">gigagroup</a>, when requested by <a class="reference external" href="https://core.telegram.org/api/config#channel-suggestions">channel suggestions</a>.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-join-to-send.html#pyrogram.raw.functions.channels.ToggleJoinToSend" title="pyrogram.raw.functions.channels.ToggleJoinToSend"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleJoinToSend</span></code></a></p></td>
-<td><p>Set whether all users <a class="reference external" href="https://core.telegram.org/api/discussion#requiring-users-to-join-the-group">should join a discussion group in order to comment on a post</a></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-join-request.html#pyrogram.raw.functions.channels.ToggleJoinRequest" title="pyrogram.raw.functions.channels.ToggleJoinRequest"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleJoinRequest</span></code></a></p></td>
-<td><p>Set whether all users should <a class="reference external" href="https://core.telegram.org/api/invites#join-requests">request admin approval to join the group</a>.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-forum.html#pyrogram.raw.functions.channels.ToggleForum" title="pyrogram.raw.functions.channels.ToggleForum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleForum</span></code></a></p></td>
-<td><p>Enable or disable <a class="reference external" href="https://core.telegram.org/api/forum">forum functionality</a> in a supergroup.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-anti-spam.html#pyrogram.raw.functions.channels.ToggleAntiSpam" title="pyrogram.raw.functions.channels.ToggleAntiSpam"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleAntiSpam</span></code></a></p></td>
-<td><p>Enable or disable the <a class="reference external" href="https://core.telegram.org/api/antispam">native antispam system</a>.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-participants-hidden.html#pyrogram.raw.functions.channels.ToggleParticipantsHidden" title="pyrogram.raw.functions.channels.ToggleParticipantsHidden"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleParticipantsHidden</span></code></a></p></td>
-<td><p>Hide or display the participants list in a <a class="reference external" href="https://core.telegram.org/api/channel">supergroup</a>.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/update-color.html#pyrogram.raw.functions.channels.UpdateColor" title="pyrogram.raw.functions.channels.UpdateColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.UpdateColor</span></code></a></p></td>
-<td><p>Update the <a class="reference external" href="https://core.telegram.org/api/colors">accent color and background custom emoji</a> of a channel.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-view-forum-as-messages.html#pyrogram.raw.functions.channels.ToggleViewForumAsMessages" title="pyrogram.raw.functions.channels.ToggleViewForumAsMessages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleViewForumAsMessages</span></code></a></p></td>
-<td><p>Users may also choose to display messages from all topics of a <a class="reference external" href="https://core.telegram.org/api/forum">forum</a> as if they were sent to a normal group, using a &quot;View as messages&quot; setting in the local client: this setting only affects the current account, and is synced to other logged in sessions using this method.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/update-emoji-status.html#pyrogram.raw.functions.channels.UpdateEmojiStatus" title="pyrogram.raw.functions.channels.UpdateEmojiStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.UpdateEmojiStatus</span></code></a></p></td>
-<td><p>Set an <a class="reference external" href="https://core.telegram.org/api/emoji-status">emoji status</a> for a channel or supergroup.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/set-boosts-to-unblock-restrictions.html#pyrogram.raw.functions.channels.SetBoostsToUnblockRestrictions" title="pyrogram.raw.functions.channels.SetBoostsToUnblockRestrictions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.SetBoostsToUnblockRestrictions</span></code></a></p></td>
-<td><p>Admins with <a class="reference external" href="https://core.telegram.org/constructor/chatAdminRights">ban_users admin rights</a> may allow users that apply a certain number of <a class="reference external" href="https://core.telegram.org/api/boost">booosts</a> to the group to bypass <a class="reference external" href="https://core.telegram.org/method/channels.toggleSlowMode">slow mode</a> and <a class="reference external" href="https://core.telegram.org/api/rights#default-rights">other</a> supergroup restrictions, see <a class="reference external" href="https://core.telegram.org/api/boost#bypass-slowmode-and-chat-restrictions">here</a> for more info.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/restrict-sponsored-messages.html#pyrogram.raw.functions.channels.RestrictSponsoredMessages" title="pyrogram.raw.functions.channels.RestrictSponsoredMessages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.RestrictSponsoredMessages</span></code></a></p></td>
-<td><p>Disable ads on the specified channel, for all users.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/update-paid-messages-price.html#pyrogram.raw.functions.channels.UpdatePaidMessagesPrice" title="pyrogram.raw.functions.channels.UpdatePaidMessagesPrice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.UpdatePaidMessagesPrice</span></code></a></p></td>
-<td><p>Enable or disable <a class="reference external" href="https://core.telegram.org/api/paid-messages">paid messages</a> in this <a class="reference external" href="https://core.telegram.org/api/channel">supergroup</a> or <a class="reference external" href="https://core.telegram.org/api/monoforum">monoforum</a>.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-autotranslation.html#pyrogram.raw.functions.channels.ToggleAutotranslation" title="pyrogram.raw.functions.channels.ToggleAutotranslation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleAutotranslation</span></code></a></p></td>
-<td><p>Toggle autotranslation in a channel, for all users: see <a class="reference external" href="https://core.telegram.org/api/translation#autotranslation-for-channels">here</a> for more info.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/bots/allow-send-message.html#pyrogram.raw.functions.bots.AllowSendMessage" title="pyrogram.raw.functions.bots.AllowSendMessage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bots.AllowSendMessage</span></code></a></p></td>
-<td><p>Allow the specified bot to send us messages</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/payments/assign-app-store-transaction.html#pyrogram.raw.functions.payments.AssignAppStoreTransaction" title="pyrogram.raw.functions.payments.AssignAppStoreTransaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.AssignAppStoreTransaction</span></code></a></p></td>
-<td><p>Informs server about a purchase made through the App Store: for official applications only.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/assign-play-market-transaction.html#pyrogram.raw.functions.payments.AssignPlayMarketTransaction" title="pyrogram.raw.functions.payments.AssignPlayMarketTransaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.AssignPlayMarketTransaction</span></code></a></p></td>
-<td><p>Informs server about a purchase made through the Play Store: for official applications only.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/payments/apply-gift-code.html#pyrogram.raw.functions.payments.ApplyGiftCode" title="pyrogram.raw.functions.payments.ApplyGiftCode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.ApplyGiftCode</span></code></a></p></td>
-<td><p>Apply a <a class="reference external" href="https://core.telegram.org/api/giveaways">Telegram Premium giftcode</a></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/launch-prepaid-giveaway.html#pyrogram.raw.functions.payments.LaunchPrepaidGiveaway" title="pyrogram.raw.functions.payments.LaunchPrepaidGiveaway"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.LaunchPrepaidGiveaway</span></code></a></p></td>
-<td><p>Launch a <a class="reference external" href="https://core.telegram.org/api/giveaways">prepaid giveaway</a>.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/payments/refund-stars-charge.html#pyrogram.raw.functions.payments.RefundStarsCharge" title="pyrogram.raw.functions.payments.RefundStarsCharge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.RefundStarsCharge</span></code></a></p></td>
-<td><p>Refund a <a class="reference external" href="https://core.telegram.org/api/stars">Telegram Stars</a> transaction, see <a class="reference external" href="https://core.telegram.org/api/payments#6-refunds">here</a> for more info.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/upgrade-star-gift.html#pyrogram.raw.functions.payments.UpgradeStarGift" title="pyrogram.raw.functions.payments.UpgradeStarGift"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.UpgradeStarGift</span></code></a></p></td>
-<td><p>Upgrade a <a class="reference external" href="https://core.telegram.org/api/gifts">gift</a> to a <a class="reference external" href="https://core.telegram.org/api/gifts#collectible-gifts">collectible gift</a>: can only be used if the upgrade was already paid by the gift sender; see <a class="reference external" href="https://core.telegram.org/api/gifts#upgrade-a-gift-to-a-collectible-gift">here</a> for more info on the full flow (including the different flow to use in case the upgrade was not paid by the gift sender).</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/payments/transfer-star-gift.html#pyrogram.raw.functions.payments.TransferStarGift" title="pyrogram.raw.functions.payments.TransferStarGift"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.TransferStarGift</span></code></a></p></td>
-<td><p>Transfer a <a class="reference external" href="https://core.telegram.org/api/gifts#collectible-gifts">collectible gift</a> to another user or channel: can only be used if transfer is free (i.e. <a class="reference external" href="https://core.telegram.org/constructor/messageActionStarGiftUnique">messageActionStarGiftUnique</a>.transfer_stars is not set); see <a class="reference external" href="https://core.telegram.org/api/gifts#transferring-collectible-gifts">here</a> for more info on the full flow (including the different flow to use in case the transfer isn't free).</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/update-star-gift-price.html#pyrogram.raw.functions.payments.UpdateStarGiftPrice" title="pyrogram.raw.functions.payments.UpdateStarGiftPrice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.UpdateStarGiftPrice</span></code></a></p></td>
-<td><p>A <a class="reference external" href="https://core.telegram.org/api/gifts#collectible-gifts">collectible gift we own</a> can be put up for sale on the <a class="reference external" href="https://telegram.org/blog/gift-marketplace-and-more">gift marketplace</a> with this method, see <a class="reference external" href="https://core.telegram.org/api/gifts#reselling-collectible-gifts">here</a> for more info.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/payments/resolve-star-gift-offer.html#pyrogram.raw.functions.payments.ResolveStarGiftOffer" title="pyrogram.raw.functions.payments.ResolveStarGiftOffer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.ResolveStarGiftOffer</span></code></a></p></td>
 <td><p>Details:</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/send-star-gift-offer.html#pyrogram.raw.functions.payments.SendStarGiftOffer" title="pyrogram.raw.functions.payments.SendStarGiftOffer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.SendStarGiftOffer</span></code></a></p></td>
-<td><p><strong>Usable by</strong>
-<span class="iv-fallback">✅ </span>
-<span class="usable-by badge-yes">Users</span>
-<span class="iv-fallback">❌ </span>
-<span class="usable-by badge-no">Bots</span>
-<br></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/delete-poll-answer.html#pyrogram.raw.functions.messages.DeletePollAnswer" title="pyrogram.raw.functions.messages.DeletePollAnswer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.DeletePollAnswer</span></code></a></p></td>
+<td><p>Details:</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/payments/craft-star-gift.html#pyrogram.raw.functions.payments.CraftStarGift" title="pyrogram.raw.functions.payments.CraftStarGift"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.CraftStarGift</span></code></a></p></td>
-<td><p><strong>Usable by</strong>
-<span class="iv-fallback">✅ </span>
-<span class="usable-by badge-yes">Users</span>
-<span class="iv-fallback">❌ </span>
-<span class="usable-by badge-no">Bots</span>
-<br></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/delete-participant-reaction.html#pyrogram.raw.functions.messages.DeleteParticipantReaction" title="pyrogram.raw.functions.messages.DeleteParticipantReaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.DeleteParticipantReaction</span></code></a></p></td>
+<td><p>Details:</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/discard-call.html#pyrogram.raw.functions.phone.DiscardCall" title="pyrogram.raw.functions.phone.DiscardCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DiscardCall</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/create-channel.html#pyrogram.raw.functions.channels.CreateChannel" title="pyrogram.raw.functions.channels.CreateChannel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.CreateChannel</span></code></a></p></td>
+<td><p>Create a <a class="reference external" href="https://core.telegram.org/api/channel">supergroup/channel</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/edit-admin.html#pyrogram.raw.functions.channels.EditAdmin" title="pyrogram.raw.functions.channels.EditAdmin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditAdmin</span></code></a></p></td>
+<td><p>Modify the admin rights of a user in a <a class="reference external" href="https://core.telegram.org/api/channel">supergroup/channel</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/edit-title.html#pyrogram.raw.functions.channels.EditTitle" title="pyrogram.raw.functions.channels.EditTitle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditTitle</span></code></a></p></td>
+<td><p>Edit the name of a <a class="reference external" href="https://core.telegram.org/api/channel">channel/supergroup</a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/edit-photo.html#pyrogram.raw.functions.channels.EditPhoto" title="pyrogram.raw.functions.channels.EditPhoto"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditPhoto</span></code></a></p></td>
+<td><p>Change the photo of a <a class="reference external" href="https://core.telegram.org/api/channel">channel/supergroup</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/join-channel.html#pyrogram.raw.functions.channels.JoinChannel" title="pyrogram.raw.functions.channels.JoinChannel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.JoinChannel</span></code></a></p></td>
+<td><p>Join a channel/supergroup</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/leave-channel.html#pyrogram.raw.functions.channels.LeaveChannel" title="pyrogram.raw.functions.channels.LeaveChannel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.LeaveChannel</span></code></a></p></td>
+<td><p>Leave a <a class="reference external" href="https://core.telegram.org/api/channel">channel/supergroup</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/delete-channel.html#pyrogram.raw.functions.channels.DeleteChannel" title="pyrogram.raw.functions.channels.DeleteChannel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.DeleteChannel</span></code></a></p></td>
+<td><p>Delete a <a class="reference external" href="https://core.telegram.org/api/channel">channel/supergroup</a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-signatures.html#pyrogram.raw.functions.channels.ToggleSignatures" title="pyrogram.raw.functions.channels.ToggleSignatures"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleSignatures</span></code></a></p></td>
+<td><p>Enable/disable message signatures in channels</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/edit-banned.html#pyrogram.raw.functions.channels.EditBanned" title="pyrogram.raw.functions.channels.EditBanned"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditBanned</span></code></a></p></td>
+<td><p>Ban/unban/kick a user in a <a class="reference external" href="https://core.telegram.org/api/channel">supergroup/channel</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/delete-history.html#pyrogram.raw.functions.channels.DeleteHistory" title="pyrogram.raw.functions.channels.DeleteHistory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.DeleteHistory</span></code></a></p></td>
+<td><p>Delete the history of a <a class="reference external" href="https://core.telegram.org/api/channel">supergroup</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-pre-history-hidden.html#pyrogram.raw.functions.channels.TogglePreHistoryHidden" title="pyrogram.raw.functions.channels.TogglePreHistoryHidden"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.TogglePreHistoryHidden</span></code></a></p></td>
+<td><p>Hide/unhide message history for new channel/supergroup users</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-slow-mode.html#pyrogram.raw.functions.channels.ToggleSlowMode" title="pyrogram.raw.functions.channels.ToggleSlowMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleSlowMode</span></code></a></p></td>
+<td><p>Toggle supergroup slow mode: if enabled, users will only be able to send one message every seconds seconds</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/convert-to-gigagroup.html#pyrogram.raw.functions.channels.ConvertToGigagroup" title="pyrogram.raw.functions.channels.ConvertToGigagroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ConvertToGigagroup</span></code></a></p></td>
+<td><p>Convert a <a class="reference external" href="https://core.telegram.org/api/channel">supergroup</a> to a <a class="reference external" href="https://core.telegram.org/api/channel">gigagroup</a>, when requested by <a class="reference external" href="https://core.telegram.org/api/config#channel-suggestions">channel suggestions</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-join-to-send.html#pyrogram.raw.functions.channels.ToggleJoinToSend" title="pyrogram.raw.functions.channels.ToggleJoinToSend"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleJoinToSend</span></code></a></p></td>
+<td><p>Set whether all users <a class="reference external" href="https://core.telegram.org/api/discussion#requiring-users-to-join-the-group">should join a discussion group in order to comment on a post</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-join-request.html#pyrogram.raw.functions.channels.ToggleJoinRequest" title="pyrogram.raw.functions.channels.ToggleJoinRequest"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleJoinRequest</span></code></a></p></td>
+<td><p>Set whether all users should <a class="reference external" href="https://core.telegram.org/api/invites#join-requests">request admin approval to join the group</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-forum.html#pyrogram.raw.functions.channels.ToggleForum" title="pyrogram.raw.functions.channels.ToggleForum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleForum</span></code></a></p></td>
+<td><p>Enable or disable <a class="reference external" href="https://core.telegram.org/api/forum">forum functionality</a> in a supergroup.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-anti-spam.html#pyrogram.raw.functions.channels.ToggleAntiSpam" title="pyrogram.raw.functions.channels.ToggleAntiSpam"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleAntiSpam</span></code></a></p></td>
+<td><p>Enable or disable the <a class="reference external" href="https://core.telegram.org/api/antispam">native antispam system</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-participants-hidden.html#pyrogram.raw.functions.channels.ToggleParticipantsHidden" title="pyrogram.raw.functions.channels.ToggleParticipantsHidden"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleParticipantsHidden</span></code></a></p></td>
+<td><p>Hide or display the participants list in a <a class="reference external" href="https://core.telegram.org/api/channel">supergroup</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/update-color.html#pyrogram.raw.functions.channels.UpdateColor" title="pyrogram.raw.functions.channels.UpdateColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.UpdateColor</span></code></a></p></td>
+<td><p>Update the <a class="reference external" href="https://core.telegram.org/api/colors">accent color and background custom emoji</a> of a channel.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-view-forum-as-messages.html#pyrogram.raw.functions.channels.ToggleViewForumAsMessages" title="pyrogram.raw.functions.channels.ToggleViewForumAsMessages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleViewForumAsMessages</span></code></a></p></td>
+<td><p>Users may also choose to display messages from all topics of a <a class="reference external" href="https://core.telegram.org/api/forum">forum</a> as if they were sent to a normal group, using a &quot;View as messages&quot; setting in the local client: this setting only affects the current account, and is synced to other logged in sessions using this method.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/update-emoji-status.html#pyrogram.raw.functions.channels.UpdateEmojiStatus" title="pyrogram.raw.functions.channels.UpdateEmojiStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.UpdateEmojiStatus</span></code></a></p></td>
+<td><p>Set an <a class="reference external" href="https://core.telegram.org/api/emoji-status">emoji status</a> for a channel or supergroup.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/set-boosts-to-unblock-restrictions.html#pyrogram.raw.functions.channels.SetBoostsToUnblockRestrictions" title="pyrogram.raw.functions.channels.SetBoostsToUnblockRestrictions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.SetBoostsToUnblockRestrictions</span></code></a></p></td>
+<td><p>Admins with <a class="reference external" href="https://core.telegram.org/constructor/chatAdminRights">ban_users admin rights</a> may allow users that apply a certain number of <a class="reference external" href="https://core.telegram.org/api/boost">booosts</a> to the group to bypass <a class="reference external" href="https://core.telegram.org/method/channels.toggleSlowMode">slow mode</a> and <a class="reference external" href="https://core.telegram.org/api/rights#default-rights">other</a> supergroup restrictions, see <a class="reference external" href="https://core.telegram.org/api/boost#bypass-slowmode-and-chat-restrictions">here</a> for more info.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/restrict-sponsored-messages.html#pyrogram.raw.functions.channels.RestrictSponsoredMessages" title="pyrogram.raw.functions.channels.RestrictSponsoredMessages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.RestrictSponsoredMessages</span></code></a></p></td>
+<td><p>Disable ads on the specified channel, for all users.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/update-paid-messages-price.html#pyrogram.raw.functions.channels.UpdatePaidMessagesPrice" title="pyrogram.raw.functions.channels.UpdatePaidMessagesPrice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.UpdatePaidMessagesPrice</span></code></a></p></td>
+<td><p>Enable or disable <a class="reference external" href="https://core.telegram.org/api/paid-messages">paid messages</a> in this <a class="reference external" href="https://core.telegram.org/api/channel">supergroup</a> or <a class="reference external" href="https://core.telegram.org/api/monoforum">monoforum</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-autotranslation.html#pyrogram.raw.functions.channels.ToggleAutotranslation" title="pyrogram.raw.functions.channels.ToggleAutotranslation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleAutotranslation</span></code></a></p></td>
+<td><p>Toggle autotranslation in a channel, for all users: see <a class="reference external" href="https://core.telegram.org/api/translation#autotranslation-for-channels">here</a> for more info.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/bots/allow-send-message.html#pyrogram.raw.functions.bots.AllowSendMessage" title="pyrogram.raw.functions.bots.AllowSendMessage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bots.AllowSendMessage</span></code></a></p></td>
+<td><p>Allow the specified bot to send us messages</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/assign-app-store-transaction.html#pyrogram.raw.functions.payments.AssignAppStoreTransaction" title="pyrogram.raw.functions.payments.AssignAppStoreTransaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.AssignAppStoreTransaction</span></code></a></p></td>
+<td><p>Informs server about a purchase made through the App Store: for official applications only.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/payments/assign-play-market-transaction.html#pyrogram.raw.functions.payments.AssignPlayMarketTransaction" title="pyrogram.raw.functions.payments.AssignPlayMarketTransaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.AssignPlayMarketTransaction</span></code></a></p></td>
+<td><p>Informs server about a purchase made through the Play Store: for official applications only.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/apply-gift-code.html#pyrogram.raw.functions.payments.ApplyGiftCode" title="pyrogram.raw.functions.payments.ApplyGiftCode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.ApplyGiftCode</span></code></a></p></td>
+<td><p>Apply a <a class="reference external" href="https://core.telegram.org/api/giveaways">Telegram Premium giftcode</a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/payments/launch-prepaid-giveaway.html#pyrogram.raw.functions.payments.LaunchPrepaidGiveaway" title="pyrogram.raw.functions.payments.LaunchPrepaidGiveaway"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.LaunchPrepaidGiveaway</span></code></a></p></td>
+<td><p>Launch a <a class="reference external" href="https://core.telegram.org/api/giveaways">prepaid giveaway</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/refund-stars-charge.html#pyrogram.raw.functions.payments.RefundStarsCharge" title="pyrogram.raw.functions.payments.RefundStarsCharge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.RefundStarsCharge</span></code></a></p></td>
+<td><p>Refund a <a class="reference external" href="https://core.telegram.org/api/stars">Telegram Stars</a> transaction, see <a class="reference external" href="https://core.telegram.org/api/payments#6-refunds">here</a> for more info.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/payments/upgrade-star-gift.html#pyrogram.raw.functions.payments.UpgradeStarGift" title="pyrogram.raw.functions.payments.UpgradeStarGift"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.UpgradeStarGift</span></code></a></p></td>
+<td><p>Upgrade a <a class="reference external" href="https://core.telegram.org/api/gifts">gift</a> to a <a class="reference external" href="https://core.telegram.org/api/gifts#collectible-gifts">collectible gift</a>: can only be used if the upgrade was already paid by the gift sender; see <a class="reference external" href="https://core.telegram.org/api/gifts#upgrade-a-gift-to-a-collectible-gift">here</a> for more info on the full flow (including the different flow to use in case the upgrade was not paid by the gift sender).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/transfer-star-gift.html#pyrogram.raw.functions.payments.TransferStarGift" title="pyrogram.raw.functions.payments.TransferStarGift"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.TransferStarGift</span></code></a></p></td>
+<td><p>Transfer a <a class="reference external" href="https://core.telegram.org/api/gifts#collectible-gifts">collectible gift</a> to another user or channel: can only be used if transfer is free (i.e. <a class="reference external" href="https://core.telegram.org/constructor/messageActionStarGiftUnique">messageActionStarGiftUnique</a>.transfer_stars is not set); see <a class="reference external" href="https://core.telegram.org/api/gifts#transferring-collectible-gifts">here</a> for more info on the full flow (including the different flow to use in case the transfer isn't free).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/payments/update-star-gift-price.html#pyrogram.raw.functions.payments.UpdateStarGiftPrice" title="pyrogram.raw.functions.payments.UpdateStarGiftPrice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.UpdateStarGiftPrice</span></code></a></p></td>
+<td><p>A <a class="reference external" href="https://core.telegram.org/api/gifts#collectible-gifts">collectible gift we own</a> can be put up for sale on the <a class="reference external" href="https://telegram.org/blog/gift-marketplace-and-more">gift marketplace</a> with this method, see <a class="reference external" href="https://core.telegram.org/api/gifts#reselling-collectible-gifts">here</a> for more info.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/resolve-star-gift-offer.html#pyrogram.raw.functions.payments.ResolveStarGiftOffer" title="pyrogram.raw.functions.payments.ResolveStarGiftOffer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.ResolveStarGiftOffer</span></code></a></p></td>
+<td><p>Accept or decline a previously received <a class="reference external" href="https://core.telegram.org/api/gifts#collectible-gift-purchase-offers">collectible gift purchase offer</a>, see <a class="reference external" href="https://core.telegram.org/api/gifts#collectible-gift-purchase-offers">here</a> for the full flow.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/payments/send-star-gift-offer.html#pyrogram.raw.functions.payments.SendStarGiftOffer" title="pyrogram.raw.functions.payments.SendStarGiftOffer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.SendStarGiftOffer</span></code></a></p></td>
+<td><p>Send an offer to purchase a <a class="reference external" href="https://core.telegram.org/api/gifts#collectible-gift-purchase-offers">collectible gift</a>, see <a class="reference external" href="https://core.telegram.org/api/gifts#collectible-gift-purchase-offers">here</a> for the full flow.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/craft-star-gift.html#pyrogram.raw.functions.payments.CraftStarGift" title="pyrogram.raw.functions.payments.CraftStarGift"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.CraftStarGift</span></code></a></p></td>
+<td><p>Craft a new <a class="reference external" href="https://core.telegram.org/api/gifts#collectible-gifts">collectible gift</a> by combining 1 to 4 owned collectible gifts of the same base gift type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/discard-call.html#pyrogram.raw.functions.phone.DiscardCall" title="pyrogram.raw.functions.phone.DiscardCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DiscardCall</span></code></a></p></td>
 <td><p>Refuse or end running call, see <a class="reference external" href="https://core.telegram.org/api/calls#one-to-one-calls">here</a> for more info on the full flow.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/set-call-rating.html#pyrogram.raw.functions.phone.SetCallRating" title="pyrogram.raw.functions.phone.SetCallRating"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.SetCallRating</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/set-call-rating.html#pyrogram.raw.functions.phone.SetCallRating" title="pyrogram.raw.functions.phone.SetCallRating"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.SetCallRating</span></code></a></p></td>
 <td><p>Rate a call, returns info about the rating message sent to the official VoIP bot, see <a class="reference external" href="https://core.telegram.org/api/calls#call-rating">here</a> for more info on the full flow.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/create-group-call.html#pyrogram.raw.functions.phone.CreateGroupCall" title="pyrogram.raw.functions.phone.CreateGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.CreateGroupCall</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/create-group-call.html#pyrogram.raw.functions.phone.CreateGroupCall" title="pyrogram.raw.functions.phone.CreateGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.CreateGroupCall</span></code></a></p></td>
 <td><p>Create a group call or livestream</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/join-group-call.html#pyrogram.raw.functions.phone.JoinGroupCall" title="pyrogram.raw.functions.phone.JoinGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.JoinGroupCall</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/join-group-call.html#pyrogram.raw.functions.phone.JoinGroupCall" title="pyrogram.raw.functions.phone.JoinGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.JoinGroupCall</span></code></a></p></td>
 <td><p>Join a group call</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/leave-group-call.html#pyrogram.raw.functions.phone.LeaveGroupCall" title="pyrogram.raw.functions.phone.LeaveGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.LeaveGroupCall</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/leave-group-call.html#pyrogram.raw.functions.phone.LeaveGroupCall" title="pyrogram.raw.functions.phone.LeaveGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.LeaveGroupCall</span></code></a></p></td>
 <td><p>Leave a group call</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/invite-to-group-call.html#pyrogram.raw.functions.phone.InviteToGroupCall" title="pyrogram.raw.functions.phone.InviteToGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.InviteToGroupCall</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/invite-to-group-call.html#pyrogram.raw.functions.phone.InviteToGroupCall" title="pyrogram.raw.functions.phone.InviteToGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.InviteToGroupCall</span></code></a></p></td>
 <td><p>Invite a set of users to a group call.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/discard-group-call.html#pyrogram.raw.functions.phone.DiscardGroupCall" title="pyrogram.raw.functions.phone.DiscardGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DiscardGroupCall</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/discard-group-call.html#pyrogram.raw.functions.phone.DiscardGroupCall" title="pyrogram.raw.functions.phone.DiscardGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DiscardGroupCall</span></code></a></p></td>
 <td><p>Terminate a group call</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/toggle-group-call-settings.html#pyrogram.raw.functions.phone.ToggleGroupCallSettings" title="pyrogram.raw.functions.phone.ToggleGroupCallSettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.ToggleGroupCallSettings</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/toggle-group-call-settings.html#pyrogram.raw.functions.phone.ToggleGroupCallSettings" title="pyrogram.raw.functions.phone.ToggleGroupCallSettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.ToggleGroupCallSettings</span></code></a></p></td>
 <td><p>Change group call settings</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/toggle-group-call-record.html#pyrogram.raw.functions.phone.ToggleGroupCallRecord" title="pyrogram.raw.functions.phone.ToggleGroupCallRecord"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.ToggleGroupCallRecord</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/toggle-group-call-record.html#pyrogram.raw.functions.phone.ToggleGroupCallRecord" title="pyrogram.raw.functions.phone.ToggleGroupCallRecord"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.ToggleGroupCallRecord</span></code></a></p></td>
 <td><p>Start or stop recording a group call: the recorded audio and video streams will be automatically sent to Saved messages (the chat with ourselves).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/edit-group-call-participant.html#pyrogram.raw.functions.phone.EditGroupCallParticipant" title="pyrogram.raw.functions.phone.EditGroupCallParticipant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.EditGroupCallParticipant</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/edit-group-call-participant.html#pyrogram.raw.functions.phone.EditGroupCallParticipant" title="pyrogram.raw.functions.phone.EditGroupCallParticipant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.EditGroupCallParticipant</span></code></a></p></td>
 <td><p>Edit information about a given group call participant Note: <a class="reference external" href="https://core.telegram.org/mtproto/TL-combinators#conditional-fields">flags</a>.N?`Bool &lt;<a class="reference external" href="https://core.telegram.org/type/Bool">https://core.telegram.org/type/Bool</a>&gt;`__ parameters can have three possible values:</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/edit-group-call-title.html#pyrogram.raw.functions.phone.EditGroupCallTitle" title="pyrogram.raw.functions.phone.EditGroupCallTitle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.EditGroupCallTitle</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/edit-group-call-title.html#pyrogram.raw.functions.phone.EditGroupCallTitle" title="pyrogram.raw.functions.phone.EditGroupCallTitle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.EditGroupCallTitle</span></code></a></p></td>
 <td><p>Edit the title of a group call or livestream</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/toggle-group-call-start-subscription.html#pyrogram.raw.functions.phone.ToggleGroupCallStartSubscription" title="pyrogram.raw.functions.phone.ToggleGroupCallStartSubscription"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.ToggleGroupCallStartSubscription</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/toggle-group-call-start-subscription.html#pyrogram.raw.functions.phone.ToggleGroupCallStartSubscription" title="pyrogram.raw.functions.phone.ToggleGroupCallStartSubscription"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.ToggleGroupCallStartSubscription</span></code></a></p></td>
 <td><p>Subscribe or unsubscribe to a scheduled group call</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/start-scheduled-group-call.html#pyrogram.raw.functions.phone.StartScheduledGroupCall" title="pyrogram.raw.functions.phone.StartScheduledGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.StartScheduledGroupCall</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/start-scheduled-group-call.html#pyrogram.raw.functions.phone.StartScheduledGroupCall" title="pyrogram.raw.functions.phone.StartScheduledGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.StartScheduledGroupCall</span></code></a></p></td>
 <td><p>Start a scheduled group call.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/join-group-call-presentation.html#pyrogram.raw.functions.phone.JoinGroupCallPresentation" title="pyrogram.raw.functions.phone.JoinGroupCallPresentation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.JoinGroupCallPresentation</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/join-group-call-presentation.html#pyrogram.raw.functions.phone.JoinGroupCallPresentation" title="pyrogram.raw.functions.phone.JoinGroupCallPresentation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.JoinGroupCallPresentation</span></code></a></p></td>
 <td><p>Start screen sharing in a call</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/leave-group-call-presentation.html#pyrogram.raw.functions.phone.LeaveGroupCallPresentation" title="pyrogram.raw.functions.phone.LeaveGroupCallPresentation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.LeaveGroupCallPresentation</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/leave-group-call-presentation.html#pyrogram.raw.functions.phone.LeaveGroupCallPresentation" title="pyrogram.raw.functions.phone.LeaveGroupCallPresentation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.LeaveGroupCallPresentation</span></code></a></p></td>
 <td><p>Stop screen sharing in a group call</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/create-conference-call.html#pyrogram.raw.functions.phone.CreateConferenceCall" title="pyrogram.raw.functions.phone.CreateConferenceCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.CreateConferenceCall</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/create-conference-call.html#pyrogram.raw.functions.phone.CreateConferenceCall" title="pyrogram.raw.functions.phone.CreateConferenceCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.CreateConferenceCall</span></code></a></p></td>
 <td><p>Create and optionally join a new conference call.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/delete-conference-call-participants.html#pyrogram.raw.functions.phone.DeleteConferenceCallParticipants" title="pyrogram.raw.functions.phone.DeleteConferenceCallParticipants"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DeleteConferenceCallParticipants</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/delete-conference-call-participants.html#pyrogram.raw.functions.phone.DeleteConferenceCallParticipants" title="pyrogram.raw.functions.phone.DeleteConferenceCallParticipants"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DeleteConferenceCallParticipants</span></code></a></p></td>
 <td><p>Remove participants from a conference call.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/send-conference-call-broadcast.html#pyrogram.raw.functions.phone.SendConferenceCallBroadcast" title="pyrogram.raw.functions.phone.SendConferenceCallBroadcast"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.SendConferenceCallBroadcast</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/send-conference-call-broadcast.html#pyrogram.raw.functions.phone.SendConferenceCallBroadcast" title="pyrogram.raw.functions.phone.SendConferenceCallBroadcast"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.SendConferenceCallBroadcast</span></code></a></p></td>
 <td><p>Broadcast a blockchain block to all members of a conference call, see <a class="reference external" href="https://core.telegram.org/api/end-to-end/group-calls">here</a> for more info.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/invite-conference-call-participant.html#pyrogram.raw.functions.phone.InviteConferenceCallParticipant" title="pyrogram.raw.functions.phone.InviteConferenceCallParticipant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.InviteConferenceCallParticipant</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/invite-conference-call-participant.html#pyrogram.raw.functions.phone.InviteConferenceCallParticipant" title="pyrogram.raw.functions.phone.InviteConferenceCallParticipant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.InviteConferenceCallParticipant</span></code></a></p></td>
 <td><p>Invite a user to a conference call.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/decline-conference-call-invite.html#pyrogram.raw.functions.phone.DeclineConferenceCallInvite" title="pyrogram.raw.functions.phone.DeclineConferenceCallInvite"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DeclineConferenceCallInvite</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/decline-conference-call-invite.html#pyrogram.raw.functions.phone.DeclineConferenceCallInvite" title="pyrogram.raw.functions.phone.DeclineConferenceCallInvite"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DeclineConferenceCallInvite</span></code></a></p></td>
 <td><p>Declines a conference call invite.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/get-group-call-chain-blocks.html#pyrogram.raw.functions.phone.GetGroupCallChainBlocks" title="pyrogram.raw.functions.phone.GetGroupCallChainBlocks"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.GetGroupCallChainBlocks</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/get-group-call-chain-blocks.html#pyrogram.raw.functions.phone.GetGroupCallChainBlocks" title="pyrogram.raw.functions.phone.GetGroupCallChainBlocks"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.GetGroupCallChainBlocks</span></code></a></p></td>
 <td><p>Fetch the blocks of a <a class="reference external" href="https://core.telegram.org/api/end-to-end/group-calls">conference blockchain</a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/send-group-call-message.html#pyrogram.raw.functions.phone.SendGroupCallMessage" title="pyrogram.raw.functions.phone.SendGroupCallMessage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.SendGroupCallMessage</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/send-group-call-message.html#pyrogram.raw.functions.phone.SendGroupCallMessage" title="pyrogram.raw.functions.phone.SendGroupCallMessage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.SendGroupCallMessage</span></code></a></p></td>
 <td><p><strong>Usable by</strong>
 <span class="iv-fallback">✅ </span>
 <span class="usable-by badge-yes">Users</span>
@@ -1379,7 +1379,7 @@
 <span class="usable-by badge-no">Bots</span>
 <br></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/delete-group-call-messages.html#pyrogram.raw.functions.phone.DeleteGroupCallMessages" title="pyrogram.raw.functions.phone.DeleteGroupCallMessages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DeleteGroupCallMessages</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/delete-group-call-messages.html#pyrogram.raw.functions.phone.DeleteGroupCallMessages" title="pyrogram.raw.functions.phone.DeleteGroupCallMessages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DeleteGroupCallMessages</span></code></a></p></td>
 <td><p><strong>Usable by</strong>
 <span class="iv-fallback">✅ </span>
 <span class="usable-by badge-yes">Users</span>
@@ -1387,7 +1387,7 @@
 <span class="usable-by badge-no">Bots</span>
 <br></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/delete-group-call-participant-messages.html#pyrogram.raw.functions.phone.DeleteGroupCallParticipantMessages" title="pyrogram.raw.functions.phone.DeleteGroupCallParticipantMessages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DeleteGroupCallParticipantMessages</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/delete-group-call-participant-messages.html#pyrogram.raw.functions.phone.DeleteGroupCallParticipantMessages" title="pyrogram.raw.functions.phone.DeleteGroupCallParticipantMessages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DeleteGroupCallParticipantMessages</span></code></a></p></td>
 <td><p><strong>Usable by</strong>
 <span class="iv-fallback">✅ </span>
 <span class="usable-by badge-yes">Users</span>
@@ -1395,34 +1395,34 @@
 <span class="usable-by badge-no">Bots</span>
 <br></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/folders/edit-peer-folders.html#pyrogram.raw.functions.folders.EditPeerFolders" title="pyrogram.raw.functions.folders.EditPeerFolders"><code class="xref py py-obj docutils literal notranslate"><span class="pre">folders.EditPeerFolders</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/folders/edit-peer-folders.html#pyrogram.raw.functions.folders.EditPeerFolders" title="pyrogram.raw.functions.folders.EditPeerFolders"><code class="xref py py-obj docutils literal notranslate"><span class="pre">folders.EditPeerFolders</span></code></a></p></td>
 <td><p>Edit peers in <a class="reference external" href="https://core.telegram.org/api/folders#peer-folders">peer folder</a></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/chatlists/join-chatlist-invite.html#pyrogram.raw.functions.chatlists.JoinChatlistInvite" title="pyrogram.raw.functions.chatlists.JoinChatlistInvite"><code class="xref py py-obj docutils literal notranslate"><span class="pre">chatlists.JoinChatlistInvite</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/chatlists/join-chatlist-invite.html#pyrogram.raw.functions.chatlists.JoinChatlistInvite" title="pyrogram.raw.functions.chatlists.JoinChatlistInvite"><code class="xref py py-obj docutils literal notranslate"><span class="pre">chatlists.JoinChatlistInvite</span></code></a></p></td>
 <td><p>Import a <a class="reference external" href="https://core.telegram.org/api/links#chat-folder-links">chat folder deep link</a>, joining some or all the chats in the folder.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/chatlists/join-chatlist-updates.html#pyrogram.raw.functions.chatlists.JoinChatlistUpdates" title="pyrogram.raw.functions.chatlists.JoinChatlistUpdates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">chatlists.JoinChatlistUpdates</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/chatlists/join-chatlist-updates.html#pyrogram.raw.functions.chatlists.JoinChatlistUpdates" title="pyrogram.raw.functions.chatlists.JoinChatlistUpdates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">chatlists.JoinChatlistUpdates</span></code></a></p></td>
 <td><p>Join channels and supergroups recently added to a <a class="reference external" href="https://core.telegram.org/api/links#chat-folder-links">chat folder deep link</a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/chatlists/leave-chatlist.html#pyrogram.raw.functions.chatlists.LeaveChatlist" title="pyrogram.raw.functions.chatlists.LeaveChatlist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">chatlists.LeaveChatlist</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/chatlists/leave-chatlist.html#pyrogram.raw.functions.chatlists.LeaveChatlist" title="pyrogram.raw.functions.chatlists.LeaveChatlist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">chatlists.LeaveChatlist</span></code></a></p></td>
 <td><p>Delete a folder imported using a <a class="reference external" href="https://core.telegram.org/api/links#chat-folder-links">chat folder deep link</a></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/stories/send-story.html#pyrogram.raw.functions.stories.SendStory" title="pyrogram.raw.functions.stories.SendStory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.SendStory</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/stories/send-story.html#pyrogram.raw.functions.stories.SendStory" title="pyrogram.raw.functions.stories.SendStory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.SendStory</span></code></a></p></td>
 <td><p>Uploads a <a class="reference external" href="https://core.telegram.org/api/stories">Telegram Story</a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/stories/edit-story.html#pyrogram.raw.functions.stories.EditStory" title="pyrogram.raw.functions.stories.EditStory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.EditStory</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/stories/edit-story.html#pyrogram.raw.functions.stories.EditStory" title="pyrogram.raw.functions.stories.EditStory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.EditStory</span></code></a></p></td>
 <td><p>Edit an uploaded <a class="reference external" href="https://core.telegram.org/api/stories">story</a> May also be used in a <a class="reference external" href="https://core.telegram.org/api/bots/connected-business-bots">business connection</a>, not by wrapping the query in <a class="reference external" href="https://core.telegram.org/method/invokeWithBusinessConnection">invokeWithBusinessConnection</a>, but rather by specifying the ID of a controlled business user in peer: in this context, the method can only be used to edit stories posted by the same business bot on behalf of the user with <a class="reference external" href="https://core.telegram.org/method/stories.sendStory">stories.sendStory</a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/stories/activate-stealth-mode.html#pyrogram.raw.functions.stories.ActivateStealthMode" title="pyrogram.raw.functions.stories.ActivateStealthMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.ActivateStealthMode</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/stories/activate-stealth-mode.html#pyrogram.raw.functions.stories.ActivateStealthMode" title="pyrogram.raw.functions.stories.ActivateStealthMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.ActivateStealthMode</span></code></a></p></td>
 <td><p>Activates <a class="reference external" href="https://core.telegram.org/api/stories#stealth-mode">stories stealth mode</a>, see <a class="reference external" href="https://core.telegram.org/api/stories#stealth-mode">here</a> for more info.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/stories/send-reaction.html#pyrogram.raw.functions.stories.SendReaction" title="pyrogram.raw.functions.stories.SendReaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.SendReaction</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/stories/send-reaction.html#pyrogram.raw.functions.stories.SendReaction" title="pyrogram.raw.functions.stories.SendReaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.SendReaction</span></code></a></p></td>
 <td><p>React to a story.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/stories/get-all-read-peer-stories.html#pyrogram.raw.functions.stories.GetAllReadPeerStories" title="pyrogram.raw.functions.stories.GetAllReadPeerStories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.GetAllReadPeerStories</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/stories/get-all-read-peer-stories.html#pyrogram.raw.functions.stories.GetAllReadPeerStories" title="pyrogram.raw.functions.stories.GetAllReadPeerStories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.GetAllReadPeerStories</span></code></a></p></td>
 <td><p>Obtain the latest read story ID for all peers when first logging in, returned as a list of <a class="reference external" href="https://core.telegram.org/constructor/updateReadStories">updateReadStories</a> updates, see <a class="reference external" href="https://core.telegram.org/api/stories#watching-stories">here</a> for more info.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/stories/start-live.html#pyrogram.raw.functions.stories.StartLive" title="pyrogram.raw.functions.stories.StartLive"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.StartLive</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/stories/start-live.html#pyrogram.raw.functions.stories.StartLive" title="pyrogram.raw.functions.stories.StartLive"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.StartLive</span></code></a></p></td>
 <td><p><strong>Usable by</strong>
 <span class="iv-fallback">✅ </span>
 <span class="usable-by badge-yes">Users</span>
@@ -1475,7 +1475,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/40056f4" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

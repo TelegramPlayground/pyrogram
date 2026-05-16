@@ -16,7 +16,7 @@
         <link rel="canonical" href="/pyrogram/telegram/types/sponsored-message.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>SponsoredMessage - PyroTGFork 2.2.23 Layer 225</title>
+        <title>SponsoredMessage - PyroTGFork 2.2.24 Layer 225</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.23 Layer 225</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 225</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.23 Layer 225</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 225</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -326,6 +326,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat.html">get_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_administrators.html">get_chat_administrators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_member.html">get_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
@@ -403,6 +404,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_personal_chat.html">set_personal_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_account.html">delete_account</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/update_status.html">update_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages.html">get_user_personal_chat_messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_user_personal_chat_messages_count.html">get_user_personal_chat_messages_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_message_reaction.html">delete_message_reaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_all_message_reactions.html">delete_all_message_reactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/add_contact.html">add_contact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_contacts.html">delete_contacts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/import_contacts.html">import_contacts</a></li>
@@ -558,6 +563,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ChatHasProtectedContentDisableRequested.html">ChatHasProtectedContentDisableRequested</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotCreated.html">ManagedBotCreated</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ManagedBotUpdated.html">ManagedBotUpdated</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/SentGuestMessage.html">SentGuestMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/BotAccessSettings.html">BotAccessSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Birthdate.html">Birthdate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/User.html">User</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Chat.html">Chat</a></li>
@@ -984,7 +991,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.types.SponsoredMessage">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">SponsoredMessage</span></span><a class="headerlink" href="#pyrogram.raw.types.SponsoredMessage" title="Link to this definition">#</a></dt>
-<dd><p>Telegram API type.</p>
+<dd><p>A <a class="reference external" href="https://core.telegram.org/api/sponsored-messages">sponsored message</a>.</p>
 <p>Constructor of <a class="reference internal" href="../base/sponsored-message.html#pyrogram.raw.base.SponsoredMessage" title="pyrogram.raw.base.SponsoredMessage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SponsoredMessage</span></code></a>.</p>
 <dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
@@ -996,21 +1003,21 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>random_id</strong> (<code class="docutils literal notranslate"><span class="pre">bytes</span></code>) – N/A</p></li>
-<li><p><strong>url</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – N/A</p></li>
-<li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – N/A</p></li>
-<li><p><strong>message</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – N/A</p></li>
-<li><p><strong>button_text</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – N/A</p></li>
-<li><p><strong>recommended</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>can_report</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>entities</strong> (List of <a class="reference internal" href="../base/message-entity.html#pyrogram.raw.base.MessageEntity" title="pyrogram.raw.base.MessageEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>photo</strong> (<a class="reference internal" href="../base/photo.html#pyrogram.raw.base.Photo" title="pyrogram.raw.base.Photo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>media</strong> (<a class="reference internal" href="../base/message-media.html#pyrogram.raw.base.MessageMedia" title="pyrogram.raw.base.MessageMedia"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMedia</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>color</strong> (<a class="reference internal" href="../base/peer-color.html#pyrogram.raw.base.PeerColor" title="pyrogram.raw.base.PeerColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColor</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>sponsor_info</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>additional_info</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>min_display_duration</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>max_display_duration</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
+<li><p><strong>random_id</strong> (<code class="docutils literal notranslate"><span class="pre">bytes</span></code>) – Message ID</p></li>
+<li><p><strong>url</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Contains the URL to open when the user clicks on the sponsored message.</p></li>
+<li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Contains the title of the sponsored message.</p></li>
+<li><p><strong>message</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Sponsored message</p></li>
+<li><p><strong>button_text</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Label of the sponsored message button.</p></li>
+<li><p><strong>recommended</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the message needs to be labeled as “recommended” instead of “sponsored”</p></li>
+<li><p><strong>can_report</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this message can be <a class="reference external" href="https://core.telegram.org/api/sponsored-messages#reporting-sponsored-messages">reported as specified here »</a>.</p></li>
+<li><p><strong>entities</strong> (List of <a class="reference internal" href="../base/message-entity.html#pyrogram.raw.base.MessageEntity" title="pyrogram.raw.base.MessageEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/api/entities">Message entities for styled text</a> in message.</p></li>
+<li><p><strong>photo</strong> (<a class="reference internal" href="../base/photo.html#pyrogram.raw.base.Photo" title="pyrogram.raw.base.Photo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code></a>, <em>optional</em>) – If set, contains a custom profile photo bubble that should be displayed for the sponsored message, like for messages sent in groups.</p></li>
+<li><p><strong>media</strong> (<a class="reference internal" href="../base/message-media.html#pyrogram.raw.base.MessageMedia" title="pyrogram.raw.base.MessageMedia"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMedia</span></code></a>, <em>optional</em>) – If set, contains some media.</p></li>
+<li><p><strong>color</strong> (<a class="reference internal" href="../base/peer-color.html#pyrogram.raw.base.PeerColor" title="pyrogram.raw.base.PeerColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColor</span></code></a>, <em>optional</em>) – If set, the sponsored message should use the <a class="reference external" href="https://core.telegram.org/api/colors">message accent color »</a> specified in color.</p></li>
+<li><p><strong>sponsor_info</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – If set, contains additional information about the sponsor to be shown along with the message.</p></li>
+<li><p><strong>additional_info</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – If set, contains additional information about the sponsored message to be shown along with the message.</p></li>
+<li><p><strong>min_display_duration</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – For <a class="reference external" href="https://core.telegram.org/api/sponsored-messages#getting-sponsored-video-advertisements">sponsored messages to show on channel videos »</a>, allow the user to hide the ad only after the specified amount of seconds.</p></li>
+<li><p><strong>max_display_duration</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – For <a class="reference external" href="https://core.telegram.org/api/sponsored-messages#getting-sponsored-video-advertisements">sponsored messages to show on channel videos »</a>, autohide the ad after after the specified amount of seconds.</p></li>
 </ul>
 </dd>
 </dl>
@@ -1054,7 +1061,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/40056f4" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

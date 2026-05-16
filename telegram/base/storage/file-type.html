@@ -16,7 +16,7 @@
         <link rel="canonical" href="/pyrogram/telegram/base/storage/file-type.html" />
 
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>storage.FileType - PyroTGFork 2.2.23 Layer 225</title>
+        <title>storage.FileType - PyroTGFork 2.2.24 Layer 225</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.23 Layer 225</div></a>
+      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 225</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.23 Layer 225</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 225</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -326,6 +326,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/get_chat.html">get_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/methods/get_chat_administrators.html">get_chat_administrators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/get_chat_member.html">get_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
@@ -403,6 +404,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/set_personal_chat.html">set_personal_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/delete_account.html">delete_account</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/update_status.html">update_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/methods/get_user_personal_chat_messages.html">get_user_personal_chat_messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/methods/get_user_personal_chat_messages_count.html">get_user_personal_chat_messages_count</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/methods/delete_message_reaction.html">delete_message_reaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/methods/delete_all_message_reactions.html">delete_all_message_reactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/add_contact.html">add_contact</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/delete_contacts.html">delete_contacts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/import_contacts.html">import_contacts</a></li>
@@ -558,6 +563,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/ChatHasProtectedContentDisableRequested.html">ChatHasProtectedContentDisableRequested</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/ManagedBotCreated.html">ManagedBotCreated</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/ManagedBotUpdated.html">ManagedBotUpdated</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/types/SentGuestMessage.html">SentGuestMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/types/BotAccessSettings.html">BotAccessSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/Birthdate.html">Birthdate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/User.html">User</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/types/Chat.html">Chat</a></li>
@@ -984,41 +991,41 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.base.storage.FileType">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.base.storage.</span></span><span class="sig-name descname"><span class="pre">FileType</span></span><a class="headerlink" href="#pyrogram.raw.base.storage.FileType" title="Link to this definition">#</a></dt>
-<dd><p>Telegram API base type.</p>
+<dd><p>Object describes the file type.</p>
 <dl>
 <dt>Constructors:</dt><dd><p>This base type has 10 constructors available.</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../types/storage/file-gif.html#pyrogram.raw.types.storage.FileGif" title="pyrogram.raw.types.storage.FileGif"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.FileGif</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>GIF image.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../../types/storage/file-jpeg.html#pyrogram.raw.types.storage.FileJpeg" title="pyrogram.raw.types.storage.FileJpeg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.FileJpeg</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>JPEG image.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../types/storage/file-mov.html#pyrogram.raw.types.storage.FileMov" title="pyrogram.raw.types.storage.FileMov"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.FileMov</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Quicktime video.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../../types/storage/file-mp3.html#pyrogram.raw.types.storage.FileMp3" title="pyrogram.raw.types.storage.FileMp3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.FileMp3</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Mp3 audio.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../types/storage/file-mp4.html#pyrogram.raw.types.storage.FileMp4" title="pyrogram.raw.types.storage.FileMp4"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.FileMp4</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>MPEG-4 video.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../../types/storage/file-partial.html#pyrogram.raw.types.storage.FilePartial" title="pyrogram.raw.types.storage.FilePartial"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.FilePartial</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Part of a bigger file.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../types/storage/file-pdf.html#pyrogram.raw.types.storage.FilePdf" title="pyrogram.raw.types.storage.FilePdf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.FilePdf</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>PDF document image.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../../types/storage/file-png.html#pyrogram.raw.types.storage.FilePng" title="pyrogram.raw.types.storage.FilePng"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.FilePng</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>PNG image.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../types/storage/file-unknown.html#pyrogram.raw.types.storage.FileUnknown" title="pyrogram.raw.types.storage.FileUnknown"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.FileUnknown</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>Unknown type.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../../types/storage/file-webp.html#pyrogram.raw.types.storage.FileWebp" title="pyrogram.raw.types.storage.FileWebp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.FileWebp</span></code></a></p></td>
-<td><p>Telegram API type.</p></td>
+<td><p>WEBP image.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1065,7 +1072,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/be85046" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/40056f4" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               
