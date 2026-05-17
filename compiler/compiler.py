@@ -469,6 +469,7 @@ def pyrogram_api():
             get_owned_bots
             get_similar_bots
             send_message_draft
+            answer_guest_query
         """,
         phone="""
         Phone
@@ -924,6 +925,7 @@ def pyrogram_api():
             Message.translate
             Message.pay
             Message.star
+            Message.answer
             ExternalReplyInfo.download
         """,
         chat="""
