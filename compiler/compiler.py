@@ -604,6 +604,7 @@ def pyrogram_api():
             MessageEntity
             TextQuote
             ExternalReplyInfo
+            LinkPreviewOptions
             ReplyParameters
             MessageOrigin
             MessageOriginUser
@@ -767,6 +768,8 @@ def pyrogram_api():
         input_media="""
         Input Media
             InputMedia
+            InputPollMedia
+            InputPollOptionMedia
             InputMediaPhoto
             InputMediaVideo
             InputMediaAudio
@@ -774,7 +777,9 @@ def pyrogram_api():
             InputMediaDocument
             InputMediaSticker
             InputPhoneContact
-            LinkPreviewOptions
+            InputMediaLivePhoto
+            InputMediaLocation
+            InputMediaVenue
         """,
         input_paid_media="""
         Input Paid Media
