@@ -38,7 +38,7 @@ Changes in this Fork
 | Scheme layer used: 225 |
 +------------------------+
 
-- Add ``members_only`` and ``country_codes`` to :meth:`~pyrogram.Client.send_poll` and :meth:`~pyrogram.types.Message.reply_poll`.
+- Added ``members_only`` and ``country_codes`` to :meth:`~pyrogram.Client.send_poll`, :meth:`~pyrogram.types.Message.reply_poll` and :obj:`~pyrogram.types.Poll`.
 - Added the :obj:`~pyrogram.filters.guest_message_query_id`.
 - Added the classes :obj:`~pyrogram.types.SentGuestMessage` and :obj:`~pyrogram.types.BotAccessSettings`.
 - Added the methods :meth:`~pyrogram.Client.answer_guest_query`, :meth:`~pyrogram.types.Message.answer`, :meth:`~pyrogram.Client.delete_message_reaction`, :meth:`~pyrogram.Client.delete_all_message_reactions`, :meth:`~pyrogram.Client.get_user_personal_chat_messages` and :meth:`~pyrogram.Client.get_user_personal_chat_messages_count`.
