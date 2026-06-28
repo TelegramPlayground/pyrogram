@@ -32,6 +32,7 @@ Changes in this Fork
 | Scheme layer used: 227 |
 +------------------------+
 
+- Allow to set emoji status for channel.
 - View `new and changed <https://telegramplayground.github.io/TG-APIs/TL/diff/tdlib.html?from=225&to=227>`__ `raw API methods <https://telegramplayground.github.io/TG-APIs/TL/diff/tdesktop.html?from=225&to=227>`__.
 
 +------------------------+
