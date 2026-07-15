@@ -16,7 +16,7 @@
         <link rel="canonical" href="/pyrogram/api/errors/not-acceptable.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>406 - NotAcceptable - PyroTGFork 2.2.24 Layer 225</title>
+        <title>406 - NotAcceptable - PyroTGFork 2.2.24 Layer 227</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 225</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 227</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 225</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 227</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -442,6 +442,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_owned_bots.html">get_owned_bots</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_similar_bots.html">get_similar_bots</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/send_message_draft.html">send_message_draft</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../methods/answer_guest_query.html">answer_guest_query</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/send_sticker.html">send_sticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_custom_emoji_stickers.html">get_custom_emoji_stickers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_message_effects.html">get_message_effects</a></li>
@@ -486,6 +487,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../types/MessageEntity.html">MessageEntity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/TextQuote.html">TextQuote</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/ExternalReplyInfo.html">ExternalReplyInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../types/LinkPreviewOptions.html">LinkPreviewOptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/ReplyParameters.html">ReplyParameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/MessageOrigin.html">MessageOrigin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/MessageOriginUser.html">MessageOriginUser</a></li>
@@ -640,6 +642,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../types/GeneralForumTopicHidden.html">GeneralForumTopicHidden</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/GeneralForumTopicUnhidden.html">GeneralForumTopicUnhidden</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/InputMedia.html">InputMedia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../types/InputPollMedia.html">InputPollMedia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../types/InputPollOptionMedia.html">InputPollOptionMedia</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/InputMediaPhoto.html">InputMediaPhoto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/InputMediaVideo.html">InputMediaVideo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/InputMediaAudio.html">InputMediaAudio</a></li>
@@ -647,7 +651,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../types/InputMediaDocument.html">InputMediaDocument</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/InputMediaSticker.html">InputMediaSticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/InputPhoneContact.html">InputPhoneContact</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../types/LinkPreviewOptions.html">LinkPreviewOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../types/InputMediaLivePhoto.html">InputMediaLivePhoto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../types/InputMediaLocation.html">InputMediaLocation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../types/InputMediaVenue.html">InputMediaVenue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/InputPaidMedia.html">InputPaidMedia</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/InputPaidMediaPhoto.html">InputPaidMediaPhoto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/InputPaidMediaVideo.html">InputPaidMediaVideo</a></li>
@@ -780,6 +786,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Message.translate.html">translate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Message.pay.html">pay</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Message.star.html">star</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bound-methods/Message.answer.html">answer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/ExternalReplyInfo.download.html">download</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Chat.archive.html">archive</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Chat.unarchive.html">unarchive</a></li>
@@ -904,7 +911,74 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../support.html">Support Pyrogram</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../releases/index.html">Release Notes</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../releases/index.html">Release Notes</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Release Notes</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/changes-in-this-fork.html">UNRELEASED VERSION</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.24.html">Pyrogram v2.2.24</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.23.html">Pyrogram v2.2.23</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.22.html">Pyrogram v2.2.22</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.21.html">Pyrogram v2.2.21</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.18.html">Pyrogram v2.2.18</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.17.html">Pyrogram v2.2.17</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.16.html">Pyrogram v2.2.16</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.15.html">Pyrogram v2.2.15</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.14.html">Pyrogram v2.2.14</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.13.html">Pyrogram v2.2.13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.12.html">Pyrogram v2.2.12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.11.html">Pyrogram v2.2.11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.10.html">Pyrogram v2.2.10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.9.html">Pyrogram v2.2.9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.8.html">Pyrogram v2.2.8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.7.html">Pyrogram v2.2.7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.6.html">Pyrogram v2.2.6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.5.html">Pyrogram v2.2.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.4.html">Pyrogram v2.2.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.2.html">Pyrogram v2.2.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.1.html">Pyrogram v2.2.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.37.html">Pyrogram v2.1.37</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.36.html">Pyrogram v2.1.36</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.35.html">Pyrogram v2.1.35</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.34.html">Pyrogram v2.1.34</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.13.html">Pyrogram v2.1.33.13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.12.html">Pyrogram v2.1.33.12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.11.html">Pyrogram v2.1.33.11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.10.html">Pyrogram v2.1.33.10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.9.html">Pyrogram v2.1.33.9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.8.html">Pyrogram v2.1.33.8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.7.html">Pyrogram v2.1.33.7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.4.html">Pyrogram v2.1.33.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.3.html">Pyrogram v2.1.33.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.2.html">Pyrogram v2.1.33.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.1.html">Pyrogram v2.1.33.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.15.html">Pyrogram v2.1.32.15</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.14.html">Pyrogram v2.1.32.14</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.13.html">Pyrogram v2.1.32.13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.12.html">Pyrogram v2.1.32.12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.11.html">Pyrogram v2.1.32.11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.10.html">Pyrogram v2.1.32.10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.9.html">Pyrogram v2.1.32.9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.8.html">Pyrogram v2.1.32.8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.7.html">Pyrogram v2.1.32.7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.6.html">Pyrogram v2.1.32.6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.4.html">Pyrogram v2.1.32.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.3.html">Pyrogram v2.1.32.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.2.html">Pyrogram v2.1.32.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.1.html">Pyrogram v2.1.32.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.31.html">Pyrogram v2.1.31</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.30.html">Pyrogram v2.1.30</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.29.html">Pyrogram v2.1.29</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.28.html">Pyrogram v2.1.28</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.27.html">Pyrogram v2.1.27</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.26.html">Pyrogram v2.1.26</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.25.html">Pyrogram v2.1.25</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.23.html">Pyrogram v2.1.23</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.22.html">Pyrogram v2.1.22</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.21.html">Pyrogram v2.1.21</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.20.html">Pyrogram v2.1.20</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.19.html">Pyrogram v2.1.19</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.18.html">Pyrogram v2.1.18</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://web.archive.org/web/20241127113824/https://docs.pyrogram.org/releases/">Previous Changes</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
 <ul>
@@ -1011,97 +1085,100 @@
 <tr class="row-even"><td><p>BANNED_RIGHTS_INVALID</p></td>
 <td><p>You provided some invalid flags in the banned rights.</p></td>
 </tr>
-<tr class="row-odd"><td><p>BOT_PRECHECKOUT_FAILED</p></td>
+<tr class="row-odd"><td><p>BOT_ACCESS_RESTRICTED</p></td>
+<td><p>The bot’s owner has restricted access to the bot in [&#64;BotFather](<a class="reference external" href="https://BotFather.t.me">https://BotFather.t.me</a>) so that only selected users can access it.</p></td>
+</tr>
+<tr class="row-even"><td><p>BOT_PRECHECKOUT_FAILED</p></td>
 <td><p>Bot precheckout failed.</p></td>
 </tr>
-<tr class="row-even"><td><p>BUSINESS_ADDRESS_ACTIVE</p></td>
+<tr class="row-odd"><td><p>BUSINESS_ADDRESS_ACTIVE</p></td>
 <td><p>The user is currently advertising a [Business Location](<a class="reference external" href="https://core.telegram.org/api/business#location">https://core.telegram.org/api/business#location</a>), the location may only be changed (or removed) using [account.updateBusinessLocation](<a class="reference external" href="https://core.telegram.org/method/account.updateBusinessLocation">https://core.telegram.org/method/account.updateBusinessLocation</a>).  .</p></td>
 </tr>
-<tr class="row-odd"><td><p>CALL_PROTOCOL_COMPAT_LAYER_INVALID</p></td>
+<tr class="row-even"><td><p>CALL_PROTOCOL_COMPAT_LAYER_INVALID</p></td>
 <td><p>The other side of the call does not support any of the VoIP protocols supported by the local client, as specified by the <cite>protocol.layer</cite> and <cite>protocol.library_versions</cite> fields.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHANNEL_PRIVATE</p></td>
+<tr class="row-odd"><td><p>CHANNEL_PRIVATE</p></td>
 <td><p>You haven’t joined this channel/supergroup.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHANNEL_TOO_LARGE</p></td>
+<tr class="row-even"><td><p>CHANNEL_TOO_LARGE</p></td>
 <td><p>Channel is too large to be deleted; this error is issued when trying to delete channels with more than 1000 members (subject to change).</p></td>
 </tr>
-<tr class="row-even"><td><p>CHAT_FORWARDS_RESTRICTED</p></td>
+<tr class="row-odd"><td><p>CHAT_FORWARDS_RESTRICTED</p></td>
 <td><p>You can’t forward messages from a protected chat.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILEREF_UPGRADE_NEEDED</p></td>
+<tr class="row-even"><td><p>FILEREF_UPGRADE_NEEDED</p></td>
 <td><p>The client has to be updated in order to support [file references](<a class="reference external" href="https://core.telegram.org/api/file-references">https://core.telegram.org/api/file-references</a>).</p></td>
 </tr>
-<tr class="row-even"><td><p>FRESH_CHANGE_ADMINS_FORBIDDEN</p></td>
+<tr class="row-odd"><td><p>FRESH_CHANGE_ADMINS_FORBIDDEN</p></td>
 <td><p>You were just elected admin, you can’t add or modify other admins yet.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FRESH_CHANGE_PHONE_FORBIDDEN</p></td>
+<tr class="row-even"><td><p>FRESH_CHANGE_PHONE_FORBIDDEN</p></td>
 <td><p>You can’t change phone number right after logging in, please wait at least 24 hours.</p></td>
 </tr>
-<tr class="row-even"><td><p>FRESH_RESET_AUTHORISATION_FORBIDDEN</p></td>
+<tr class="row-odd"><td><p>FRESH_RESET_AUTHORISATION_FORBIDDEN</p></td>
 <td><p>You can’t logout other sessions if less than 24 hours have passed since you logged on the current session.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INVITE_HASH_EXPIRED</p></td>
+<tr class="row-even"><td><p>INVITE_HASH_EXPIRED</p></td>
 <td><p>The invite link has expired.</p></td>
 </tr>
-<tr class="row-even"><td><p>PAYMENT_UNSUPPORTED</p></td>
+<tr class="row-odd"><td><p>PAYMENT_UNSUPPORTED</p></td>
 <td><p>A detailed description of the error will be received separately as described [here](<a class="reference external" href="https://core.telegram.org/api/errors#406-not-acceptable">https://core.telegram.org/api/errors#406-not-acceptable</a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p>PEER_ID_INVALID</p></td>
+<tr class="row-even"><td><p>PEER_ID_INVALID</p></td>
 <td><p>The provided peer id is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>PHONE_NUMBER_INVALID</p></td>
+<tr class="row-odd"><td><p>PHONE_NUMBER_INVALID</p></td>
 <td><p>The phone number is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>PHONE_PASSWORD_FLOOD</p></td>
+<tr class="row-even"><td><p>PHONE_PASSWORD_FLOOD</p></td>
 <td><p>You have tried logging in too many times.</p></td>
 </tr>
-<tr class="row-even"><td><p>PRECHECKOUT_FAILED</p></td>
+<tr class="row-odd"><td><p>PRECHECKOUT_FAILED</p></td>
 <td><p>Precheckout failed, a detailed and localized description for the error will be emitted via an [updateServiceNotification as specified here](<a class="reference external" href="https://core.telegram.org/api/errors#406-not-acceptable">https://core.telegram.org/api/errors#406-not-acceptable</a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p>PREMIUM_CURRENTLY_UNAVAILABLE</p></td>
+<tr class="row-even"><td><p>PREMIUM_CURRENTLY_UNAVAILABLE</p></td>
 <td><p>You cannot currently purchase a Premium subscription.</p></td>
 </tr>
-<tr class="row-even"><td><p>PREVIOUS_CHAT_IMPORT_ACTIVE_WAIT_XMIN</p></td>
+<tr class="row-odd"><td><p>PREVIOUS_CHAT_IMPORT_ACTIVE_WAIT_XMIN</p></td>
 <td><p>Import for this chat is already in progress, wait {value} minutes before starting a new one.</p></td>
 </tr>
-<tr class="row-odd"><td><p>PRIVACY_PREMIUM_REQUIRED</p></td>
+<tr class="row-even"><td><p>PRIVACY_PREMIUM_REQUIRED</p></td>
 <td><p>You need a [Telegram Premium subscription](<a class="reference external" href="https://core.telegram.org/api/premium">https://core.telegram.org/api/premium</a>) to send a message to this user.</p></td>
 </tr>
-<tr class="row-even"><td><p>SEND_CODE_UNAVAILABLE</p></td>
+<tr class="row-odd"><td><p>SEND_CODE_UNAVAILABLE</p></td>
 <td><p>Returned when all available options for this type of number were already used (e.g. flash-call, then SMS, then this error might be returned to trigger a second resend).</p></td>
 </tr>
-<tr class="row-odd"><td><p>STARGIFT_EXPORT_IN_PROGRESS</p></td>
+<tr class="row-even"><td><p>STARGIFT_EXPORT_IN_PROGRESS</p></td>
 <td><p>A gift export is in progress, a detailed and localized description for the error will be emitted via an [updateServiceNotification as specified here](<a class="reference external" href="https://core.telegram.org/api/errors#406-not-acceptable">https://core.telegram.org/api/errors#406-not-acceptable</a>).</p></td>
 </tr>
-<tr class="row-even"><td><p>STARS_FORM_AMOUNT_MISMATCH</p></td>
+<tr class="row-odd"><td><p>STARS_FORM_AMOUNT_MISMATCH</p></td>
 <td><p>The form amount has changed, please fetch the new form using [payments.getPaymentForm](<a class="reference external" href="https://core.telegram.org/method/payments.getPaymentForm">https://core.telegram.org/method/payments.getPaymentForm</a>) and restart the process.</p></td>
 </tr>
-<tr class="row-odd"><td><p>STICKERSET_INVALID</p></td>
+<tr class="row-even"><td><p>STICKERSET_INVALID</p></td>
 <td><p>The provided sticker set is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>STICKERSET_OWNER_ANONYMOUS</p></td>
+<tr class="row-odd"><td><p>STICKERSET_OWNER_ANONYMOUS</p></td>
 <td><p>Provided stickerset can’t be installed as group stickerset to prevent admin deanonymization.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TOPIC_CLOSED</p></td>
+<tr class="row-even"><td><p>TOPIC_CLOSED</p></td>
 <td><p>This topic was closed, you can’t send messages to it anymore.</p></td>
 </tr>
-<tr class="row-even"><td><p>TOPIC_DELETED</p></td>
+<tr class="row-odd"><td><p>TOPIC_DELETED</p></td>
 <td><p>The specified topic was deleted.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TRANSLATIONS_DISABLED</p></td>
+<tr class="row-even"><td><p>TRANSLATIONS_DISABLED</p></td>
 <td><p>Translations are unavailable, a detailed and localized description for the error will be emitted via an [updateServiceNotification as specified here](<a class="reference external" href="https://core.telegram.org/api/errors#406-not-acceptable">https://core.telegram.org/api/errors#406-not-acceptable</a>).</p></td>
 </tr>
-<tr class="row-even"><td><p>UPDATE_APP_TO_LOGIN</p></td>
+<tr class="row-odd"><td><p>UPDATE_APP_TO_LOGIN</p></td>
 <td><p>Please update your client to login.</p></td>
 </tr>
-<tr class="row-odd"><td><p>USERPIC_PRIVACY_REQUIRED</p></td>
+<tr class="row-even"><td><p>USERPIC_PRIVACY_REQUIRED</p></td>
 <td><p>You need to disable privacy settings for your profile picture in order to make your geolocation public.</p></td>
 </tr>
-<tr class="row-even"><td><p>USERPIC_UPLOAD_REQUIRED</p></td>
+<tr class="row-odd"><td><p>USERPIC_UPLOAD_REQUIRED</p></td>
 <td><p>You must have a profile picture to publish your geolocation.</p></td>
 </tr>
-<tr class="row-odd"><td><p>USER_RESTRICTED</p></td>
+<tr class="row-even"><td><p>USER_RESTRICTED</p></td>
 <td><p>You’re spamreported, you can’t create channels or chats.</p></td>
 </tr>
 </tbody>
@@ -1145,7 +1222,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/40056f4" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/f1dc08e" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

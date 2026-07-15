@@ -16,7 +16,7 @@
         <link rel="canonical" href="/pyrogram/api/errors/bad-request.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>400 - BadRequest - PyroTGFork 2.2.24 Layer 225</title>
+        <title>400 - BadRequest - PyroTGFork 2.2.24 Layer 227</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 225</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 227</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 225</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 227</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -442,6 +442,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_owned_bots.html">get_owned_bots</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_similar_bots.html">get_similar_bots</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/send_message_draft.html">send_message_draft</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../methods/answer_guest_query.html">answer_guest_query</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/send_sticker.html">send_sticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_custom_emoji_stickers.html">get_custom_emoji_stickers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_message_effects.html">get_message_effects</a></li>
@@ -486,6 +487,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../types/MessageEntity.html">MessageEntity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/TextQuote.html">TextQuote</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/ExternalReplyInfo.html">ExternalReplyInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../types/LinkPreviewOptions.html">LinkPreviewOptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/ReplyParameters.html">ReplyParameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/MessageOrigin.html">MessageOrigin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/MessageOriginUser.html">MessageOriginUser</a></li>
@@ -640,6 +642,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../types/GeneralForumTopicHidden.html">GeneralForumTopicHidden</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/GeneralForumTopicUnhidden.html">GeneralForumTopicUnhidden</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/InputMedia.html">InputMedia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../types/InputPollMedia.html">InputPollMedia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../types/InputPollOptionMedia.html">InputPollOptionMedia</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/InputMediaPhoto.html">InputMediaPhoto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/InputMediaVideo.html">InputMediaVideo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/InputMediaAudio.html">InputMediaAudio</a></li>
@@ -647,7 +651,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../types/InputMediaDocument.html">InputMediaDocument</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/InputMediaSticker.html">InputMediaSticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/InputPhoneContact.html">InputPhoneContact</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../types/LinkPreviewOptions.html">LinkPreviewOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../types/InputMediaLivePhoto.html">InputMediaLivePhoto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../types/InputMediaLocation.html">InputMediaLocation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../types/InputMediaVenue.html">InputMediaVenue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/InputPaidMedia.html">InputPaidMedia</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/InputPaidMediaPhoto.html">InputPaidMediaPhoto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/InputPaidMediaVideo.html">InputPaidMediaVideo</a></li>
@@ -780,6 +786,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Message.translate.html">translate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Message.pay.html">pay</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Message.star.html">star</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bound-methods/Message.answer.html">answer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/ExternalReplyInfo.download.html">download</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Chat.archive.html">archive</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Chat.unarchive.html">unarchive</a></li>
@@ -904,7 +911,74 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../support.html">Support Pyrogram</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../releases/index.html">Release Notes</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../releases/index.html">Release Notes</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Release Notes</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/changes-in-this-fork.html">UNRELEASED VERSION</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.24.html">Pyrogram v2.2.24</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.23.html">Pyrogram v2.2.23</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.22.html">Pyrogram v2.2.22</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.21.html">Pyrogram v2.2.21</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.18.html">Pyrogram v2.2.18</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.17.html">Pyrogram v2.2.17</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.16.html">Pyrogram v2.2.16</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.15.html">Pyrogram v2.2.15</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.14.html">Pyrogram v2.2.14</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.13.html">Pyrogram v2.2.13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.12.html">Pyrogram v2.2.12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.11.html">Pyrogram v2.2.11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.10.html">Pyrogram v2.2.10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.9.html">Pyrogram v2.2.9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.8.html">Pyrogram v2.2.8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.7.html">Pyrogram v2.2.7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.6.html">Pyrogram v2.2.6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.5.html">Pyrogram v2.2.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.4.html">Pyrogram v2.2.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.2.html">Pyrogram v2.2.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.1.html">Pyrogram v2.2.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.37.html">Pyrogram v2.1.37</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.36.html">Pyrogram v2.1.36</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.35.html">Pyrogram v2.1.35</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.34.html">Pyrogram v2.1.34</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.13.html">Pyrogram v2.1.33.13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.12.html">Pyrogram v2.1.33.12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.11.html">Pyrogram v2.1.33.11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.10.html">Pyrogram v2.1.33.10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.9.html">Pyrogram v2.1.33.9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.8.html">Pyrogram v2.1.33.8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.7.html">Pyrogram v2.1.33.7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.4.html">Pyrogram v2.1.33.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.3.html">Pyrogram v2.1.33.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.2.html">Pyrogram v2.1.33.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.1.html">Pyrogram v2.1.33.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.15.html">Pyrogram v2.1.32.15</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.14.html">Pyrogram v2.1.32.14</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.13.html">Pyrogram v2.1.32.13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.12.html">Pyrogram v2.1.32.12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.11.html">Pyrogram v2.1.32.11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.10.html">Pyrogram v2.1.32.10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.9.html">Pyrogram v2.1.32.9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.8.html">Pyrogram v2.1.32.8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.7.html">Pyrogram v2.1.32.7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.6.html">Pyrogram v2.1.32.6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.4.html">Pyrogram v2.1.32.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.3.html">Pyrogram v2.1.32.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.2.html">Pyrogram v2.1.32.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.1.html">Pyrogram v2.1.32.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.31.html">Pyrogram v2.1.31</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.30.html">Pyrogram v2.1.30</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.29.html">Pyrogram v2.1.29</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.28.html">Pyrogram v2.1.28</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.27.html">Pyrogram v2.1.27</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.26.html">Pyrogram v2.1.26</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.25.html">Pyrogram v2.1.25</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.23.html">Pyrogram v2.1.23</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.22.html">Pyrogram v2.1.22</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.21.html">Pyrogram v2.1.21</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.20.html">Pyrogram v2.1.20</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.19.html">Pyrogram v2.1.19</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.18.html">Pyrogram v2.1.18</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://web.archive.org/web/20241127113824/https://docs.pyrogram.org/releases/">Previous Changes</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
 <ul>
@@ -1026,6 +1100,12 @@
 <tr class="row-odd"><td><p>AD_EXPIRED</p></td>
 <td><p>The ad has expired (too old or not found).</p></td>
 </tr>
+<tr class="row-even"><td><p>AICOMPOSE_TONE_INVALID</p></td>
+<td><p>The specified tone is invalid.</p></td>
+</tr>
+<tr class="row-odd"><td><p>AICOMPOSE_TONE_TITLE_INVALID</p></td>
+<td><p>The specified tone title is invalid.</p></td>
+</tr>
 <tr class="row-even"><td><p>AI_COMPOSE_TASK_MISSING</p></td>
 <td><p>The text composition style is missing.</p></td>
 </tr>
@@ -1093,7 +1173,7 @@
 <td><p>The base port location is invalid</p></td>
 </tr>
 <tr class="row-even"><td><p>BIRTHDAY_ALREADY</p></td>
-<td><p>The user has already entered a birthday.</p></td>
+<td><p>The target user already has a birthday set.</p></td>
 </tr>
 <tr class="row-odd"><td><p>BIRTHDAY_INVALID</p></td>
 <td><p>An invalid age was specified, must be between 0 and 150 years.</p></td>
@@ -1257,137 +1337,143 @@
 <tr class="row-even"><td><p>CALL_ALREADY_DECLINED</p></td>
 <td><p>The call was already declined.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CALL_OCCUPY_FAILED</p></td>
+<tr class="row-odd"><td><p>CALL_NOT_ACTIVE</p></td>
+<td><p>The specified call is not active.</p></td>
+</tr>
+<tr class="row-even"><td><p>CALL_OCCUPY_FAILED</p></td>
 <td><p>The call failed because the user is already making another call.</p></td>
 </tr>
-<tr class="row-even"><td><p>CALL_PEER_INVALID</p></td>
+<tr class="row-odd"><td><p>CALL_PEER_INVALID</p></td>
 <td><p>The provided call peer object is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CALL_PROTOCOL_FLAGS_INVALID</p></td>
+<tr class="row-even"><td><p>CALL_PROTOCOL_FLAGS_INVALID</p></td>
 <td><p>Call protocol flags invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>CALL_PROTOCOL_LAYER_INVALID</p></td>
+<tr class="row-odd"><td><p>CALL_PROTOCOL_LAYER_INVALID</p></td>
 <td><p>The specified protocol layer version range is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CDN_METHOD_INVALID</p></td>
+<tr class="row-even"><td><p>CDN_METHOD_INVALID</p></td>
 <td><p>You can’t call this method in a CDN DC.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHANNELS_ADMIN_LOCATED_TOO_MUCH</p></td>
+<tr class="row-odd"><td><p>CHANNELS_ADMIN_LOCATED_TOO_MUCH</p></td>
 <td><p>The user has reached the limit of public geogroups.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHANNELS_ADMIN_PUBLIC_TOO_MUCH</p></td>
+<tr class="row-even"><td><p>CHANNELS_ADMIN_PUBLIC_TOO_MUCH</p></td>
 <td><p>You’re admin of too many public channels, make some channels private to change the username of this channel.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHANNELS_TOO_MUCH</p></td>
+<tr class="row-odd"><td><p>CHANNELS_TOO_MUCH</p></td>
 <td><p>You have joined too many channels/supergroups.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHANNEL_ADD_INVALID</p></td>
+<tr class="row-even"><td><p>CHANNEL_ADD_INVALID</p></td>
 <td><p>Internal error.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHANNEL_BANNED</p></td>
+<tr class="row-odd"><td><p>CHANNEL_BANNED</p></td>
 <td><p>The channel is banned</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHANNEL_FORUM_MISSING</p></td>
+<tr class="row-even"><td><p>CHANNEL_FORUM_MISSING</p></td>
 <td><p>This supergroup is not a forum.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHANNEL_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>CHANNEL_ID_INVALID</p></td>
 <td><p>The specified supergroup ID is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHANNEL_INVALID</p></td>
+<tr class="row-even"><td><p>CHANNEL_INVALID</p></td>
 <td><p>The provided channel is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHANNEL_MONOFORUM_UNSUPPORTED</p></td>
+<tr class="row-odd"><td><p>CHANNEL_MONOFORUM_UNSUPPORTED</p></td>
 <td><p>[Monoforums](<a class="reference external" href="https://core.telegram.org/api/channel#monoforums">https://core.telegram.org/api/channel#monoforums</a>) do not support this feature.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHANNEL_PARICIPANT_MISSING</p></td>
+<tr class="row-even"><td><p>CHANNEL_PARICIPANT_MISSING</p></td>
 <td><p>The current user is not in the channel.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHANNEL_PRIVATE</p></td>
+<tr class="row-odd"><td><p>CHANNEL_PRIVATE</p></td>
 <td><p>You haven’t joined this channel/supergroup.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHANNEL_TOO_BIG</p></td>
+<tr class="row-even"><td><p>CHANNEL_TOO_BIG</p></td>
 <td><p>This channel has too many participants (&gt;1000) to be deleted.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHANNEL_TOO_LARGE</p></td>
+<tr class="row-odd"><td><p>CHANNEL_TOO_LARGE</p></td>
 <td><p>Channel is too large to be deleted; this error is issued when trying to delete channels with more than 1000 members (subject to change).</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHARGE_ALREADY_REFUNDED</p></td>
+<tr class="row-even"><td><p>CHARGE_ALREADY_REFUNDED</p></td>
 <td><p>The transaction was already refunded.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHARGE_ID_EMPTY</p></td>
+<tr class="row-odd"><td><p>CHARGE_ID_EMPTY</p></td>
 <td><p>The specified charge_id is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHARGE_ID_INVALID</p></td>
+<tr class="row-even"><td><p>CHARGE_ID_INVALID</p></td>
 <td><p>The specified charge_id is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHATLINKS_TOO_MUCH</p></td>
+<tr class="row-odd"><td><p>CHATLINKS_TOO_MUCH</p></td>
 <td><p>Too many [business chat links](<a class="reference external" href="https://core.telegram.org/api/business#business-chat-links">https://core.telegram.org/api/business#business-chat-links</a>) were created, please delete some older links.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHATLINK_SLUG_EMPTY</p></td>
+<tr class="row-even"><td><p>CHATLINK_SLUG_EMPTY</p></td>
 <td><p>The specified slug is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHATLINK_SLUG_EXPIRED</p></td>
+<tr class="row-odd"><td><p>CHATLINK_SLUG_EXPIRED</p></td>
 <td><p>The specified [business chat link](<a class="reference external" href="https://core.telegram.org/api/business#business-chat-links">https://core.telegram.org/api/business#business-chat-links</a>) has expired.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHATLISTS_TOO_MUCH</p></td>
+<tr class="row-even"><td><p>CHATLISTS_TOO_MUCH</p></td>
 <td><p>You have created too many folder links, hitting the <cite>chatlist_invites_limit_default</cite>/<cite>chatlist_invites_limit_premium</cite> [limits](<a class="reference external" href="https://core.telegram.org/api/config#chatlist-invites-limit-default">https://core.telegram.org/api/config#chatlist-invites-limit-default</a>).</p></td>
 </tr>
-<tr class="row-even"><td><p>CHATLIST_EXCLUDE_INVALID</p></td>
+<tr class="row-odd"><td><p>CHATLIST_EXCLUDE_INVALID</p></td>
 <td><p>The specified <cite>exclude_peers</cite> are invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHAT_ABOUT_NOT_MODIFIED</p></td>
+<tr class="row-even"><td><p>CHAT_ABOUT_NOT_MODIFIED</p></td>
 <td><p>About text has not changed.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHAT_ABOUT_TOO_LONG</p></td>
+<tr class="row-odd"><td><p>CHAT_ABOUT_TOO_LONG</p></td>
 <td><p>Chat about too long.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHAT_ADMIN_REQUIRED</p></td>
+<tr class="row-even"><td><p>CHAT_ADMIN_REQUIRED</p></td>
 <td><p>You must be an admin in this chat to do this.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHAT_DISCUSSION_UNALLOWED</p></td>
+<tr class="row-odd"><td><p>CHAT_DISCUSSION_UNALLOWED</p></td>
 <td><p>You can’t enable forum topics in a discussion group linked to a channel.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHAT_FORWARDS_RESTRICTED</p></td>
+<tr class="row-even"><td><p>CHAT_FORWARDS_RESTRICTED</p></td>
 <td><p>You can’t forward messages from a protected chat.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHAT_ID_EMPTY</p></td>
+<tr class="row-odd"><td><p>CHAT_ID_EMPTY</p></td>
 <td><p>The provided chat ID is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHAT_ID_INVALID</p></td>
+<tr class="row-even"><td><p>CHAT_ID_INVALID</p></td>
 <td><p>The provided chat id is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHAT_INVALID</p></td>
+<tr class="row-odd"><td><p>CHAT_INVALID</p></td>
 <td><p>Invalid chat.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHAT_INVITE_PERMANENT</p></td>
+<tr class="row-even"><td><p>CHAT_INVITE_PERMANENT</p></td>
 <td><p>You can’t set an expiration date on permanent invite links.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHAT_LINK_EXISTS</p></td>
+<tr class="row-odd"><td><p>CHAT_LINK_EXISTS</p></td>
 <td><p>The chat is public, you can’t hide the history to new users.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHAT_MEMBER_ADD_FAILED</p></td>
+<tr class="row-even"><td><p>CHAT_MEMBER_ADD_FAILED</p></td>
 <td><p>Could not add participants.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHAT_NOT_MODIFIED</p></td>
+<tr class="row-odd"><td><p>CHAT_NOT_MODIFIED</p></td>
 <td><p>No changes were made to chat information because the new information you passed is identical to the current information.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHAT_PUBLIC_REQUIRED</p></td>
+<tr class="row-even"><td><p>CHAT_PUBLIC_REQUIRED</p></td>
 <td><p>You can only enable join requests in public groups.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHAT_RESTRICTED</p></td>
+<tr class="row-odd"><td><p>CHAT_RESTRICTED</p></td>
 <td><p>You can’t send messages in this chat, you were restricted.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHAT_REVOKE_DATE_UNSUPPORTED</p></td>
+<tr class="row-even"><td><p>CHAT_REVOKE_DATE_UNSUPPORTED</p></td>
 <td><p><cite>min_date</cite> and <cite>max_date</cite> are not available for using with non-user peers.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHAT_SEND_INLINE_FORBIDDEN</p></td>
+<tr class="row-odd"><td><p>CHAT_SEND_INLINE_FORBIDDEN</p></td>
 <td><p>You can’t send inline messages in this group.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHAT_TITLE_EMPTY</p></td>
+<tr class="row-even"><td><p>CHAT_TITLE_EMPTY</p></td>
 <td><p>No chat title provided.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHAT_TOO_BIG</p></td>
+<tr class="row-odd"><td><p>CHAT_TOO_BIG</p></td>
 <td><p>This method is not available for groups with more than <cite>chat_read_mark_size_threshold</cite> members, [see client configuration](<a class="reference external" href="https://core.telegram.org/api/config#client-configuration">https://core.telegram.org/api/config#client-configuration</a>).</p></td>
+</tr>
+<tr class="row-even"><td><p>CHAT_WRITE_FORBIDDEN</p></td>
+<td><p>You can’t write in this chat.</p></td>
 </tr>
 <tr class="row-odd"><td><p>CODE_EMPTY</p></td>
 <td><p>The provided code is empty.</p></td>
@@ -1405,7 +1491,7 @@
 <td><p>The specified collectible could not be found.</p></td>
 </tr>
 <tr class="row-even"><td><p>COLLECTION_ID_INVALID</p></td>
-<td><p>The specified collection id is invalid.</p></td>
+<td><p>The specified collection ID is invalid.</p></td>
 </tr>
 <tr class="row-odd"><td><p>COLOR_INVALID</p></td>
 <td><p>The specified color palette ID was invalid.</p></td>
@@ -1560,347 +1646,353 @@
 <tr class="row-odd"><td><p>ENTITY_BOUNDS_INVALID</p></td>
 <td><p>A specified [entity offset or length](<a class="reference external" href="https://core.telegram.org/api/entities#entity-length">https://core.telegram.org/api/entities#entity-length</a>) is invalid, see [here](<a class="reference external" href="https://core.telegram.org/api/entities#entity-length">https://core.telegram.org/api/entities#entity-length</a>) for info on how to properly compute the entity offset/length.</p></td>
 </tr>
-<tr class="row-even"><td><p>ENTITY_DATE_INVALID</p></td>
-<td><p>A specified date/time entity is invalid.</p></td>
+<tr class="row-even"><td><p>ENTITY_DATE_FORMAT_INVALID</p></td>
+<td><p>One of the passed messageEntityFormattedDate objects has an invalid format (i.e. an invalid combination of the format flags).</p></td>
 </tr>
-<tr class="row-odd"><td><p>ENTITY_MENTION_USER_INVALID</p></td>
+<tr class="row-odd"><td><p>ENTITY_DATE_INVALID</p></td>
+<td><p>One of the passed messageEntityFormattedDate objects has an invalid date: the allowed value ranges from <cite>0</cite> to the current date plus 1098 days (<cite>time()+1098*86400</cite>).</p></td>
+</tr>
+<tr class="row-even"><td><p>ENTITY_MENTION_USER_INVALID</p></td>
 <td><p>You mentioned an invalid user.</p></td>
 </tr>
-<tr class="row-even"><td><p>ERROR_TEXT_EMPTY</p></td>
+<tr class="row-odd"><td><p>ERROR_TEXT_EMPTY</p></td>
 <td><p>The provided error message is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>EXPIRES_AT_INVALID</p></td>
+<tr class="row-even"><td><p>EXPIRES_AT_INVALID</p></td>
 <td><p>The specified <cite>expires_at</cite> timestamp is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>EXPIRE_DATE_INVALID</p></td>
+<tr class="row-odd"><td><p>EXPIRE_DATE_INVALID</p></td>
 <td><p>The specified expiration date is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>EXPORT_CARD_INVALID</p></td>
+<tr class="row-even"><td><p>EXPORT_CARD_INVALID</p></td>
 <td><p>Provided card is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>EXTENDED_MEDIA_AMOUNT_INVALID</p></td>
+<tr class="row-odd"><td><p>EXTENDED_MEDIA_AMOUNT_INVALID</p></td>
 <td><p>The specified <cite>stars_amount</cite> of the passed [inputMediaPaidMedia](<a class="reference external" href="https://core.telegram.org/constructor/inputMediaPaidMedia">https://core.telegram.org/constructor/inputMediaPaidMedia</a>) is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>EXTENDED_MEDIA_EMPTY</p></td>
+<tr class="row-even"><td><p>EXTENDED_MEDIA_EMPTY</p></td>
 <td><p>The specified paid media is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>EXTENDED_MEDIA_INVALID</p></td>
+<tr class="row-odd"><td><p>EXTENDED_MEDIA_INVALID</p></td>
 <td><p>The specified paid media is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>EXTERNAL_URL_INVALID</p></td>
+<tr class="row-even"><td><p>EXTERNAL_URL_INVALID</p></td>
 <td><p>External URL invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>FIELD_NAME_EMPTY</p></td>
+<tr class="row-odd"><td><p>FIELD_NAME_EMPTY</p></td>
 <td><p>The field with the name FIELD_NAME is missing</p></td>
 </tr>
-<tr class="row-odd"><td><p>FIELD_NAME_INVALID</p></td>
+<tr class="row-even"><td><p>FIELD_NAME_INVALID</p></td>
 <td><p>The field with the name FIELD_NAME is invalid</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_CONTENT_TYPE_INVALID</p></td>
+<tr class="row-odd"><td><p>FILE_CONTENT_TYPE_INVALID</p></td>
 <td><p>File content-type is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_EMTPY</p></td>
+<tr class="row-even"><td><p>FILE_EMTPY</p></td>
 <td><p>An empty file was provided.</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>FILE_ID_INVALID</p></td>
 <td><p>The provided file id is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_MIGRATE_X</p></td>
+<tr class="row-even"><td><p>FILE_MIGRATE_X</p></td>
 <td><p>The file currently being accessed is stored in DC {value}, please re-send the query to that DC.</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_PARTS_INVALID</p></td>
+<tr class="row-odd"><td><p>FILE_PARTS_INVALID</p></td>
 <td><p>The number of file parts is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_PART_EMPTY</p></td>
+<tr class="row-even"><td><p>FILE_PART_EMPTY</p></td>
 <td><p>The provided file part is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_PART_INVALID</p></td>
+<tr class="row-odd"><td><p>FILE_PART_INVALID</p></td>
 <td><p>The file part number is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_PART_LENGTH_INVALID</p></td>
+<tr class="row-even"><td><p>FILE_PART_LENGTH_INVALID</p></td>
 <td><p>The length of a file part is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_PART_SIZE_CHANGED</p></td>
+<tr class="row-odd"><td><p>FILE_PART_SIZE_CHANGED</p></td>
 <td><p>Provided file part size has changed.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_PART_SIZE_INVALID</p></td>
+<tr class="row-even"><td><p>FILE_PART_SIZE_INVALID</p></td>
 <td><p>The provided file part size is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_PART_TOO_BIG</p></td>
+<tr class="row-odd"><td><p>FILE_PART_TOO_BIG</p></td>
 <td><p>The uploaded file part is too big.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_PART_TOO_SMALL</p></td>
+<tr class="row-even"><td><p>FILE_PART_TOO_SMALL</p></td>
 <td><p>The size of the uploaded file part is too small, please see the documentation for the allowed sizes.</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_PART_X_MISSING</p></td>
+<tr class="row-odd"><td><p>FILE_PART_X_MISSING</p></td>
 <td><p>Part {value} of the file is missing from storage. Try repeating the method call to resave the part.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_REFERENCE_EMPTY</p></td>
+<tr class="row-even"><td><p>FILE_REFERENCE_EMPTY</p></td>
 <td><p>An empty [file reference](<a class="reference external" href="https://core.telegram.org/api/file-references">https://core.telegram.org/api/file-references</a>) was specified.</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_REFERENCE_EXPIRED</p></td>
+<tr class="row-odd"><td><p>FILE_REFERENCE_EXPIRED</p></td>
 <td><p>File reference expired, it must be refetched as described in [the documentation](<a class="reference external" href="https://core.telegram.org/api/file-references">https://core.telegram.org/api/file-references</a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_REFERENCE_INVALID</p></td>
+<tr class="row-even"><td><p>FILE_REFERENCE_INVALID</p></td>
 <td><p>The specified [file reference](<a class="reference external" href="https://core.telegram.org/api/file-references">https://core.telegram.org/api/file-references</a>) is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_REFERENCE_X_EMPTY</p></td>
-<td><p>The file reference of the media file at index {value} in the passed media array is empty.</p></td>
+<tr class="row-odd"><td><p>FILE_REFERENCE_X_EMPTY</p></td>
+<td><p>The file reference of the media file at offset {value} in the multi_media array is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_REFERENCE_X_EXPIRED</p></td>
+<tr class="row-even"><td><p>FILE_REFERENCE_X_EXPIRED</p></td>
 <td><p>The file reference of the media file at index {value} in the passed media array expired, it [must be refreshed as specified in the documentation](<a class="reference external" href="https://core.telegram.org/api/file-references">https://core.telegram.org/api/file-references</a>). .</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_REFERENCE_X_INVALID</p></td>
+<tr class="row-odd"><td><p>FILE_REFERENCE_X_INVALID</p></td>
 <td><p>The [file reference](<a class="reference external" href="https://core.telegram.org/api/file-references">https://core.telegram.org/api/file-references</a>) of the media file at index {value} in the passed media array is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_TITLE_EMPTY</p></td>
+<tr class="row-even"><td><p>FILE_TITLE_EMPTY</p></td>
 <td><p>An empty file title was specified.</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_TOKEN_INVALID</p></td>
+<tr class="row-odd"><td><p>FILE_TOKEN_INVALID</p></td>
 <td><p>The master DC did not accept the <cite>file_token</cite> (e.g., the token has expired). Continue downloading the file from the master DC using upload.getFile.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILTER_ID_INVALID</p></td>
+<tr class="row-even"><td><p>FILTER_ID_INVALID</p></td>
 <td><p>The specified filter ID is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>FILTER_INCLUDE_EMPTY</p></td>
+<tr class="row-odd"><td><p>FILTER_INCLUDE_EMPTY</p></td>
 <td><p>The include_peers vector of the filter is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILTER_NOT_SUPPORTED</p></td>
+<tr class="row-even"><td><p>FILTER_NOT_SUPPORTED</p></td>
 <td><p>The specified filter cannot be used in this context.</p></td>
 </tr>
-<tr class="row-even"><td><p>FILTER_TITLE_EMPTY</p></td>
+<tr class="row-odd"><td><p>FILTER_TITLE_EMPTY</p></td>
 <td><p>The title field of the filter is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FIRSTNAME_INVALID</p></td>
+<tr class="row-even"><td><p>FIRSTNAME_INVALID</p></td>
 <td><p>The first name is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>FOLDER_ID_EMPTY</p></td>
+<tr class="row-odd"><td><p>FOLDER_ID_EMPTY</p></td>
 <td><p>An empty folder ID was specified.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FOLDER_ID_INVALID</p></td>
+<tr class="row-even"><td><p>FOLDER_ID_INVALID</p></td>
 <td><p>Invalid folder ID.</p></td>
 </tr>
-<tr class="row-even"><td><p>FORM_EXPIRED</p></td>
+<tr class="row-odd"><td><p>FORM_EXPIRED</p></td>
 <td><p>The form was generated more than 10 minutes ago and has expired, please re-generate it using [payments.getPaymentForm](<a class="reference external" href="https://core.telegram.org/method/payments.getPaymentForm">https://core.telegram.org/method/payments.getPaymentForm</a>) and pass the new <cite>form_id</cite>.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FORM_ID_EMPTY</p></td>
+<tr class="row-even"><td><p>FORM_ID_EMPTY</p></td>
 <td><p>The specified form ID is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>FORM_SUBMIT_DUPLICATE</p></td>
+<tr class="row-odd"><td><p>FORM_SUBMIT_DUPLICATE</p></td>
 <td><p>The same payment form was already submitted.  .</p></td>
 </tr>
-<tr class="row-odd"><td><p>FORM_UNSUPPORTED</p></td>
+<tr class="row-even"><td><p>FORM_UNSUPPORTED</p></td>
 <td><p>Please update your client.</p></td>
 </tr>
-<tr class="row-even"><td><p>FORUM_ENABLED</p></td>
+<tr class="row-odd"><td><p>FORUM_ENABLED</p></td>
 <td><p>You can’t execute the specified action because the group is a [forum](<a class="reference external" href="https://core.telegram.org/api/forum">https://core.telegram.org/api/forum</a>), disable forum functionality to continue.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FRESH_CHANGE_ADMINS_FORBIDDEN</p></td>
+<tr class="row-even"><td><p>FRESH_CHANGE_ADMINS_FORBIDDEN</p></td>
 <td><p>You were just elected admin, you can’t add or modify other admins yet.</p></td>
 </tr>
-<tr class="row-even"><td><p>FROM_MESSAGE_BOT_DISABLED</p></td>
+<tr class="row-odd"><td><p>FROM_MESSAGE_BOT_DISABLED</p></td>
 <td><p>Bots can’t use fromMessage min constructors.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FROM_PEER_INVALID</p></td>
+<tr class="row-even"><td><p>FROM_PEER_INVALID</p></td>
 <td><p>The specified from_id is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>FROZEN_PARTICIPANT_MISSING</p></td>
+<tr class="row-odd"><td><p>FROZEN_PARTICIPANT_MISSING</p></td>
 <td><p>The current account is [frozen](<a class="reference external" href="https://core.telegram.org/api/auth#frozen-accounts">https://core.telegram.org/api/auth#frozen-accounts</a>), and cannot access the specified peer.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FUTURE_CREATOR_NONE</p></td>
+<tr class="row-even"><td><p>FUTURE_CREATOR_NONE</p></td>
 <td><p>The future creator after leave is only applicable to supergroups.</p></td>
 </tr>
-<tr class="row-even"><td><p>GAME_BOT_INVALID</p></td>
+<tr class="row-odd"><td><p>GAME_BOT_INVALID</p></td>
 <td><p>Bots can’t send another bot’s game.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GENERAL_MODIFY_ICON_FORBIDDEN</p></td>
+<tr class="row-even"><td><p>GENERAL_MODIFY_ICON_FORBIDDEN</p></td>
 <td><p>You can’t modify the icon of the ‘General’ topic.</p></td>
 </tr>
-<tr class="row-even"><td><p>GEO_POINT_INVALID</p></td>
+<tr class="row-odd"><td><p>GEO_POINT_INVALID</p></td>
 <td><p>Invalid geoposition provided.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GIFT_MONTHS_INVALID</p></td>
+<tr class="row-even"><td><p>GIFT_MONTHS_INVALID</p></td>
 <td><p>The value passed in invoice.inputInvoicePremiumGiftStars.months is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>GIFT_SLUG_EXPIRED</p></td>
+<tr class="row-odd"><td><p>GIFT_SLUG_EXPIRED</p></td>
 <td><p>The specified gift slug has expired.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GIFT_SLUG_INVALID</p></td>
+<tr class="row-even"><td><p>GIFT_SLUG_INVALID</p></td>
 <td><p>The specified slug is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>GIFT_STARS_INVALID</p></td>
+<tr class="row-odd"><td><p>GIFT_STARS_INVALID</p></td>
 <td><p>The specified amount of stars is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GIF_CONTENT_TYPE_INVALID</p></td>
+<tr class="row-even"><td><p>GIF_CONTENT_TYPE_INVALID</p></td>
 <td><p>GIF content-type invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>GIF_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>GIF_ID_INVALID</p></td>
 <td><p>The provided GIF ID is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GRAPH_EXPIRED_RELOAD</p></td>
+<tr class="row-even"><td><p>GRAPH_EXPIRED_RELOAD</p></td>
 <td><p>This graph has expired, please obtain a new graph token.</p></td>
 </tr>
-<tr class="row-even"><td><p>GRAPH_INVALID_RELOAD</p></td>
+<tr class="row-odd"><td><p>GRAPH_INVALID_RELOAD</p></td>
 <td><p>Invalid graph token provided, please reload the stats and provide the updated token.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GRAPH_OUTDATED_RELOAD</p></td>
+<tr class="row-even"><td><p>GRAPH_OUTDATED_RELOAD</p></td>
 <td><p>The graph is outdated, please get a new async token using stats.getBroadcastStats.</p></td>
 </tr>
-<tr class="row-even"><td><p>GROUPCALL_ALREADY_DISCARDED</p></td>
+<tr class="row-odd"><td><p>GROUPCALL_ALREADY_DISCARDED</p></td>
 <td><p>The group call was already discarded.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GROUPCALL_FORBIDDEN</p></td>
+<tr class="row-even"><td><p>GROUPCALL_FORBIDDEN</p></td>
 <td><p>The group call has already ended.</p></td>
 </tr>
-<tr class="row-even"><td><p>GROUPCALL_INVALID</p></td>
+<tr class="row-odd"><td><p>GROUPCALL_INVALID</p></td>
 <td><p>The specified group call is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GROUPCALL_JOIN_MISSING</p></td>
+<tr class="row-even"><td><p>GROUPCALL_JOIN_MISSING</p></td>
 <td><p>You haven’t joined this group call.</p></td>
 </tr>
-<tr class="row-even"><td><p>GROUPCALL_NOT_MODIFIED</p></td>
+<tr class="row-odd"><td><p>GROUPCALL_NOT_MODIFIED</p></td>
 <td><p>Group call settings weren’t modified.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GROUPCALL_SSRC_DUPLICATE_MUCH</p></td>
+<tr class="row-even"><td><p>GROUPCALL_SSRC_DUPLICATE_MUCH</p></td>
 <td><p>The app needs to retry joining the group call with a new SSRC value.</p></td>
 </tr>
-<tr class="row-even"><td><p>GROUPED_MEDIA_INVALID</p></td>
+<tr class="row-odd"><td><p>GROUPED_MEDIA_INVALID</p></td>
 <td><p>Invalid grouped media.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GROUP_CALL_INVALID</p></td>
+<tr class="row-even"><td><p>GROUP_CALL_INVALID</p></td>
 <td><p>The group call is invalid</p></td>
 </tr>
-<tr class="row-even"><td><p>HASHTAG_INVALID</p></td>
+<tr class="row-odd"><td><p>HASHTAG_INVALID</p></td>
 <td><p>The specified hashtag is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>HASH_INVALID</p></td>
+<tr class="row-even"><td><p>HASH_INVALID</p></td>
 <td><p>The provided hash is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>HASH_SIZE_INVALID</p></td>
+<tr class="row-odd"><td><p>HASH_SIZE_INVALID</p></td>
 <td><p>The size of the specified secureValueError.hash is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>HIDE_REQUESTER_MISSING</p></td>
+<tr class="row-even"><td><p>HIDE_REQUESTER_MISSING</p></td>
 <td><p>The join request was missing or was already handled.</p></td>
 </tr>
-<tr class="row-even"><td><p>ID_EXPIRED</p></td>
+<tr class="row-odd"><td><p>ID_EXPIRED</p></td>
 <td><p>The passed prepared inline message ID has expired.</p></td>
 </tr>
-<tr class="row-odd"><td><p>ID_INVALID</p></td>
+<tr class="row-even"><td><p>ID_INVALID</p></td>
 <td><p>The passed ID is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>IMAGE_PROCESS_FAILED</p></td>
+<tr class="row-odd"><td><p>IMAGE_PROCESS_FAILED</p></td>
 <td><p>Failure while processing image.</p></td>
 </tr>
-<tr class="row-odd"><td><p>IMPORT_FILE_INVALID</p></td>
+<tr class="row-even"><td><p>IMPORT_FILE_INVALID</p></td>
 <td><p>The specified chat export file is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>IMPORT_FORMAT_DATE_INVALID</p></td>
+<tr class="row-odd"><td><p>IMPORT_FORMAT_DATE_INVALID</p></td>
 <td><p>The date specified in the import file is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>IMPORT_FORMAT_UNRECOGNIZED</p></td>
+<tr class="row-even"><td><p>IMPORT_FORMAT_UNRECOGNIZED</p></td>
 <td><p>The specified chat export file was exported from an unsupported chat app.</p></td>
 </tr>
-<tr class="row-even"><td><p>IMPORT_HISTORY_LOG_EMPTY</p></td>
+<tr class="row-odd"><td><p>IMPORT_HISTORY_LOG_EMPTY</p></td>
 <td><p>The specified chat export file is empty or has an invalid indentation.</p></td>
 </tr>
-<tr class="row-odd"><td><p>IMPORT_ID_INVALID</p></td>
+<tr class="row-even"><td><p>IMPORT_ID_INVALID</p></td>
 <td><p>The specified import ID is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>IMPORT_TOKEN_INVALID</p></td>
+<tr class="row-odd"><td><p>IMPORT_TOKEN_INVALID</p></td>
 <td><p>The specified token is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INLINE_RESULT_EXPIRED</p></td>
+<tr class="row-even"><td><p>INLINE_RESULT_EXPIRED</p></td>
 <td><p>The inline query expired.</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_CHATLIST_INVALID</p></td>
+<tr class="row-odd"><td><p>INPUT_CHATLIST_INVALID</p></td>
 <td><p>The specified folder is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_CONSTRUCTOR_INVALID</p></td>
+<tr class="row-even"><td><p>INPUT_CONSTRUCTOR_INVALID</p></td>
 <td><p>The specified TL constructor is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_FETCH_ERROR</p></td>
+<tr class="row-odd"><td><p>INPUT_FETCH_ERROR</p></td>
 <td><p>An error occurred while parsing the provided TL constructor.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_FETCH_ERROR_X</p></td>
+<tr class="row-even"><td><p>INPUT_FETCH_ERROR_X</p></td>
 <td><p>An error occurred while parsing the provided TL {value} constructor.</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_FETCH_FAIL</p></td>
+<tr class="row-odd"><td><p>INPUT_FETCH_FAIL</p></td>
 <td><p>An error occurred while parsing the provided TL constructor.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_FILE_INVALID</p></td>
+<tr class="row-even"><td><p>INPUT_FILE_INVALID</p></td>
 <td><p>The specified [InputFile](<a class="reference external" href="https://core.telegram.org/type/InputFile">https://core.telegram.org/type/InputFile</a>) is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_FILTER_INVALID</p></td>
+<tr class="row-odd"><td><p>INPUT_FILTER_INVALID</p></td>
 <td><p>The specified filter is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_LAYER_INVALID</p></td>
+<tr class="row-even"><td><p>INPUT_LAYER_INVALID</p></td>
 <td><p>The specified layer is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_METHOD_INVALID</p></td>
+<tr class="row-odd"><td><p>INPUT_METHOD_INVALID</p></td>
 <td><p>The specified method is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_PEERS_EMPTY</p></td>
+<tr class="row-even"><td><p>INPUT_PEERS_EMPTY</p></td>
 <td><p>The specified peer array is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_PURPOSE_INVALID</p></td>
+<tr class="row-odd"><td><p>INPUT_PURPOSE_INVALID</p></td>
 <td><p>The specified payment purpose is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_REQUEST_TOO_LONG</p></td>
+<tr class="row-even"><td><p>INPUT_REQUEST_TOO_LONG</p></td>
 <td><p>The request payload is too long.</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_STARS_AMOUNT_INVALID</p></td>
-<td><p>The specified star_count is invalid.</p></td>
+<tr class="row-odd"><td><p>INPUT_STARS_AMOUNT_INVALID</p></td>
+<td><p>The specified offer amount in stars is invalid, see [here](<a class="reference external" href="https://core.telegram.org/api/gifts#collectible-gift-purchase-offers">https://core.telegram.org/api/gifts#collectible-gift-purchase-offers</a>) for the allowed range.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_STARS_NANOS_INVALID</p></td>
-<td><p>The specified nanostar_count is invalid.</p></td>
+<tr class="row-even"><td><p>INPUT_STARS_NANOS_INVALID</p></td>
+<td><p>The specified offer amount in nanotons is invalid, see [here](<a class="reference external" href="https://core.telegram.org/api/gifts#collectible-gift-purchase-offers">https://core.telegram.org/api/gifts#collectible-gift-purchase-offers</a>) for the allowed range.</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_TEXT_EMPTY</p></td>
+<tr class="row-odd"><td><p>INPUT_TEXT_EMPTY</p></td>
 <td><p>The specified text is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_TEXT_TOO_LONG</p></td>
+<tr class="row-even"><td><p>INPUT_TEXT_TOO_LONG</p></td>
 <td><p>The specified text is too long.</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_USER_DEACTIVATED</p></td>
+<tr class="row-odd"><td><p>INPUT_USER_DEACTIVATED</p></td>
 <td><p>The specified user was deleted.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INVITES_TOO_MUCH</p></td>
+<tr class="row-even"><td><p>INVITES_TOO_MUCH</p></td>
 <td><p>The maximum number of per-folder invites specified by the <cite>chatlist_invites_limit_default</cite>/<cite>chatlist_invites_limit_premium</cite> [client configuration parameters](<a class="reference external" href="https://core.telegram.org/api/config#chatlist-invites-limit-default">https://core.telegram.org/api/config#chatlist-invites-limit-default</a>) was reached.</p></td>
 </tr>
-<tr class="row-even"><td><p>INVITE_FORBIDDEN_WITH_JOINAS</p></td>
+<tr class="row-odd"><td><p>INVITE_FORBIDDEN_WITH_JOINAS</p></td>
 <td><p>If the user has anonymously joined a group call as a channel, they can’t invite other users to the group call because that would cause deanonymization, because the invite would be sent using the original user ID, not the anonymized channel ID.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INVITE_HASH_EMPTY</p></td>
+<tr class="row-even"><td><p>INVITE_HASH_EMPTY</p></td>
 <td><p>The invite hash is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>INVITE_HASH_EXPIRED</p></td>
+<tr class="row-odd"><td><p>INVITE_HASH_EXPIRED</p></td>
 <td><p>The invite link has expired.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INVITE_HASH_INVALID</p></td>
+<tr class="row-even"><td><p>INVITE_HASH_INVALID</p></td>
 <td><p>The invite hash is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>INVITE_REQUEST_SENT</p></td>
+<tr class="row-odd"><td><p>INVITE_REQUEST_SENT</p></td>
 <td><p>You have successfully requested to join this chat or channel.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INVITE_REVOKED_MISSING</p></td>
+<tr class="row-even"><td><p>INVITE_REVOKED_MISSING</p></td>
 <td><p>The specified invite link was already revoked or is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>INVITE_SLUG_EMPTY</p></td>
+<tr class="row-odd"><td><p>INVITE_SLUG_EMPTY</p></td>
 <td><p>The specified invite slug is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INVITE_SLUG_EXPIRED</p></td>
+<tr class="row-even"><td><p>INVITE_SLUG_EXPIRED</p></td>
 <td><p>The specified chat folder link has expired.</p></td>
 </tr>
-<tr class="row-even"><td><p>INVITE_SLUG_INVALID</p></td>
+<tr class="row-odd"><td><p>INVITE_SLUG_INVALID</p></td>
 <td><p>The specified invitation slug is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INVOICE_INVALID</p></td>
+<tr class="row-even"><td><p>INVOICE_INVALID</p></td>
 <td><p>The specified invoice is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>INVOICE_PAYLOAD_INVALID</p></td>
+<tr class="row-odd"><td><p>INVOICE_PAYLOAD_INVALID</p></td>
 <td><p>The specified invoice payload is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>JOIN_AS_PEER_INVALID</p></td>
+<tr class="row-even"><td><p>JOIN_AS_PEER_INVALID</p></td>
 <td><p>The specified peer cannot be used to join a group call.</p></td>
+</tr>
+<tr class="row-odd"><td><p>JOIN_GUARD_TIMEOUT</p></td>
+<td><p>A timeout occurred while fetching data from the guard bot.</p></td>
 </tr>
 <tr class="row-even"><td><p>LANGUAGE_INVALID</p></td>
 <td><p>The specified lang_code is invalid.</p></td>
@@ -2011,7 +2103,7 @@
 <td><p>Poll closed.</p></td>
 </tr>
 <tr class="row-even"><td><p>MESSAGE_REQUIRED</p></td>
-<td><p>Message is required.</p></td>
+<td><p>A non-empty list of IDs must be passed to <cite>id</cite>.</p></td>
 </tr>
 <tr class="row-odd"><td><p>MESSAGE_TOO_LONG</p></td>
 <td><p>The provided message is too long.</p></td>
@@ -2040,14 +2132,20 @@
 <tr class="row-odd"><td><p>MSG_VOICE_MISSING</p></td>
 <td><p>The specified message is not a voice message.</p></td>
 </tr>
-<tr class="row-even"><td><p>MSG_WAIT_FAILED</p></td>
+<tr class="row-even"><td><p>MSG_VOICE_TOO_LONG</p></td>
+<td><p>The specified voice message is too long to be transcribed.</p></td>
+</tr>
+<tr class="row-odd"><td><p>MSG_WAIT_FAILED</p></td>
 <td><p>A waiting call returned an error.</p></td>
 </tr>
-<tr class="row-odd"><td><p>MTPROTO_CLUSTER_INVALID</p></td>
+<tr class="row-even"><td><p>MTPROTO_CLUSTER_INVALID</p></td>
 <td><p>The mtproto 1049295266_343213 cluster is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>MULTI_MEDIA_TOO_LONG</p></td>
+<tr class="row-odd"><td><p>MULTI_MEDIA_TOO_LONG</p></td>
 <td><p>Too many media files for album.</p></td>
+</tr>
+<tr class="row-even"><td><p>NAME_INVALID</p></td>
+<td><p>The specified bot name is invalid.</p></td>
 </tr>
 <tr class="row-odd"><td><p>NEED_ACTION_MISSING</p></td>
 <td><p>Action is missing.</p></td>
@@ -2254,7 +2352,7 @@
 <td><p>There are too many pinned topics, unpin some first.</p></td>
 </tr>
 <tr class="row-odd"><td><p>PINNED_TOPIC_NOT_MODIFIED</p></td>
-<td><p>The specified pinned topic was not modified.</p></td>
+<td><p>The specified topic is already pinned.</p></td>
 </tr>
 <tr class="row-even"><td><p>PIN_RESTRICTED</p></td>
 <td><p>You can’t pin messages.</p></td>
@@ -2300,6 +2398,12 @@
 </tr>
 <tr class="row-even"><td><p>PRIVACY_VALUE_INVALID</p></td>
 <td><p>The specified privacy rule combination is invalid.</p></td>
+</tr>
+<tr class="row-odd"><td><p>PUBLIC_BROADCAST_EXPECTED</p></td>
+<td><p><cite>channel</cite> only accepts a channel, but a supergroup was passed.</p></td>
+</tr>
+<tr class="row-even"><td><p>PUBLIC_KEY_INVALID</p></td>
+<td><p>The specified e2e public key is invalid.</p></td>
 </tr>
 <tr class="row-odd"><td><p>PUBLIC_KEY_REQUIRED</p></td>
 <td><p>A public key is required.</p></td>
@@ -2403,35 +2507,41 @@
 <tr class="row-even"><td><p>REPLY_TO_USER_INVALID</p></td>
 <td><p>The replied-to user is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>REQUEST_TOKEN_INVALID</p></td>
+<tr class="row-odd"><td><p>REQUEST_MSG_EXPIRED</p></td>
+<td><p>The request specified in request_msg_id has already expired.</p></td>
+</tr>
+<tr class="row-even"><td><p>REQUEST_TOKEN_INVALID</p></td>
 <td><p>The master DC did not accept the <cite>request_token</cite> from the CDN DC. Continue downloading the file from the master DC using upload.getFile.</p></td>
 </tr>
-<tr class="row-even"><td><p>RESELL_STARS_TOO_FEW</p></td>
+<tr class="row-odd"><td><p>RESELL_STARS_TOO_FEW</p></td>
 <td><p>The resell_stars is less than the minimum amount required.</p></td>
 </tr>
-<tr class="row-odd"><td><p>RESELL_STARS_TOO_MUCH</p></td>
+<tr class="row-even"><td><p>RESELL_STARS_TOO_MUCH</p></td>
 <td><p>The resell_stars is more than the maximum amount allowed.</p></td>
 </tr>
-<tr class="row-even"><td><p>RESET_REQUEST_MISSING</p></td>
+<tr class="row-odd"><td><p>RESET_REQUEST_MISSING</p></td>
 <td><p>No password reset is in progress.</p></td>
 </tr>
-<tr class="row-odd"><td><p>RESULTS_TOO_MUCH</p></td>
+<tr class="row-even"><td><p>RESULTS_TOO_MUCH</p></td>
 <td><p>Too many results were provided.</p></td>
 </tr>
-<tr class="row-even"><td><p>RESULT_ID_DUPLICATE</p></td>
+<tr class="row-odd"><td><p>RESULT_ID_DUPLICATE</p></td>
 <td><p>You provided a duplicate result ID.</p></td>
 </tr>
-<tr class="row-odd"><td><p>RESULT_ID_EMPTY</p></td>
+<tr class="row-even"><td><p>RESULT_ID_EMPTY</p></td>
 <td><p>Result ID empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>RESULT_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>RESULT_ID_INVALID</p></td>
 <td><p>One of the specified result IDs is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>RESULT_TYPE_INVALID</p></td>
+<tr class="row-even"><td><p>RESULT_TYPE_INVALID</p></td>
 <td><p>Result type invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>REVOTE_NOT_ALLOWED</p></td>
+<tr class="row-odd"><td><p>REVOTE_NOT_ALLOWED</p></td>
 <td><p>You cannot change your vote.</p></td>
+</tr>
+<tr class="row-even"><td><p>RICH_MESSAGE_DOCUMENT_INVALID</p></td>
+<td><p>One of the rich message document is invalid.</p></td>
 </tr>
 <tr class="row-odd"><td><p>RIGHTS_NOT_MODIFIED</p></td>
 <td><p>The new admin rights are equal to the old rights, no change was made.</p></td>
@@ -2563,7 +2673,7 @@
 <td><p>The specified gift was already upgraded to a collectible gift.</p></td>
 </tr>
 <tr class="row-even"><td><p>STARGIFT_ATTRIBUTE_INVALID</p></td>
-<td><p>The provided star gift attribute is invalid.</p></td>
+<td><p>One of the specified star gift attributes is invalid.</p></td>
 </tr>
 <tr class="row-odd"><td><p>STARGIFT_CONVERT_TOO_OLD</p></td>
 <td><p>This gift can no longer be converted into stars.</p></td>
@@ -2575,19 +2685,19 @@
 <td><p>The passed gift is invalid.</p></td>
 </tr>
 <tr class="row-even"><td><p>STARGIFT_MESSAGE_INVALID</p></td>
-<td><p>The provided star gift message is invalid. You cannot specify it in a message if the recepient has specified send_paid_messages_stars.</p></td>
+<td><p>The specified inputInvoiceStarGift.message is invalid.</p></td>
 </tr>
 <tr class="row-odd"><td><p>STARGIFT_NOT_FOUND</p></td>
 <td><p>The specified gift was not found.</p></td>
 </tr>
 <tr class="row-even"><td><p>STARGIFT_NOT_OWNER</p></td>
-<td><p>You cannot control this gift because it does not belong to you.</p></td>
+<td><p>You’re not the owner of the gift you trying to transfer.</p></td>
 </tr>
 <tr class="row-odd"><td><p>STARGIFT_NOT_UNIQUE</p></td>
-<td><p>The star gift is not unique.</p></td>
+<td><p>You can’t transfer a non-collectible gift.</p></td>
 </tr>
 <tr class="row-even"><td><p>STARGIFT_OFFER_INVALID</p></td>
-<td><p>The star gift offer is invalid.</p></td>
+<td><p>The specified offer amount is invalid.</p></td>
 </tr>
 <tr class="row-odd"><td><p>STARGIFT_OFFER_NOT_ALLOWED</p></td>
 <td><p>The star gift offer is not allowed.</p></td>
@@ -2737,7 +2847,7 @@
 <td><p>The specified story ID is invalid.</p></td>
 </tr>
 <tr class="row-even"><td><p>STORY_LIVE_ALREADY_X</p></td>
-<td><p>The user or the chat has an active live story with identifier {value}.</p></td>
+<td><p>This peer already has an active live story, and its ID is equal to {value}.</p></td>
 </tr>
 <tr class="row-odd"><td><p>STORY_NOT_MODIFIED</p></td>
 <td><p>The new story information you passed is equal to the previous story information, thus it wasn’t modified.</p></td>
@@ -2832,89 +2942,95 @@
 <tr class="row-odd"><td><p>TODO_ITEMS_EMPTY</p></td>
 <td><p>A checklist was specified, but no [checklist items](<a class="reference external" href="https://core.telegram.org/api/todo">https://core.telegram.org/api/todo</a>) were passed.</p></td>
 </tr>
-<tr class="row-even"><td><p>TODO_ITEM_DUPLICATE</p></td>
+<tr class="row-even"><td><p>TODO_ITEMS_TOO_MUCH</p></td>
+<td><p>You specified too many todo list items.</p></td>
+</tr>
+<tr class="row-odd"><td><p>TODO_ITEM_DUPLICATE</p></td>
 <td><p>Duplicate [checklist items](<a class="reference external" href="https://core.telegram.org/api/todo">https://core.telegram.org/api/todo</a>) detected.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TODO_NOT_MODIFIED</p></td>
+<tr class="row-even"><td><p>TODO_NOT_MODIFIED</p></td>
 <td><p>No todo items were specified, so no changes were made to the todo list.</p></td>
 </tr>
-<tr class="row-even"><td><p>TOKEN_EMPTY</p></td>
+<tr class="row-odd"><td><p>TOKEN_EMPTY</p></td>
 <td><p>The specified token is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TOKEN_INVALID</p></td>
+<tr class="row-even"><td><p>TOKEN_INVALID</p></td>
 <td><p>The provided token is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>TOKEN_TYPE_INVALID</p></td>
+<tr class="row-odd"><td><p>TOKEN_TYPE_INVALID</p></td>
 <td><p>The specified token type is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TOPICS_EMPTY</p></td>
+<tr class="row-even"><td><p>TOPICS_EMPTY</p></td>
 <td><p>You specified no topic IDs.</p></td>
 </tr>
-<tr class="row-even"><td><p>TOPIC_CLOSED</p></td>
+<tr class="row-odd"><td><p>TOPIC_CLOSED</p></td>
 <td><p>This topic was closed, you can’t send messages to it anymore.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TOPIC_CLOSE_SEPARATELY</p></td>
+<tr class="row-even"><td><p>TOPIC_CLOSE_SEPARATELY</p></td>
 <td><p>The <cite>close</cite> flag cannot be provided together with any of the other flags.</p></td>
 </tr>
-<tr class="row-even"><td><p>TOPIC_DELETED</p></td>
+<tr class="row-odd"><td><p>TOPIC_DELETED</p></td>
 <td><p>The specified topic was deleted.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TOPIC_HIDE_SEPARATELY</p></td>
+<tr class="row-even"><td><p>TOPIC_HIDE_SEPARATELY</p></td>
 <td><p>The <cite>hide</cite> flag cannot be provided together with any of the other flags.</p></td>
 </tr>
-<tr class="row-even"><td><p>TOPIC_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>TOPIC_ID_INVALID</p></td>
 <td><p>The specified topic ID is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TOPIC_NOT_MODIFIED</p></td>
+<tr class="row-even"><td><p>TOPIC_NOT_MODIFIED</p></td>
 <td><p>The updated topic info is equal to the current topic info, nothing was changed.</p></td>
 </tr>
-<tr class="row-even"><td><p>TOPIC_TITLE_EMPTY</p></td>
+<tr class="row-odd"><td><p>TOPIC_TITLE_EMPTY</p></td>
 <td><p>The specified topic title is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TO_ID_INVALID</p></td>
+<tr class="row-even"><td><p>TO_ID_INVALID</p></td>
 <td><p>The specified <cite>to_id</cite> of the passed inputInvoiceStarGiftResale or inputInvoiceStarGiftTransfer is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>TO_LANG_INVALID</p></td>
+<tr class="row-odd"><td><p>TO_LANG_INVALID</p></td>
 <td><p>The specified destination language is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TRANSACTION_ID_INVALID</p></td>
+<tr class="row-even"><td><p>TRANSACTION_ID_INVALID</p></td>
 <td><p>The specified transaction ID is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>TRANSCRIPTION_FAILED</p></td>
+<tr class="row-odd"><td><p>TRANSCRIPTION_FAILED</p></td>
 <td><p>Audio transcription failed.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TRANSLATE_REQ_QUOTA_EXCEEDED</p></td>
+<tr class="row-even"><td><p>TRANSLATE_REQ_QUOTA_EXCEEDED</p></td>
 <td><p>Translation is currently unavailable due to a temporary server-side lack of resources.</p></td>
 </tr>
-<tr class="row-even"><td><p>TRANSLATIONS_DISABLED</p></td>
+<tr class="row-odd"><td><p>TRANSLATIONS_DISABLED</p></td>
 <td><p>Translation is disabled.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TRANSLATIONS_DISABLED_ALT</p></td>
+<tr class="row-even"><td><p>TRANSLATIONS_DISABLED_ALT</p></td>
 <td><p>Translation is disabled.</p></td>
 </tr>
-<tr class="row-even"><td><p>TTL_DAYS_INVALID</p></td>
+<tr class="row-odd"><td><p>TTL_DAYS_INVALID</p></td>
 <td><p>The provided TTL is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TTL_MEDIA_INVALID</p></td>
+<tr class="row-even"><td><p>TTL_MEDIA_INVALID</p></td>
 <td><p>Invalid media Time To Live was provided.</p></td>
 </tr>
-<tr class="row-even"><td><p>TTL_PERIOD_INVALID</p></td>
+<tr class="row-odd"><td><p>TTL_PERIOD_INVALID</p></td>
 <td><p>The specified TTL period is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TYPES_EMPTY</p></td>
+<tr class="row-even"><td><p>TYPES_EMPTY</p></td>
 <td><p>No top peer type was provided.</p></td>
 </tr>
-<tr class="row-even"><td><p>TYPE_CONSTRUCTOR_INVALID</p></td>
+<tr class="row-odd"><td><p>TYPE_CONSTRUCTOR_INVALID</p></td>
 <td><p>The type constructor is invalid</p></td>
 </tr>
-<tr class="row-odd"><td><p>UNKNOWN_ERROR</p></td>
+<tr class="row-even"><td><p>UNKNOWN_ERROR</p></td>
 <td><p>Unknown error.</p></td>
 </tr>
-<tr class="row-even"><td><p>UNSUPPORTED</p></td>
+<tr class="row-odd"><td><p>UNSUPPORTED</p></td>
 <td><p><cite>require_payment</cite> cannot be <em>set</em> by users, only by monoforums: users must instead use the [inputPrivacyKeyNoPaidMessages](<a class="reference external" href="https://core.telegram.org/constructor/inputPrivacyKeyNoPaidMessages">https://core.telegram.org/constructor/inputPrivacyKeyNoPaidMessages</a>) privacy setting to remove a previously added exemption.</p></td>
 </tr>
-<tr class="row-odd"><td><p>UNTIL_DATE_INVALID</p></td>
+<tr class="row-even"><td><p>UNTIL_DATE_INVALID</p></td>
 <td><p>Invalid until date provided.</p></td>
+</tr>
+<tr class="row-odd"><td><p>URL_EXPIRED</p></td>
+<td><p>The specified OAuth request has expired.</p></td>
 </tr>
 <tr class="row-even"><td><p>URL_INVALID</p></td>
 <td><p>Invalid URL provided.</p></td>
@@ -3021,38 +3137,44 @@
 <tr class="row-even"><td><p>VIDEO_CONTENT_TYPE_INVALID</p></td>
 <td><p>The video’s content type is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>VIDEO_FILE_INVALID</p></td>
+<tr class="row-odd"><td><p>VIDEO_DURATION_INVALID</p></td>
+<td><p>The duration of the specified video is invalid.</p></td>
+</tr>
+<tr class="row-even"><td><p>VIDEO_FILE_INVALID</p></td>
 <td><p>The specified video file is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>VIDEO_PAUSE_FORBIDDEN</p></td>
+<tr class="row-odd"><td><p>VIDEO_PAUSE_FORBIDDEN</p></td>
 <td><p>You cannot pause the video stream.</p></td>
 </tr>
-<tr class="row-odd"><td><p>VIDEO_STOP_FORBIDDEN</p></td>
+<tr class="row-even"><td><p>VIDEO_STOP_FORBIDDEN</p></td>
 <td><p>You cannot stop the video stream.</p></td>
 </tr>
-<tr class="row-even"><td><p>VIDEO_TITLE_EMPTY</p></td>
+<tr class="row-odd"><td><p>VIDEO_TITLE_EMPTY</p></td>
 <td><p>The specified video title is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>VOICE_MESSAGES_FORBIDDEN</p></td>
+<tr class="row-even"><td><p>VOICE_MESSAGES_FORBIDDEN</p></td>
 <td><p>This user’s privacy settings forbid you from sending voice messages.</p></td>
 </tr>
-<tr class="row-even"><td><p>VOLUME_LOC_NOT_FOUND</p></td>
+<tr class="row-odd"><td><p>VOLUME_LOC_NOT_FOUND</p></td>
 <td><p>The volume location can’t be found</p></td>
 </tr>
-<tr class="row-odd"><td><p>WALLPAPER_FILE_INVALID</p></td>
+<tr class="row-even"><td><p>WALLPAPER_FILE_INVALID</p></td>
 <td><p>The specified wallpaper file is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>WALLPAPER_INVALID</p></td>
+<tr class="row-odd"><td><p>WALLPAPER_INVALID</p></td>
 <td><p>The specified wallpaper is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>WALLPAPER_MIME_INVALID</p></td>
+<tr class="row-even"><td><p>WALLPAPER_MIME_INVALID</p></td>
 <td><p>The specified wallpaper MIME type is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>WALLPAPER_NOT_FOUND</p></td>
+<tr class="row-odd"><td><p>WALLPAPER_NOT_FOUND</p></td>
 <td><p>The specified wallpaper could not be found.</p></td>
 </tr>
-<tr class="row-odd"><td><p>WC_CONVERT_URL_INVALID</p></td>
+<tr class="row-even"><td><p>WC_CONVERT_URL_INVALID</p></td>
 <td><p>WC convert URL invalid.</p></td>
+</tr>
+<tr class="row-odd"><td><p>WEBAUTH_TOKEN_EXPIRED</p></td>
+<td><p>The specified auth token has expired.</p></td>
 </tr>
 <tr class="row-even"><td><p>WEBDOCUMENT_INVALID</p></td>
 <td><p>Invalid webdocument URL provided.</p></td>
@@ -3134,7 +3256,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/40056f4" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/f1dc08e" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

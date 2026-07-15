@@ -12,11 +12,11 @@
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="https://t.me/PyroTGFork/2" />
     <meta property="article:author" content="@PyroTGFork" />
-    <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="KeyboardButtonRow" href="keyboard-button-row.html" /><link rel="prev" title="JSONValue" href="json-value.html" />
+    <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="KeyboardButtonRow" href="keyboard-button-row.html" /><link rel="prev" title="JoinChatBotResult" href="join-chat-bot-result.html" />
         <link rel="canonical" href="/pyrogram/telegram/base/keyboard-button.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>KeyboardButton - PyroTGFork 2.2.24 Layer 225</title>
+        <title>KeyboardButton - PyroTGFork 2.2.24 Layer 227</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 225</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 227</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 225</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 227</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -442,6 +442,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_owned_bots.html">get_owned_bots</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_similar_bots.html">get_similar_bots</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/send_message_draft.html">send_message_draft</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/answer_guest_query.html">answer_guest_query</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/send_sticker.html">send_sticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_custom_emoji_stickers.html">get_custom_emoji_stickers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_message_effects.html">get_message_effects</a></li>
@@ -486,6 +487,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/MessageEntity.html">MessageEntity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/TextQuote.html">TextQuote</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ExternalReplyInfo.html">ExternalReplyInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/LinkPreviewOptions.html">LinkPreviewOptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/ReplyParameters.html">ReplyParameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/MessageOrigin.html">MessageOrigin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/MessageOriginUser.html">MessageOriginUser</a></li>
@@ -640,6 +642,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/GeneralForumTopicHidden.html">GeneralForumTopicHidden</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/GeneralForumTopicUnhidden.html">GeneralForumTopicUnhidden</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/InputMedia.html">InputMedia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/InputPollMedia.html">InputPollMedia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/InputPollOptionMedia.html">InputPollOptionMedia</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/InputMediaPhoto.html">InputMediaPhoto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/InputMediaVideo.html">InputMediaVideo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/InputMediaAudio.html">InputMediaAudio</a></li>
@@ -647,7 +651,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/InputMediaDocument.html">InputMediaDocument</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/InputMediaSticker.html">InputMediaSticker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/InputPhoneContact.html">InputPhoneContact</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../api/types/LinkPreviewOptions.html">LinkPreviewOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/InputMediaLivePhoto.html">InputMediaLivePhoto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/InputMediaLocation.html">InputMediaLocation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/InputMediaVenue.html">InputMediaVenue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/InputPaidMedia.html">InputPaidMedia</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/InputPaidMediaPhoto.html">InputPaidMediaPhoto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/InputPaidMediaVideo.html">InputPaidMediaVideo</a></li>
@@ -780,6 +786,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/bound-methods/Message.translate.html">translate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/bound-methods/Message.pay.html">pay</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/bound-methods/Message.star.html">star</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/bound-methods/Message.answer.html">answer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/bound-methods/ExternalReplyInfo.download.html">download</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/bound-methods/Chat.archive.html">archive</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/bound-methods/Chat.unarchive.html">unarchive</a></li>
@@ -904,7 +911,74 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../support.html">Support Pyrogram</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../releases/index.html">Release Notes</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../releases/index.html">Release Notes</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Release Notes</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/changes-in-this-fork.html">UNRELEASED VERSION</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.24.html">Pyrogram v2.2.24</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.23.html">Pyrogram v2.2.23</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.22.html">Pyrogram v2.2.22</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.21.html">Pyrogram v2.2.21</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.18.html">Pyrogram v2.2.18</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.17.html">Pyrogram v2.2.17</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.16.html">Pyrogram v2.2.16</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.15.html">Pyrogram v2.2.15</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.14.html">Pyrogram v2.2.14</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.13.html">Pyrogram v2.2.13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.12.html">Pyrogram v2.2.12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.11.html">Pyrogram v2.2.11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.10.html">Pyrogram v2.2.10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.9.html">Pyrogram v2.2.9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.8.html">Pyrogram v2.2.8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.7.html">Pyrogram v2.2.7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.6.html">Pyrogram v2.2.6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.5.html">Pyrogram v2.2.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.4.html">Pyrogram v2.2.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.2.html">Pyrogram v2.2.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.1.html">Pyrogram v2.2.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.37.html">Pyrogram v2.1.37</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.36.html">Pyrogram v2.1.36</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.35.html">Pyrogram v2.1.35</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.34.html">Pyrogram v2.1.34</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.13.html">Pyrogram v2.1.33.13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.12.html">Pyrogram v2.1.33.12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.11.html">Pyrogram v2.1.33.11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.10.html">Pyrogram v2.1.33.10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.9.html">Pyrogram v2.1.33.9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.8.html">Pyrogram v2.1.33.8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.7.html">Pyrogram v2.1.33.7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.4.html">Pyrogram v2.1.33.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.3.html">Pyrogram v2.1.33.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.2.html">Pyrogram v2.1.33.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.33.1.html">Pyrogram v2.1.33.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.15.html">Pyrogram v2.1.32.15</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.14.html">Pyrogram v2.1.32.14</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.13.html">Pyrogram v2.1.32.13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.12.html">Pyrogram v2.1.32.12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.11.html">Pyrogram v2.1.32.11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.10.html">Pyrogram v2.1.32.10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.9.html">Pyrogram v2.1.32.9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.8.html">Pyrogram v2.1.32.8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.7.html">Pyrogram v2.1.32.7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.6.html">Pyrogram v2.1.32.6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.4.html">Pyrogram v2.1.32.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.3.html">Pyrogram v2.1.32.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.2.html">Pyrogram v2.1.32.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.32.1.html">Pyrogram v2.1.32.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.31.html">Pyrogram v2.1.31</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.30.html">Pyrogram v2.1.30</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.29.html">Pyrogram v2.1.29</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.28.html">Pyrogram v2.1.28</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.27.html">Pyrogram v2.1.27</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.26.html">Pyrogram v2.1.26</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.25.html">Pyrogram v2.1.25</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.23.html">Pyrogram v2.1.23</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.22.html">Pyrogram v2.1.22</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.21.html">Pyrogram v2.1.21</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.20.html">Pyrogram v2.1.20</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.19.html">Pyrogram v2.1.19</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.1.18.html">Pyrogram v2.1.18</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://web.archive.org/web/20241127113824/https://docs.pyrogram.org/releases/">Previous Changes</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Telegram Raw API</span></p>
 <ul>
@@ -1004,49 +1078,49 @@
 <td><p>Button to request a user to <a class="reference external" href="https://core.telegram.org/method/messages.acceptUrlAuth">authorize</a> via URL using <a class="reference external" href="https://telegram.org/blog/privacy-discussions-web-bots#meet-seamless-web-bots">Seamless Telegram Login</a>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/input-keyboard-button-user-profile.html#pyrogram.raw.types.InputKeyboardButtonUserProfile" title="pyrogram.raw.types.InputKeyboardButtonUserProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputKeyboardButtonUserProfile</span></code></a></p></td>
-<td><p>Button that links directly to a user profile</p></td>
+<td><p>Button that links directly to a user profile Use this constructor to send a <a class="reference external" href="https://core.telegram.org/constructor/keyboardButtonUserProfile">keyboardButtonUserProfile</a> button in an <a class="reference external" href="https://core.telegram.org/bots/features#inline-keyboards">inline keyboard</a>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/keyboard-button.html#pyrogram.raw.types.KeyboardButton" title="pyrogram.raw.types.KeyboardButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButton</span></code></a></p></td>
-<td><p>Bot keyboard button</p></td>
+<td><p>Bot keyboard button Available only in <a class="reference external" href="https://core.telegram.org/constructor/replyKeyboardMarkup">reply keyboards</a>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/keyboard-button-buy.html#pyrogram.raw.types.KeyboardButtonBuy" title="pyrogram.raw.types.KeyboardButtonBuy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonBuy</span></code></a></p></td>
-<td><p>Button to buy a product</p></td>
+<td><p>Button to buy a product Available only in <a class="reference external" href="https://core.telegram.org/constructor/replyInlineMarkup">inline keyboards</a>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/keyboard-button-callback.html#pyrogram.raw.types.KeyboardButtonCallback" title="pyrogram.raw.types.KeyboardButtonCallback"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonCallback</span></code></a></p></td>
-<td><p>Callback button</p></td>
+<td><p>Callback button Available only in <a class="reference external" href="https://core.telegram.org/constructor/replyInlineMarkup">inline keyboards</a>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/keyboard-button-copy.html#pyrogram.raw.types.KeyboardButtonCopy" title="pyrogram.raw.types.KeyboardButtonCopy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonCopy</span></code></a></p></td>
-<td><p>Clipboard button: when clicked, the attached text must be copied to the clipboard.</p></td>
+<td><p>Clipboard button Available only in <a class="reference external" href="https://core.telegram.org/constructor/replyInlineMarkup">inline keyboards</a>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/keyboard-button-game.html#pyrogram.raw.types.KeyboardButtonGame" title="pyrogram.raw.types.KeyboardButtonGame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonGame</span></code></a></p></td>
-<td><p>Button to start a game</p></td>
+<td><p>Button to start a game Available only in <a class="reference external" href="https://core.telegram.org/constructor/replyInlineMarkup">inline keyboards</a>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/keyboard-button-request-geo-location.html#pyrogram.raw.types.KeyboardButtonRequestGeoLocation" title="pyrogram.raw.types.KeyboardButtonRequestGeoLocation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonRequestGeoLocation</span></code></a></p></td>
-<td><p>Button to request a user's geolocation</p></td>
+<td><p>Button to request a user's geolocation Available only in private chats, in <a class="reference external" href="https://core.telegram.org/constructor/replyKeyboardMarkup">reply keyboards</a>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/keyboard-button-request-peer.html#pyrogram.raw.types.KeyboardButtonRequestPeer" title="pyrogram.raw.types.KeyboardButtonRequestPeer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonRequestPeer</span></code></a></p></td>
-<td><p>Prompts the user to select and share one or more peers with the bot using <a class="reference external" href="https://core.telegram.org/method/messages.sendBotRequestedPeer">messages.sendBotRequestedPeer</a></p></td>
+<td><p>Prompts the user to select and share one or more peers with the bot using <a class="reference external" href="https://core.telegram.org/method/messages.sendBotRequestedPeer">messages.sendBotRequestedPeer</a> Available only in private chats, in <a class="reference external" href="https://core.telegram.org/constructor/replyKeyboardMarkup">reply keyboards</a>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/keyboard-button-request-phone.html#pyrogram.raw.types.KeyboardButtonRequestPhone" title="pyrogram.raw.types.KeyboardButtonRequestPhone"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonRequestPhone</span></code></a></p></td>
-<td><p>Button to request a user's phone number</p></td>
+<td><p>Button to request a user's phone number Available only in private chats, in <a class="reference external" href="https://core.telegram.org/constructor/replyKeyboardMarkup">reply keyboards</a>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/keyboard-button-request-poll.html#pyrogram.raw.types.KeyboardButtonRequestPoll" title="pyrogram.raw.types.KeyboardButtonRequestPoll"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonRequestPoll</span></code></a></p></td>
-<td><p>A button that allows the user to create and send a poll when pressed; available only in private</p></td>
+<td><p>Button to request a poll from the user Available only in private chats, in <a class="reference external" href="https://core.telegram.org/constructor/replyKeyboardMarkup">reply keyboards</a>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/keyboard-button-simple-web-view.html#pyrogram.raw.types.KeyboardButtonSimpleWebView" title="pyrogram.raw.types.KeyboardButtonSimpleWebView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonSimpleWebView</span></code></a></p></td>
 <td><p>Button to open a <a class="reference external" href="https://core.telegram.org/api/bots/webapps">bot mini app</a> using <a class="reference external" href="https://core.telegram.org/method/messages.requestSimpleWebView">messages.requestSimpleWebView</a>, without sending user information to the web app.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/keyboard-button-switch-inline.html#pyrogram.raw.types.KeyboardButtonSwitchInline" title="pyrogram.raw.types.KeyboardButtonSwitchInline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonSwitchInline</span></code></a></p></td>
-<td><p>Button to force a user to switch to inline mode: pressing the button will prompt the user to select one of their chats, open that chat and insert the bot's username and the specified inline query in the input field.</p></td>
+<td><p>Button to switch the user to inline mode Available only in <a class="reference external" href="https://core.telegram.org/constructor/replyInlineMarkup">inline keyboards</a>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/keyboard-button-url.html#pyrogram.raw.types.KeyboardButtonUrl" title="pyrogram.raw.types.KeyboardButtonUrl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonUrl</span></code></a></p></td>
-<td><p>URL button</p></td>
+<td><p>URL button Available only in <a class="reference external" href="https://core.telegram.org/constructor/replyInlineMarkup">inline keyboards</a>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/keyboard-button-url-auth.html#pyrogram.raw.types.KeyboardButtonUrlAuth" title="pyrogram.raw.types.KeyboardButtonUrlAuth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonUrlAuth</span></code></a></p></td>
 <td><p>Button to request a user to authorize via URL using <a class="reference external" href="https://telegram.org/blog/privacy-discussions-web-bots#meet-seamless-web-bots">Seamless Telegram Login</a>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../types/keyboard-button-user-profile.html#pyrogram.raw.types.KeyboardButtonUserProfile" title="pyrogram.raw.types.KeyboardButtonUserProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonUserProfile</span></code></a></p></td>
-<td><p>Button that links directly to a user profile</p></td>
+<td><p>Button that links directly to a user profile Available only in <a class="reference external" href="https://core.telegram.org/constructor/replyInlineMarkup">inline keyboards</a>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../types/keyboard-button-web-view.html#pyrogram.raw.types.KeyboardButtonWebView" title="pyrogram.raw.types.KeyboardButtonWebView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonWebView</span></code></a></p></td>
 <td><p>Button to open a <a class="reference external" href="https://core.telegram.org/api/bots/webapps">bot mini app</a> using <a class="reference external" href="https://core.telegram.org/method/messages.requestWebView">messages.requestWebView</a>, sending over user information after user confirmation.</p></td>
@@ -1060,7 +1134,7 @@
 <table class="autosummary longtable docutils align-default">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="../functions/bots/get-requested-web-view-button.html#pyrogram.raw.functions.bots.GetRequestedWebViewButton" title="pyrogram.raw.functions.bots.GetRequestedWebViewButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bots.GetRequestedWebViewButton</span></code></a></p></td>
-<td><p>Details:</p></td>
+<td><p>Fetch the peer request button a bot prepared for a <a class="reference external" href="https://core.telegram.org/api/bots/webapps">Mini App</a> with <a class="reference external" href="https://core.telegram.org/method/bots.requestWebViewButton">bots.requestWebViewButton</a>, invoked when the Mini App emits a <a class="reference external" href="https://core.telegram.org/api/web-events#web-app-request-chat">web_app_request_chat</a> event, see <a class="reference external" href="https://core.telegram.org/api/bots/buttons#requesting-peers-via-mini-apps">here</a> for more info.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1086,14 +1160,14 @@
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="json-value.html">
+          <a class="prev-page" href="join-chat-bot-result.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">JSONValue</div>
+                <div class="title">JoinChatBotResult</div>
                 
               </div>
             </a>
@@ -1107,7 +1181,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/40056f4" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/f1dc08e" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               
