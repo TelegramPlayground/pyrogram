@@ -1,0 +1,9 @@
+Pyrogram v2.1.33.12
+==================
+
+
+Scheme layer used: 190
+---------
+
+- Added the methods :meth:`~pyrogram.Client.get_available_gifts`, :meth:`~pyrogram.Client.get_user_gifts`, :meth:`~pyrogram.Client.sell_gift`, :meth:`~pyrogram.Client.send_gift`, :meth:`~pyrogram.Client.toggle_gift_is_saved`, :meth:`~pyrogram.types.UserGift.toggle` and the types :obj:`~pyrogram.types.UserGift` and :obj:`~pyrogram.types.Gift`.
+- Added the parameter ``send_as`` in the appropriate methods and bound methods `PR 107 <https://github.com/TelegramPlayGround/PyroTGFork/pull/107>`_.

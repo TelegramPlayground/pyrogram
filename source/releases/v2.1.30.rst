@@ -1,0 +1,13 @@
+Pyrogram v2.1.30
+==================
+
+
+Scheme layer used: 179
+---------
+
+- Added the field ``question_entities`` to the class :obj:`~pyrogram.types.Poll`.
+- Added the field ``text_entities`` to the class :obj:`~pyrogram.types.PollOption`.
+- Added the parameters ``question_parse_mode`` and ``question_entities`` to the method :meth:`~pyrogram.Client.send_poll`.
+- Added the class :obj:`~pyrogram.types.InputPollOption` and changed the type of the parameter ``options`` in the method :meth:`~pyrogram.Client.send_poll` to Array of :obj:`~pyrogram.types.InputPollOption`.
+- Added the field ``max_reaction_count`` to the class :obj:`~pyrogram.types.Chat`.
+- Added the field ``via_join_request`` to the class :obj:`~pyrogram.types.ChatMemberUpdated`.

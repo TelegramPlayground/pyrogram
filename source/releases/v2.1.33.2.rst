@@ -1,0 +1,8 @@
+Pyrogram v2.1.33.2
+==================
+
+
+Scheme layer used: 185
+---------
+
+- Added :meth:`~pyrogram.Client.terminate_session`, :meth:`~pyrogram.types.ActiveSession.terminate`, and :meth:`~pyrogram.Client.terminate_all_other_sessions`.

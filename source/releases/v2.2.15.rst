@@ -1,0 +1,5 @@
+Pyrogram v2.2.15
+==================
+
+
+Bug Fixes <https://github.com/TelegramPlayground/PyroTGFork/compare/v2.2.14...v2.2.15>

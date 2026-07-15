@@ -1,0 +1,10 @@
+Pyrogram v2.1.23
+==================
+
+
+Scheme layer used: 177
+---------
+
+- **BOTS ONLY**: Updated :obj:`~pyrogram.handlers.ChatMemberUpdatedHandler` to handle updates when the bot is blocked or unblocked by a user.
+- Added missing parameters in :meth:`~pyrogram.Client.create_group`, :meth:`~pyrogram.Client.create_supergroup`, :meth:`~pyrogram.Client.create_channel`.
+- Added ``emoji_message_interaction`` parameter to :meth:`~pyrogram.Client.send_chat_action` and :meth:`~pyrogram.types.Message.reply_chat_action`.

@@ -1,0 +1,10 @@
+Pyrogram v2.1.33.4
+==================
+
+
+Scheme layer used: 186
+---------
+
+- Added the field ``can_enable_paid_reaction`` to the class :obj:`~pyrogram.types.Chat`.
+- Added ``link`` property to :obj:`~pyrogram.types.Story` and fixed the ``link`` property in :obj:`~pyrogram.types.Message`.
+- Introduced :obj:`~pyrogram.types.DraftMessage` type.
