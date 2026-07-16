@@ -2,15 +2,10 @@ UNRELEASED VERSION
 ==================
 
 
-Scheme layer used: 227
----------
+New Features
+-------------
 
 - Allow to set emoji status for channel.
-- View `new and changed <https://telegramplayground.github.io/TG-APIs/TL/diff/tdlib.html?from=225&to=227>`__ `raw API methods <https://telegramplayground.github.io/TG-APIs/TL/diff/tdesktop.html?from=225&to=227>`__.
-
-Scheme layer used: 225
----------
-
 - Added ``members_only`` and ``country_codes`` to :meth:`~pyrogram.Client.send_poll`, :meth:`~pyrogram.types.Message.reply_poll` and :obj:`~pyrogram.types.Poll`.
 - Added the :obj:`~pyrogram.filters.guest_message_query_id`.
 - Added the classes :obj:`~pyrogram.types.SentGuestMessage` and :obj:`~pyrogram.types.BotAccessSettings`.
@@ -20,3 +15,14 @@ Scheme layer used: 225
 - Added the field ``supports_guest_queries`` to the :obj:`~pyrogram.types.User`.
 - Added ``description_media`` and ``explanation_media`` in :meth:`~pyrogram.Client.send_poll` and :meth:`~pyrogram.types.Message.reply_poll`.
 - Added the field ``can_react_to_messages`` to the :obj:`~pyrogram.types.ChatPermissions`.
+
+Bug Fixes
+----------
+
+- Resolves NameError with the InputMedia types (contributed by @zydou in `#242 <https://github.com/TelegramPlayground/PyroTGFork/issues/242>`__)
+- Resolves four NameError bugs that cause runtime crashes in the library. (contributed by @Gaoc3 in `#244 <https://github.com/TelegramPlayground/PyroTGFork/pull/244>`__)
+
+Layer Changes
+--------------
+
+- View `new and changed <https://telegramplayground.github.io/TG-APIs/TL/diff/tdlib.html?from=225&to=228>`__ `raw API methods <https://telegramplayground.github.io/TG-APIs/TL/diff/tdesktop.html?from=225&to=228>`__.
