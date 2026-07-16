@@ -3,7 +3,7 @@ Pyrogram v2.1.32.1
 
 
 Scheme layer used: 179
----------
+------------------------
 
 - Support for the updated Channel ID format. `#28 <https://github.com/TelegramPlayGround/PyroTGFork/pull/28>`_
 - Improvements to :meth:`~pyrogram.Client.save_file` and :meth:`~pyrogram.Client.get_file` to handle the new `FLOOD_PREMIUM_WAIT <https://t.me/swiftgram/72>`_ errors.

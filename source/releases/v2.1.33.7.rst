@@ -1,9 +1,9 @@
 Pyrogram v2.1.33.7
-==================
+===================
 
 
 Scheme layer used: 187
----------
+------------------------
 
 - Added the field ``prize_star_count`` to the classes :obj:`~pyrogram.types.GiveawayCreated`, :obj:`~pyrogram.types.Giveaway`, :obj:`~pyrogram.types.GiveawayWinners`.
 - Added the field ``is_star_giveaway`` to the class :obj:`~pyrogram.types.GiveawayCompleted`.
@@ -11,7 +11,7 @@ Scheme layer used: 187
 - View `new and changed <https://telegramplayground.github.io/TG-APIs/TL/diff/tdlib.html?from=186&to=187>`__ `raw API methods <https://telegramplayground.github.io/TG-APIs/TL/diff/tdesktop.html?from=186&to=187>`__.
 
 Scheme layer used: 186
----------
+------------------------
 
 - Try to return the service message (when applicable) in the methods :meth:`~pyrogram.Client.set_chat_photo`, :meth:`~pyrogram.types.Chat.set_photo`.
 - Added the methods :meth:`~pyrogram.Client.get_payment_form` and :meth:`~pyrogram.Client.send_payment_form` `#89 <https://github.com/TelegramPlayGround/PyroTGFork/pull/89>`__.

@@ -3,12 +3,12 @@ Pyrogram v2.2.12
 
 
 Scheme layer used: 203
----------
+------------------------
 
 - View `new and changed <https://telegramplayground.github.io/TG-APIs/TL/diff/tdlib.html?from=202&to=205>`__ `raw API methods <https://telegramplayground.github.io/TG-APIs/TL/diff/tdesktop.html?from=202&to=203>`__.
 
 Scheme layer used: 202
----------
+------------------------
 
 - Added the method :meth:`~pyrogram.Client.post_story` allowing bots to post a story on behalf of a managed business account.
 - Added the method :meth:`~pyrogram.Client.edit_story` and :meth:`~pyrogram.Client.edit_business_story`, allowing bots to edit stories they had previously posted on behalf of a managed business account.

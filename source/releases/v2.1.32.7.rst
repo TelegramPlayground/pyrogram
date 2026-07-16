@@ -3,7 +3,7 @@ Pyrogram v2.1.32.7
 
 
 Scheme layer used: 181
----------
+------------------------
 
 - Added the methods :meth:`~pyrogram.Client.translate_text`, :meth:`~pyrogram.Client.translate_message_text`, :meth:`~pyrogram.types.Message.translate` and the type :obj:`~pyrogram.types.TranslatedText` (`#39 <https://github.com/TelegramPlayGround/PyroTGFork/pull/39>`_).
 - Added the methods :meth:`~pyrogram.Client.create_video_chat`, :meth:`~pyrogram.Client.discard_group_call`, :meth:`~pyrogram.Client.get_video_chat_rtmp_url` and the type :obj:`~pyrogram.types.RtmpUrl` (`#37 <https://github.com/TelegramPlayGround/PyroTGFork/pull/37>`_).

@@ -3,7 +3,7 @@ Pyrogram v2.1.34
 
 
 Scheme layer used: 192
----------
+------------------------
 
 - Added :obj:`~pyrogram.enums.ChatEventAction.SHOW_MESSAGE_SENDER_ENABLED`, :obj:`~pyrogram.enums.ChatEventAction.AGGRESSIVE_ANTI_SPAM_TOGGLED`, :obj:`~pyrogram.enums.ChatEventAction.PROTECTED_CONTENT_TOGGLED`, :obj:`~pyrogram.enums.ChatEventAction.CHAT_IS_FORUM_TOGGLED`, :obj:`~pyrogram.enums.ChatEventAction.USERNAMES_CHANGED`, :obj:`~pyrogram.enums.ChatEventAction.MEMBER_SUBSCRIPTION_EXTENDED`, :obj:`~pyrogram.enums.ChatEventAction.MEMBER_JOINED_BY_LINK`, :obj:`~pyrogram.enums.ChatEventAction.MEMBER_JOINED_BY_REQUEST`, and updated :obj:`~pyrogram.types.ChatEventFilter` with the corresponding attributes.
 - Added the parameter ``show_caption_above_media`` to the :meth:`~pyrogram.Client.edit_inline_caption`.

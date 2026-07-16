@@ -1,9 +1,9 @@
 Pyrogram v2.1.32.12
-==================
+====================
 
 
 Scheme layer used: 184
----------
+------------------------
 
 - Added the class :obj:`~pyrogram.types.RefundedPayment`, containing information about a refunded payment.
 - Added the field ``refunded_payment`` to the class :obj:`~pyrogram.types.Message`, describing a service message about a refunded payment.

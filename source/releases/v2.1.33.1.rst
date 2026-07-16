@@ -1,9 +1,9 @@
 Pyrogram v2.1.33.1
-==================
+===================
 
 
 Scheme layer used: 185
----------
+------------------------
 
 - Added ``gifted_stars`` service message to the class :obj:`~pyrogram.types.Message`.
 - Added the fields ``have_access``, ``has_main_web_app``, ``active_user_count`` to the class :obj:`~pyrogram.types.User`, which is returned in response to  :meth:`~pyrogram.Client.get_me`.

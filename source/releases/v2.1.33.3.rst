@@ -1,9 +1,9 @@
 Pyrogram v2.1.33.3
-==================
+===================
 
 
 Scheme layer used: 186
----------
+------------------------
 
 - Added the ability to send paid media to any chat and the parameter ``business_connection_id`` to the :meth:`~pyrogram.Client.send_paid_media`, allowing bots to send paid media on behalf of a business account.
 - Added the field ``until_date`` to the class :obj:`~pyrogram.types.ChatMember` for members with an active subscription.

@@ -1,9 +1,9 @@
 Pyrogram v2.2.4
-==================
+=================
 
 
 Scheme layer used: 196
----------
+------------------------s
 
 - Added the ``pay_for_upgrade`` in the :meth:`~pyrogram.Client.send_gift`.
 - Added the parameters ``upgrade_star_count`` and ``is_for_birthday`` in :obj:`~pyrogram.types.Gift`.

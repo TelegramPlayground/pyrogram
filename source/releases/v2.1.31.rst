@@ -3,7 +3,7 @@ Pyrogram v2.1.31
 
 
 Scheme layer used: 179
----------
+------------------------
 
 - Added :meth:`~pyrogram.Client.get_chat_sponsored_messages` and the type :obj:`~pyrogram.types.SponsoredMessage`, by stealing unauthored changes from `KurimuzonAkuma/pyrogram#55 <https://github.com/KurimuzonAkuma/pyrogram/pull/55>`_.
 - Added :meth:`~pyrogram.Client.load_group_call_participants` and the type :obj:`~pyrogram.types.GroupCallParticipant`, by stealing unauthored changes from `6df467f <https://github.com/KurimuzonAkuma/pyrogram/commit/6df467f89c0f6fa513a3f56ff1b517574fd3d164>`_.

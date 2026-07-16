@@ -3,7 +3,7 @@ Pyrogram v2.2.17
 
 
 Scheme layer used: 220
----------
+------------------------
 
 - fix: set description correctly in :obj:`~pyrogram.types.InlineQueryResultAnimation` (contributed by @Krau in `#262 <https://github.com/KurimuzonAkuma/kurigram/pull/262>`__).
 - Add generic return type for :meth:`~pyrogram.Client.invoke` (contributed by @ZeN220 in `#252 <https://github.com/KurimuzonAkuma/kurigram/pull/252>`__).

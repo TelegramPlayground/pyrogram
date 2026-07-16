@@ -3,7 +3,7 @@ Pyrogram v2.1.32.6
 
 
 Scheme layer used: 181
----------
+------------------------
 
 - Added the types :obj:`~pyrogram.types.LabeledPrice`, :obj:`~pyrogram.types.OrderInfo`, :obj:`~pyrogram.types.PreCheckoutQuery`, :obj:`~pyrogram.types.ShippingAddress`, :obj:`~pyrogram.types.ShippingOption`, :obj:`~pyrogram.types.ShippingQuery` and :obj:`~pyrogram.types.SuccessfulPayment`.
 - Added the ``successful_payment`` parameter to the :obj:`~pyrogram.types.Message`. Added the filter :obj:`~pyrogram.filters.successful_payment` to detect service messages of Successful Payment type.

@@ -3,7 +3,7 @@ Pyrogram v2.1.35
 
 
 Scheme layer used: 194
----------
+------------------------
 
 - Added the field ``subscription_expiration_date`` in the :obj:`~pyrogram.types.SuccessfulPayment`.
 - Added the parameter ``subscription_period`` in the :meth:`~pyrogram.Client.create_invoice_link`.

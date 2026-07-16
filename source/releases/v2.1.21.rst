@@ -3,7 +3,7 @@ Pyrogram v2.1.21
 
 
 Scheme layer used: 177
----------
+------------------------
 
 - Added ``callback_data_with_password`` to :obj:`~pyrogram.types.InlineKeyboardButton` and added support in :meth:`~pyrogram.types.Message.click` for such buttons.
 - PR from upstream: `1391 <https://github.com/pyrogram/pyrogram/pull/1391>`_ without attribution.

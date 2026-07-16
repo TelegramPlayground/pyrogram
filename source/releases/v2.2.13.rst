@@ -3,7 +3,7 @@ Pyrogram v2.2.13
 
 
 Scheme layer used: 205
----------
+------------------------
 
 - Added the :obj:`~pyrogram.types.ChecklistTask` representing a task in a checklist.
 - Added the :obj:`~pyrogram.types.Checklist` representing a checklist.

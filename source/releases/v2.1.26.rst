@@ -3,12 +3,12 @@ Pyrogram v2.1.26
 
 
 Scheme layer used: 179
----------
+------------------------
 
 - `View new and changed raw API methods <https://telegramplayground.github.io/TG-APIs/TL/diff/tdesktop.html?from=178&to=179>`__.
 
 Scheme layer used: 178
----------
+------------------------
 
 - Steal `d51eef3 <https://github.com/PyrogramMod/PyrogramMod/commit/d51eef31dc28724405ff473e45ca21b7d835d8b4>`_ without attribution.
 - Added :meth:`~pyrogram.Client.edit_cached_media` and :meth:`~pyrogram.types.Message.edit_cached_media`.

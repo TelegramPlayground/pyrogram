@@ -3,7 +3,7 @@ Pyrogram v2.2.16
 
 
 Scheme layer used: 214
----------
+------------------------
 
 - `fix get_chat_photos <https://github.com/TelegramPlayground/PyroTGFork/pull/203>`.
 - `support filters.regex for ChosenInlineResult <https://github.com/TelegramPlayground/PyroTGFork/pull/198>`__.
@@ -14,7 +14,7 @@ Scheme layer used: 214
 
 
 Scheme layer used: 211
----------
+------------------------
 
 - Rename direct_message_topic_id to ``direct_messages_topic_id`` in :obj:`~pyrogram.types.ReplyParameters`. This parameter can be used to send a message to a direct messages chat topic.
 - Added the field ``checklist_task_id`` to the class :obj:`~pyrogram.types.ReplyParameters`, allowing bots to reply to a specific checklist task.

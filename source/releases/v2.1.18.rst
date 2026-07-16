@@ -3,7 +3,7 @@ Pyrogram v2.1.18
 
 
 Scheme layer used: 177
----------
+------------------------
 
 - Added ``filters.users_shared`` and ``filters.chat_shared``.
 - Added the classes :obj:`~pyrogram.types.BusinessOpeningHours` and :obj:`~pyrogram.types.BusinessOpeningHoursInterval` and the field       ``business_opening_hours`` to the class :obj:`~pyrogram.types.Chat`.
@@ -33,7 +33,7 @@ Scheme layer used: 177
 
 
 Scheme layer used: 176
----------
+------------------------
 
 - Add ``message_thread_id`` parameter to :meth:`~pyrogram.Client.unpin_all_chat_messages`.
 - Add :meth:`~pyrogram.Client.create_forum_topic`, :meth:`~pyrogram.Client.edit_forum_topic`, :meth:`~pyrogram.Client.close_forum_topic`, :meth:`~pyrogram.Client.reopen_forum_topic`, :meth:`~pyrogram.Client.hide_forum_topic`, :meth:`~pyrogram.Client.unhide_forum_topic`, :meth:`~pyrogram.Client.delete_forum_topic`, :meth:`~pyrogram.Client.get_forum_topic_icon_stickers`.
@@ -68,7 +68,7 @@ Scheme layer used: 176
 
 
 PmOItrOAe
----------
+----------
 
 - Renamed ``placeholder`` to ``input_field_placeholder`` in :obj:`~pyrogram.types.ForceReply` and :obj:`~pyrogram.types.ReplyKeyboardMarkup`.
 - Add ``link`` parameter in :meth:`~pyrogram.Client.get_messages`
@@ -78,7 +78,7 @@ PmOItrOAe
 
 
 Leaked Scheme Layers (2)
----------
+-------------------------
 
 - `Add ttl_seconds attribute to Voice and VideoNote class <https://github.com/KurimuzonAkuma/pyrogram/commit/7556d3e3864215386f018692947cdf52a82cb420>`_
 - `#713 <https://github.com/pyrogram/pyrogram/pull/713>`_
@@ -99,7 +99,7 @@ Leaked Scheme Layers (2)
 
 
 Scheme layer used: 174
----------
+------------------------
 
 - Added the field ``story`` to the class :obj:`~pyrogram.types.Message` for messages with forwarded stories. Currently, it holds no information.
 - Added the class :obj:`~pyrogram.types.ChatBoostAdded` and the field ``boost_added`` to the class :obj:`~pyrogram.types.Message` for service messages about a user boosting a chat.
@@ -109,7 +109,7 @@ Scheme layer used: 174
 
 
 Scheme layer used: 173
----------
+------------------------
 
 - Fix ConnectionResetError when only ping task (`#24 <https://github.com/KurimuzonAkuma/pyrogram/pull/24>`_)
 - Added ``is_topic_message`` to the :obj:`~pyrogram.types.Message` object.
@@ -134,7 +134,7 @@ Scheme layer used: 173
 
 
 Scheme layer used: 170
----------
+------------------------
 
 - Stole documentation from `PyrogramMod <https://github.com/PyrogramMod/PyrogramMod>`_.
 - Renamed ``send_reaction`` to :meth:`~pyrogram.Client.set_reaction`.
@@ -150,7 +150,7 @@ Scheme layer used: 170
 
 
 Scheme layer used: 169
----------
+------------------------
 
 - Changed condition in :meth:`~pyrogram.Client.join_chat` and :meth:`~pyrogram.Client.get_chat`.
 - Added ``disable_content_type_detection`` parameter to :obj:`~pyrogram.types.InputMediaVideo`.
@@ -165,18 +165,18 @@ Scheme layer used: 169
 
 
 Scheme layer used: 167
----------
+------------------------
 
 - Fixed the TL flags being Python reserved keywords: ``from`` and ``self``.
 
 
 Scheme layer used: 161
----------
+------------------------
 
 - Added ``my_stories_from`` to the :meth:`~pyrogram.Client.block_user` and :meth:`~pyrogram.Client.unblock_user` methods.
 
 
 Scheme layer used: 160
----------
+------------------------
 
 - Added ``message_thread_id`` to the methods :meth:`~pyrogram.Client.copy_message`, :meth:`~pyrogram.Client.forward_messages`, :meth:`~pyrogram.Client.send_message`, :meth:`~pyrogram.Client.send_photo`, :meth:`~pyrogram.Client.send_video`, :meth:`~pyrogram.Client.send_animation`, :meth:`~pyrogram.Client.send_audio`, :meth:`~pyrogram.Client.send_document`, :meth:`~pyrogram.Client.send_sticker`, :meth:`~pyrogram.Client.send_video_note`, :meth:`~pyrogram.Client.send_voice`, :meth:`~pyrogram.Client.send_location`, :meth:`~pyrogram.Client.send_venue`, :meth:`~pyrogram.Client.send_contact`, :meth:`~pyrogram.Client.send_poll`, :meth:`~pyrogram.Client.send_dice`, :meth:`~pyrogram.Client.send_game`, :meth:`~pyrogram.Client.send_media_group`, :meth:`~pyrogram.Client.copy_media_group`, :meth:`~pyrogram.Client.send_inline_bot_result`, :meth:`~pyrogram.Client.send_cached_media`.

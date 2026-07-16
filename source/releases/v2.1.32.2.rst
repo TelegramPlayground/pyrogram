@@ -1,9 +1,9 @@
 Pyrogram v2.1.32.2
-==================
+===================
 
 
 Scheme layer used: 181
----------
+------------------------
 
 - Added the parameter ``message_effect_id`` to the methods :meth:`~pyrogram.Client.send_message`, :meth:`~pyrogram.Client.send_photo`, :meth:`~pyrogram.Client.send_video`, :meth:`~pyrogram.Client.send_animation`, :meth:`~pyrogram.Client.send_audio`, :meth:`~pyrogram.Client.send_document`, :meth:`~pyrogram.Client.send_sticker`, :meth:`~pyrogram.Client.send_video_note`, :meth:`~pyrogram.Client.send_voice`, :meth:`~pyrogram.Client.send_location`, :meth:`~pyrogram.Client.send_venue`, :meth:`~pyrogram.Client.send_contact`, :meth:`~pyrogram.Client.send_poll`, :meth:`~pyrogram.Client.send_dice`, :meth:`~pyrogram.Client.send_game`, and :meth:`~pyrogram.Client.send_media_group`, and the corresponding ``reply_*`` methods in the class :obj:`~pyrogram.types.Message`.
 - Added the field ``effect_id`` to the class :obj:`~pyrogram.types.Message`.
@@ -15,7 +15,7 @@ Scheme layer used: 181
 
 
 Scheme layer used: 179
----------
+------------------------
 
 - Add ``invoice`` to :obj:`~pyrogram.types.Message` and :obj:`~pyrogram.types.ExternalReplyInfo`.
 - Add ``link_preview_options`` to :obj:`~pyrogram.Client`.

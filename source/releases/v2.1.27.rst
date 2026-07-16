@@ -3,7 +3,7 @@ Pyrogram v2.1.27
 
 
 Scheme layer used: 179
----------
+------------------------
 
 - Added ``revoke_messages`` parameter to :meth:`~pyrogram.Client.ban_chat_member` and :meth:`~pyrogram.types.Chat.ban_member`.
 - Added :meth:`~pyrogram.Client.get_collectible_item_info`.

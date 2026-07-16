@@ -3,7 +3,7 @@ Pyrogram v2.1.19
 
 
 Scheme layer used: 177
----------
+------------------------
 
 - Added the method :meth:`~pyrogram.Client.get_created_chats`.
 - Added the class :obj:`~pyrogram.types.ForumTopic` and the methods :meth:`~pyrogram.Client.get_forum_topics`, :meth:`~pyrogram.Client.get_forum_topic`.

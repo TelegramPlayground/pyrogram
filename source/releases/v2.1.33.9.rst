@@ -3,7 +3,7 @@ Pyrogram v2.1.33.9
 
 
 Scheme layer used: 189
----------
+------------------------
 
 - Added :meth:`~pyrogram.types.Message.star` bound method to the :obj:`~pyrogram.types.Message`.
 - Introduced support for Python 3.13.

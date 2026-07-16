@@ -3,7 +3,7 @@ Pyrogram v2.2.18
 
 
 Scheme layer used: 222
----------
+------------------------
 
 - Added the field ``first_profile_audio`` to the class :obj:`~pyrogram.types.Chat` and the methods :meth:`~pyrogram.Client.get_chat_audios`, :meth:`~pyrogram.Client.get_chat_audios_count`, :meth:`~pyrogram.Client.add_profile_audio`, :meth:`~pyrogram.Client.remove_profile_audio`, :meth:`~pyrogram.Client.set_profile_audio_position`.
 - Removed the methods :meth:`~pyrogram.Client.get_received_gifts`, :meth:`~pyrogram.Client.sell_gift`, :meth:`~pyrogram.Client.send_gift`, :meth:`~pyrogram.Client.toggle_gift_is_saved` and the :obj:`~pyrogram.types.ReceivedGift`.

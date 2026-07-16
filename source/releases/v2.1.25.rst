@@ -3,10 +3,9 @@ Pyrogram v2.1.25
 
 
 Scheme layer used: 178
----------
+------------------------
 
 - Added ``max_reaction_count`` to :obj:`~pyrogram.types.ChatReactions`.
 - Added ``personal_chat_message`` to :obj:`~pyrogram.types.Chat`.
 - Added ``only_in_channels`` parameter to :meth:`~pyrogram.Client.search_global` and :meth:`~pyrogram.Client.search_global_count`.
 - View `new and changed <https://telegramplayground.github.io/TG-APIs/TL/diff/tdlib.html?from=177&to=178>`__ `raw API methods <https://telegramplayground.github.io/TG-APIs/TL/diff/tdesktop.html?from=177&to=178>`__.
-

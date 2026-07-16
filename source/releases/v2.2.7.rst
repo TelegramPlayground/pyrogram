@@ -3,7 +3,7 @@ Pyrogram v2.2.7
 
 
 Scheme layer used: 199
----------
+------------------------
 
 - Added the parameters ``video_cover`` and ``video_start_timestamp`` to the method :meth:`~pyrogram.Client.copy_message`, allowing bots to change the start timestamp for copied videos.
 - Added ``for_paid_reactions`` in :meth:`~pyrogram.Client.get_send_as_chats`.
@@ -12,7 +12,7 @@ Scheme layer used: 199
 
 
 Scheme layer used: 198
----------
+------------------------
 
 - Updated :doc:`Text Formatting <../../topics/text-formatting>` documentation.
 - Splitted the :meth:`~pyrogram.Client.get_messages` into :meth:`~pyrogram.Client.get_chat_pinned_message`, :meth:`~pyrogram.Client.get_callback_query_message`, and :meth:`~pyrogram.Client.get_replied_message`.

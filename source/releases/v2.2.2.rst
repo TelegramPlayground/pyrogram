@@ -3,6 +3,6 @@ Pyrogram v2.2.2
 
 
 Scheme layer used: 195
----------
+------------------------
 
 - Bug Fixes <https://github.com/TelegramPlayground/PyroTGFork/issues/123>

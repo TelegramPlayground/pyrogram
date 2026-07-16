@@ -3,7 +3,7 @@ Pyrogram v2.1.20
 
 
 Scheme layer used: 177
----------
+------------------------
 
 - Added :meth:`~pyrogram.Client.get_stickers`.
 - Try to return the service message (when applicable) in the methods :meth:`~pyrogram.Client.add_chat_members`, :meth:`~pyrogram.Client.promote_chat_member`.

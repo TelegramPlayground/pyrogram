@@ -3,7 +3,7 @@ Pyrogram v2.2.9
 
 
 Scheme layer used: 200
----------
+------------------------
 
 - Rename ``UserGift`` to :obj:`~pyrogram.types.ReceivedGift`, ``get_user_gifts`` to :meth:`~pyrogram.Client.get_received_gifts` and the corresponding fields appropriately.
 - Added the field ``paid_message_star_count`` to the classes :obj:`~pyrogram.types.Chat`, :obj:`~pyrogram.types.Message` and :obj:`~pyrogram.types.User`.
@@ -12,7 +12,7 @@ Scheme layer used: 200
 
 
 Scheme layer used: 199
----------
+------------------------
 
 - Added the class :obj:`~pyrogram.types.InlineQueryResultGame`.
 - Added the bound methods :meth:`~pyrogram.types.ChosenInlineResult.edit_message_text`, :meth:`~pyrogram.types.ChosenInlineResult.edit_message_caption`, :meth:`~pyrogram.types.ChosenInlineResult.edit_message_media` and :meth:`~pyrogram.types.ChosenInlineResult.edit_message_reply_markup`.

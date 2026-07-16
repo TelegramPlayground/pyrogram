@@ -3,7 +3,7 @@ Pyrogram v2.2.22
 
 
 Scheme layer used: 224
----------
+------------------------
 
 - Added the methods :meth:`~pyrogram.Client.add_poll_option` and :meth:`~pyrogram.Client.delete_poll_option`.
 - Added the field ``can_manage_bots`` to the class :obj:`~pyrogram.types.User`.
@@ -23,6 +23,6 @@ Scheme layer used: 224
 
 
 Scheme layer used: 223
----------
+------------------------
 
 - Added the method :meth:`~pyrogram.Client.send_message_draft`, allowing bots to stream partial messages to a user while being generated. (contributed by @sudo-py-dev in `#231 <https://github.com/TelegramPlayground/PyroTGFork/pull/231>`__).

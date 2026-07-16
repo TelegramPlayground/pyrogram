@@ -3,7 +3,7 @@ Pyrogram v2.1.30
 
 
 Scheme layer used: 179
----------
+------------------------
 
 - Added the field ``question_entities`` to the class :obj:`~pyrogram.types.Poll`.
 - Added the field ``text_entities`` to the class :obj:`~pyrogram.types.PollOption`.
