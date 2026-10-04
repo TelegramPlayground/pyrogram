@@ -16,7 +16,7 @@
         <link rel="canonical" href="/pyrogram/api/errors/bad-request.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>400 - BadRequest - PyroTGFork 2.2.24 Layer 227</title>
+        <title>400 - BadRequest - PyroTGFork 2.2.24.1 Layer 227</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.24 Layer 227</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.24.1 Layer 227</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24 Layer 227</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.24.1 Layer 227</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -912,7 +912,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../support.html">Support Pyrogram</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../releases/index.html">Release Notes</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Release Notes</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../releases/changes-in-this-fork.html">UNRELEASED VERSION</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.24.1.html">Pyrogram v2.2.24.1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.24.html">Pyrogram v2.2.24</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.23.html">Pyrogram v2.2.23</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../releases/v2.2.22.html">Pyrogram v2.2.22</a></li>
@@ -1496,602 +1496,608 @@
 <tr class="row-odd"><td><p>COLOR_INVALID</p></td>
 <td><p>The specified color palette ID was invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>CONNECTION_API_ID_INVALID</p></td>
+<tr class="row-even"><td><p>COMMUNITY_PEER_TOO_LARGE</p></td>
+<td><p>The specified peer has too many members to be part of a community.</p></td>
+</tr>
+<tr class="row-odd"><td><p>CONNECTION_API_ID_INVALID</p></td>
 <td><p>The provided API id is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CONNECTION_APP_VERSION_EMPTY</p></td>
+<tr class="row-even"><td><p>CONNECTION_APP_VERSION_EMPTY</p></td>
 <td><p>App version is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>CONNECTION_DEVICE_MODEL_EMPTY</p></td>
+<tr class="row-odd"><td><p>CONNECTION_DEVICE_MODEL_EMPTY</p></td>
 <td><p>The specified device model is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CONNECTION_ID_INVALID</p></td>
+<tr class="row-even"><td><p>CONNECTION_ID_INVALID</p></td>
 <td><p>The specified connection ID is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>CONNECTION_LANG_PACK_INVALID</p></td>
+<tr class="row-odd"><td><p>CONNECTION_LANG_PACK_INVALID</p></td>
 <td><p>The specified language pack is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CONNECTION_LAYER_INVALID</p></td>
+<tr class="row-even"><td><p>CONNECTION_LAYER_INVALID</p></td>
 <td><p>Layer invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>CONNECTION_NOT_INITED</p></td>
+<tr class="row-odd"><td><p>CONNECTION_NOT_INITED</p></td>
 <td><p>Please initialize the connection using initConnection before making queries.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CONNECTION_SYSTEM_EMPTY</p></td>
+<tr class="row-even"><td><p>CONNECTION_SYSTEM_EMPTY</p></td>
 <td><p>The specified system version is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>CONNECTION_SYSTEM_LANG_CODE_EMPTY</p></td>
+<tr class="row-odd"><td><p>CONNECTION_SYSTEM_LANG_CODE_EMPTY</p></td>
 <td><p>The specified system language code is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CONTACT_ADD_MISSING</p></td>
+<tr class="row-even"><td><p>CONTACT_ADD_MISSING</p></td>
 <td><p>Contact to add is missing.</p></td>
 </tr>
-<tr class="row-even"><td><p>CONTACT_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>CONTACT_ID_INVALID</p></td>
 <td><p>The provided contact ID is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CONTACT_MISSING</p></td>
+<tr class="row-even"><td><p>CONTACT_MISSING</p></td>
 <td><p>The specified user is not a contact.</p></td>
 </tr>
-<tr class="row-even"><td><p>CONTACT_NAME_EMPTY</p></td>
+<tr class="row-odd"><td><p>CONTACT_NAME_EMPTY</p></td>
 <td><p>Contact name empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CONTACT_REQ_MISSING</p></td>
+<tr class="row-even"><td><p>CONTACT_REQ_MISSING</p></td>
 <td><p>Missing contact request.</p></td>
 </tr>
-<tr class="row-even"><td><p>CREATE_CALL_FAILED</p></td>
+<tr class="row-odd"><td><p>CREATE_CALL_FAILED</p></td>
 <td><p>An error occurred while creating the call.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CREDENTIAL_INVALID</p></td>
+<tr class="row-even"><td><p>CREDENTIAL_INVALID</p></td>
 <td><p>The credential is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>CURRENCY_TOTAL_AMOUNT_INVALID</p></td>
+<tr class="row-odd"><td><p>CURRENCY_TOTAL_AMOUNT_INVALID</p></td>
 <td><p>The total amount of all prices is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CUSTOM_REACTIONS_TOO_MANY</p></td>
+<tr class="row-even"><td><p>CUSTOM_REACTIONS_TOO_MANY</p></td>
 <td><p>Too many custom reactions were specified.</p></td>
 </tr>
-<tr class="row-even"><td><p>DATA_HASH_SIZE_INVALID</p></td>
+<tr class="row-odd"><td><p>DATA_HASH_SIZE_INVALID</p></td>
 <td><p>The size of the specified secureValueErrorData.data_hash is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>DATA_INVALID</p></td>
+<tr class="row-even"><td><p>DATA_INVALID</p></td>
 <td><p>Encrypted data invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>DATA_JSON_INVALID</p></td>
+<tr class="row-odd"><td><p>DATA_JSON_INVALID</p></td>
 <td><p>The provided JSON data is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>DATA_TOO_LONG</p></td>
+<tr class="row-even"><td><p>DATA_TOO_LONG</p></td>
 <td><p>Data too long.</p></td>
 </tr>
-<tr class="row-even"><td><p>DATE_EMPTY</p></td>
+<tr class="row-odd"><td><p>DATE_EMPTY</p></td>
 <td><p>Date empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>DC_ID_INVALID</p></td>
+<tr class="row-even"><td><p>DC_ID_INVALID</p></td>
 <td><p>The provided DC ID is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>DELETE_ANSWER_FORBIDDEN</p></td>
+<tr class="row-odd"><td><p>DELETE_ANSWER_FORBIDDEN</p></td>
 <td><p>You cannot delete the specified option in this poll.</p></td>
 </tr>
-<tr class="row-odd"><td><p>DH_G_A_INVALID</p></td>
+<tr class="row-even"><td><p>DH_G_A_INVALID</p></td>
 <td><p>g_a invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>DOCUMENT_INVALID</p></td>
+<tr class="row-odd"><td><p>DOCUMENT_INVALID</p></td>
 <td><p>The specified document is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>EFFECT_CHAT_INVALID</p></td>
+<tr class="row-even"><td><p>EFFECT_CHAT_INVALID</p></td>
 <td><p>The effect_id can only be used in private chats</p></td>
 </tr>
-<tr class="row-even"><td><p>EFFECT_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>EFFECT_ID_INVALID</p></td>
 <td><p>The specified effect ID is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>EMAIL_HASH_EXPIRED</p></td>
+<tr class="row-even"><td><p>EMAIL_HASH_EXPIRED</p></td>
 <td><p>Email hash expired.</p></td>
 </tr>
-<tr class="row-even"><td><p>EMAIL_INSTALL_MISSING</p></td>
+<tr class="row-odd"><td><p>EMAIL_INSTALL_MISSING</p></td>
 <td><p>In order to use account.SendVerifyEmailCode, auth.SendCode must return auth.SentCodeTypeSetUpEmailRequired.</p></td>
 </tr>
-<tr class="row-odd"><td><p>EMAIL_INVALID</p></td>
+<tr class="row-even"><td><p>EMAIL_INVALID</p></td>
 <td><p>The specified email is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>EMAIL_NOT_ALLOWED</p></td>
+<tr class="row-odd"><td><p>EMAIL_NOT_ALLOWED</p></td>
 <td><p>The specified email cannot be used to complete the operation.</p></td>
 </tr>
-<tr class="row-odd"><td><p>EMAIL_NOT_SETUP</p></td>
+<tr class="row-even"><td><p>EMAIL_NOT_SETUP</p></td>
 <td><p>In order to change the login email with emailVerifyPurposeLoginChange, an existing login email must already be set using emailVerifyPurposeLoginSetup.</p></td>
 </tr>
-<tr class="row-even"><td><p>EMAIL_UNCONFIRMED</p></td>
+<tr class="row-odd"><td><p>EMAIL_UNCONFIRMED</p></td>
 <td><p>Email unconfirmed.</p></td>
 </tr>
-<tr class="row-odd"><td><p>EMAIL_UNCONFIRMED_X</p></td>
+<tr class="row-even"><td><p>EMAIL_UNCONFIRMED_X</p></td>
 <td><p>The provided email isn’t confirmed, {value} is the length of the verification code that was just sent to the email: use [account.verifyEmail](<a class="reference external" href="https://core.telegram.org/method/account.verifyEmail">https://core.telegram.org/method/account.verifyEmail</a>) to enter the received verification code and enable the recovery email.</p></td>
 </tr>
-<tr class="row-even"><td><p>EMAIL_VERIFY_EXPIRED</p></td>
+<tr class="row-odd"><td><p>EMAIL_VERIFY_EXPIRED</p></td>
 <td><p>The verification email has expired.</p></td>
 </tr>
-<tr class="row-odd"><td><p>EMOJI_INVALID</p></td>
+<tr class="row-even"><td><p>EMOJI_INVALID</p></td>
 <td><p>The specified theme emoji is valid.</p></td>
 </tr>
-<tr class="row-even"><td><p>EMOJI_MARKUP_INVALID</p></td>
+<tr class="row-odd"><td><p>EMOJI_MARKUP_INVALID</p></td>
 <td><p>The specified <cite>video_emoji_markup</cite> was invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>EMOJI_NOT_MODIFIED</p></td>
+<tr class="row-even"><td><p>EMOJI_NOT_MODIFIED</p></td>
 <td><p>The theme wasn’t changed.</p></td>
 </tr>
-<tr class="row-even"><td><p>EMOTICON_EMPTY</p></td>
+<tr class="row-odd"><td><p>EMOTICON_EMPTY</p></td>
 <td><p>The emoji is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>EMOTICON_INVALID</p></td>
+<tr class="row-even"><td><p>EMOTICON_INVALID</p></td>
 <td><p>The specified emoji is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>EMOTICON_STICKERPACK_MISSING</p></td>
+<tr class="row-odd"><td><p>EMOTICON_STICKERPACK_MISSING</p></td>
 <td><p>inputStickerSetDice.emoji cannot be empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>ENCRYPTED_MESSAGE_INVALID</p></td>
+<tr class="row-even"><td><p>ENCRYPTED_MESSAGE_INVALID</p></td>
 <td><p>Encrypted message invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>ENCRYPTION_ALREADY_ACCEPTED</p></td>
+<tr class="row-odd"><td><p>ENCRYPTION_ALREADY_ACCEPTED</p></td>
 <td><p>Secret chat already accepted.</p></td>
 </tr>
-<tr class="row-odd"><td><p>ENCRYPTION_ALREADY_DECLINED</p></td>
+<tr class="row-even"><td><p>ENCRYPTION_ALREADY_DECLINED</p></td>
 <td><p>The secret chat was already declined.</p></td>
 </tr>
-<tr class="row-even"><td><p>ENCRYPTION_DECLINED</p></td>
+<tr class="row-odd"><td><p>ENCRYPTION_DECLINED</p></td>
 <td><p>The secret chat was declined.</p></td>
 </tr>
-<tr class="row-odd"><td><p>ENCRYPTION_ID_INVALID</p></td>
+<tr class="row-even"><td><p>ENCRYPTION_ID_INVALID</p></td>
 <td><p>The provided secret chat ID is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>ENTITIES_TOO_LONG</p></td>
+<tr class="row-odd"><td><p>ENTITIES_TOO_LONG</p></td>
 <td><p>You provided too many styled message entities.</p></td>
 </tr>
-<tr class="row-odd"><td><p>ENTITY_BOUNDS_INVALID</p></td>
+<tr class="row-even"><td><p>ENTITY_BOUNDS_INVALID</p></td>
 <td><p>A specified [entity offset or length](<a class="reference external" href="https://core.telegram.org/api/entities#entity-length">https://core.telegram.org/api/entities#entity-length</a>) is invalid, see [here](<a class="reference external" href="https://core.telegram.org/api/entities#entity-length">https://core.telegram.org/api/entities#entity-length</a>) for info on how to properly compute the entity offset/length.</p></td>
 </tr>
-<tr class="row-even"><td><p>ENTITY_DATE_FORMAT_INVALID</p></td>
+<tr class="row-odd"><td><p>ENTITY_DATE_FORMAT_INVALID</p></td>
 <td><p>One of the passed messageEntityFormattedDate objects has an invalid format (i.e. an invalid combination of the format flags).</p></td>
 </tr>
-<tr class="row-odd"><td><p>ENTITY_DATE_INVALID</p></td>
+<tr class="row-even"><td><p>ENTITY_DATE_INVALID</p></td>
 <td><p>One of the passed messageEntityFormattedDate objects has an invalid date: the allowed value ranges from <cite>0</cite> to the current date plus 1098 days (<cite>time()+1098*86400</cite>).</p></td>
 </tr>
-<tr class="row-even"><td><p>ENTITY_MENTION_USER_INVALID</p></td>
+<tr class="row-odd"><td><p>ENTITY_MENTION_USER_INVALID</p></td>
 <td><p>You mentioned an invalid user.</p></td>
 </tr>
-<tr class="row-odd"><td><p>ERROR_TEXT_EMPTY</p></td>
+<tr class="row-even"><td><p>ERROR_TEXT_EMPTY</p></td>
 <td><p>The provided error message is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>EXPIRES_AT_INVALID</p></td>
+<tr class="row-odd"><td><p>EXPIRES_AT_INVALID</p></td>
 <td><p>The specified <cite>expires_at</cite> timestamp is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>EXPIRE_DATE_INVALID</p></td>
+<tr class="row-even"><td><p>EXPIRE_DATE_INVALID</p></td>
 <td><p>The specified expiration date is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>EXPORT_CARD_INVALID</p></td>
+<tr class="row-odd"><td><p>EXPORT_CARD_INVALID</p></td>
 <td><p>Provided card is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>EXTENDED_MEDIA_AMOUNT_INVALID</p></td>
+<tr class="row-even"><td><p>EXTENDED_MEDIA_AMOUNT_INVALID</p></td>
 <td><p>The specified <cite>stars_amount</cite> of the passed [inputMediaPaidMedia](<a class="reference external" href="https://core.telegram.org/constructor/inputMediaPaidMedia">https://core.telegram.org/constructor/inputMediaPaidMedia</a>) is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>EXTENDED_MEDIA_EMPTY</p></td>
+<tr class="row-odd"><td><p>EXTENDED_MEDIA_EMPTY</p></td>
 <td><p>The specified paid media is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>EXTENDED_MEDIA_INVALID</p></td>
+<tr class="row-even"><td><p>EXTENDED_MEDIA_INVALID</p></td>
 <td><p>The specified paid media is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>EXTERNAL_URL_INVALID</p></td>
+<tr class="row-odd"><td><p>EXTERNAL_URL_INVALID</p></td>
 <td><p>External URL invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FIELD_NAME_EMPTY</p></td>
+<tr class="row-even"><td><p>FIELD_NAME_EMPTY</p></td>
 <td><p>The field with the name FIELD_NAME is missing</p></td>
 </tr>
-<tr class="row-even"><td><p>FIELD_NAME_INVALID</p></td>
+<tr class="row-odd"><td><p>FIELD_NAME_INVALID</p></td>
 <td><p>The field with the name FIELD_NAME is invalid</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_CONTENT_TYPE_INVALID</p></td>
+<tr class="row-even"><td><p>FILE_CONTENT_TYPE_INVALID</p></td>
 <td><p>File content-type is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_EMTPY</p></td>
+<tr class="row-odd"><td><p>FILE_EMTPY</p></td>
 <td><p>An empty file was provided.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_ID_INVALID</p></td>
+<tr class="row-even"><td><p>FILE_ID_INVALID</p></td>
 <td><p>The provided file id is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_MIGRATE_X</p></td>
+<tr class="row-odd"><td><p>FILE_MIGRATE_X</p></td>
 <td><p>The file currently being accessed is stored in DC {value}, please re-send the query to that DC.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_PARTS_INVALID</p></td>
+<tr class="row-even"><td><p>FILE_PARTS_INVALID</p></td>
 <td><p>The number of file parts is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_PART_EMPTY</p></td>
+<tr class="row-odd"><td><p>FILE_PART_EMPTY</p></td>
 <td><p>The provided file part is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_PART_INVALID</p></td>
+<tr class="row-even"><td><p>FILE_PART_INVALID</p></td>
 <td><p>The file part number is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_PART_LENGTH_INVALID</p></td>
+<tr class="row-odd"><td><p>FILE_PART_LENGTH_INVALID</p></td>
 <td><p>The length of a file part is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_PART_SIZE_CHANGED</p></td>
+<tr class="row-even"><td><p>FILE_PART_SIZE_CHANGED</p></td>
 <td><p>Provided file part size has changed.</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_PART_SIZE_INVALID</p></td>
+<tr class="row-odd"><td><p>FILE_PART_SIZE_INVALID</p></td>
 <td><p>The provided file part size is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_PART_TOO_BIG</p></td>
+<tr class="row-even"><td><p>FILE_PART_TOO_BIG</p></td>
 <td><p>The uploaded file part is too big.</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_PART_TOO_SMALL</p></td>
+<tr class="row-odd"><td><p>FILE_PART_TOO_SMALL</p></td>
 <td><p>The size of the uploaded file part is too small, please see the documentation for the allowed sizes.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_PART_X_MISSING</p></td>
+<tr class="row-even"><td><p>FILE_PART_X_MISSING</p></td>
 <td><p>Part {value} of the file is missing from storage. Try repeating the method call to resave the part.</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_REFERENCE_EMPTY</p></td>
+<tr class="row-odd"><td><p>FILE_REFERENCE_EMPTY</p></td>
 <td><p>An empty [file reference](<a class="reference external" href="https://core.telegram.org/api/file-references">https://core.telegram.org/api/file-references</a>) was specified.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_REFERENCE_EXPIRED</p></td>
+<tr class="row-even"><td><p>FILE_REFERENCE_EXPIRED</p></td>
 <td><p>File reference expired, it must be refetched as described in [the documentation](<a class="reference external" href="https://core.telegram.org/api/file-references">https://core.telegram.org/api/file-references</a>).</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_REFERENCE_INVALID</p></td>
+<tr class="row-odd"><td><p>FILE_REFERENCE_INVALID</p></td>
 <td><p>The specified [file reference](<a class="reference external" href="https://core.telegram.org/api/file-references">https://core.telegram.org/api/file-references</a>) is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_REFERENCE_X_EMPTY</p></td>
+<tr class="row-even"><td><p>FILE_REFERENCE_X_EMPTY</p></td>
 <td><p>The file reference of the media file at offset {value} in the multi_media array is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_REFERENCE_X_EXPIRED</p></td>
+<tr class="row-odd"><td><p>FILE_REFERENCE_X_EXPIRED</p></td>
 <td><p>The file reference of the media file at index {value} in the passed media array expired, it [must be refreshed as specified in the documentation](<a class="reference external" href="https://core.telegram.org/api/file-references">https://core.telegram.org/api/file-references</a>). .</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_REFERENCE_X_INVALID</p></td>
+<tr class="row-even"><td><p>FILE_REFERENCE_X_INVALID</p></td>
 <td><p>The [file reference](<a class="reference external" href="https://core.telegram.org/api/file-references">https://core.telegram.org/api/file-references</a>) of the media file at index {value} in the passed media array is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>FILE_TITLE_EMPTY</p></td>
+<tr class="row-odd"><td><p>FILE_TITLE_EMPTY</p></td>
 <td><p>An empty file title was specified.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILE_TOKEN_INVALID</p></td>
+<tr class="row-even"><td><p>FILE_TOKEN_INVALID</p></td>
 <td><p>The master DC did not accept the <cite>file_token</cite> (e.g., the token has expired). Continue downloading the file from the master DC using upload.getFile.</p></td>
 </tr>
-<tr class="row-even"><td><p>FILTER_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>FILTER_ID_INVALID</p></td>
 <td><p>The specified filter ID is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILTER_INCLUDE_EMPTY</p></td>
+<tr class="row-even"><td><p>FILTER_INCLUDE_EMPTY</p></td>
 <td><p>The include_peers vector of the filter is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>FILTER_NOT_SUPPORTED</p></td>
+<tr class="row-odd"><td><p>FILTER_NOT_SUPPORTED</p></td>
 <td><p>The specified filter cannot be used in this context.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILTER_TITLE_EMPTY</p></td>
+<tr class="row-even"><td><p>FILTER_TITLE_EMPTY</p></td>
 <td><p>The title field of the filter is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>FIRSTNAME_INVALID</p></td>
+<tr class="row-odd"><td><p>FIRSTNAME_INVALID</p></td>
 <td><p>The first name is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FOLDER_ID_EMPTY</p></td>
+<tr class="row-even"><td><p>FOLDER_ID_EMPTY</p></td>
 <td><p>An empty folder ID was specified.</p></td>
 </tr>
-<tr class="row-even"><td><p>FOLDER_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>FOLDER_ID_INVALID</p></td>
 <td><p>Invalid folder ID.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FORM_EXPIRED</p></td>
+<tr class="row-even"><td><p>FORM_EXPIRED</p></td>
 <td><p>The form was generated more than 10 minutes ago and has expired, please re-generate it using [payments.getPaymentForm](<a class="reference external" href="https://core.telegram.org/method/payments.getPaymentForm">https://core.telegram.org/method/payments.getPaymentForm</a>) and pass the new <cite>form_id</cite>.</p></td>
 </tr>
-<tr class="row-even"><td><p>FORM_ID_EMPTY</p></td>
+<tr class="row-odd"><td><p>FORM_ID_EMPTY</p></td>
 <td><p>The specified form ID is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FORM_SUBMIT_DUPLICATE</p></td>
+<tr class="row-even"><td><p>FORM_SUBMIT_DUPLICATE</p></td>
 <td><p>The same payment form was already submitted.  .</p></td>
 </tr>
-<tr class="row-even"><td><p>FORM_UNSUPPORTED</p></td>
+<tr class="row-odd"><td><p>FORM_UNSUPPORTED</p></td>
 <td><p>Please update your client.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FORUM_ENABLED</p></td>
+<tr class="row-even"><td><p>FORUM_ENABLED</p></td>
 <td><p>You can’t execute the specified action because the group is a [forum](<a class="reference external" href="https://core.telegram.org/api/forum">https://core.telegram.org/api/forum</a>), disable forum functionality to continue.</p></td>
 </tr>
-<tr class="row-even"><td><p>FRESH_CHANGE_ADMINS_FORBIDDEN</p></td>
+<tr class="row-odd"><td><p>FRESH_CHANGE_ADMINS_FORBIDDEN</p></td>
 <td><p>You were just elected admin, you can’t add or modify other admins yet.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FROM_MESSAGE_BOT_DISABLED</p></td>
+<tr class="row-even"><td><p>FROM_MESSAGE_BOT_DISABLED</p></td>
 <td><p>Bots can’t use fromMessage min constructors.</p></td>
 </tr>
-<tr class="row-even"><td><p>FROM_PEER_INVALID</p></td>
+<tr class="row-odd"><td><p>FROM_PEER_INVALID</p></td>
 <td><p>The specified from_id is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FROZEN_PARTICIPANT_MISSING</p></td>
+<tr class="row-even"><td><p>FROZEN_PARTICIPANT_MISSING</p></td>
 <td><p>The current account is [frozen](<a class="reference external" href="https://core.telegram.org/api/auth#frozen-accounts">https://core.telegram.org/api/auth#frozen-accounts</a>), and cannot access the specified peer.</p></td>
 </tr>
-<tr class="row-even"><td><p>FUTURE_CREATOR_NONE</p></td>
+<tr class="row-odd"><td><p>FUTURE_CREATOR_NONE</p></td>
 <td><p>The future creator after leave is only applicable to supergroups.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GAME_BOT_INVALID</p></td>
+<tr class="row-even"><td><p>GAME_BOT_INVALID</p></td>
 <td><p>Bots can’t send another bot’s game.</p></td>
 </tr>
-<tr class="row-even"><td><p>GENERAL_MODIFY_ICON_FORBIDDEN</p></td>
+<tr class="row-odd"><td><p>GENERAL_MODIFY_ICON_FORBIDDEN</p></td>
 <td><p>You can’t modify the icon of the ‘General’ topic.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GEO_POINT_INVALID</p></td>
+<tr class="row-even"><td><p>GEO_POINT_INVALID</p></td>
 <td><p>Invalid geoposition provided.</p></td>
 </tr>
-<tr class="row-even"><td><p>GIFT_MONTHS_INVALID</p></td>
+<tr class="row-odd"><td><p>GIFT_MONTHS_INVALID</p></td>
 <td><p>The value passed in invoice.inputInvoicePremiumGiftStars.months is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GIFT_SLUG_EXPIRED</p></td>
+<tr class="row-even"><td><p>GIFT_SLUG_EXPIRED</p></td>
 <td><p>The specified gift slug has expired.</p></td>
 </tr>
-<tr class="row-even"><td><p>GIFT_SLUG_INVALID</p></td>
+<tr class="row-odd"><td><p>GIFT_SLUG_INVALID</p></td>
 <td><p>The specified slug is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GIFT_STARS_INVALID</p></td>
+<tr class="row-even"><td><p>GIFT_STARS_INVALID</p></td>
 <td><p>The specified amount of stars is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>GIF_CONTENT_TYPE_INVALID</p></td>
+<tr class="row-odd"><td><p>GIF_CONTENT_TYPE_INVALID</p></td>
 <td><p>GIF content-type invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GIF_ID_INVALID</p></td>
+<tr class="row-even"><td><p>GIF_ID_INVALID</p></td>
 <td><p>The provided GIF ID is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>GRAPH_EXPIRED_RELOAD</p></td>
+<tr class="row-odd"><td><p>GRAPH_EXPIRED_RELOAD</p></td>
 <td><p>This graph has expired, please obtain a new graph token.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GRAPH_INVALID_RELOAD</p></td>
+<tr class="row-even"><td><p>GRAPH_INVALID_RELOAD</p></td>
 <td><p>Invalid graph token provided, please reload the stats and provide the updated token.</p></td>
 </tr>
-<tr class="row-even"><td><p>GRAPH_OUTDATED_RELOAD</p></td>
+<tr class="row-odd"><td><p>GRAPH_OUTDATED_RELOAD</p></td>
 <td><p>The graph is outdated, please get a new async token using stats.getBroadcastStats.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GROUPCALL_ALREADY_DISCARDED</p></td>
+<tr class="row-even"><td><p>GROUPCALL_ALREADY_DISCARDED</p></td>
 <td><p>The group call was already discarded.</p></td>
 </tr>
-<tr class="row-even"><td><p>GROUPCALL_FORBIDDEN</p></td>
+<tr class="row-odd"><td><p>GROUPCALL_FORBIDDEN</p></td>
 <td><p>The group call has already ended.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GROUPCALL_INVALID</p></td>
+<tr class="row-even"><td><p>GROUPCALL_INVALID</p></td>
 <td><p>The specified group call is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>GROUPCALL_JOIN_MISSING</p></td>
+<tr class="row-odd"><td><p>GROUPCALL_JOIN_MISSING</p></td>
 <td><p>You haven’t joined this group call.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GROUPCALL_NOT_MODIFIED</p></td>
+<tr class="row-even"><td><p>GROUPCALL_NOT_MODIFIED</p></td>
 <td><p>Group call settings weren’t modified.</p></td>
 </tr>
-<tr class="row-even"><td><p>GROUPCALL_SSRC_DUPLICATE_MUCH</p></td>
+<tr class="row-odd"><td><p>GROUPCALL_SSRC_DUPLICATE_MUCH</p></td>
 <td><p>The app needs to retry joining the group call with a new SSRC value.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GROUPED_MEDIA_INVALID</p></td>
+<tr class="row-even"><td><p>GROUPED_MEDIA_INVALID</p></td>
 <td><p>Invalid grouped media.</p></td>
 </tr>
-<tr class="row-even"><td><p>GROUP_CALL_INVALID</p></td>
+<tr class="row-odd"><td><p>GROUP_CALL_INVALID</p></td>
 <td><p>The group call is invalid</p></td>
 </tr>
-<tr class="row-odd"><td><p>HASHTAG_INVALID</p></td>
+<tr class="row-even"><td><p>HASHTAG_INVALID</p></td>
 <td><p>The specified hashtag is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>HASH_INVALID</p></td>
+<tr class="row-odd"><td><p>HASH_INVALID</p></td>
 <td><p>The provided hash is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>HASH_SIZE_INVALID</p></td>
+<tr class="row-even"><td><p>HASH_SIZE_INVALID</p></td>
 <td><p>The size of the specified secureValueError.hash is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>HIDE_REQUESTER_MISSING</p></td>
+<tr class="row-odd"><td><p>HIDE_REQUESTER_MISSING</p></td>
 <td><p>The join request was missing or was already handled.</p></td>
 </tr>
-<tr class="row-odd"><td><p>ID_EXPIRED</p></td>
+<tr class="row-even"><td><p>ID_EXPIRED</p></td>
 <td><p>The passed prepared inline message ID has expired.</p></td>
 </tr>
-<tr class="row-even"><td><p>ID_INVALID</p></td>
+<tr class="row-odd"><td><p>ID_INVALID</p></td>
 <td><p>The passed ID is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>IMAGE_PROCESS_FAILED</p></td>
+<tr class="row-even"><td><p>IMAGE_PROCESS_FAILED</p></td>
 <td><p>Failure while processing image.</p></td>
 </tr>
-<tr class="row-even"><td><p>IMPORT_FILE_INVALID</p></td>
+<tr class="row-odd"><td><p>IMPORT_FILE_INVALID</p></td>
 <td><p>The specified chat export file is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>IMPORT_FORMAT_DATE_INVALID</p></td>
+<tr class="row-even"><td><p>IMPORT_FORMAT_DATE_INVALID</p></td>
 <td><p>The date specified in the import file is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>IMPORT_FORMAT_UNRECOGNIZED</p></td>
+<tr class="row-odd"><td><p>IMPORT_FORMAT_UNRECOGNIZED</p></td>
 <td><p>The specified chat export file was exported from an unsupported chat app.</p></td>
 </tr>
-<tr class="row-odd"><td><p>IMPORT_HISTORY_LOG_EMPTY</p></td>
+<tr class="row-even"><td><p>IMPORT_HISTORY_LOG_EMPTY</p></td>
 <td><p>The specified chat export file is empty or has an invalid indentation.</p></td>
 </tr>
-<tr class="row-even"><td><p>IMPORT_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>IMPORT_ID_INVALID</p></td>
 <td><p>The specified import ID is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>IMPORT_TOKEN_INVALID</p></td>
+<tr class="row-even"><td><p>IMPORT_TOKEN_INVALID</p></td>
 <td><p>The specified token is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>INLINE_RESULT_EXPIRED</p></td>
+<tr class="row-odd"><td><p>INLINE_RESULT_EXPIRED</p></td>
 <td><p>The inline query expired.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_CHATLIST_INVALID</p></td>
+<tr class="row-even"><td><p>INPUT_CHATLIST_INVALID</p></td>
 <td><p>The specified folder is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_CONSTRUCTOR_INVALID</p></td>
+<tr class="row-odd"><td><p>INPUT_CONSTRUCTOR_INVALID</p></td>
 <td><p>The specified TL constructor is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_FETCH_ERROR</p></td>
+<tr class="row-even"><td><p>INPUT_FETCH_ERROR</p></td>
 <td><p>An error occurred while parsing the provided TL constructor.</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_FETCH_ERROR_X</p></td>
+<tr class="row-odd"><td><p>INPUT_FETCH_ERROR_X</p></td>
 <td><p>An error occurred while parsing the provided TL {value} constructor.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_FETCH_FAIL</p></td>
+<tr class="row-even"><td><p>INPUT_FETCH_FAIL</p></td>
 <td><p>An error occurred while parsing the provided TL constructor.</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_FILE_INVALID</p></td>
+<tr class="row-odd"><td><p>INPUT_FILE_INVALID</p></td>
 <td><p>The specified [InputFile](<a class="reference external" href="https://core.telegram.org/type/InputFile">https://core.telegram.org/type/InputFile</a>) is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_FILTER_INVALID</p></td>
+<tr class="row-even"><td><p>INPUT_FILTER_INVALID</p></td>
 <td><p>The specified filter is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_LAYER_INVALID</p></td>
+<tr class="row-odd"><td><p>INPUT_LAYER_INVALID</p></td>
 <td><p>The specified layer is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_METHOD_INVALID</p></td>
+<tr class="row-even"><td><p>INPUT_METHOD_INVALID</p></td>
 <td><p>The specified method is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_PEERS_EMPTY</p></td>
+<tr class="row-odd"><td><p>INPUT_PEERS_EMPTY</p></td>
 <td><p>The specified peer array is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_PURPOSE_INVALID</p></td>
+<tr class="row-even"><td><p>INPUT_PURPOSE_INVALID</p></td>
 <td><p>The specified payment purpose is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_REQUEST_TOO_LONG</p></td>
+<tr class="row-odd"><td><p>INPUT_REQUEST_TOO_LONG</p></td>
 <td><p>The request payload is too long.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_STARS_AMOUNT_INVALID</p></td>
+<tr class="row-even"><td><p>INPUT_STARS_AMOUNT_INVALID</p></td>
 <td><p>The specified offer amount in stars is invalid, see [here](<a class="reference external" href="https://core.telegram.org/api/gifts#collectible-gift-purchase-offers">https://core.telegram.org/api/gifts#collectible-gift-purchase-offers</a>) for the allowed range.</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_STARS_NANOS_INVALID</p></td>
+<tr class="row-odd"><td><p>INPUT_STARS_NANOS_INVALID</p></td>
 <td><p>The specified offer amount in nanotons is invalid, see [here](<a class="reference external" href="https://core.telegram.org/api/gifts#collectible-gift-purchase-offers">https://core.telegram.org/api/gifts#collectible-gift-purchase-offers</a>) for the allowed range.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_TEXT_EMPTY</p></td>
+<tr class="row-even"><td><p>INPUT_TEXT_EMPTY</p></td>
 <td><p>The specified text is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_TEXT_TOO_LONG</p></td>
+<tr class="row-odd"><td><p>INPUT_TEXT_TOO_LONG</p></td>
 <td><p>The specified text is too long.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_USER_DEACTIVATED</p></td>
+<tr class="row-even"><td><p>INPUT_USER_DEACTIVATED</p></td>
 <td><p>The specified user was deleted.</p></td>
 </tr>
-<tr class="row-even"><td><p>INVITES_TOO_MUCH</p></td>
+<tr class="row-odd"><td><p>INVITES_TOO_MUCH</p></td>
 <td><p>The maximum number of per-folder invites specified by the <cite>chatlist_invites_limit_default</cite>/<cite>chatlist_invites_limit_premium</cite> [client configuration parameters](<a class="reference external" href="https://core.telegram.org/api/config#chatlist-invites-limit-default">https://core.telegram.org/api/config#chatlist-invites-limit-default</a>) was reached.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INVITE_FORBIDDEN_WITH_JOINAS</p></td>
+<tr class="row-even"><td><p>INVITE_FORBIDDEN_WITH_JOINAS</p></td>
 <td><p>If the user has anonymously joined a group call as a channel, they can’t invite other users to the group call because that would cause deanonymization, because the invite would be sent using the original user ID, not the anonymized channel ID.</p></td>
 </tr>
-<tr class="row-even"><td><p>INVITE_HASH_EMPTY</p></td>
+<tr class="row-odd"><td><p>INVITE_HASH_EMPTY</p></td>
 <td><p>The invite hash is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INVITE_HASH_EXPIRED</p></td>
+<tr class="row-even"><td><p>INVITE_HASH_EXPIRED</p></td>
 <td><p>The invite link has expired.</p></td>
 </tr>
-<tr class="row-even"><td><p>INVITE_HASH_INVALID</p></td>
+<tr class="row-odd"><td><p>INVITE_HASH_INVALID</p></td>
 <td><p>The invite hash is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INVITE_REQUEST_SENT</p></td>
+<tr class="row-even"><td><p>INVITE_REQUEST_SENT</p></td>
 <td><p>You have successfully requested to join this chat or channel.</p></td>
 </tr>
-<tr class="row-even"><td><p>INVITE_REVOKED_MISSING</p></td>
+<tr class="row-odd"><td><p>INVITE_REVOKED_MISSING</p></td>
 <td><p>The specified invite link was already revoked or is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INVITE_SLUG_EMPTY</p></td>
+<tr class="row-even"><td><p>INVITE_SLUG_EMPTY</p></td>
 <td><p>The specified invite slug is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>INVITE_SLUG_EXPIRED</p></td>
+<tr class="row-odd"><td><p>INVITE_SLUG_EXPIRED</p></td>
 <td><p>The specified chat folder link has expired.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INVITE_SLUG_INVALID</p></td>
+<tr class="row-even"><td><p>INVITE_SLUG_INVALID</p></td>
 <td><p>The specified invitation slug is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>INVOICE_INVALID</p></td>
+<tr class="row-odd"><td><p>INVOICE_INVALID</p></td>
 <td><p>The specified invoice is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INVOICE_PAYLOAD_INVALID</p></td>
+<tr class="row-even"><td><p>INVOICE_PAYLOAD_INVALID</p></td>
 <td><p>The specified invoice payload is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>JOIN_AS_PEER_INVALID</p></td>
+<tr class="row-odd"><td><p>JOIN_AS_PEER_INVALID</p></td>
 <td><p>The specified peer cannot be used to join a group call.</p></td>
 </tr>
-<tr class="row-odd"><td><p>JOIN_GUARD_TIMEOUT</p></td>
+<tr class="row-even"><td><p>JOIN_GUARD_TIMEOUT</p></td>
 <td><p>A timeout occurred while fetching data from the guard bot.</p></td>
 </tr>
-<tr class="row-even"><td><p>LANGUAGE_INVALID</p></td>
+<tr class="row-odd"><td><p>LANGUAGE_INVALID</p></td>
 <td><p>The specified lang_code is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>LANG_CODE_INVALID</p></td>
+<tr class="row-even"><td><p>LANG_CODE_INVALID</p></td>
 <td><p>The specified language code is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>LANG_CODE_NOT_SUPPORTED</p></td>
+<tr class="row-odd"><td><p>LANG_CODE_NOT_SUPPORTED</p></td>
 <td><p>The specified language code is not supported.</p></td>
 </tr>
-<tr class="row-odd"><td><p>LANG_PACK_INVALID</p></td>
+<tr class="row-even"><td><p>LANG_PACK_INVALID</p></td>
 <td><p>The provided language pack is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>LASTNAME_INVALID</p></td>
+<tr class="row-odd"><td><p>LASTNAME_INVALID</p></td>
 <td><p>The last name is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>LIMIT_INVALID</p></td>
+<tr class="row-even"><td><p>LIMIT_INVALID</p></td>
 <td><p>The provided limit is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>LINK_NOT_MODIFIED</p></td>
+<tr class="row-odd"><td><p>LINK_NOT_MODIFIED</p></td>
 <td><p>Discussion link not modified.</p></td>
 </tr>
-<tr class="row-odd"><td><p>LOCATION_INVALID</p></td>
+<tr class="row-even"><td><p>LOCATION_INVALID</p></td>
 <td><p>The provided location is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>MANAGER_INVALID</p></td>
+<tr class="row-odd"><td><p>MANAGER_INVALID</p></td>
 <td><p>The provided bot manager is invalid. Bot Management Mode should be enabled for the bot in the &#64;BotFather Mini App.</p></td>
 </tr>
-<tr class="row-odd"><td><p>MANAGER_PERMISSION_MISSING</p></td>
+<tr class="row-even"><td><p>MANAGER_PERMISSION_MISSING</p></td>
 <td><p>The bot manager permission is missing. Bot Management Mode should be enabled for the bot in the &#64;BotFather Mini App.</p></td>
 </tr>
-<tr class="row-even"><td><p>MAX_DATE_INVALID</p></td>
+<tr class="row-odd"><td><p>MAX_DATE_INVALID</p></td>
 <td><p>The specified maximum date is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>MAX_ID_INVALID</p></td>
+<tr class="row-even"><td><p>MAX_ID_INVALID</p></td>
 <td><p>The provided max ID is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>MAX_QTS_INVALID</p></td>
+<tr class="row-odd"><td><p>MAX_QTS_INVALID</p></td>
 <td><p>The specified max_qts is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>MD5_CHECKSUM_INVALID</p></td>
+<tr class="row-even"><td><p>MD5_CHECKSUM_INVALID</p></td>
 <td><p>The MD5 checksums do not match.</p></td>
 </tr>
-<tr class="row-even"><td><p>MEDIA_ALREADY_PAID</p></td>
+<tr class="row-odd"><td><p>MEDIA_ALREADY_PAID</p></td>
 <td><p>You already paid for the specified media.</p></td>
 </tr>
-<tr class="row-odd"><td><p>MEDIA_CAPTION_TOO_LONG</p></td>
+<tr class="row-even"><td><p>MEDIA_CAPTION_TOO_LONG</p></td>
 <td><p>The caption is too long.</p></td>
 </tr>
-<tr class="row-even"><td><p>MEDIA_EMPTY</p></td>
+<tr class="row-odd"><td><p>MEDIA_EMPTY</p></td>
 <td><p>The provided media object is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>MEDIA_FILE_INVALID</p></td>
+<tr class="row-even"><td><p>MEDIA_FILE_INVALID</p></td>
 <td><p>The specified media file is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>MEDIA_GROUPED_INVALID</p></td>
+<tr class="row-odd"><td><p>MEDIA_GROUPED_INVALID</p></td>
 <td><p>You tried to send media of different types in an album.</p></td>
 </tr>
-<tr class="row-odd"><td><p>MEDIA_INVALID</p></td>
+<tr class="row-even"><td><p>MEDIA_INVALID</p></td>
 <td><p>Media invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>MEDIA_NEW_INVALID</p></td>
+<tr class="row-odd"><td><p>MEDIA_NEW_INVALID</p></td>
 <td><p>The new media is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>MEDIA_PREV_INVALID</p></td>
+<tr class="row-even"><td><p>MEDIA_PREV_INVALID</p></td>
 <td><p>Previous media invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>MEDIA_TTL_INVALID</p></td>
+<tr class="row-odd"><td><p>MEDIA_TTL_INVALID</p></td>
 <td><p>The specified media TTL is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>MEDIA_TYPE_INVALID</p></td>
+<tr class="row-even"><td><p>MEDIA_TYPE_INVALID</p></td>
 <td><p>The specified media type cannot be used in stories.</p></td>
 </tr>
-<tr class="row-even"><td><p>MEDIA_VIDEO_STORY_MISSING</p></td>
+<tr class="row-odd"><td><p>MEDIA_VIDEO_STORY_MISSING</p></td>
 <td><p>A non-story video cannot be repubblished as a story (emitted when trying to resend a non-story video as a story using inputDocument).</p></td>
 </tr>
-<tr class="row-odd"><td><p>MEGAGROUP_GEO_REQUIRED</p></td>
+<tr class="row-even"><td><p>MEGAGROUP_GEO_REQUIRED</p></td>
 <td><p>This method can only be invoked on a geogroup.</p></td>
 </tr>
-<tr class="row-even"><td><p>MEGAGROUP_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>MEGAGROUP_ID_INVALID</p></td>
 <td><p>Invalid supergroup ID.</p></td>
 </tr>
-<tr class="row-odd"><td><p>MEGAGROUP_PREHISTORY_HIDDEN</p></td>
+<tr class="row-even"><td><p>MEGAGROUP_PREHISTORY_HIDDEN</p></td>
 <td><p>Group with hidden history for new members can’t be set as discussion groups.</p></td>
 </tr>
-<tr class="row-even"><td><p>MEGAGROUP_REQUIRED</p></td>
+<tr class="row-odd"><td><p>MEGAGROUP_REQUIRED</p></td>
 <td><p>You can only use this method on a supergroup.</p></td>
 </tr>
-<tr class="row-odd"><td><p>MESSAGE_EDIT_TIME_EXPIRED</p></td>
+<tr class="row-even"><td><p>MESSAGE_EDIT_TIME_EXPIRED</p></td>
 <td><p>You can’t edit this message anymore, too much time has passed since its creation.</p></td>
 </tr>
-<tr class="row-even"><td><p>MESSAGE_EMPTY</p></td>
+<tr class="row-odd"><td><p>MESSAGE_EMPTY</p></td>
 <td><p>The provided message is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>MESSAGE_IDS_EMPTY</p></td>
+<tr class="row-even"><td><p>MESSAGE_IDS_EMPTY</p></td>
 <td><p>No message ids were provided.</p></td>
 </tr>
-<tr class="row-even"><td><p>MESSAGE_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>MESSAGE_ID_INVALID</p></td>
 <td><p>The provided message id is invalid.</p></td>
+</tr>
+<tr class="row-even"><td><p>MESSAGE_NOT_COMMAND</p></td>
+<td><p>The provided message is not a ephemeral message with a valid callback_query_id.</p></td>
 </tr>
 <tr class="row-odd"><td><p>MESSAGE_NOT_MODIFIED</p></td>
 <td><p>The provided message data is identical to the previous message data, the message wasn’t modified.</p></td>
@@ -3256,7 +3262,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/f1dc08e" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/PyroTGFork/tree/144e433" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               
