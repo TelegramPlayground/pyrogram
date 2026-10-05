@@ -52,7 +52,7 @@ It enables you to easily interact with the main Telegram API through a user acco
 .. admonition :: USE AT YOUR OWN RISK
     :class: tip
     
-    All of the repositories that we merge features from are listed in :doc:`Release Notes <releases/changes-in-this-fork>` file.
+    All of the repositories that we merge features from are listed in :doc:`Release Notes <releases/>` file.
 
 
 Support
@@ -103,7 +103,7 @@ Meta
     - :doc:`Pyrogram FAQ <faq/index>`: Answers to common Pyrogram questions.
     - :doc:`Support Pyrogram <support>`: Ways to show your appreciation.
     - :doc:`Release Notes <releases/index>`: Release notes for Pyrogram releases.
-    - :doc:`Fork Release Notes <releases/changes-in-this-fork>`: Documented changes of this Fork.
+    - :doc:`Fork Release Notes <releases/>`: Documented changes of this Fork.
 
 .. toctree::
     :hidden:
